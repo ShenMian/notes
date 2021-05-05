@@ -1,6 +1,4 @@
 
-
-
 <div align="center">
 
 该系列文章遵循 [CC BY-SA 3.0] 协议发布.  
