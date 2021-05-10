@@ -31,20 +31,27 @@
 ![](assets/PID_Compensation_Animated.gif)
 
 ```cpp
-static float kP, kI = 0, kD;
+float kP, kI = 0, kD;
+auto prevTime = getCurrentMillSecond();
 
 while(true)
 {
-  float            error = target - output;
-  static float prevError = error;
+	auto     time = getCurrentMillSecond();
+	uint16_t dt   = static_cast<uint16_t>(time - prevTime);
+	prevTime      = time;
 
-  float P  = kP * error;
-  float I += kI * error * dt;
-  float D  = kD * (error - prevError) / dt;
+  static float i;
+
+  float           error = target - output;
+  static auto prevError = error;
+
+  float p  = kP * error;
+  float i += kI * error * dt;
+  float d  = kD * (error - prevError) / dt;
 
   prevError = error;
 
-  output = P + I + D;
+  auto output = p + i + d;
 }
 ```
 
