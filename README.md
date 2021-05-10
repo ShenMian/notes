@@ -1,8 +1,8 @@
 
 <div align="center">
 
-该系列文章遵循 [CC BY-SA 3.0] 协议发布.  
-![](license.png)
+该系列文章遵循 [CC BY-SA 3.0] 协议发布. 部分图片来源于网络.  
+![](license.png)  
 
 </div>
 
