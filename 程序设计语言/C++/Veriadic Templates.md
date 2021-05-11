@@ -35,9 +35,25 @@ template <typename T, typename... Args>
 void print(const T& arg, const Args&... args)
 {
   std::cout << arg;
-  if constexpr(sizeof...(args) > 0)
+  if constexpr (sizeof...(args) > 0)
     print(args...);
   else
     std::cout << std::endl;
 }
 ```
+**提示**: constexpr if 为 C++17 引入的语法.
+
+```cpp
+template <typename T, typename... Args>
+void print(const T& arg, const Args&... args)
+{
+  // ...
+}
+
+template <typename... Args>
+void print(const Args&... args)
+{
+  // ...
+}
+```
+上面的实现是可以通过编译的, 即使出现了参数数量超过或等于 2 的调用语句.  
