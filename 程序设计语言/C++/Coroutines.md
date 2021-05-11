@@ -1,4 +1,4 @@
-# Coroutine
+# Coroutines
 
 协程.  
 
@@ -19,3 +19,8 @@ C++20 加入了对协程的支持, 但只提供了最基础的接口. 直接使�
 - Boost.Coroutine: 对称/非对称的有栈协程, API 风格比较老式.
 - Boost.Coroutine2: 非对称的有栈协程, API 风格现代.
 - Boost.Fiber: 带有调度器的有栈协程, 调度导致效率较低.
+
+## 关键字
+- co_yield: 挂起并返回值.
+- co_await: 挂起.
+- co_return: 结束协程.
