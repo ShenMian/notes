@@ -28,13 +28,16 @@ int main()
  - print(1+2)
  - print()
 
-可通过 `sizeof...(args)` 来获取可变参数 `args` 的类型参数个数. 因此上述实现还可以写为:  
+可通过 `sizeof...(args)` 来获取可变参数 `args` 的类型参数个数.  
+因此上述实现还可以写为:  
 ```cpp
 template <typename T, typename... Args>
 void print(const T& arg, const Args&... args)
 {
   std::cout << arg;
-  if(sizeof...(args) > 0)
+  if constexpr(sizeof...(args) > 0)
     print(args...);
+  else
+    std::cout << std::endl;
 }
 ```
