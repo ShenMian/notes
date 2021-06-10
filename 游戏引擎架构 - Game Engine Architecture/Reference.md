@@ -14,6 +14,8 @@
 
 ## 网站
 - [NVIDIA GPU Gems 3](https://developer.nvidia.com/gpugems/gpugems3/)
+- [GAMES101](https://www.bilibili.com/video/BV1X7411F744)
+- [GAMES202](https://www.bilibili.com/video/BV1YK4y1T7yY)
 
 [Game Programming Patterns]: https://gameprogrammingpatterns.com/
 [Game Engine Architecture]: https://www.gameenginebook.com/
