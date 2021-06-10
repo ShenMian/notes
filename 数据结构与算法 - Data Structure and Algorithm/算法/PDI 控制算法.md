@@ -36,9 +36,9 @@ auto prevTime = getCurrentMillSecond();
 
 while(true)
 {
-	auto     time = getCurrentMillSecond();
-	uint16_t dt   = static_cast<uint16_t>(time - prevTime);
-	prevTime      = time;
+  auto     time = getCurrentMillSecond();
+  uint16_t dt   = static_cast<uint16_t>(time - prevTime);
+  prevTime      = time;
 
   static float i;
 
