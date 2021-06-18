@@ -12,3 +12,6 @@ ECS 架构分离了标识(entities), 数据(components)和行为(systems). ECS �
 ## Memory Chunks
 实体组件的存储位置取决于其 Archtype. ECS 申请的内存块被简称为 chunk. 每个 chunk 只会存储相同 Archtype 的实体.  
 ![Figure-2 Chunk](assets/ArchetypeChunk.png)  
+
+## Entity
+该类只用于存储 Entity 的 ID 和 version. 因为实体销毁后 ID 会被重复利用, 因此需要通过 version 来辨别 ID 相同的 Entity 是不是代表同一个实体. 每次实体销毁后 version 都会改变, 通常是加 1. 以此来区分之前有着相同 ID 的 Entity.
