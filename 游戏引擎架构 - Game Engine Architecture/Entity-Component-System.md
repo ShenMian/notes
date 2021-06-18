@@ -5,13 +5,24 @@ ECS 架构分离了标识(entities), 数据(components)和行为(systems). ECS �
 - 避免继承带来的缺陷: 相比传统的继承, ECS 不用担心"菱形继承", 继承关系复杂等问题.
 ![Figure-0 Concept](assets/ECSBlock.png)  
 
-## Archetypes
+## 基本概念
+
+### Archetypes
 一种独特的组件类型组合被称为一个 Archetype. 如下图, 可以通过组件类型的组合分为 M, N 两种 Archtype. 对组件类型的改动也会造成实体 Archtype 的改变. 例如, 移除实体B的 Renderer 组件会使其的 Archtype 从 M 变为 N.  
 ![Figure-1 Archtype](assets/Archetype.png)  
 
-## Memory Chunks
+### Memory Chunks
 实体组件的存储位置取决于其 Archtype. ECS 申请的内存块被简称为 chunk. 每个 chunk 只会存储相同 Archtype 的实体.  
 ![Figure-2 Chunk](assets/ArchetypeChunk.png)  
 
-## Entity
+## 实现
+
+### class Entity
+```cpp
+struct Entity
+{
+  size_t id;
+  size_t version;
+}
+```
 该类只用于存储 Entity 的 ID 和 version. 因为实体销毁后 ID 会被重复利用, 因此需要通过 version 来辨别 ID 相同的 Entity 是不是代表同一个实体. 每次实体销毁后 version 都会改变, 通常是加 1. 以此来区分之前有着相同 ID 的 Entity.
