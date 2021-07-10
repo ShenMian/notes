@@ -3,6 +3,10 @@
 可变参数模板.  
 **标准**: C++11.  
 
+## 1. 参数解包
+
+### 1.1 递归模板函数
+
 ```cpp
 template <typename T, typename... Args>
 void print(const T& arg, const Args&... args)
@@ -28,8 +32,7 @@ int main()
  - print(1+2)
  - print()
 
-可通过 `sizeof...(args)` 来获取可变参数 `args` 的类型参数个数.  
-因此上述实现还可以写为:  
+可通过 `sizeof...(args)` 来获取可变参数 `args` 的类型参数个数, 因此上述实现还可以写为:  
 ```cpp
 template <typename T, typename... Args>
 void print(const T& arg, const Args&... args)
@@ -42,6 +45,21 @@ void print(const T& arg, const Args&... args)
 }
 ```
 **提示**: constexpr if 为 C++17 引入的语法.
+
+### 1.2 初始化列表展开
+
+```cpp
+template <typename T, typename... Args>
+void print(const T& arg, const Args&... args)
+{
+  std::cout << arg;
+  (void)std::initializer_list<T>{[&args] {
+    std::out << args << std::endl;
+  }(), arg)...};
+}
+```
+
+## 2. 其他
 
 ```cpp
 template <typename T, typename... Args>
