@@ -50,8 +50,6 @@ while(true)
   i += kI * error * dt;
   d  = kD * (error - lastError) / dt;
 
-  lastError = error;
-
   output = p + i + d; // 产生输出
 }
 ```
