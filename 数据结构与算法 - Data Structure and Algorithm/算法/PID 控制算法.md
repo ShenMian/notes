@@ -21,22 +21,25 @@
 ## 稳态误差(Steady-State Errors)
 系统从一个稳态过渡到新的稳态, 或系统受扰动作用又重新平衡后, 系统出现的偏差.
 
-## P: 比例单元
+## 参数
+
+### P: 比例单元
 结果为误差与 Kp 的乘积. 误差越大调节力度越大, 快速减小误差; 误差越小调节力度越小.  
 
-## I: 积分单元
+### I: 积分单元
 结果为积分与 Ki 的乘积. 积分为误差与时间的乘积之和, 因此考虑到了不同时间段的误差. 若误差长期没有得到修正, 存在稳态误差, 积分会不断增加, 最终会使误差会不断接近零.  
 
-## D: 微分单元
+### D: 微分单元
 
 通过下图可以很直观的看出三种算法对整体调节效果的影响:  
 ![](assets/PID_Compensation_Animated.gif)
 
+## 实现
 ```cpp
-float kP, kI, kD; // 这三个参数的值由用户指定
-float target, output;
+float kP, kI, kD;     // 这三个参数的值由用户指定
+float target, output; // target 为期望达到的值
 float p, i = 0.0f, d, error, lastError;
-auto previous = getCurrentMillSecond();
+auto  previous = getCurrentMillSecond();
 while(true)
 {
   auto     current = getCurrentMillSecond();
