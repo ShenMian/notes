@@ -1,5 +1,7 @@
 # PID 控制算法
 
+在现实中对事物的控制不能达到完全精确. 如果使用开环的控制系统将导致误差不断积累, 最终达到某个阈值, 失去对事物的控制. 利用 PID 来构建一个闭环控制系统.
+
 该算法由三部分组成, 分别是比例(Proportional, P)单元, 积分(Integral, I)单元和微分(Derivative, D)单元.  
 
 ![](assets/PID_feedback_nct_int_correct.png)  
@@ -31,27 +33,26 @@
 ![](assets/PID_Compensation_Animated.gif)
 
 ```cpp
-float kP, kI = 0, kD;
-auto prevTime = getCurrentMillSecond();
-
+float kP, kI, kD; // 这三个参数的值由用户指定
+float target, output;
+float p, i = 0.0f, d, error, lastError;
+auto previous = getCurrentMillSecond();
 while(true)
 {
-  auto     time = getCurrentMillSecond();
-  uint16_t dt   = static_cast<uint16_t>(time - prevTime);
-  prevTime      = time;
+  auto     current = getCurrentMillSecond();
+  uint16_t dt      = static_cast<uint16_t>(current - previous);
+  previous         = current;
 
-  static float i;
+  error     = target - output;
+  lastError = error;
 
-  float           error = target - output;
-  static auto prevError = error;
+  p  = kP * error;
+  i += kI * error * dt;
+  d  = kD * (error - lastError) / dt;
 
-  float p  = kP * error;
-  float i += kI * error * dt;
-  float d  = kD * (error - prevError) / dt;
+  lastError = error;
 
-  prevError = error;
-
-  auto output = p + i + d;
+  output = p + i + d; // 产生输出
 }
 ```
 
