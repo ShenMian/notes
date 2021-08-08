@@ -1,6 +1,6 @@
 # Design Pattern
 
-# Singleton 单例模式
+## Singleton 单例模式
 - 第一次获取实例时初始化, 被称为`懒汉式`.  
 初始化顺序可控, C++11及之后线程安全, C++11之前线程不安全.  
 **出处**: 该方法由 Scott Meyer 在 *Effective C++* 一书中提出.
