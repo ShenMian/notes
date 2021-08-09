@@ -1,6 +1,4 @@
-# Design Pattern
-
-## Singleton 单例模式
+# Singleton 单例模式
 
 **缺点**
 - 是全局变量, 可能提高代码耦合度.
@@ -46,5 +44,3 @@ private:
   inline static Singleton instance = Singleton();
 };
 ```
-
----
