@@ -2,10 +2,6 @@
 
 IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生产效率.  
 
-## Hotkeys
-- Ctrl + `
-打开内置终端.
-
 ## Plugins
 
 - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
