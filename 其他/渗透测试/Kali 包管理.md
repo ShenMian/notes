@@ -2,20 +2,19 @@
 
 ## 更新
 ```bash
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+sudo apt update       # 刷新存储库索引
+sudo apt upgrade      # 升级所有可升级的软件包
+sudo apt full-upgrade # 在升级软件包时自动处理依赖关系
 ```
 
 ## 清理安装包
 ```bash
-sudo apt-get clean
-sudo apt-get autoclean
+sudo apt autoremove # 自动删除不需要的包
 ```
 
 ## 镜像源
 ```bash
-sudo vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list # 利用 vim 编辑镜像源
 ```
 
 ```conf
