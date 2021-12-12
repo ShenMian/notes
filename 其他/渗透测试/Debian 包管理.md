@@ -1,4 +1,6 @@
-# Kali 包管理
+# Debian 包管理
+
+**操作系统**: Ubuntu, Kali
 
 ## 更新
 ```bash
