@@ -20,6 +20,13 @@ URL: https://extensions.gnome.org/
 
 ## Git
 
+### 安裝 github-cli
+```bash
+sudo pacman -S gh
+gh auth login
+# gh auth setup-git
+```
+
 ### 設置用戶
 ```bash
 git config --global user.name 'name'
