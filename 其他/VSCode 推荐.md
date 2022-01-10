@@ -4,6 +4,8 @@ IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生�
 
 ## Plugins
 
+- [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) AI 自动补全.
+
 - [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 高亮 TODO/FIXME, 并提供树形图导航.
 
