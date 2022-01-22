@@ -6,7 +6,7 @@ git clone https://github.com/daniruiz/dotfiles
 ./dotfiles/install.sh
 ```
 
-安装 Powerline 字体
+#### 安装 Powerline 字体
 ```bash
 git clone https://github.com/powerline/fonts
 ./fonts/install.sh
@@ -17,6 +17,12 @@ git clone https://github.com/powerline/fonts
 yay -S gnome-terminal-transparency
 ```
 在終端設置裏調整透明度.
+
+### VIM
+安裝或更新 SpaceVim.
+```bash
+curl -sLf https://spacevim.org/cn/install.sh | bash
+```
 
 ## Gnome
 
