@@ -6,6 +6,12 @@ git clone https://github.com/daniruiz/dotfiles
 ./dotfiles/install.sh
 ```
 
+安装 Powerline 字体
+```bash
+git clone https://github.com/powerline/fonts
+./fonts/install.sh
+```
+
 ### 透明背景
 ```bash
 yay -S gnome-terminal-transparency
