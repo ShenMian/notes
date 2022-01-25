@@ -10,6 +10,7 @@ iwconfig
 sudo airmon-ng start wlan0
 ```
 開啓監聽模式後, 無線網卡名稱發生改變.  後面會附加`mon`(monitor), 即`wlan0mon`.
+**注意**: 監聽模式開啓後的無線網卡將無法訪問 Internet, 直到監聽模式被關閉.
 
 3. 監聽 Wifi 信號.
 ```bash
