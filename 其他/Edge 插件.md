@@ -26,3 +26,6 @@
 ## Github
 - Refined Github.
 - Github Web IDE.
+
+## 链接
+- [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
