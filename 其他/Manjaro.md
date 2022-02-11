@@ -1,3 +1,21 @@
+# Manjaro
+
+## 常用软件
+
+### 软件开发
+- Visual Studio Code(code): 代码编辑器.
+- NeoVim: 现代 VIM.
+- CLion: C/C++ IDE.
+- Github CLI(gh): Github 命令行接口.
+
+### 娱乐
+- Microsoft Edge(microsoft-edge-stable-bin): 浏览器.
+- VLC: 视频播放器.
+- QQMusic: QQ音乐.
+
+### 通讯
+- Telegram(telegram-desktop).
+
 ## 終端美化
 
 ### 命令提示符
