@@ -7,10 +7,10 @@
 ## 工作流程(Workflow)
 分支
 - main: 包含生产代码.
-- develop
-- release/xxx
-- feature/xxx
-- hotfix/xxx
+- develop.
+- release/xxx.
+- feature/xxx.
+- hotfix/xxx.
 ![](assets/git-flow.png)
 
 ## 清空仓库

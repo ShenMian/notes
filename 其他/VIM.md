@@ -1,5 +1,7 @@
 # VIM
 
+![](assets/vi-keys.gif)
+
 ## 模式
 - 普通模式(normal mode).
 - 插入模式(Insert mode).
