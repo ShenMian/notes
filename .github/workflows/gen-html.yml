@@ -1,0 +1,17 @@
+name: Generate HTML
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Generate HTML from Markdown
+      uses: ldeluigi/markdown-docs@latest
+      with:
+        src: .
+        dst: docs
+        language: zh
+        primary-color: indigo
+        secondary-color: indigo
