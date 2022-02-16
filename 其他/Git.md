@@ -6,8 +6,9 @@
 
 ## 工作流程(Workflow)
 分支
-- main
+- main: 包含生产代码.
 - develop
+- release/xxx
 - feature/xxx
 - hotfix/xxx
 
