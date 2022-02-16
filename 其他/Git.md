@@ -1,6 +1,15 @@
 # Git
 
-![](assets/git_commands.jpg) 
+## 基本命令
+
+![](assets/git_commands.jpg)
+
+## 工作流程(Workflow)
+分支
+- main
+- develop
+- feature/xxx
+- hotfix/xxx
 
 ## 清空仓库
 ```bash
@@ -11,6 +20,9 @@ git rm --cached -r .
 git commit --allow-empty -m 'first commit'
 git push origin empty:master --force
 ```
+
+## GUI 客户端
+- [GitKraken](https://www.gitkraken.com/).
 
 ## Github CLI
 Github CLI 是 Github 官方提供的跨平台的命令行工具.
