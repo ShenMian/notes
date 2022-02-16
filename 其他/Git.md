@@ -23,7 +23,9 @@ git push origin empty:master --force
 ```
 
 ## GUI 客户端
-- [GitKraken](https://www.gitkraken.com/).
+- [Github Desktop](https://desktop.github.com/): 简洁.
+- [GitKraken](https://www.gitkraken.com/): 跨平台, 部分功能收费.
+**注意**: 如果已为 Git 配置了代理服务器不建议使用 `GitKraken`, 可能会导致错误.
 
 ## Github CLI
 Github CLI 是 Github 官方提供的跨平台的命令行工具.
