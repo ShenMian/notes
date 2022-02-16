@@ -2,7 +2,11 @@
 
 IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生产效率.  
 
-## Plugins
+## 快捷键(Shotcuts)
+- 查看快捷键: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>S</kbd>
+- 格式化代码: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>F</kbd>
+
+## 插件(Plugins)
 
 - [Github Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) AI 自动补全.
 
