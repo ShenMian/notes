@@ -1,4 +1,4 @@
-# VIM 快捷键
+# VIM
 
 ## 模式
 - 普通模式(normal mode).
