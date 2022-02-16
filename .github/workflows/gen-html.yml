@@ -6,6 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
     steps:
     - name: Generate HTML from Markdown
       uses: ldeluigi/markdown-docs@latest
