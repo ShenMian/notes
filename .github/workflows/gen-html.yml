@@ -11,7 +11,7 @@ jobs:
       uses: ldeluigi/markdown-docs@latest
       with:
         src: .
-        dst: docs
+        dst: ./docs
         language: zh
         primary-color: indigo
         secondary-color: indigo
@@ -20,4 +20,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs
+        publish_dir: ./docs
