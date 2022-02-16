@@ -3,7 +3,7 @@
 ## 模式
 - 普通模式(normal mode).
 - 插入模式(Insert mode).
-- 命令模式(Command mode).
+- 命令模式(command mode).
 
 ## 普通模式
 
