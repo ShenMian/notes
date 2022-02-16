@@ -11,6 +11,7 @@
 - release/xxx
 - feature/xxx
 - hotfix/xxx
+![](assets/git-flow.png)
 
 ## 清空仓库
 ```bash
