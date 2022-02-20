@@ -37,6 +37,7 @@ Windows 用户可以直接从 [Releases](https://github.com/cli/cli/releases) �
 ```bash
 sudo pacman -S gh # Archlinux
 gh auth login     # 登录 Github 账号
+gh auth setup-git # 
 ```
 
 ## 配置 Git
