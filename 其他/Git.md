@@ -49,6 +49,11 @@ git config --global user.name 'name'
 git config --global user.email 'eamil'
 ```
 
+### 设置编辑器
+```bash
+git config --global core.editor 'vim'
+```
+
 ### 设置代理
 ```bash
 git config --global http.proxy 'socks5://127.0.0.1:7891'
