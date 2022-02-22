@@ -55,7 +55,7 @@
 - Subsystem for Android.
 
 [CLion]:              https://www.jetbrains.com/clion/
-[Visual Studio]: https://www.visualstudio.com/
+[Visual Studio]:      https://www.visualstudio.com/
 [Visual Studio Code]: https://code.visualstudio.com/
 [Git]:                https://git-scm.com/
 [Github Desktop]:     https://desktop.github.com/
