@@ -15,10 +15,7 @@ sudo apt autoremove # 自动删除不需要的包
 ```
 
 ## 镜像源
-```bash
-sudo vim /etc/apt/sources.list # 利用 vim 编辑镜像源
-```
-
+将文件 `/etc/apt/sources.list` 中的内容修改为以下内容:
 ```conf
 # Aliyun 阿里云
 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
