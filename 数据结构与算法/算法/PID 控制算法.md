@@ -6,27 +6,33 @@
 
 ![](assets/PID_feedback_nct_int_correct.png)  
 注解:
+
 - Kp: 比例调节参数.
 - Ki: 积分调节参数.
 - Kd: 微分调节参数.
 - e(t): 当前误差.
 
 ## 调节参数
+
 三个公式都包含各自的调节参数, 这三个调节参数分别控制三个部分计算的结果对控制的影响大小, 应更具实际应用将它们调整到最适合的值.  
 调试 PID 控制参数主要方式有:
+
 - 人工调整.
 - [齐格勒-尼科尔斯方法].
 - PID 调试软件.
 
 ## 稳态误差(Steady-State Errors)
+
 系统从一个稳态过渡到新的稳态, 或系统受扰动作用又重新平衡后, 系统出现的偏差.
 
 ## 参数
 
 ### P: 比例单元
+
 结果为误差与 Kp 的乘积. 误差越大调节力度越大, 快速减小误差; 误差越小调节力度越小.  
 
 ### I: 积分单元
+
 结果为积分与 Ki 的乘积. 积分为误差与时间的乘积之和, 因此考虑到了不同时间段的误差. 若误差长期没有得到修正, 存在稳态误差, 积分会不断增加, 最终会使误差会不断接近零.  
 
 ### D: 微分单元
@@ -35,6 +41,7 @@
 ![](assets/PID_Compensation_Animated.gif)
 
 ## 实现
+
 ```cpp
 float kP, kI, kD;     // 这三个参数的值由用户指定
 float target, output; // target 为期望达到的值
@@ -58,6 +65,7 @@ while(true)
 ```
 
 ## 参考
+
 - https://zh.wikipedia.org/wiki/PID控制器
 - https://www.bilibili.com/video/BV1jr4y1P7qK/?spm_id_from=333.788.recommend_more_video.0
 
