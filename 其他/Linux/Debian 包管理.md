@@ -3,6 +3,7 @@
 **操作系统**: Ubuntu, Kali
 
 ## 更新
+
 ```bash
 sudo apt update       # 刷新存储库索引
 sudo apt upgrade      # 升级所有可升级的软件包
@@ -10,12 +11,15 @@ sudo apt full-upgrade # 在升级软件包时自动处理依赖关系
 ```
 
 ## 清理安装包
+
 ```bash
 sudo apt autoremove # 自动删除不需要的包
 ```
 
 ## 镜像源
+
 将文件 `/etc/apt/sources.list` 中的内容修改为以下内容:
+
 ```conf
 # Aliyun 阿里云
 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
