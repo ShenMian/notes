@@ -4,17 +4,24 @@
 **注意**: 以下内容针对的是 Clash for Windows.  
 
 ## 常见故障
+
 - 全部节点显示超时(timeout).
 - 订阅无法更新.
 
 ## 校准时间
+
 Windows 11: 设置 -> 时间和语言 -> 日期和时间 -> 其他设置 -> 立即同步.
 
 ## 重启 Clash
+
 关闭并重新打开 Clash 可能可以**暂时**解决问题.
 
 ## 禁用内部 DNS
+
 在配置文件的 dns 的 enable 改为 false.
 
 ## 使用旧版本
+
 使用 1.19.4 及以下版本. 如果 BUG 是新版本引入的, 可以通过回滚到旧版本来解决问题.
+
+**警告**: 1.19.9 以下版本存在 XSS 安全漏洞, [#2710](https://github.com/Fndroid/clash_for_windows_pkg/issues/2710).  
