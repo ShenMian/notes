@@ -3,6 +3,7 @@
 IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生产效率.  
 
 ## 快捷键(Shotcuts)
+
 - 查看快捷键: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>S</kbd>
 - 格式化代码: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>F</kbd>
 
@@ -27,12 +28,14 @@ VIM 模拟. 如果已经熟悉了 VI/VIM 的键盘操作, 该插件将提升键�
 脱离浏览器使用 LeetCode 做题.
 
 ### Git
+
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 提供精确到行和代码块的 Git 提交信息.
 
 - [Github Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
 
 ### C++
+
 - [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
 CMake 语法高亮等.
 
