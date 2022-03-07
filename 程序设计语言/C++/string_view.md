@@ -7,6 +7,11 @@
 
 - 只读. 如果需要修改原字符串, 请使用 `std::string&`.
 
+## 优点
+
+- 避免了不必要的内存分配.
+- 提高访问速度: `std::string&` 需要先接引用.
+
 ## 例子
 
 在 C++17 之前我们通常使用以下方式声明一个带有 `std::string` 参数的函数, 将参数通过引用传递.
@@ -25,3 +30,7 @@ void print(std::string_view);
 这样写无论实参是 `std::string` 或 `const char*` 都会构建一个 `std::string_view` 对象, 因为不存在拷贝操作, 因此效率较高.  
 
 `std::string_view` 没有 `c_str()` 方法, 可以使用 `data()` 来代替.
+
+## 参考
+
+- [Which String Parameter Type?](https://hackingcpp.com/cpp/recipe/string_parameters.html)
