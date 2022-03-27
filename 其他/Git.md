@@ -20,7 +20,7 @@
 ```bash
 git clone https://github.com/<ACCOUNT>/<REPO>.wiki.git
 cd <REPO>.wiki
-git checkout --orphan empty
+git checkout --orphan empty # 创建孤儿分支 empty
 git rm --cached -r .
 git commit --allow-empty -m 'first commit'
 git push origin empty:master --force
