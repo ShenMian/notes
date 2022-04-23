@@ -70,3 +70,8 @@ git config --global core.editor 'vim'
 git config --global http.proxy 'socks5://127.0.0.1:7891'
 git config --global https.proxy 'socks5://127.0.0.1:7891'
 ```
+
+## 拓展
+
+- [入门视频](https://www.bilibili.com/video/BV1KD4y1S7FL)
+- [进阶视频](https://www.bilibili.com/video/BV1hA411v7qX)
