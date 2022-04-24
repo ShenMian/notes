@@ -69,6 +69,10 @@ Archetype 可以看作是组件种类的合集, 因此可以用 `std::bitset` �
 ```cpp
 struct Archetype
 {
+  bool anyOf(const Archetype&) const {...};
+  bool allOf(const Archetype&) const {...};
+  bool noneOf(const Archetype&) const {...};
+
   std::bitset<32> signature;
 }
 ```
