@@ -36,7 +36,7 @@ struct Entity
 
 ### 版本(Version)
 
-因为实体只是一个标识, 所以在内存中可能存在多个副本. 且实体销毁后所使用的 ID 会被重新利用. 为了判断一个实体是否有效, 引入了第二个属性版本(version).  
+因为实体只是一个标识, 所以在内存中可能存在多个副本. 且实体销毁后所使用的 ID 会被重新利用. 为了判断一个实体是否有效, 引入了第二个属性版本.  
 ID 会重複利用, 因此无法通过 ID 判断当前实体是否已被销毁. 每次销毁版本都增加 1, 以确保已销毁的实体的版本过时, 可以查询最新 ID 的版本来判断实体是否无效. 这意味着分发实体的类需要维护一个包含 ID 和最新版本的表.
 
 ## 组件(Component)
@@ -58,7 +58,7 @@ struct TransformComponent
 一种独特的组件类型组合被称为一个 Archetype. 如下图, 可以通过组件类型的组合分为 M, N 两种 Archetype. 对组件类型的改动也会造成实体 Archetype 的改变. 例如, 移除实体B的 Renderer 组件会使其的 Archetype 从 M 变为 N.  
 ![Figure-1 Archetype](assets/Archetype.png)  
 
-Archetype 可以看作是组件种类的合集, 因此可以用 `std::bitset` 来存储这些数据. 这样便可以很容易的提供快速的交并集运算.  
+Archetype 可以看作是组件种类的合集, 因此可以用 `std::bitset` 来存储这些数据来方便的实现快速的交并集运算.  
 
 ```cpp
 struct Archetype
