@@ -56,9 +56,15 @@ struct TransformComponent
 ### Archetypes
 
 一种独特的组件类型组合被称为一个 Archetype. 如下图, 可以通过组件类型的组合分为 M, N 两种 Archetype. 对组件类型的改动也会造成实体 Archetype 的改变. 例如, 移除实体B的 Renderer 组件会使其的 Archetype 从 M 变为 N.  
+
 ![Figure-1 Archetype](assets/Archetype.png)  
 
 Archetype 可以看作是组件种类的合集, 因此可以用 `std::bitset` 来存储这些数据来方便的实现快速的交并集运算.  
+每个组件对应一个位, 位的状态表示是否包含该组件. 通常会使用下列几种运算:  
+
+- any: a 是否包含 b 的任意一个组件, 即 a 与 b 之间是否存在交集. 只需要判断 `a & b` 是否为 ture.
+- all: a 是否包含 b 的全部组件, 即是 a 是否是 b 的子集. 只需要判断 `a & b` 是否与 b 相等.
+- none: a 是否没有包含 b 的任何组件, a 与 b 之间没有交集. 只需要判断 `a & b` 是否为 false.
 
 ```cpp
 struct Archetype
