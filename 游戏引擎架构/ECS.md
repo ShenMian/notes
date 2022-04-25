@@ -1,5 +1,6 @@
 # ECS
 
+**中文**: 实体-组件-系统.  
 **英文**: Entity-Component-System(ECS).  
 
 ## 概述
