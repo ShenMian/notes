@@ -50,7 +50,7 @@ struct TransformComponent
   Vector3    position;
   Quaternion rotation;
   Vector3    scale;
-}
+};
 ```
 
 ### Archetypes
