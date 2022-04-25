@@ -74,7 +74,7 @@ struct Archetype
   bool noneOf(const Archetype&) const {...};
 
   std::bitset<32> signature;
-}
+};
 ```
 
 ---
