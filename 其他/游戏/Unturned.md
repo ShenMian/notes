@@ -20,26 +20,28 @@
 
 | ID  | English     | 中文 |
 | --- | ----------- | --- |
-| 146 | Red Dot Sight       | 紅點機械瞄具
-| 147 | Red Halo Sight      | 紅圈機械瞄具
-| 148 | Red Chevron Scope   | 紅V字瞄準鏡
-| 153 | 7x Scope            | 7倍瞄準鏡
-| 296 | 16x Scope           | 16倍瞄準鏡
+| 146 | Red Dot Sight     | 紅點機械瞄具
+| 147 | Red Halo Sight    | 紅圈機械瞄具
+| 148 | Red Chevron Scope | 紅V字瞄準鏡
+| 153 | 7x Scope          | 7倍瞄準鏡
+| 296 | 16x Scope         | 16倍瞄準鏡
 
 ### 战术配件
 
 | ID   | English     | 中文 |
 | ---- | ----------- | --- |
-| 7    | Military Suppressor | 軍用消音器
-| 1191 | Ranger Barrel       | 俄制消音器
-| 144  | Ranger Suppressor   | 俄制步槍消音器
-| 150  | Military Muzzle     | 軍用消焰器
-| 8    | Vertical Grip       | 垂直握把
-| 145  | Horizontal Grip     | 水平握把
-| 149  | Military Barrel     | 軍用加長用槍管
-| 151  | Tactical Laser      | 戰術激光輔瞄器
-| 152  | Tactical Light      | 戰術燈光輔瞄器
-| 1190 | Ranger Muzzle       | 俄制槍管
+| 7    | Military Suppressor            | 軍用消音器
+| 1191 | Ranger Barrel                  | 俄制消音器
+| 144  | Ranger Suppressor              | 俄制步槍消音器
+| 150  | Military Muzzle                | 軍用消焰器
+| 8    | Vertical Grip                  | 垂直握把
+| 145  | Horizontal Grip                | 水平握把
+| 149  | Military Barrel                | 軍用加長用槍管
+| 151  | Tactical Laser                 | 戰術激光輔瞄器
+| 152  | Tactical Light                 | 戰術燈光輔瞄器
+| 1190 | Ranger Muzzle                  | 俄制槍管
+| 1007 | Adaptive Chambering Attachment | 口径适应器
+| 1008 | Rangefinder Attachment         | 测距仪
 
 ### 弹匣
 
