@@ -12,8 +12,19 @@
 | --- | ----------- | --- |
 | 116 | PDW         | 蜜獾軍用消音步槍
 | 363 | Maplestrike | 枫叶軍用突擊步槍
+| 297 | Grizzly     | 灰熊軍用狙擊步槍/反器材步槍
 
-## 枪械配件
+## 瞄具
+
+| ID  | English     | 中文 |
+| --- | ----------- | --- |
+| 146 | Red Dot Sight       | 紅點機械瞄具
+| 147 | Red Halo Sight      | 紅圈機械瞄具
+| 148 | Red Chevron Scope   | 紅V字瞄準鏡
+| 153 | 7x Scope            | 7倍瞄準鏡
+| 296 | 16x Scope           | 16倍瞄準鏡
+
+## 战术配件
 
 | ID  | English     | 中文 |
 | --- | ----------- | --- |
@@ -22,18 +33,18 @@
 | 150 | Military Muzzle     | 軍用消焰器
 | 8   | Vertical Grip       | 垂直握把
 | 145 | Horizontal Grip     | 水平握把
-| 146 | Red Dot Sight       | 紅點機械瞄具
-| 147 | Red Halo Sight      | 紅圈機械瞄具
-| 148 | Red Chevron Scope   | 紅V字瞄準鏡
 | 149 | Military Barrel     | 軍用加長用槍管
+| 151 | Tactical Laser      | 戰術激光輔瞄器
+| 152 | Tactical Light      | 戰術燈光輔瞄器
 
 ## 弹匣
 
-| ID  | English     | 中文 |
-| --- | ----------- | --- |
-| 6   | Military Magazine | 軍用步槍彈匣
-| 17  | Military Drum     | 軍用步槍彈鼓
-| 125 | Ranger Drum       | 俄制步槍彈鼓
+| ID   | English     | 中文 |
+| ---- | ----------- | --- |
+| 6    | Military Magazine | 軍用步槍彈匣
+| 1177 | Military Tracer   | 軍用曳光彈彈匣
+| 17   | Military Drum     | 軍用步槍彈鼓
+| 125  | Ranger Drum       | 俄制步槍彈鼓
 
 ## 弹药
 
@@ -44,8 +55,27 @@
 | 119 | Low Caliber Ranger Ammuniton Box      | 小口徑俄制彈藥盒
 
 ## 医疗
+
 | ID  | English     | 中文 |
 | --- | ----------- | --- |
-| 15  | Medkit  | 醫藥箱
-| 95  | Bandage | 繃帶
-| 96  | Splint  | 夾板
+| 15  | Medkit      | 醫藥箱
+| 95  | Bandage     | 繃帶
+| 96  | Splint      | 夾板
+| 387 | Adrenaline  | 腎上腺素
+| 388 | Morphine    | 嗎啡
+| 389 | Antibiotics | 抗生素
+| 390 | Painkillers | 止痛藥
+| 391 | Vitamins    | 維他命
+| 392 | Tablets     | 淨化藥片
+| 393 | Rag         | 小繃帶
+| 394 | Dressing    | 醫用繃帶
+| 395 | Bloodbag    | 血袋
+
+## 爆炸物
+
+| ID  | English     | 中文 |
+| --- | ----------- | --- |
+| 254  | Grenade【手雷】
+| 1240 | Remote Detonator | 引爆器
+| 1241 | Breaching Charge | 遙控C4
+| 1242 | Makeshift Grenade | 土質手雷
