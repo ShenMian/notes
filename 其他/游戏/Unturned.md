@@ -18,13 +18,14 @@
 
 ### 瞄具
 
-| ID  | English     | 中文 |
-| --- | ----------- | --- |
-| 146 | Red Dot Sight     | 紅點機械瞄具
-| 147 | Red Halo Sight    | 紅圈機械瞄具
-| 148 | Red Chevron Scope | 紅V字瞄準鏡
-| 153 | 7x Scope          | 7倍瞄準鏡
-| 296 | 16x Scope         | 16倍瞄準鏡
+| ID   | English     | 中文 |
+| ---- | ----------- | --- |
+| 146  | Red Dot Sight              | 紅點機械瞄具
+| 147  | Red Halo Sight             | 紅圈機械瞄具
+| 148  | Red Chevron Scope          | 紅V字瞄準鏡
+| 153  | 7x Scope                   | 7倍瞄準鏡
+| 296  | 16x Scope                  | 16倍瞄準鏡
+| 1201 | Military Nightvision Scope | 軍用夜視瞄準鏡
 
 ### 战术配件
 
@@ -95,7 +96,6 @@
 
 | ID   | English     | 中文 |
 | ---- | ----------- | --- |
-| 1201 | Military Nightvision Scope | 軍用夜視瞄準鏡
 
 ## 载具
 
