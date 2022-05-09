@@ -59,8 +59,10 @@
 | ID  | English     | 中文 |
 | --- | ----------- | --- |
 | 15  | Medkit      | 醫藥箱
-| 95  | Bandage     | 繃帶
+| 394 | Dressing    | 醫用繃帶
+| 395 | Bloodbag    | 血袋
 | 96  | Splint      | 夾板
+| 95  | Bandage     | 繃帶
 | 387 | Adrenaline  | 腎上腺素
 | 388 | Morphine    | 嗎啡
 | 389 | Antibiotics | 抗生素
@@ -68,14 +70,15 @@
 | 391 | Vitamins    | 維他命
 | 392 | Tablets     | 淨化藥片
 | 393 | Rag         | 小繃帶
-| 394 | Dressing    | 醫用繃帶
-| 395 | Bloodbag    | 血袋
 
 ## 爆炸物
 
 | ID  | English     | 中文 |
 | --- | ----------- | --- |
-| 254  | Grenade【手雷】
-| 1240 | Remote Detonator | 引爆器
-| 1241 | Breaching Charge | 遙控C4
+| 254  | Grenade           | 手雷
+| 1240 | Remote Detonator  | 引爆器
+| 1241 | Breaching Charge  | 遙控C4
 | 1242 | Makeshift Grenade | 土質手雷
+| 1100 | Sticky Grenade    | 黏性手雷
+| 1101 | Landmine          | 地雷
+| 1102 | Claymore          | 闊劍地雷
