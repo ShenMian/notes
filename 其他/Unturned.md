@@ -119,3 +119,7 @@
 | 120 | 叢林色坦克
 | 121 | 沙漠色坦克
 | 137 | 俄羅斯坦克
+
+## 参考
+
+- <https://unturned.fandom.com/zh/wiki/%E7%89%A9%E5%93%81ID?variant=zh-cn>
