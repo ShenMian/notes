@@ -4,7 +4,7 @@
 
 该算法由三部分组成, 分别是比例(Proportional, P)单元, 积分(Integral, I)单元和微分(Derivative, D)单元.  
 
-![](assets/PID_feedback_nct_int_correct.png)  
+![PID](assets/PID_feedback_nct_int_correct.png)  
 注解:
 
 - Kp: 比例调节参数.
@@ -38,7 +38,7 @@
 ### D: 微分单元
 
 通过下图可以很直观的看出三种算法对整体调节效果的影响:  
-![](assets/PID_Compensation_Animated.gif)
+![PID 动画](assets/PID_Compensation_Animated.gif)
 
 ## 实现
 
@@ -66,7 +66,7 @@ while(true)
 
 ## 参考
 
-- https://zh.wikipedia.org/wiki/PID控制器
-- https://www.bilibili.com/video/BV1jr4y1P7qK/?spm_id_from=333.788.recommend_more_video.0
+- <https://zh.wikipedia.org/wiki/PID控制器>
+- <https://www.bilibili.com/video/BV1jr4y1P7qK/?spm_id_from=333.788.recommend_more_video.0>
 
 [齐格勒-尼科尔斯方法]: https://zh.wikipedia.org/wiki/齐格勒－尼科尔斯方法
