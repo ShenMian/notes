@@ -10,8 +10,8 @@
 - [CLion]: C/C++ IDE, 收费.
 - [Visual Studio]: C/C++ IDE. (ReSharper)
 - [Visual Studio Code]: 轻量 IDE, 开源.
-- [Git].
-- [Github Desktop].
+- [Git]: 版本控制.
+- [Github Desktop]: Git GUI.
 - [CppCheck]: C/C++ 代码质量检查.
 
 ## 通讯
@@ -40,9 +40,10 @@
 
 ## 云盘
 
-- 微云.
-- 百度网盘.
+- 阿里云盘: 速度快, 容量大, 不适合分享文件.
 - 天翼云盘.
+- 百度网盘: 速度慢, 容量大.
+- 微云: 速度慢, 容量小.
 
 ## 计算机图形学
 
