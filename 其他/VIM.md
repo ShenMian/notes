@@ -2,14 +2,14 @@
 
 ## 配置
 
-可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/Neovim.
+可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.
 使用下面命令安装 SpaceVim:
 
 ```bash
 curl -sLf https://spacevim.org/cn/install.sh | bash
 ```
 
-可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.
+可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件, 快捷键: `SPC f v d`. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.
 
 ## 基本用法
 
@@ -71,7 +71,7 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 
 - 保存: `:w`.
 - 退出: `:q`.
-- 保存并退出: `:wq`.
+- 保存并退出: `:wq`/`:x`(仅在有修改时保存).
 - 定位到第 n 行: `:n`.
 - 执行命令 command:`:!command`.
 
