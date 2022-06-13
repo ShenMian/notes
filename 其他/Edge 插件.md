@@ -33,8 +33,8 @@
 
 ## Github
 
-- [Refined Github].
-- [Github Web IDE].
+- [Refined Github] 对 Github 页面进行了一些改进.
+- [Github Web IDE] 添加一些通过 Web IDE 打开仓库的按钮.
 
 ## 链接
 
