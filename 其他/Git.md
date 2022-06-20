@@ -42,9 +42,9 @@ Windows 用户可以直接从 [Releases](https://github.com/cli/cli/releases) �
 在 Github 因为安全问题禁用 Git 通过账户和密码登录后, 经过 Github CLI 配置后的 Git 可以按原样使用.
 
 ```bash
-sudo pacman -S gh # Archlinux
-gh auth login     # 登录 Github 账号
-gh auth setup-git # 配置 Git
+sudo pacman -S github-cli # Archlinux
+gh auth login             # 登录 Github 账号
+gh auth setup-git         # 配置 Git
 ```
 
 ## 配置 Git
