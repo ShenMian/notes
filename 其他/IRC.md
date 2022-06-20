@@ -13,3 +13,8 @@ Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.
 /set irc.server.libera.autojoin "#archlinux-cn,#C++,##English,#c_lang_cn"
 ```
 
+提高账户安全性:
+
+```
+/msg nickserv set enforce on
+```
