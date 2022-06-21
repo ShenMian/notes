@@ -10,7 +10,7 @@ Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.
 连接服务器后自动加入频道:
 
 ```
-/set irc.server.libera.autojoin "#archlinux-cn,#C++,##English,#c_lang_cn"
+/set irc.server.libera.autojoin "#archlinux-cn-offtopic,#C++,##English,#c_lang_cn,#archlinux-cn"
 ```
 
 提高账户安全性:
