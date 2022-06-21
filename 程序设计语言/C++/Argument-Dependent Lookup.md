@@ -1,4 +1,4 @@
-# ADL(Argument-Dependent Lookup)
+# Argument-Dependent Lookup, ADL
 
 **别名**: Koenig Lookup.  
 
@@ -10,7 +10,7 @@ std::cout << 1; // 等价于 std::operator<<(std::cout, 1)
 上方代码中该运算符重载位于命名空间 `std` 中, 因此正常情况下无法匹配到正确的函数.  
 通过 ADL, 可以根据第一个参数 `std::cout` 推断出命名空间为 `std`, 从而匹配到正确的函数.  
 
-最开始 ADL 只适用于重载的运算符, 但由于觉得在普通函数上也适用, 后来被拓展到了全体函数.  
+最开始 ADL 只适用于重载的运算符, 但后来由于觉得在普通函数上也适用, 便被拓展到了全体函数.  
 
 ## 参考
 
