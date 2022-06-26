@@ -49,8 +49,6 @@ gh auth setup-git         # 配置 Git
 
 ## 配置 Git
 
-**注意**: 可以通过安装 Github CLI 来实现自动配置.
-
 ### 设置用戶
 
 ```bash
@@ -61,7 +59,7 @@ git config --global user.email 'eamil'
 ### 设置编辑器
 
 ```bash
-git config --global core.editor 'vim'
+git config --global core.editor 'nvim'
 ```
 
 ### 设置代理
