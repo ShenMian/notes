@@ -12,6 +12,12 @@
    sudo airmon-ng start wlan0
    ```
 
+   若设备被占用, 执行下列命令来结束占用设备的进程:  
+
+   ```bash
+   sudo airmon-ng check kill
+   ```
+
    開啓監聽模式後, 無線網卡名稱發生改變.  後面會附加`mon`(monitor), 即`wlan0mon`.
    **注意**: 監聽模式開啓後的無線網卡將無法訪問 Internet, 直到監聽模式被關閉.
 
