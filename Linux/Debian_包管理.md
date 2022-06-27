@@ -1,6 +1,6 @@
 # Debian 包管理
 
-**操作系统**: Ubuntu, Kali
+**操作系统**: Ubuntu, Kali  
 
 ## 更新
 
@@ -32,8 +32,8 @@ deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 # deb-src http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free
 
 # Kali 官方
-# deb http://http.kali.org/kali kali-rolling main non-free contrib 
-# deb-src http://http.kali.org/kali kali-rolling main non-free contrib 
+# deb http://http.kali.org/kali kali-rolling main non-free contrib
+# deb-src http://http.kali.org/kali kali-rolling main non-free contrib
 
 # 默认
 # deb http://security.kali.org/kali-security kali-rolling/updates main contrib non-free
