@@ -12,7 +12,7 @@
 ## 效率
 
 - [Vimium C] VIM 快捷键.
-- [NeatDownloadManager] 多线程下载, 需要结合本地[服务](https://www.neatdownloadmanager.com/index.php/)使用. (仅支持 Windows/macOS)
+- [NeatDownloadManager] 多线程下载, 需要结合本地[服务](https://www.neatdownloadmanager.com/index.php/en/)使用. (仅支持 Windows/macOS)
 - 侧边翻译: 划词翻译, 侧边显示.
 
 ## 广告拦截
