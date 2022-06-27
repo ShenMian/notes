@@ -23,6 +23,7 @@
 
 ## 工具
 
+- [Eudic] 词典, 跨平台.
 - [Shotcut] 视频剪辑, 开源.
 - [Krita] 板绘, 开源, 跨平台.
 - [Blender] 3D 建模, 开源, 跨平台.
@@ -86,6 +87,7 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
 [Everything]:         https://www.voidtools.com/
 [VLC media player]:   https://www.videolan.org/
 [OBS Studio]:         https://obsproject.com/
+[Eudic]:              https://www.eudic.net/v4/en/app/eudic/
 [Shotcut]:            https://shotcut.org/
 [Krita]:              https://krita.org/
 [Blender]:            https://www.blender.org/
