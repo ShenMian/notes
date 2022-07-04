@@ -23,8 +23,8 @@
 
 ## 文字
 
-- Grammarly for Microsoft Edge: 拼写和语法检查器.
 - Microsoft Editor: 拼写和语法检查器.
+- Grammarly for Microsoft Edge: 拼写和语法检查器. (不推荐, 存在吞字的 BUG)
 
 ## 视频
 
