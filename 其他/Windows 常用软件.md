@@ -46,7 +46,7 @@
 - [Visual Studio] C/C++ IDE.
 - [Visual Studio Code] 轻量 IDE, 开源, 跨平台.
 - [Git] 版本控制, 开源, 跨平台.
-- [Github Desktop] Git GUI, 目标仅为 Github 服务, 开源.
+- [Git GUI 客户端](./Git.md#gui-客户端)
 
 ## 计算机图形学
 
