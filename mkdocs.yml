@@ -15,16 +15,16 @@ theme:
 
   # 配色
   palette:
-    primary: green
-
     # 浅色模式
     - scheme: default
+      primary: green
       toggle:
         icon: material/brightness-7 
         name: 浅色模式
 
     # 深色模式
     - scheme: slate
+      primary: green
       toggle:
         icon: material/brightness-4
         name: 深色模式
