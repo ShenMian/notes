@@ -1,6 +1,6 @@
 # Debian 包管理
 
-**操作系统**: Ubuntu, Kali  
+**操作系统**: Ubuntu, Kali.  
 
 ## 更新
 

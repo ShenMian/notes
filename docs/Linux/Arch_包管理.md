@@ -1,6 +1,6 @@
 # Arch 包管理
 
-**操作系统**: Arch, Manjaro  
+**操作系统**: Arch, Manjaro.  
 
 ## 进行全面更新
 
