@@ -11,14 +11,11 @@ jobs:
       with:
         fetch-depth: 0
 
-    # - name: Generate HTML from Markdown
-    #   uses: ldeluigi/markdown-docs@latest
-    #   with:
-    #     src: .
-    #     dst: ./docs
-    #     language: zh
-    #     primary-color: indigo
-    #     secondary-color: indigo
+    - name: Generate HTML from Markdown
+      uses: ldeluigi/markdown-docs@latest
+      with:
+        src: .
+        dst: ./docs
 
     - name: Deploy
       run: |
