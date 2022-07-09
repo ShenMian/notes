@@ -3,7 +3,7 @@ name: Generate HTML
 on: [push, pull_request]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,7 +22,12 @@ jobs:
         secondary-color: indigo
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+    - run: |
+        pip install mkdocs-material 
+        mkdocs gh-deploy --force
+
+    # - name: Deploy
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./docs
