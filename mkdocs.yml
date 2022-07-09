@@ -41,6 +41,7 @@ theme:
     code: Cascadia Mono
 
 markdown_extensions:
+  - admonition
   - md_in_html
   - footnotes
   - pymdownx.details
