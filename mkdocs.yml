@@ -1,3 +1,6 @@
+site_name: Notes
+repo_url: https://github.com/ShenMian/Notes/
+
 theme:
   name: material
 
