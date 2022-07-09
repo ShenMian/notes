@@ -1,0 +1,15 @@
+theme:
+  name: material
+
+  # 404 page
+  static_templates:
+    - config/theme.404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: zh
+  font:
+    code: Cascadia Mono
