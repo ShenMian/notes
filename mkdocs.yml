@@ -1,13 +1,19 @@
 site_name: Notes
+site_description: Learning notes.
+site_author: ShenMian
 repo_url: https://github.com/ShenMian/Notes/
 
 theme:
   name: material
 
-  # 404 page
+  features:
+    - navigation.tabs
+
+  # 404 页面
   static_templates:
     - 404.html
 
+  # 配色
   palette:
     scheme: slate
 
