@@ -37,7 +37,7 @@
 ![](./assets/1_func_index_FromCreate.png)  
 
 该函数的实现非常简单, 在将两个弹窗中出现的字符串作为参数调用了 @TApplication@MessageBox.  
-由于该应用程序使用的是 Win32 API, 因此离 BessageBox 等系统函数的调用不远了.  
+由于该应用程序使用的是 Win32 API, 因此离 MessageBox 等系统函数的调用不远了.  
 在查看 @TApplication@MessageBox 后可以发现, 这两个字符串参数被原封不动的传入了 MessageBoxA.  
 
 至此, 如何阻止启动时弹窗的办法已经十分明显了. 只要让 MessageBoxA 不被调用即可, 但为同时确保程序的其他部分能正常运行, 不能应该对 @TApplication@MessageBox 内部进行修改.  
