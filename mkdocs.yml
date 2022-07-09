@@ -20,11 +20,13 @@ theme:
   palette:
     - scheme: default
       primary: green
+      accent: green
       toggle:
         icon: material/brightness-7 
         name: 浅色模式
     - scheme: slate
       primary: green
+      accent: green
       toggle:
         icon: material/brightness-4
         name: 深色模式
