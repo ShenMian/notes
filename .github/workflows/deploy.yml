@@ -1,11 +1,10 @@
-name: Generate HTML
+name: Deploy
 
 on: [push, pull_request]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -22,7 +21,7 @@ jobs:
         secondary-color: indigo
 
     - name: Deploy
-    - run: |
+      run: |
         pip install mkdocs-material 
         mkdocs gh-deploy --force
 
