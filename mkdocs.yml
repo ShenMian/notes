@@ -41,6 +41,7 @@ theme:
     code: Cascadia Mono
 
 markdown_extensions:
+  - md_in_html
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.arithmatex:
