@@ -4,11 +4,23 @@
 类型: Nag,Name/Serial,Serial  
 语言: Borland Delphi 3.0  
 
+## 准备工作
+
+1. 检索程序基本信息, 如编写语言, 是否加壳.
+2. 将程序放入 IDA 中进行分析.
+3. 添加 Delphi 库函数标签, 打开签名视图(Shift+F5). 右键选择应用新签名并搜索相关签名.
+
+    ![](./assets/1_sig_delphi.png)  
+
+    查看签名视图的 #fun 项, 检查被成功识别函数的数量.  
+
+    ![](./assets/1_sig.png)  
+
 ## 阻止启动时弹窗
 
 ![](./assets/1_startup_msgbox.png)  
 
-将程序放入 IDA 中进行分析. 打开字符串视图(Shift+F12)并搜索(Ctrl+F)相关字符串.  
+打开字符串视图(Shift+F12)并搜索相关字符串.  
 
 ![](./assets/1_ida_str_hello.png)  
 
@@ -22,7 +34,7 @@
 
 双击查询记录定位到引用的位置.  
 
-![](./assets/1_func_startup_msgbox.png)
+![](./assets/1_func_startup_msgbox.png)  
 
 该函数的实现非常简单, 在将两个弹窗中出现的字符串作为参数调用了 message_box_wrapper.  
 由于该应用程序使用的是 Win32 API, 因此离 BessageBox 等系统函数的调用不远了.  
