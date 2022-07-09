@@ -1,6 +1,9 @@
 site_name: Notes
 site_description: Learning notes.
 site_author: ShenMian
+site_url: https://shenmian.github.io/Notes/
+
+repo_name: ShenMian/Notes
 repo_url: https://github.com/ShenMian/Notes/
 
 theme:
@@ -15,14 +18,12 @@ theme:
 
   # 配色
   palette:
-    # 浅色模式
     - scheme: default
       primary: green
       toggle:
         icon: material/brightness-7 
         name: 浅色模式
 
-    # 深色模式
     - scheme: slate
       primary: green
       toggle:
@@ -46,3 +47,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ShenMian
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/ShenMian
