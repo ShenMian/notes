@@ -5,7 +5,8 @@ site_url: https://shenmian.github.io/Notes/
 
 repo_name: ShenMian/Notes
 repo_url: https://github.com/ShenMian/Notes/
-docs_dir: ./
+
+edit_uri: edit/master/
 
 theme:
   name: material
