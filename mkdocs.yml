@@ -17,17 +17,17 @@ theme:
   palette:
     primary: green
 
-  # 浅色模式
-  - scheme: default
-    toggle:
-      icon: material/brightness-7 
-      name: 浅色模式
+    # 浅色模式
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: 浅色模式
 
-  # 深色模式
-  - scheme: slate
-    toggle:
-      icon: material/brightness-4
-      name: 深色模式
+    # 深色模式
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: 深色模式
 
   # 启用搜索功能
   include_search_page: false
