@@ -6,7 +6,10 @@ theme:
 
   # 404 page
   static_templates:
-    - config/theme.404.html
+    - ./config/theme.404.html
+
+  palette:
+    scheme: slate
 
   # Necessary for search to work properly
   include_search_page: false
