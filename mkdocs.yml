@@ -6,16 +6,23 @@ theme:
 
   # 404 page
   static_templates:
-    - ./config/theme.404.html
+    - 404.html
 
   palette:
     scheme: slate
 
-  # Necessary for search to work properly
+  # 启用搜索功能
   include_search_page: false
   search_index_only: true
 
-  # Default values, taken from mkdocs_theme.yml
+  # 默认值, 来自于 mkdocs_theme.yml
   language: zh
   font:
     code: Cascadia Mono
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
