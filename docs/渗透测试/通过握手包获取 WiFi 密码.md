@@ -19,7 +19,7 @@
    ```
 
    開啓監聽模式後, 無線網卡名稱發生改變.  後面會附加`mon`(monitor), 即`wlan0mon`.
-   
+
    !!! warning
        監聽模式開啓後的無線網卡將無法訪問 Internet, 直到監聽模式被關閉.
 
@@ -28,7 +28,7 @@
    ```bash
    sudo airodunp-ng wlan0mon
    ```
-   
+
    當發現目標 WiFi 時按`Ctrl+C`停止掃描. 並記錄 BSSID 和 CH 兩個參數.
 
 4. 捕獲指定 WiFi 通信內容.
