@@ -23,7 +23,6 @@ theme:
       toggle:
         icon: material/brightness-7 
         name: 浅色模式
-
     - scheme: slate
       primary: green
       toggle:
