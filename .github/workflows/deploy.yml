@@ -16,6 +16,9 @@ jobs:
       with:
         src: .
         dst: ./docs
+        language: zh
+        primary-color: indigo
+        secondary-color: indigo
 
     - name: Deploy
       run: |
