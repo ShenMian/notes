@@ -14,7 +14,8 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
 打开 `optionalfeatures.exe`, 勾选 Windows Subsystem for Linux.  
 
-**提示**: 该步骤需要重启计算机.  
+!!! tip
+    该步骤需要重启计算机.  
 
 ## 安装 Linux 发行版
 

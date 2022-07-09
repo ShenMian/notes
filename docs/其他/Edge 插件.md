@@ -1,6 +1,7 @@
 # Edge 插件
 
-**提示**: 部分插件来在 Chrome Web Store, 但可以在 Edge 中正常使用.  
+!!! tip
+    部分插件来在 Chrome Web Store, 但可以在 Edge 中正常使用.  
 
 ## 功能
 

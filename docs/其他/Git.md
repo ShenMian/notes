@@ -31,7 +31,8 @@ git push origin empty:master --force
 - [Github Desktop](https://desktop.github.com/): 跨平台, 简洁, 开源, 目标仅为 Github 服务.
 - [GitKraken](https://www.gitkraken.com/): 跨平台, 部分功能收费.
 
-**注意**: 如果已为 Git 配置了代理服务器不建议使用 `GitKraken`, 可能会导致错误.
+!!! warning
+    如果已为 Git 配置了代理服务器不建议使用 `GitKraken`, 可能会导致错误.
 
 ## Github CLI
 
