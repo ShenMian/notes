@@ -42,6 +42,7 @@ theme:
 
 markdown_extensions:
   - md_in_html
+  - footnotes
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.arithmatex:
