@@ -1,8 +1,8 @@
 # Acid burn
 
-名称: Acid burn
-类型: Nag,Name/Serial,Serial
-语言: Borland Delphi 3.0
+名称: Acid burn  
+类型: Nag,Name/Serial,Serial  
+语言: Borland Delphi 3.0  
 
 ## 阻止启动时弹窗
 
@@ -10,7 +10,7 @@
 
 将程序放入 IDA 中进行分析. 打开字符串视图(Shift+F12)并搜索(Ctrl+F)相关字符串.  
 
-![](./assets/1_ida_str_hello.png)
+![](./assets/1_ida_str_hello.png)  
 
 双击字符串定位到字符串所在的位置.  
 
