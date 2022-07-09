@@ -1,7 +1,7 @@
 # Acid burn
 
 名称: Acid burn  
-类型: Nag,Name/Serial,Serial  
+类型: Nag, Name/Serial, Serial  
 语言: Borland Delphi 3.0  
 
 ## 准备工作
@@ -36,11 +36,27 @@
 
 ![](./assets/1_func_index_FromCreate.png)  
 
-该函数的实现非常简单, 在将两个弹窗中出现的字符串作为参数调用了 @TApplication@MessageBox.  
+该函数的实现非常简单, 在将两个弹窗中出现的字符串作为参数调用了 `TApplication::MessageBox`.  
 由于该应用程序使用的是 Win32 API, 因此离 MessageBox 等系统函数的调用不远了.  
-在查看 @TApplication@MessageBox 后可以发现, 这两个字符串参数被原封不动的传入了 MessageBoxA.  
+在查看 `TApplication::MessageBox` 后可以发现, 这两个字符串参数被原封不动的传入了 `MessageBoxA`.  
 
-至此, 如何阻止启动时弹窗的办法已经十分明显了. 只要让 MessageBoxA 不被调用即可, 但为同时确保程序的其他部分能正常运行, 不能应该对 @TApplication@MessageBox 内部进行修改.  
+至此, 如何阻止启动时弹窗的办法已经十分明显了. 只要让 `MessageBoxA` 不被调用即可, 但为同时确保程序的其他部分能正常运行, 不能应该对 `TApplication::MessageBox` 内部进行修改.  
 将不想执行的代码使用空指令 nop 填充, 但需要确保堆栈平衡和寄存器数值的正确, 可参考[调用约定](../调用约定.md).  
 
 通过 编辑->补丁->汇编 来对原汇编代码进行修改, 然后再通过 编辑->补丁->应用 来保存修改, 写入前记得先对源程序进行备份.  
+
+## Serial
+
+在序列号输入失败后会弹窗提示, 根据内容定位到引用该字符串的代码.  
+
+![](./assets/1_serial_verify_.png)  
+
+根据上图内容可以看出序列号校验的最后一步操作是利用 LStrCmp 对两个字符串进行比较.  
+因为 LStrCmp 会在函数相等时返回 0, 所以字符串相等时序列号正确, 反之错误.  
+
+![](./assets/1_serial_verify.png)  
+
+从上图的分析可以看出, 首先创建了两个局域变量 `str1`, `str2` 并为它们赋值.  `_str_Hello`, `_str_Dude_` 类型是 `_strings` 结构体, 包含了 `_top`, `len`, `text` 三部分, 其中 text 部分是以 0 结尾的 C-style 字符串.  
+之后调用 `LStrCatN` 将三个字符串连接起来, 形成正确的序列号 "Hello Dude!". 并与通过 `TControl::GetText` 获取的用户输入进行比较.  
+
+## Name/Serial
