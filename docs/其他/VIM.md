@@ -80,7 +80,5 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 
 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件, 快捷键: `SPC f v d`. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.  
 
-```bash
-:SPUpdate SpaceVim # 更新 SpaceVim
-:SPUpdate          # 更新全部插件
-```
+- 更新 SpaceVim: `:SPUpdate SpaceVim`
+- 更新全部插件: `:SPUpdate`
