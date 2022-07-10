@@ -1,8 +1,10 @@
 # Git
 
+Git 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
+
 ## 基本命令
 
-![](assets/git_commands.jpg)
+![Git 常用命令速查表](assets/git_commands.jpg)  
 
 ## 工作流程(Workflow)
 
@@ -13,7 +15,8 @@
 - release/xxx.
 - feature/xxx.
 - hotfix/xxx.
-![](assets/git-flow.png)
+
+![Git 工作流程](assets/git-flow.png)  
 
 ## 清空仓库
 
@@ -71,5 +74,8 @@ git config --global https.proxy 'socks5://127.0.0.1:7891'
 
 ## 拓展
 
+- [Git 文档](https://git-scm.com/doc)
 - [入门视频](https://www.bilibili.com/video/BV1KD4y1S7FL)
 - [进阶视频](https://www.bilibili.com/video/BV1hA411v7qX)
+
+[^1]: https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F
