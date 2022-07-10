@@ -6,17 +6,30 @@ site_url: https://shenmian.github.io/Notes/
 repo_name: ShenMian/Notes
 repo_url: https://github.com/ShenMian/Notes/
 
+# https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 theme:
   name: material
 
-  features:
-    - navigation.tabs
+  # 语言
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/?h=language#configuration
+  language: zh
+
+  # 字体
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=font#configuration
+  font:
+    text: Cascadia Mono
+    code: Cascadia Mono
+
+  # 启用搜索功能
+  include_search_page: false
+  search_index_only: true
 
   # 404 页面
   static_templates:
     - 404.html
 
   # 配色
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=palette#color-palette-toggle
   palette:
     - scheme: default
       primary: green
@@ -31,15 +44,11 @@ theme:
         icon: material/brightness-4
         name: 深色模式
 
-  # 启用搜索功能
-  include_search_page: false
-  search_index_only: true
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=features+navigation+tabs#navigation-tabs
+    - navigation.tabs
 
-  # 默认值, 来自于 mkdocs_theme.yml
-  language: zh
-  font:
-    code: Cascadia Mono
-
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
 markdown_extensions:
   - admonition
   - md_in_html
@@ -54,6 +63,7 @@ markdown_extensions:
       generic: true
 
 extra:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social#social-links
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ShenMian
