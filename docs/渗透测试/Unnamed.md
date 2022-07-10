@@ -1,3 +1,4 @@
+# Unnamed
 
 - 前期交互(Pre-engagement Interactions)
 - 情报收集(Intelligence Gathering)
@@ -6,3 +7,7 @@
 - 漏洞利用(Exploitation)
 - 后渗透攻击(Post Exploitation)
 - 报告(Reporting)
+
+```sh
+sudo pip3 install pwntools
+```
