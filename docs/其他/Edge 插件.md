@@ -14,7 +14,7 @@
 
 - [Vimium C] VIM 快捷键.
 - [NeatDownloadManager] 多线程下载, 需要结合本地[服务](https://www.neatdownloadmanager.com/index.php/en/)使用. (仅支持 Windows/macOS)
-- 侧边翻译: 划词翻译, 侧边显示.
+- [Edge Translate] 划词翻译, 侧边显示.
 
 ## 广告拦截
 
@@ -24,8 +24,8 @@
 
 ## 文字
 
-- Microsoft Editor: 拼写和语法检查器.
-- Grammarly for Microsoft Edge: 拼写和语法检查器. (不推荐, 存在吞字的 BUG)
+- [Microsoft Editor] 拼写和语法检查器.
+- [Grammarly for Microsoft Edge] 拼写和语法检查器. (不推荐, 存在吞字的 BUG)
 
 ## 视频
 
@@ -49,13 +49,17 @@
 
 [Vimium C]:                https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
 [NeatDownloadManager]:     https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
+[Edge Translate]:          https://microsoftedge.microsoft.com/addons/detail/edge-translate/bfdogplmndidlpjfhoijckpakkdjkkil
 
 [Adblock Plus]:            https://microsoftedge.microsoft.com/addons/detail/gmgoamodcdcjnbaobigkjelfplakmdhh
 [YouTube Adblock]:         https://microsoftedge.microsoft.com/addons/detail/bbocfgcdelebeaboidkmglbdkimdpojb
 [Baidu Capsule]:           https://microsoftedge.microsoft.com/addons/detail/%E7%99%BE%E5%BA%A6%E8%8D%AF%E4%B8%B8-baidu-capsule/hbljbaljilkocckmkgdjghgjaidnkdlc
 
+[Microsoft Editor]:             https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh
+[Grammarly for Microsoft Edge]: https://microsoftedge.microsoft.com/addons/detail/grammarly-grammar-checke/cnlefmmeadmemmdciolhbnfeacpdfbkd
+
 [Global Speed]:               https://microsoftedge.microsoft.com/addons/detail/global-speed/mjhlabbcmjflkpjknnicihkfnmbdfced
-[PSmooth Picture in picture]: https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
+[Smooth Picture in picture]: https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
 
 [Gitako]:                  https://microsoftedge.microsoft.com/addons/detail/alpoloddcggjhakjemghahlkofjekbca
 [Refined Github]:          https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
