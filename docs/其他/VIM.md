@@ -1,26 +1,15 @@
 # VIM
 
-## 配置
-
-可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.
-使用下面命令安装 SpaceVim:
-
-```sh
-curl -sLf https://spacevim.org/cn/install.sh | bash
-```
-
-可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件, 快捷键: `SPC f v d`. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.
-
 ## 基本用法
 
-![](assets/vi-keys.gif)
+![vi/vim shortcuts](assets/vi-keys.gif)  
 
 ### 模式
 
 - 普通模式(normal mode).
 - 插入模式(insert mode).
-- 命令模式(command mode).
 - 可视模式(visual mode).
+- 命令模式(command mode).
 
 ### 普通模式
 
@@ -79,3 +68,19 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 ### 可视模式
 
 在普通模式下按 <kbd>v</kbd> 即可进入可视模式.
+
+## SpaceVim
+
+可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.  
+使用下面命令安装 SpaceVim:  
+
+```sh
+curl -sLf https://spacevim.org/cn/install.sh | bash
+```
+
+可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件, 快捷键: `SPC f v d`. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.  
+
+```bash
+:SPUpdate SpaceVim # 更新 SpaceVim
+:SPUpdate          # 更新全部插件
+```
