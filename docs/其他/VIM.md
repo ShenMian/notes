@@ -5,7 +5,7 @@
 可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.
 使用下面命令安装 SpaceVim:
 
-```bash
+```sh
 curl -sLf https://spacevim.org/cn/install.sh | bash
 ```
 

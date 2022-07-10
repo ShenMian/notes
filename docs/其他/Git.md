@@ -17,7 +17,7 @@
 
 ## 清空仓库
 
-```bash
+```sh
 git clone https://github.com/<ACCOUNT>/<REPO>.wiki.git
 cd <REPO>.wiki
 git checkout --orphan empty # 创建孤儿分支 empty
@@ -41,7 +41,7 @@ Windows 用户可以直接从 [Releases](https://github.com/cli/cli/releases) �
 安装后执行下面命令, 来登录账户并配置本地的 Git.
 在 Github 因为安全问题禁用 Git 通过账户和密码登录后, 经过 Github CLI 配置后的 Git 可以按原样使用.
 
-```bash
+```sh
 sudo pacman -S github-cli # Archlinux
 gh auth login             # 登录 Github 账号
 gh auth setup-git         # 配置 Git
@@ -51,20 +51,20 @@ gh auth setup-git         # 配置 Git
 
 ### 设置用戶
 
-```bash
+```sh
 git config --global user.name 'name'
 git config --global user.email 'eamil'
 ```
 
 ### 设置编辑器
 
-```bash
+```sh
 git config --global core.editor 'nvim'
 ```
 
 ### 设置代理
 
-```bash
+```sh
 git config --global http.proxy 'socks5://127.0.0.1:7891'
 git config --global https.proxy 'socks5://127.0.0.1:7891'
 ```

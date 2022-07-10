@@ -4,13 +4,13 @@
 
 ## 进行全面更新
 
-```bash
+```sh
 sudo pacman -Syyu
 ```
 
 ## 更新镜像源
 
-```bash
+```sh
 sudo pacman-mirrors -c China
 ```
 
@@ -18,7 +18,7 @@ sudo pacman-mirrors -c China
 
 安装 yay.  
 
-```bash
+```sh
 sudo pacman -S yay
 ```
 
@@ -36,6 +36,6 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 
 ## 安装 archlinuxcn-keyring(不推荐)
 
-```bash
+```sh
 sudo pacman -S archlinuxcn-keyring
 ```
