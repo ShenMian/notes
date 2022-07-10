@@ -34,6 +34,7 @@
 
 ## Github
 
+- [Gitako] 文件树侧边栏.
 - [Refined Github] 对 Github 页面进行了一些改进.
 - [Github Web IDE] 添加一些通过 Web IDE 打开仓库的按钮.
 
@@ -41,12 +42,13 @@
 
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
 
-[Dark Reader]:             https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
+[Dark Reader]:             https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc
 [Proxy SwitchyOmega]:      https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc
 [Simple Allow Copy]:       https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
 [YouTube™ dual subtitles]: https://microsoftedge.microsoft.com/addons/detail/youtube%E2%84%A2-dual-subtitles/kicjdgmlfepkcglkdcaalgikoaphdbbp
-[Vimium C]:                https://chrome.google.com/webstore/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg
+[Vimium C]:                https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
 [NeatDownloadManager]:     https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
-[Adblock Plus]:            https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb
+[Adblock Plus]:            https://microsoftedge.microsoft.com/addons/detail/gmgoamodcdcjnbaobigkjelfplakmdhh
+[Gitako]:                  https://microsoftedge.microsoft.com/addons/detail/alpoloddcggjhakjemghahlkofjekbca
 [Refined Github]:          https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
 [Github Web IDE]:          https://microsoftedge.microsoft.com/addons/detail/github-web-ide/akjbkjciknacicbnkfjbnlaeednpadcf
