@@ -18,9 +18,9 @@
 
 ## 广告拦截
 
-- [Adblock Plus]: 通用广告拦截器.
-- YouTube Adblock: 屏蔽 YouTube 视频广告.
-- Baidu Capsule: 净化百度搜索页面.
+- [Adblock Plus] 通用广告拦截器.
+- [YouTube Adblock] 屏蔽 YouTube 视频广告.
+- [Baidu Capsule] 净化百度搜索页面.
 
 ## 文字
 
@@ -29,8 +29,8 @@
 
 ## 视频
 
-- Global Speed: 控制视频播放速度, 可微调, 拓展播放器功能.
-- 画中画: 拓展播放器功能.
+- [Global Speed] 控制视频播放速度, 可微调, 拓展播放器功能.
+- [Smooth Picture in picture] 画中画, 拓展播放器功能.
 
 ## Github
 
@@ -46,9 +46,17 @@
 [Proxy SwitchyOmega]:      https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc
 [Simple Allow Copy]:       https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
 [YouTube™ dual subtitles]: https://microsoftedge.microsoft.com/addons/detail/youtube%E2%84%A2-dual-subtitles/kicjdgmlfepkcglkdcaalgikoaphdbbp
+
 [Vimium C]:                https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
 [NeatDownloadManager]:     https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
+
 [Adblock Plus]:            https://microsoftedge.microsoft.com/addons/detail/gmgoamodcdcjnbaobigkjelfplakmdhh
+[YouTube Adblock]:         https://microsoftedge.microsoft.com/addons/detail/bbocfgcdelebeaboidkmglbdkimdpojb
+[Baidu Capsule]:           https://microsoftedge.microsoft.com/addons/detail/%E7%99%BE%E5%BA%A6%E8%8D%AF%E4%B8%B8-baidu-capsule/hbljbaljilkocckmkgdjghgjaidnkdlc
+
+[Global Speed]:               https://microsoftedge.microsoft.com/addons/detail/global-speed/mjhlabbcmjflkpjknnicihkfnmbdfced
+[PSmooth Picture in picture]: https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
+
 [Gitako]:                  https://microsoftedge.microsoft.com/addons/detail/alpoloddcggjhakjemghahlkofjekbca
 [Refined Github]:          https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
 [Github Web IDE]:          https://microsoftedge.microsoft.com/addons/detail/github-web-ide/akjbkjciknacicbnkfjbnlaeednpadcf
