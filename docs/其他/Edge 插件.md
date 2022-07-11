@@ -5,6 +5,7 @@
 
 ## 功能
 
+- [Tampermonkey] 插件中的插件, 可以安装更多实用的脚本.
 - [Dark Reader] 提供任意页面的自适应黑暗主题.
 - [Proxy SwitchyOmega] 手动/自动切换代理.
 - [Simple Allow Copy] 在禁止拷贝内容的网页里拷贝内容, 开启时可能导致部网页分功能失效.
@@ -42,6 +43,7 @@
 
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
 
+[Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
 [Dark Reader]:             https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc
 [Proxy SwitchyOmega]:      https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc
 [Simple Allow Copy]:       https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
