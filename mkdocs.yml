@@ -72,9 +72,9 @@ extra:
       link: https://t.me/ShenMian
   alternate:
     - name: Chinese
-      link: /
+      link: Notes/
       lang: zh
     - name: English
-      link: /en/
+      link: Notes/en/
       lang: en
 
