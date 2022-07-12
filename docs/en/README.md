@@ -4,7 +4,7 @@
 
 ---
 
-![License](../docs/assets/LICENSE.png){ align=right }
+![License](../assets/LICENSE.png){ align=right }
 
 This series of articles is released under the [CC BY-SA 4.0] agreement. Some pictures are from the Internet.
 
