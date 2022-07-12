@@ -72,6 +72,7 @@ extra:
       link: https://t.me/ShenMian
   alternate:
     - name: 中文
+      link: /
       lang: zh
     - name: English
       link: en/
