@@ -2,7 +2,7 @@
 
 IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生产效率.  
 
-## 快捷键(Shotcuts)
+## 快捷键(Shortcuts)
 
 - 查看快捷键: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>S</kbd>
 - 格式化代码: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>F</kbd>
