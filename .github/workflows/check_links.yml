@@ -1,6 +1,10 @@
 name: Check links
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+  - cron: "0 8 * * *"
 
 jobs:
   check-links:
@@ -10,4 +14,4 @@ jobs:
     - uses: gaurav-nelson/github-action-markdown-link-check@1.0.14
       with:
         use-quiet-mode: 'yes'
-        config-file: .github/workflows/check_links_config.json
+        use-verbose-mode: 'yes'
