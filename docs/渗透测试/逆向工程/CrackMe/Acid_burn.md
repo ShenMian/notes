@@ -62,6 +62,8 @@
 从上图的分析可以看出, 首先创建了两个局域变量 `str1`, `str2` 并为它们赋值.  `_str_Hello`, `_str_Dude_` 类型是 `_strings` 结构体, 包含了 `_top`, `len`, `text` 三部分, 其中 text 部分是以 0 结尾的 C-style 字符串.  
 之后调用 `LStrCatN` 将三个字符串连接起来, 形成正确的序列号 "Hello Dude!". 并与通过 `TControl::GetText` 获取的用户输入进行比较.  
 
+由于直接将未经处理的用户输入与序列号进行比较, 因此可以在判断处设置断点, 查看此刻内存中序列号的值.  
+
 !!! success
     序列号为 "Hello Dude!".  
 
