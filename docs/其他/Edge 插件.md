@@ -3,10 +3,14 @@
 !!! tip
     部分插件来在 Chrome Web Store, 但可以在 Edge 中正常使用.  
 
+## 安全
+
+- [NoScript] 防止基于脚本的渗透, 开源.
+
 ## 功能
 
 - [Tampermonkey] 插件中的插件, 可以安装更多实用的脚本.
-- [Dark Reader] 提供任意页面的自适应黑暗主题.
+- [Dark Reader] 提供任意页面的自适应黑暗主题, 开源.
 - [Proxy SwitchyOmega] 手动/自动切换代理.
 - [Simple Allow Copy] 在禁止拷贝内容的网页里拷贝内容, 开启时可能导致部网页分功能失效.
 - [YouTube™ dual subtitles] YouTube 双字幕.
@@ -42,6 +46,8 @@
 ## 链接
 
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
+
+[NoScript]:                https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=en-US
 
 [Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
 [Dark Reader]:             https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc
