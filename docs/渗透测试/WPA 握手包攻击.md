@@ -1,4 +1,6 @@
-# 通过握手包获取 WiFi 密码
+# WPA 握手包攻击
+
+## 手动
 
 1. 查看網絡設備, 獲取無線網卡名稱.
 
@@ -43,13 +45,13 @@
    sudo aireplay-ng -0 5 -a [BSSID] -c [Target MAC] wlan0mon
    ```
 
-   目標設備從指定 WiFi 斷開鏈接後將嘗試重連, 會向路由器發送握手包. 而第4步將會捕獲這個握手包.
+   目標設備從指定 WiFi 斷開鏈接後將嘗試重連, 會向路由器發送握手包. 而第 4 步將會捕獲這個握手包.
 
-6. 當第4步提示捕獲握手包時按下`Ctrl+C`結束監聽.
+6. 當第 4 步提示捕獲握手包時按下 `Ctrl+C` 結束監聽.
 
-   此時, 握手包的數據已經被記錄在第4步指定的`.cap`文件中.
+   此時, 握手包的數據已經被記錄在第4步指定的 `.cap` 文件中.
 
-7. 對`.cap`文件中握手包的hash進行破解.
+7. 對 `.cap` 文件中握手包的hash進行破解.
 
    - 使用 Hashcat. (推薦)
 
@@ -69,3 +71,11 @@
    ```sh
    sudo airmon-ng stop wlan0mon
    ```
+
+   若第 2 步中结束的进程没有自动恢复, 则需要手动启动.
+
+## 自动
+
+可以利用 [wifite2](https://github.com/derv82/wifite2) 来简化上面的流程.  
+
+![Wifite2 WAP Handshake attack](https://camo.githubusercontent.com/241679fd57d09ce160bbaf04886b896d1d101d405fc4d692954beefc8e477a07/68747470733a2f2f692e696d6775722e636f6d2f4636565068626d2e676966)
