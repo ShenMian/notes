@@ -68,3 +68,21 @@
     序列号为 "Hello Dude!".  
 
 ## Name/Serial
+
+定位到验证名称/序列号的代码处:  
+
+![名称/序列号验证](assets/1_name_serial_verify_.png)  
+
+经过简单分析即可还原算法:  
+
+```cpp
+std::string gen_serial_by_name(const std::string& name)
+{
+    if(name.size() < 4)
+        return "";
+    return "CW"s + "-"s + std::to_string(41 * 2 * name[0]) + "-"s + "CRACKED"s;
+}
+```
+
+!!! success
+    代码成功通过测试.
