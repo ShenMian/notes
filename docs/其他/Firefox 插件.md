@@ -12,6 +12,10 @@
 
 - [Firefox Translations] 离线翻译, 开源.
 
+## 广告拦截
+
+- [Adblock Plus] 通用广告拦截器, 开源.
+
 ## Tor Browser
 
 如果你使用的是 Tor Browser, 请不要安装任何不可信的插件(闭源/用户数量少/评分低), 建议安装少量的/必要的/可信的插件.  
@@ -21,3 +25,5 @@
 [Dark Reader]:          https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 
 [Firefox Translations]: https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+
+[Adblock Plus]:         https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/

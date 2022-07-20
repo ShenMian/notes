@@ -23,7 +23,7 @@
 
 ## 广告拦截
 
-- [Adblock Plus] 通用广告拦截器.
+- [Adblock Plus] 通用广告拦截器, 开源.
 - [YouTube Adblock] 屏蔽 YouTube 视频广告.
 - [Baidu Capsule] 净化百度搜索页面.
 
