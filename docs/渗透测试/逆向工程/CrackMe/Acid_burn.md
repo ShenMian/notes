@@ -76,7 +76,7 @@
 经过简单分析即可还原算法:  
 
 ```cpp
-std::string gen_serial_by_name(const std::string& name)
+std::string gen_serial_by_name(std::string_view name)
 {
     if(name.size() < 4)
         return "";
