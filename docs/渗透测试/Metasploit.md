@@ -1,12 +1,13 @@
 # Metasploit
 
-该工具存在免费版本 Metasploit Framework 和付费版本 Metasploit Pro, 后者提供了许多实用的专业功能, 但是天价.  
+该工具存在免费版本 Metasploit Framework 和付费版本 Metasploit Pro, 后者提供了许多实用的专业功能, 但是天价. 以下内容均以 Metasploit Framework(MSF) 为例.  
 
 ## 数据库
 
 初次使用 MSF 时可以利用 [msfdb](https://docs.metasploit.com/docs/using-metasploit/intermediate/metasploit-database-support.html) 对数据库进行自动初始化, 若自动初始化失败则进行[手动初始化](https://docs.rapid7.com/metasploit/managing-the-database/). 仅支持 [PostgreSQL](https://www.postgresql.org/) 数据库.  
 
 ```sh
+# Arch/Manjaro
 sudo pacman -S postgresql                      # 安装数据库
 sudo systemctl enable --now postgresql.service # 启用数据库服务
 sudo systemctl status postgresql.service       # 检查数据库服务状态
@@ -19,16 +20,6 @@ msfdb init   # 初始化数据库
 启动 msfconsole 后可以通过 `db_status` 检查数据库连接状态.  
 
 之后便可以使用数据库相关指令, 关键信息(如主机/服务/漏洞/战利品)会被记录到数据库中以便后续查询.  
-
-### 故障排除
-
-msfdb 初始化数据库失败. 可以使用下面的源安装 `msfdb-blackarch`:  
-
-```
-[blackarch]
-SigLevel = Optional TrustAll
-Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
-```
 
 ## 快速入门
 
@@ -58,11 +49,21 @@ msf > sessions         # 列出会话, -l
 msf > sessions [id]    # 打开会话, -i
 msf > sessions -u [id] # 将 shell 升级到 meterpreter
 
-# 日志/故障排除
+# 故障排除
 msf > setg LogLevel 5          # 日志详细等级, 范围 1-5
 cat ~/.msf6/logs/framework.log # 查看日志
 msf > debug                    # 显示诊断信息, 在故障发生后使用
 ```
+
+## 载荷
+
+MSF 中的载荷(payload)共有以下三种:  
+
+- Singles: 包含完整的功能, 不依赖 MSF, 因此不需要通过 exploit/multi/handler 来建立连接.
+- Stagers: 小巧可靠, 用于建立连接并接收 Stages.
+- Stages: 无大小限制, 包含高级功能.
+
+在遇见 "载荷" 一词时应结合上下文推断具体含义.  
 
 ## 生成载荷
 
@@ -112,17 +113,29 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
 
 ### 故障排除
 
-Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
+- Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
 
-- Metasploit 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
-- Payload 不匹配: 该问题会导致目标上的接收器发生段错误, exploit/multi/handler 中设置的 payload(类型/系统/架构) 与目标上期待的不一致, 解决方法是确保 payload 一致.
-- 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
+  - MSF 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
+  - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷(类型/系统/架构)与目标上期待的不一致, 解决方法是确保载荷一致.
+  - 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
 
     1. 转移进程: 通过 `set AutoRunScript "migrate -n explorer.exe"` 在链接建立后立即转移到其他进程, 以规避安全软件的检测.
     2. 混淆: 生成载荷时使用编码器混淆并加密代码, 以规避安全软件对内存中代码的特征检测. 或通过 `set EnableStageEncoding true` 对发送的 stage 进行编码, 以规避安全软件对流量特征的识别.
+
+- msfdb 初始化数据库失败. 可以使用下面的源安装 `msfdb-blackarch`:  
+
+  ```
+  [blackarch]
+  SigLevel = Optional TrustAll
+  Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+  ```
 
 ## 拓展
 
 - [Metasploit Documentation](https://docs.metasploit.com/)
 - <https://www.kali.org/docs/tools/starting-metasploit-framework-in-kali/>
 - [mimikatz](https://github.com/ParrotSec/mimikatz)
+
+## 参考
+
+- <https://www.offensive-security.com/metasploit-unleashed/payloads/>
