@@ -64,7 +64,7 @@ MSF 中的载荷(payload)共有以下三种:
 - Stages: 无大小限制, 包含高级功能.
 
 在遇见 "载荷" 一词时应结合上下文推断具体含义.  
-命名规则是 `<platform>/[arch]/<single>` 和 `<platform>/[arch]/<stage>/<stager>`, 比如 `windows/x64/meterpreter/reverse_tcp` 就代表 Windows 下使用 x64 指令集编写的使用 tcp 协议反向建立连接的 stager, 用于接收 meterpreter 这个 stage.
+命名规则是 `<platform>/[arch]/<single>` 和 `<platform>/[arch]/<stage>/<stager>`, 比如 `windows/x64/meterpreter/reverse_tcp` 就代表 Windows 下使用 x64 指令集编写的使用 tcp 协议反向建立连接的 stager, 用于接收 meterpreter 这个 stage.  
 
 ## 生成载荷
 
