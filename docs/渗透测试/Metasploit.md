@@ -63,9 +63,9 @@ MSF 中的载荷(payload)共有以下三种:
 
 - Singles: 包含完整的功能, 不依赖 MSF, 因此不需要通过 exploit/multi/handler 来建立连接.
 - Stagers: 小巧可靠, 用于建立连接并接收 Stages.
-  - bind: 正向连接, MSF 主动尝试与目标中的 stager 建立连接.
-  - reverse: 反向连接, 目标中的 stager 尝试与 MSF 连接. 可以绕过部分防火墙规则.
-  - https: 伪装成正常 HTTPS 流量进行通讯. 可以绕过部分防火墙规则且更难被探测器识别.
+    - bind: 正向连接, MSF 主动尝试与目标中的 stager 建立连接.
+    - reverse: 反向连接, 目标中的 stager 尝试与 MSF 连接. 可以绕过部分防火墙规则.
+    - https: 伪装成正常 HTTPS 流量进行通讯. 可以绕过部分防火墙规则且更难被探测器识别.
 - Stages: 无大小限制, 包含高级功能.
 
 在遇见 "载荷" 一词时应结合上下文推断具体含义.  
@@ -133,20 +133,20 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
 
 - Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
 
-  - MSF 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
-  - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷(类型/系统/架构)与目标上期待的不一致, 解决方法是确保载荷一致.
-  - 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
+    - MSF 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
+    - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷(类型/系统/架构)与目标上期待的不一致, 解决方法是确保载荷一致.
+    - 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
 
-    1. 转移进程: 通过 `set AutoRunScript "migrate -n explorer.exe"` 在链接建立后立即转移到其他进程, 以规避安全软件的检测.
-    2. 混淆: 生成载荷时使用编码器混淆并加密代码, 以规避安全软件对内存中代码的特征检测. 或通过 `set EnableStageEncoding true` 对发送的 stage 进行编码, 以规避安全软件对流量特征的识别.
+        1. 转移进程: 通过 `set AutoRunScript "migrate -n explorer.exe"` 在链接建立后立即转移到其他进程, 以规避安全软件的检测.
+        2. 混淆: 生成载荷时使用编码器混淆并加密代码, 以规避安全软件对内存中代码的特征检测. 或通过 `set EnableStageEncoding true` 对发送的 stage 进行编码, 以规避安全软件对流量特征的识别.
 
 - msfdb 初始化数据库失败. 可以使用下面的源安装 `msfdb-blackarch`:  
 
-  ```
-  [blackarch]
-  SigLevel = Optional TrustAll
-  Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
-  ```
+    ```
+    [blackarch]
+    SigLevel = Optional TrustAll
+    Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+    ```
 
 ## 拓展
 
