@@ -18,6 +18,15 @@ msfdb init   # 初始化数据库
 
 之后便可以使用数据库相关指令, 关键信息会被记录到数据库中以便后续查询.  
 
+### 导出
+
+```sh
+db_export -f xml ./msfdb.xml # 将当前 workspace 中的数据以 xml 格式导出到 ./msfdb.xml
+```
+
+!!! warning
+    导出结果可能未空, 需要进行检查.  
+
 ## Msfvenom
 
 ```sh
