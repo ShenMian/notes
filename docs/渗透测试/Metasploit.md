@@ -129,7 +129,7 @@ meterpreter > search type:post  # 列出 post module
 meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" 下
 ```
 
-### 故障排除
+## 故障排除
 
 - Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
 
