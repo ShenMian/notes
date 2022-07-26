@@ -20,26 +20,32 @@ msfdb init   # 初始化数据库
 
 之后便可以使用数据库相关指令, 关键信息(如主机/服务/漏洞/战利品)会被记录到数据库中以便后续查询.  
 
-### 导出
+### 故障排除
 
-```sh
-db_export -f xml ./msfdb.xml # 将当前 workspace 中的数据以 xml 格式导出到 ./msfdb.xml
+msfdb 初始化数据库失败. 可以使用下面的源安装 `msfdb-blackarch`:  
+
 ```
-
-!!! warning
-    导出结果可能未空, 需要进行检查.  
+[blackarch]
+SigLevel = Optional TrustAll
+Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+```
 
 ## 快速入门
 
 ```sh
-msf > workspace [name]    # 切换工作区
-msf > workspace -a [name] # 添加工作区
+# 数据库/工作区
+msf > workspace [name]             # 切换工作区
+msf > workspace -a [name]          # 添加工作区
+msf > db_nmap [...]                # 调用 nmap 进行扫描, 比将结果保存到当前工作区
+msf > db_export -f [format] [file] # 将当前工作区中的数据以指定格式(通常是 xml)导出到文件中, 导出结果可能为空, 需要进行检查
 
+# 查找/选择 module
 msf > search [[type:]keyword] # 搜索 module
 msf > use [id/module]         # 使用 module, module 的名称或 search 指令结果中的 id
 msf > use [id/module]         # 显示 module 的详细信息.
 msf > setg [option] [value]   # 设置默认选项, 避免切换 module 时重复填写不变的参数
 
+# 使用 module
 msf(module) > options                 # 显示当前 module 的选项
 msf(module) > info                    # 显示当前 module 的详细信息
 msf(module) > show [option]           # 显示选项的可用选项
@@ -47,9 +53,15 @@ msf(module) > set [option] [id/value] # 设置选项, 选项的值或 show 指�
 msf(module) > check                   # 部分 exploit module 支持, 用于验证 RHOSTS 是否可以被利用
 msf(module) > run                     # 执行 module
 
+# 会话管理
 msf > sessions         # 列出会话, -l
 msf > sessions [id]    # 打开会话, -i
 msf > sessions -u [id] # 将 shell 升级到 meterpreter
+
+# 日志/故障排除
+msf > setg LogLevel 5          # 日志详细等级, 范围 1-5
+cat ~/.msf6/logs/framework.log # 查看日志
+msf > debug                    # 显示诊断信息, 在故障发生后使用
 ```
 
 ## 生成载荷
@@ -98,15 +110,16 @@ meterpreter > search type:post  # 列出 post module
 meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" 下
 ```
 
-## 故障排除
+### 故障排除
 
-msfdb 初始化数据库失败. 可以使用下面的源安装 `msfdb-blackarch`:  
+Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
 
-```
-[blackarch]
-SigLevel = Optional TrustAll
-Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
-```
+- Metasploit 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
+- Payload 不匹配: 该问题会导致目标上的接收器发生段错误, exploit/multi/handler 中设置的 payload(类型/系统/架构) 与目标上期待的不一致, 解决方法是确保 payload 一致.
+- 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
+
+    1. 转移进程: 通过 `set AutoRunScript "migrate -n explorer.exe"` 在链接建立后立即转移到其他进程, 以规避安全软件的检测.
+    2. 混淆: 生成载荷时使用编码器混淆并加密代码, 以规避安全软件对内存中代码的特征检测. 或通过 `set EnableStageEncoding true` 对发送的 stage 进行编码, 以规避安全软件对流量特征的识别.
 
 ## 拓展
 
