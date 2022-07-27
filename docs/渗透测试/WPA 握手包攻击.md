@@ -76,6 +76,6 @@
 
 ## 自动
 
-可以利用 [wifite2](https://github.com/derv82/wifite2) 来简化上面的流程.  
+可以利用 [wifite2](https://github.com/derv82/wifite2)/[WEF](https://github.com/D3Ext/WEF) 来简化上面的流程.  
 
 ![Wifite2 WAP Handshake attack](https://camo.githubusercontent.com/241679fd57d09ce160bbaf04886b896d1d101d405fc4d692954beefc8e477a07/68747470733a2f2f692e696d6775722e636f6d2f4636565068626d2e676966)

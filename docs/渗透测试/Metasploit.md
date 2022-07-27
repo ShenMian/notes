@@ -55,6 +55,8 @@ cat ~/.msf6/logs/framework.log # 查看日志
 msf > debug                    # 显示诊断信息, 在故障发生后使用
 ```
 
+更多内容请参考扩展中的 Metasploit Cheat Sheet.  
+
 ## 载荷
 
 **别名**: 攻击载荷, 有效载荷.  
@@ -151,6 +153,7 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
 ## 拓展
 
 - [Metasploit Documentation](https://docs.metasploit.com/)
+- [Metasploit Cheat Sheet](https://www.comparitech.com/net-admin/metasploit-cheat-sheet/)
 - <https://www.kali.org/docs/tools/starting-metasploit-framework-in-kali/>
 - [mimikatz](https://github.com/ParrotSec/mimikatz)
 
