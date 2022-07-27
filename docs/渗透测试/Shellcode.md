@@ -41,8 +41,9 @@ objdump -d shellcode                    # 打印反汇编结果
 
     ```py
     from pwn import *
-    context(log_level = 'debug', arch = 'i386', os = 'linux') # linux/x86
-    shellcode = asm(shellcraft.sh())
+    context(arch = 'i386', os = 'linux') # linux/x86
+    print shellcraft.sh()      # 输出 shellcode 汇编代码
+    print asm(shellcraft.sh()) # 输出 shellcode 二进制代码
     ```
 
 ## 拓展
