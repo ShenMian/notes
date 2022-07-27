@@ -4,6 +4,8 @@ Shellcode 是一小段代码, 在漏洞利用后用于注入到目标程序中�
 
 ## 编写
 
+以下是一段简单的 shellcode 代码:  
+
 ```asm
 # linux/x86 execve("/bin/sh", 0, 0)
 global _start
@@ -18,19 +20,12 @@ _start:
     int  0x80     ;; syscall
 ```
 
-```asm
-# linux/x64 execve("/bin/sh", 0, 0)
-global _start
-_start:    
-    mov  rbx, "/bin/sh"
-    push rbx
-    push rsp
-    pop  rdi
-    xor  esi, esi
-    xor  edx, edx
-    push 0x3b
-    pop  rax
-    syscall
+在 Linux 下可以使用 [NASM](https://www.nasm.us/) 进行编译:  
+
+```sh
+nasm -f elf32 shellcode.asm             # 编译
+ld -m elf_i386 -o shellcode shellcode.o # 链接
+objdump -d shellcode                    # 打印反汇编结果
 ```
 
 设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断/syscall即可. 具体使用方式请参考 [Linux 系统调用](https://publicki.top/syscall.html).  
