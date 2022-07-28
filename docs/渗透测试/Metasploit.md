@@ -12,6 +12,10 @@ sudo pacman -S postgresql                      # 安装数据库
 sudo systemctl enable --now postgresql.service # 启用数据库服务
 sudo systemctl status postgresql.service       # 检查数据库服务状态
 
+# Kali
+sudo service postgresql start  # 启用数据库服务
+sudo service postgresql status # 检查数据库服务状态
+
 msfdb status # 检查数据库服务状态, 包括监听端口
 msfdb init   # 初始化数据库
 ```
