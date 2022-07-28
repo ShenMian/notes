@@ -21,15 +21,15 @@ sudo apt autoremove # 自动删除不需要的包
 将文件 `/etc/apt/sources.list` 中的内容修改为以下内容:
 
 ```conf
-# Aliyun 阿里云
-deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
-deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
-
 # USTC 中科大
-# deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
-# deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 # deb http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free
 # deb-src http://mirrors.ustc.edu.cn/kali-security kali-current/updates main contrib non-free
+
+# Aliyun 阿里云
+# deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+# deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
 
 # Kali 官方
 # deb http://http.kali.org/kali kali-rolling main non-free contrib
