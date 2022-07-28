@@ -20,5 +20,5 @@
 
 ## 工具
 
-Kali Tweaks -> Metapackages
+若觉得默认的工具包不够用, 还可以从 Kali Tweaks -> Metapackages 安装其他工具包集合.  
 可以使用 [Kali 工具](https://www.kali.org/tools/) 来搜索并查看 Kali 中工具的信息, 如项目主页或源代码仓库.  
