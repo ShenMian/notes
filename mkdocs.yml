@@ -9,6 +9,7 @@ repo_url: https://github.com/ShenMian/Notes/
 # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
 theme:
   name: material
+  custom_dir: overrides
   # favicon: docs/assets/icon.ico
 
   # 语言
