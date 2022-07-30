@@ -7,7 +7,3 @@
 - 漏洞利用(Exploitation)
 - 后渗透攻击(Post Exploitation)
 - 报告(Reporting)
-
-```sh
-sudo pip3 install pwntools
-```

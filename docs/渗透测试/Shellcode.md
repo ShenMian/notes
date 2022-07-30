@@ -51,7 +51,7 @@ objdump -d shellcode                    # 打印反汇编结果
 
 - 利用 [MSF](./Metasploit.md) 生成 shellcode, 可定制.
 - 利用 [ALPHA3](https://github.com/TaQini/alpha3) 生成由可见字符集构成的 shellcode.
-- 利用 pwntools 生成特定架构和系统的 shellcode, 不可定制.
+- 利用 [pwntools](https://github.com/Gallopsled/pwntools) 生成特定架构和系统的 shellcode, 不可定制.
 
     ```py
     from pwn import *
