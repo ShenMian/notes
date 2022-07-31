@@ -20,19 +20,19 @@ Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.
 
   在添加服务器的时候使用 `-ssl` 选项. 或:
 
-  ```
-  /set irc.server.<server-name>.ssl on
-  ```
+    ```
+    /set irc.server.<server-name>.ssl on
+    ```
 
 - 提高账户安全性.
 
-  ```
-  /msg nickserv set enforce on
-  ```
+    ```
+    /msg nickserv set enforce on
+    ```
 
 - 通过代理连接服务器.
 
-  ```
-  /proxy add <proxy-name> http <proxy-host> <proxy-port>
-  /set irc.server.<server-name>.proxy "<proxy-name>"
-  ```
+    ```
+    /proxy add <proxy-name> http <proxy-host> <proxy-port>
+    /set irc.server.<server-name>.proxy "<proxy-name>"
+    ```
