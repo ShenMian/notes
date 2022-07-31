@@ -2,20 +2,20 @@
 
 ## 启用 WSL
 
-### 方法 1:
+- 方法 1
 
-以管理员身份运行 PowerShell 后执行下面命令.
+    以管理员身份运行 PowerShell 后执行下面命令.
 
-```ps1
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
+    ```ps1
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+    ```
 
-### 方法 2:
+- 方法 2
 
-打开 `optionalfeatures.exe`, 勾选 Windows Subsystem for Linux.  
+    打开 `optionalfeatures.exe`, 勾选 Windows Subsystem for Linux.  
 
-!!! tip
-    该步骤需要重启计算机.  
+    !!! tip
+       该步骤需要重启计算机.  
 
 ## 安装 Linux 发行版
 
