@@ -40,9 +40,9 @@ git push origin empty:master --force
 ## Github CLI
 
 Github CLI 是 Github 官方提供的跨平台的命令行工具. [安装教程](https://github.com/cli/cli#installation).  
-Windows 用户可以直接从 [Releases](https://github.com/cli/cli/releases) 上下载安装包.
-安装后执行下面命令, 来登录账户并配置本地的 Git.
-在 Github 因为安全问题禁用 Git 通过账户和密码登录后, 经过 Github CLI 配置后的 Git 可以按原样使用.
+Windows 用户可以直接从 [Releases](https://github.com/cli/cli/releases) 上下载安装包.  
+安装后执行下面命令, 来登录账户并配置本地的 Git.  
+在 Github 因为安全问题禁用 Git 通过账户和密码登录后, 经过 Github CLI 配置后的 Git 可以按原样使用.  
 
 ```sh
 sudo pacman -S github-cli # Archlinux
