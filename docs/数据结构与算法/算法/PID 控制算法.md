@@ -5,6 +5,7 @@
 该算法由三部分组成, 分别是比例(Proportional, P)单元, 积分(Integral, I)单元和微分(Derivative, D)单元.  
 
 ![PID](assets/PID_feedback_nct_int_correct.png)  
+
 注解:
 
 - Kp: 比例调节参数.
@@ -14,7 +15,7 @@
 
 ## 稳态误差(Steady-State Errors)
 
-系统从一个稳态过渡到新的稳态, 或系统受扰动作用又重新平衡后, 系统出现的偏差.
+系统从一个稳态过渡到新的稳态, 或系统受扰动作用又重新平衡后, 系统出现的偏差.  
 
 ## 参数
 
