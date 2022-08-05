@@ -20,10 +20,10 @@ chmod +x install-nethunter-termux
 若出现询问则直接回车选择默认值.  
 
 - 启动 CLI: `nh`.
-- 以 root 权限启动: `nh -r`.
-- 配置 KeX 密码: `nh kex passwd`.
-- 启动 KeX: `nh kex`.
-- 结束 KeX: `nh kex stop`.
+- 启动 CLI 以 root 权限: `nh -r`.
+- 配置 GUI 密码: `nh kex passwd`.
+- 启动 GUI 并驻留后台: `nh kex &`.
+- 结束 GUI: `nh kex stop`.
 
 命令 `nh` 是 `nethunter` 的别名.  
 
