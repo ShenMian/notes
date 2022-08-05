@@ -14,9 +14,9 @@ NetHunter 有三个版本, 以下仅说明 Rootless 版本的安装.
 打开 Termux 并执行以下命令:  
 
 ```sh
-apt update
-apt upgrade
-apt install wget
+pkg update
+pkg upgrade
+pkg install wget
 
 wget -O install-nethunter-termux https://gitlab.com/kalilinux/nethunter/build-scripts/kali-nethunter-project/raw/master/nethunter-rootless/install-nethunter-termux # short url: https://bit.ly/3bvdkvh
 chmod +x install-nethunter-termux
