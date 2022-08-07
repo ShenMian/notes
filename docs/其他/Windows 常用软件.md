@@ -15,6 +15,10 @@
 
 - [Everything] 快速的硬盘文件搜索.
 
+## 办公
+
+- [Thunderbird] 集成了邮件, 日历, 联系人, IRC, 开源, 跨平台.
+
 ## 娱乐
 
 - QQ Music.
@@ -85,6 +89,7 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
 [Telegram]:           https://web.telegram.org/
 [WeChat]:             https://www.wechat.com/
 [Everything]:         https://www.voidtools.com/
+[Thunderbird]:        https://www.thunderbird.net/
 [VLC media player]:   https://www.videolan.org/
 [OBS Studio]:         https://obsproject.com/
 [Eudic]:              https://www.eudic.net/v4/en/app/eudic/

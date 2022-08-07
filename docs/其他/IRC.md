@@ -14,6 +14,8 @@ Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.
 /set irc.server.libera.autojoin "#archlinux-cn-offtopic,#C++,##English,#c_lang_cn,#archlinux-cn"
 ```
 
+其他客户端还有: Thunderbird.  
+
 ## 安全
 
 - 使用 SSL 连接服务器.
