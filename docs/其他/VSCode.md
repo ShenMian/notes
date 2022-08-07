@@ -4,8 +4,12 @@ IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生�
 
 ## 快捷键(Shortcuts)
 
-- 查看快捷键: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>S</kbd>
-- 格式化代码: <kbd>Ctrl</kbd>+<kbd>K</kbd>+<kbd>F</kbd>
+- 查看快捷键: `Ctrl`+`K`+`S`.
+- 格式化代码: `Ctrl`+`K`+`F`.
+
+## 字体
+
+[Cascadia Code](https://github.com/microsoft/cascadia-code).  
 
 ## 插件(Plugins)
 
