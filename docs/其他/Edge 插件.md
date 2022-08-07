@@ -6,6 +6,7 @@
 ## 安全
 
 - [NoScript] 防止基于脚本的渗透, 开源.
+- [uBlock Origin] 默认屏蔽广告/跟踪器/恶意网站, 开源.
 
 ## 功能
 
@@ -48,6 +49,7 @@
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
 
 [NoScript]:                https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=en-US
+[uBlock Origin]:           https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak
 
 [Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
 [Dark Reader]:             https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc

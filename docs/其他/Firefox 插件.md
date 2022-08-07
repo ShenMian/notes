@@ -3,6 +3,7 @@
 ## 安全
 
 - [NoScript] 防止基于脚本的渗透, 开源.
+- [uBlock Origin] 默认屏蔽广告/跟踪器/恶意网站, 开源.
 
 ## 功能
 
@@ -21,6 +22,7 @@
 如果你使用的是 Tor Browser, 请不要安装任何不可信的插件(闭源/用户数量少/评分低), 建议安装少量的/必要的/可信的插件.  
 
 [NoScript]:             https://addons.mozilla.org/en-US/firefox/addon/noscript/
+[uBlock Origin]:        https://addons.mozilla.org/addon/ublock-origin/
 
 [Dark Reader]:          https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 
