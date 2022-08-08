@@ -14,6 +14,7 @@
 ## 效率
 
 - [Everything] 快速的硬盘文件搜索.
+- [Power Automate] 自动化流程, 可视化编程.
 
 ## 办公
 
@@ -86,20 +87,28 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
 [Git]:                https://git-scm.com/
 [Github Desktop]:     https://desktop.github.com/
 [CppCheck]:           https://cppcheck.sourceforge.io/
+
 [Telegram]:           https://web.telegram.org/
 [WeChat]:             https://www.wechat.com/
+
 [Everything]:         https://www.voidtools.com/
+[Power Automate]:     https://powerautomate.microsoft.com/
+
 [Thunderbird]:        https://www.thunderbird.net/
+
 [VLC media player]:   https://www.videolan.org/
 [OBS Studio]:         https://obsproject.com/
+
 [Eudic]:              https://www.eudic.net/v4/en/app/eudic/
 [Shotcut]:            https://shotcut.org/
 [Krita]:              https://krita.org/
 [Blender]:            https://www.blender.org/
+
 [Steam]:              https://store.steampowered.com/
 [RenderDoc]:          https://renderdoc.org/
 [Unity]:              https://unity.com/
 [Unreal Engine]:      https://www.unrealengine.com/
+
 [IDA Pro]:            https://hex-rays.com/ida-pro/
 [VMware]:             https://www.vmware.com/
 [Maltego]:            https://www.maltego.com/
