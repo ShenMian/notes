@@ -30,6 +30,7 @@
 
 ## 文字
 
+- [LanguageTool] 拼写和语法检查器, 包含应用程序/浏览器插件/办公软件插件/邮件客户端插件, 核心功能开源.
 - [Microsoft Editor] 拼写和语法检查器.
 - [Grammarly for Microsoft Edge] 拼写和语法检查器. (不推荐, 存在吞字的 BUG)
 
@@ -65,6 +66,7 @@
 [YouTube Adblock]:         https://microsoftedge.microsoft.com/addons/detail/bbocfgcdelebeaboidkmglbdkimdpojb
 [Baidu Capsule]:           https://microsoftedge.microsoft.com/addons/detail/%E7%99%BE%E5%BA%A6%E8%8D%AF%E4%B8%B8-baidu-capsule/hbljbaljilkocckmkgdjghgjaidnkdlc
 
+[LanguageTool]:                 https://microsoftedge.microsoft.com/addons/detail/grammar-spell-checker-%E2%80%94/hfjadhjooeceemgojogkhlppanjkbobc
 [Microsoft Editor]:             https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh
 [Grammarly for Microsoft Edge]: https://microsoftedge.microsoft.com/addons/detail/grammarly-grammar-checke/cnlefmmeadmemmdciolhbnfeacpdfbkd
 
