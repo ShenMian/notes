@@ -82,3 +82,7 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 
 - 更新 SpaceVim: `:SPUpdate SpaceVim`
 - 更新全部插件: `:SPUpdate`
+
+## 拓展
+
+- [Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
