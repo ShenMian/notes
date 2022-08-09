@@ -2,9 +2,17 @@
 
 ## 安装
 
+可以借助 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.  
+
 ```sh
 sudo pacman -S nvim python-pynvim
+curl -sLf https://spacevim.org/cn/install.sh | bash
 ```
+
+[入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.  
+
+- 打开配置文件: `SPC f v d`, 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件.
+- 更新全部插件: `:SPUpdate`, 对全部已安装的插件进行更新, 包括 SpaceVim 自身.
 
 ## 基本用法
 
@@ -74,20 +82,6 @@ sudo pacman -S nvim python-pynvim
 ### 可视模式
 
 在普通模式下按 `v` 即可进入可视模式.
-
-## SpaceVim
-
-可以使用 [SpaceVim](https://spacevim.org/cn/) 来配置 vim/neovim.  
-使用下面命令安装 SpaceVim:  
-
-```sh
-curl -sLf https://spacevim.org/cn/install.sh | bash
-```
-
-可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件, 快捷键: `SPC f v d`. [入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.  
-
-- 更新 SpaceVim: `:SPUpdate SpaceVim`
-- 更新全部插件: `:SPUpdate`
 
 ## 拓展
 
