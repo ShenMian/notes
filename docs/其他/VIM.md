@@ -1,5 +1,11 @@
 # VIM
 
+## 安装
+
+```sh
+sudo pacman -S nvim python-pynvim
+```
+
 ## 基本用法
 
 ![vi/vim shortcuts](assets/vi-keys.gif)  
