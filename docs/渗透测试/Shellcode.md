@@ -28,7 +28,7 @@ ld -m elf_i386 -o shellcode shellcode.o # 链接
 objdump -d shellcode                    # 打印反汇编结果
 ```
 
-设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断即可. 其它指令集的用法有所不同, 具体使用方式请参考 [Linux 系统调用](https://publicki.top/syscall.html).  
+设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断即可. 其他指令集的用法有所不同, 具体使用方式请参考 [Linux 系统调用](https://publicki.top/syscall.html).  
 
 ## 定制
 
