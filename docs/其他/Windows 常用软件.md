@@ -68,9 +68,9 @@
 - [VMware] 虚拟机.
 - [Maltego] 信息收集, 跨平台.
 
-## 故障排除
+## 常用操作
 
-开机时 Num Lock 自动启用
+开机时 Num Lock 自动启用  
 
 ```bat
 reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicators /t REG_DWORD /d 0 /f
@@ -80,6 +80,8 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
 - 1: 表示开启Caps Lock(大写键)
 - 2: 表示开启Num Lock(小键盘)
 - 4: 表示开启Scroll Lock(在 Thinkpad 中与 Num Lock 是相同的)
+
+启动项文件夹, 运行 `shell:startup` 打开.  
 
 [CLion]:              https://www.jetbrains.com/clion/
 [Visual Studio]:      https://www.visualstudio.com/
