@@ -4,7 +4,7 @@
 
 ### 是什么
 
-Vim 是一款基于 TUI 的编辑器, 特点是可以只通过键盘使用/高度可自定义. 前者使得 Vim 使用起来十分高效, 后者使得 VIM 可以通过配置添加各种想要的功能.  
+Vim 是一款基于 TUI 的编辑器[^1], 特点是可以只通过键盘使用/高度可自定义. 前者使得 Vim 使用起来十分高效, 后者使得 VIM 可以通过配置添加各种想要的功能.  
 
 Vim(**V**i **im**proved) 最初是为了模仿 Vi, 后面 Vim 加入了许多新功能变成了 Vi 的改进版. 其中包含了不少现代 IDE 具备的基本功能.  
 
@@ -29,7 +29,7 @@ sudo pacman -S nvim python-pynvim
 curl -sLf https://spacevim.org/cn/install.sh | bash
 ```
 
-[入门指南](https://spacevim.org/cn/quick-start-guide/) 有配件文件说明和快速搭建适用于不同编程语言环境方法的索引.  
+[入门指南](https://spacevim.org/cn/quick-start-guide/)有配置文件说明和快速搭建适用于不同编程语言环境方法的索引.  
 
 - 打开配置文件: `SPC f v d`, 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件.
 - 更新全部插件: `:SPUpdate`, 对全部已安装的插件进行更新, 包括 SpaceVim 自身.
@@ -112,3 +112,5 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 ## 拓展
 
 - [Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
+
+[^1]: 也有提供 GUI 的分支项目, 如 gVim/macVim.
