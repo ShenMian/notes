@@ -9,8 +9,8 @@
 
 ## 优点
 
-- 避免了不必要的内存分配: `const std::string&` 在部分情况下需要拷贝操作.
-- 提高访问速度: `const std::string&` 需要先接引用, 因此在使用 `std::string_view` 的时候请不要通过引用传递. `std::string_view` 实现十分轻量, 因此可以通过值传递.
+- 避免了不必要的内存分配: `const std::string&` 在传入 `const char*` 时需要执行拷贝操作.
+- 提高访问速度: `const std::string&` 需要先解引用, 因此在使用 `std::string_view` 的时候请不要通过引用传递. `std::string_view` 实现十分轻量, 因此可以通过值传递.
 
 ## 例子
 
