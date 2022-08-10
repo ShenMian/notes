@@ -68,11 +68,11 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 #### 移动光标
 
 ```txt
-     ^
-     k
-  < h l >
-     j
-     v
+     ^       gg
+     k       H
+0 < h l > $  M
+     j       L
+     v       G
 ```
 
 | 命令    | 描述                     |
