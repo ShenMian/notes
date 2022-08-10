@@ -52,7 +52,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 ## 基本用法
 
-![vi/vim shortcuts](assets/vi-keys.gif)  
+![Vi/Vim Graphical Cheat Sheet - www.viemu.com](assets/vi_vim_graphical_cheat_sheet.gif)  
 
 ### 模式
 
@@ -136,6 +136,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 ## 拓展
 
 - [Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
+- [Vi/Vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 - <https://en.wikipedia.org/wiki/Editor_war> Vi 与 Emacs 之间的编辑器之战
 - <https://vimawesome.com/>
 
