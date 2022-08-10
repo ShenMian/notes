@@ -1,21 +1,64 @@
-# 常用软件
+# Linux 常用软件
 
 ## 软件开发
 
-- Visual Studio Code(code): 轻量 IDE.
-- Neovim(neovim): 现代 VIM.
-- CLion(clion): C/C++ IDE.
-- Github CLI(github-cli): Github 命令行接口.
+| 名称               | 描述               | Arch       |
+| ------------------ | ------------------ | ---------- |
+| Visual Studio Code | 轻量 IDE.          | code       |
+| Neovim             | 现代 VIM.          | neovim     |
+| CLion              | C/C++ IDE.         | clion      |
+| Github CLI         | Github 命令行接口. | github-cli |
 
 ## 娱乐
 
-- Microsoft Edge(microsoft-edge-stable-bin): 浏览器.
-- VLC media player: 媒体播放器.
-- QQMusic(qqmusic-bin): QQ音乐.
+| 名称             | 描述        | Arch                      |
+| ---------------- | ----------- | ------------------------- |
+| Microsoft Edge   | 浏览器.     | microsoft-edge-stable-bin |
+| VLC media player | 媒体播放器. |                           |
+| QQMusic          | QQ音乐.     | qqmusic-bin               |
 
 ## 通讯
 
-- Telegram(telegram-desktop).
+| 名称     | 描述 | Arch             |
+| -------- | ---- | ---------------- |
+| Telegram |      | telegram-desktop |
+
+## 电源管理
+
+| 名称     | 描述                | Arch              |
+| -------- | ------------------- | ----------------- |
+| TPL      | 自动电源管理.       | tlp               |
+| LMT      |                     | laptop-mode-tools |
+| PowerTOP | 电源管理和功耗统计. | powertop          |
+
+- TPL.
+
+    ```sh
+    sudo systemctl enable tlp --now # 启用 TPL 服务
+    sudo pacman -S tlpui            # 安装 TPL UI 配置
+    ```
+
+- LMT.
+
+    ```sh
+    sudo systemctl enable --now laptop-mode.service # 启用 LMT 服务
+    ```
+
+配置文件路径 `/etc/laptop-mode/laptop-mode.conf`.
+
+- PowerTOP.
+
+    ```sh
+    # 生成报告, 路径 `powertop.html`
+    sudo powertop --html
+
+    # 根据推荐自动调节电源管理
+    sudo powertop --auto-tune
+
+    # 启用 auto-tune 作为服务
+    sudo sh -c "echo -e '[Unit]\nDescription=PowerTop\n\n[Service]\nType=oneshot\nRemainAfterExit=true\nExecStart=/usr/bin/powertop --auto-tune\n\n[Install]\nWantedBy=multi-user.target\n' > /etc/systemd/system/powertop.service"
+    sudo systemctl enable --now powertop.service
+    ```
 
 ## 输入法
 
@@ -99,37 +142,6 @@ patch:
     该调整设置存在一定风险, 修改前需进行备份.  
 
 NVIDIA 驱动的安装和配置可以参考 [Manjaro Wiki](https://wiki.manjaro.org/index.php/Configure_NVIDIA_(non-free)_settings_and_load_them_on_Startup).  
-
-## 电源管理
-
-- TPL(tlp): 自动电源管理.
-
-    ```sh
-    sudo systemctl enable tlp --now # 启用 TPL 服务
-    sudo pacman -S tlpui            # 安装 TPL UI 配置
-    ```
-
-- LMT(laptop-mode-tools)
-
-    ```sh
-    sudo systemctl enable --now laptop-mode.service # 启用 LMT 服务
-    ```
-
-配置文件路径 `/etc/laptop-mode/laptop-mode.conf`.
-
-- PowerTOP(powertop): 电源管理和功耗统计.
-
-    ```sh
-    # 生成报告, 路径 `powertop.html`
-    sudo powertop --html
-
-    # 根据推荐自动调节电源管理
-    sudo powertop --auto-tune
-
-    # 启用 auto-tune 作为服务
-    sudo sh -c "echo -e '[Unit]\nDescription=PowerTop\n\n[Service]\nType=oneshot\nRemainAfterExit=true\nExecStart=/usr/bin/powertop --auto-tune\n\n[Install]\nWantedBy=multi-user.target\n' > /etc/systemd/system/powertop.service"
-    sudo systemctl enable --now powertop.service
-    ```
 
 ## 拓展
 
