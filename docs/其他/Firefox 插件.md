@@ -30,7 +30,7 @@
 
 [Dark Reader]:          https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 
-[Firefox Translations]: https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search
+[Firefox Translations]: https://addons.mozilla.org/en-US/firefox/addon/firefox-translations/
 
 [Adblock Plus]:         https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/
 
