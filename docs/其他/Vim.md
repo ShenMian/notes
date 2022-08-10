@@ -1,5 +1,7 @@
 # Vim
 
+![SpaceVim screenshot](./assets/spacevim.png)  
+
 ## 简介
 
 ### 是什么
@@ -33,6 +35,14 @@ curl -sLf https://spacevim.org/cn/install.sh | bash
 
 - 打开配置文件: `SPC f v d`, 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件.
 - 更新全部插件: `:SPUpdate`, 对全部已安装的插件进行更新, 包括 SpaceVim 自身.
+
+要启用 nvim-qt 中的右键文本编辑菜单, 往 ginit.vim 中添加一下内容:  
+
+```vim
+nnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
+inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
+vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
+```
 
 ## 基本用法
 
