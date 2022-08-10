@@ -21,8 +21,8 @@ Git 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语
 ## 清空仓库
 
 ```sh
-git clone https://github.com/<ACCOUNT>/<REPO>.wiki.git
-cd <REPO>.wiki
+git clone https://github.com/<ACCOUNT>/<REPO>.git
+cd <REPO>
 git checkout --orphan empty # 创建孤儿分支 empty
 git rm --cached -r .
 git commit --allow-empty -m 'first commit'
