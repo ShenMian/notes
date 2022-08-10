@@ -171,10 +171,10 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 ## 参见
 
-- <https://en.wikipedia.org/wiki/Editor_war> Vi 与 Emacs 之间的编辑器之战
+- [Vi 与 Emacs 之间的编辑器之战](https://en.wikipedia.org/wiki/Editor_war)
+- [Vim Quick Ref](http://vimdoc.sourceforge.net/htmldoc/quickref.html)
+- [Neovim Quick Ref](https://neovim.io/doc/user/quickref.html)
 - <https://vimawesome.com/>
-- <http://vimdoc.sourceforge.net/htmldoc/quickref.html> Vim Quick Ref
-- <https://neovim.io/doc/user/quickref.html> Neovim Quick Ref
 
 ## 参考
 
