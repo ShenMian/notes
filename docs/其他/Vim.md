@@ -14,7 +14,7 @@ Vim(**V**i **im**proved) 最初是为了模仿 Vi, 后面 Vim 加入了许多新
 
 对于已经熟悉了直观 GUI 的用户来说, Vim 显得不那么友善. 刚开始使用 Vim 的过程会比较坎坷, 因为一些简单的编辑功能需要重新学习. 但在逐渐熟悉操作后, 效率会逐渐提高, 直至超越曾经使用的 GUI.  
 
-Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多. 掌握 Vim 并不需要主动记忆命令, 经常使用即可. [vimtutor](https://github.com/vim/vim/tree/master/runtime/tutor) 提供了一个交互式的入门教学, 时长约 30min.  
+Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多. 掌握 Vim 并不需要刻意记忆命令, 经常使用即可. [vimtutor](https://github.com/vim/vim/tree/master/runtime/tutor) 提供了一个交互式的入门教学, 时长约 30min.  
 
 ![Vim tutor mode](./assets/vim_tutor_mode.png)  
 
