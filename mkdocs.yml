@@ -14,7 +14,7 @@ theme:
 
   # 语言
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/?h=language#configuration
-  language: zh
+  language: en
 
   # 字体
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=font#configuration
@@ -50,6 +50,9 @@ theme:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=features+navigation+tabs#navigation-tabs
     - navigation.tabs
 
+# 已知错误
+# 启用 tag 插件会导致搜索框消失
+# 使用 meta 会导致搜索功能失效, 包括往文件中写入 meta 数据
 # plugins:
 #   - tags
 
