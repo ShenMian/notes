@@ -1,5 +1,7 @@
 # Dishonored 2
 
+![Screenshot](./assets/dishonored2.jpg)  
+
 **中文**: 耻辱 2.  
 
 ## 暗杀

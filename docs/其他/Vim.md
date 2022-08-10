@@ -1,6 +1,6 @@
 # Vim
 
-![SpaceVim screenshot](./assets/spacevim.png)  
+![Screenshot](./assets/spacevim.png)  
 
 ## 简介
 
