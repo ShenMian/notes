@@ -31,7 +31,9 @@ sudo pacman -S nvim python-pynvim
 curl -sLf https://spacevim.org/cn/install.sh | bash
 ```
 
-[入门指南](https://spacevim.org/cn/quick-start-guide/)有配置文件说明和快速搭建适用于不同编程语言环境方法的索引.  
+## SpaceVim
+
+[SpaceVim 入门指南](https://spacevim.org/cn/quick-start-guide/)有配置文件说明和快速搭建适用于不同编程语言环境方法的索引.  
 
 - 打开配置文件: `SPC f v d`, 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件.
 - 更新全部插件: `:SPUpdate`, 对全部已安装的插件进行更新, 包括 SpaceVim 自身.
@@ -43,6 +45,8 @@ nnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
 inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
 vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
 ```
+
+SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(可以看作是特定功能的合集), 用户可以应根据自身需求启用他们来添加功能. 在用户进行简单的配置并重启后, 会自动下载所需的的插件并进行配置.  
 
 ## 基本用法
 

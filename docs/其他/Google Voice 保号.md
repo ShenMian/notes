@@ -2,7 +2,7 @@
 
 ## 引言
 
-Google Voice 号码在指定地区可以免费申请, 号码若9个月内没有使用将被回收. 部分地区申请不易, 因此需要防止帐号长时间未使用被回收.  
+Google Voice 号码在指定地区可以免费申请, 号码若9个月内没有使用将被回收. 部分地区申请不易, 因此需要防止账号长时间未使用被回收.  
 可以通过查看 [Google Voice 使用限制政策](https://www.google.com/googlevoice/program-policies.html) 来了解最新的规则.  
 
 ## 订阅广告短信
