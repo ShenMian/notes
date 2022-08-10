@@ -14,7 +14,7 @@ theme:
 
   # 语言
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/?h=language#configuration
-  language: en
+  language: zh
 
   # 字体
   # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=font#configuration
