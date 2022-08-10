@@ -52,6 +52,6 @@ IDE 是开发软件的工具, 学会如何高效使用工具将显著提升生�
 - GLSL Lint
 - Shader languages support for VS Code
 
-## 拓展
+## 参见
 
 - [VS Code Top-Ten Pro Tips](https://www.youtube.com/watch?v=u21W_tfPVrY)

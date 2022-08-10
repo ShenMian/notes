@@ -165,7 +165,7 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
     Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
     ```
 
-## 拓展
+## 参见
 
 - [Metasploit Documentation](https://docs.metasploit.com/)
 - [Metasploit Cheat Sheet](https://www.comparitech.com/net-admin/metasploit-cheat-sheet/)

@@ -125,6 +125,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 ### 命令模式
 
 在普通模式下按 `:`/`/` 即可进入命令模式. 按 `Esc` 回到普通模式.  
+此时光标会移动到屏幕最下方, 并等待用户输入命令. 可以使用 `Tab` 补全命令.  
 
 #### 保存/退出
 
@@ -135,8 +136,6 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 | `:q`      | 退出                         |
 | `:wq`     | 写入并退出                   |
 | `:x`/`ZZ` | 写入并退出, 仅在有修改时写入 |
-| `:n`      | 定位到第 `n` 行              |
-| `:!cmd`   | 执行命令 `cmd`               |
 
 #### 其他
 
@@ -144,12 +143,14 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 | -------- | ------------------- |
 | `:Tutor` | vimtutor 交互式教程 |
 | `:help`  | 查看帮助            |
+| `:n`     | 定位到第 `n` 行     |
+| `:!cmd`  | 执行命令 `cmd`      |
 
 ### 可视模式
 
 在普通模式下按 `v` 即可进入可视模式. 按 `Esc` 回到普通模式.  
 
-## 拓展
+## 参见
 
 - <https://en.wikipedia.org/wiki/Editor_war> Vi 与 Emacs 之间的编辑器之战
 - <https://vimawesome.com/>

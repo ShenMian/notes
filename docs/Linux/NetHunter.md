@@ -53,7 +53,7 @@ chmod +x install-nethunter-termux
 !!! success
     此时应该能成功看到 Kali 的 GUI 界面.  
 
-## 拓展
+## 参见
 
 - <https://www.kali.org/docs/nethunter/nethunter-rootless/>
 

@@ -87,7 +87,7 @@ struct Archetype
 实体组件的存储位置取决于其 Archetype. ECS 申请的内存块被简称为 chunk. 每个 chunk 只会存储相同 Archetype 的实体.  
 ![Figure-2 Memory Chunk](assets/ArchetypeChunk.png)  
 
-## 拓展
+## 参见
 
 - <https://austinmorlan.com/posts/entity_component_system/>
 - <https://wickedengine.net/2019/09/29/entity-component-system/>

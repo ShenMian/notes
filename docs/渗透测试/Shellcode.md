@@ -60,7 +60,7 @@ objdump -d shellcode                    # 打印反汇编结果
     print asm(shellcraft.sh()) # 输出 shellcode 二进制代码
     ```
 
-## 拓展
+## 参见
 
 - [Exploit Database Shellcodes](https://www.exploit-db.com/shellcodes)
 - <http://shell-storm.org/shellcode/>

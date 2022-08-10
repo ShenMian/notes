@@ -97,7 +97,7 @@
    菜单栏中的统计数字里统计了许多重要的数据, 如击杀人数/被发现次数等. 在存档前应该先查看这些数据来确保这个存档是有效的.  
    其中 `玩家死亡次数` 不受回档影响.  
 
-## 拓展
+## 参见
 
 - [Steam 成就](https://steamcommunity.com/stats/403640/achievements)
 - [全收集流程](https://www.bilibili.com/video/BV1kt411B7tj)
