@@ -55,7 +55,7 @@ theme:
 
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
 markdown_extensions:
-  - meta
+  # - meta
   - admonition
   - attr_list
   - md_in_html
@@ -76,10 +76,3 @@ extra:
       link: https://github.com/ShenMian
     - icon: fontawesome/brands/telegram
       link: https://t.me/ShenMian
-  # alternate:
-  #   - name: 中文
-  #     link: /
-  #     lang: zh
-  #   - name: English
-  #     link: en/
-  #     lang: en
