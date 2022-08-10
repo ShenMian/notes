@@ -55,7 +55,7 @@ theme:
 
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
 markdown_extensions:
-  - meta
+  # - meta
   - admonition
   - attr_list
   - md_in_html
