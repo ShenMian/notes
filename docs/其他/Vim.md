@@ -77,34 +77,6 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
      v       G
 ```
 
-```txt
-+------------- |      
-+------------- 0      $ ------------------+
-|  +---------- ^      fe --------+        |
-|  |  +------- Fo     te -------+|        |
-|  |  |+------ To     30| ---+  ||        |
-|  |  || +---- ge     w ---+ |  ||        |
-|  |  || | +-- b      e -+ | |  ||        |
-|  |  || | |  +h      l+ | | |  ||        |
-v  v  vv v v  v▼      ▼v v v v  vv        v
-   echo "This is a simple command in shell"
-   
-                 - SCREEN 1 START -
-   +-+---------> #!/usr/bin/python
-   | |     +--->     
-   | |     |     print("This")
-   | |     { } ▶ print("is")
-   | |       |   print("a")
-   | |       └->    
-   | | +---+---> print("simple")
-G gg H M L k j ▶ print("Python")
-|        |   └-> print("script")
-|        |     
-|        └-----> 
-|                - SCREEN 1 END -
-└--------------> print("SCREEN 2")
-```
-
 | 命令            | 描述                     |
 | --------------- | ------------------------ |
 | `h`/`j`/`k`/`l` | 向左/下/上/右移动        |
