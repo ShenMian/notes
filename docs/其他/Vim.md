@@ -122,5 +122,6 @@ vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
 ## 拓展
 
 - [Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
+- <https://en.wikipedia.org/wiki/Editor_war> Vi 与 Emacs 之间的编辑器之战
 
 [^1]: 也有提供 GUI 的分支项目, 如 gVim/macVim.
