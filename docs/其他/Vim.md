@@ -18,6 +18,8 @@ Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多. 掌
 
 ![Vim tutor mode](./assets/vim_tutor_mode.png)  
 
+其次 Vim User Manual[^2] 也是值得一读的.  
+
 ### 为什么
 
 初始 Vim 的功能远不及其他现代 IDE, 即使高度可自定义也存在很大局限性, 因为其终究是一个基于 TUI 的编辑器. Vim 的高效的键盘使用方案也被其他的现代 IDE 甚至包括浏览器通过插件所支持, 比如 Visual Studio Code 中的 Vim 插件. 因此即使不使用 Vim, 学习 Vim 依然十分有价值.  
@@ -75,27 +77,54 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
      v       G
 ```
 
-| 命令    | 描述                     |
-| ------- | ------------------------ |
-| h/j/k/l | 向左/下/上/右移动        |
-| 0       | 移动到行首               |
-| $       | 移动到行尾               |
-| gg      | 移动到当前文件的第一行   |
-| G       | 移动到当前文件最后一行   |
-| H       | 移动到当前屏幕的第一行   |
-| M       | 移动到当前屏幕的中间     |
-| L       | 移动到当前屏幕的最后一行 |
-| w       | 向后移动一个词           |
-| b       | 向前移动一个词           |
+```txt
++------------- |      
++------------- 0      $ ------------------+
+|  +---------- ^      fe --------+        |
+|  |  +------- Fo     te -------+|        |
+|  |  |+------ To     30| ---+  ||        |
+|  |  || +---- ge     w ---+ |  ||        |
+|  |  || | +-- b      e -+ | |  ||        |
+|  |  || | |  +h      l+ | | |  ||        |
+v  v  vv v v  v▼      ▼v v v v  vv        v
+   echo "This is a simple command in shell"
+   
+                 - SCREEN 1 START -
+   +-+---------> #!/usr/bin/python
+   | |     +--->     
+   | |     |     print("This")
+   | |     { } ▶ print("is")
+   | |       |   print("a")
+   | |       └->    
+   | | +---+---> print("simple")
+G gg H M L k j ▶ print("Python")
+|        |   └-> print("script")
+|        |     
+|        └-----> 
+|                - SCREEN 1 END -
+└--------------> print("SCREEN 2")
+```
+
+| 命令            | 描述                     |
+| --------------- | ------------------------ |
+| `h`/`j`/`k`/`l` | 向左/下/上/右移动        |
+| `0`/`$`         | 移动到行首/尾            |
+| `gg`            | 移动到当前文件的第一行   |
+| `G`             | 移动到当前文件最后一行   |
+| `H`             | 移动到当前屏幕的第一行   |
+| `M`             | 移动到当前屏幕的中间     |
+| `L`             | 移动到当前屏幕的最后一行 |
+| `w`             | 向后移动一个词           |
+| `b`             | 向前移动一个词           |
 
 #### 删除内容
 
 | 命令 | 描述                               |
 | ---- | ---------------------------------- |
-| x    | 删除光标上的当前字符               |
-| dd   | 删除一整行                         |
-| D    | 删除当行光标之后的内容             |
-| C    | 删除光标内容的内容，并进入插入模式 |
+| `x`  | 删除光标上的当前字符               |
+| `dd` | 删除一整行                         |
+| `D`  | 删除当行光标之后的内容             |
+| `C`  | 删除光标内容的内容，并进入插入模式 |
 
 #### 插入内容
 
@@ -103,12 +132,12 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 | 命令 | 描述                                           |
 | ---- | ---------------------------------------------- |
-| i    | 在光标左侧进入插入模式                         |
-| I    | 在光标所在行的行首输入正文                     |
-| a    | 在光标右侧输入内容                             |
-| A    | 在光标所在行的行尾输入内容                     |
-| o    | 在光标所在的下一行添增内容                     |
-| O    | 在光标所在的上一行添增新行, 光标位于新行的行首 |
+| `i`  | 在光标左侧进入插入模式                         |
+| `I`  | 在光标所在行的行首输入正文                     |
+| `a`  | 在光标右侧输入内容                             |
+| `A`  | 在光标所在行的行尾输入内容                     |
+| `o`  | 在光标所在的下一行添增内容                     |
+| `O`  | 在光标所在的上一行添增新行, 光标位于新行的行首 |
 
 ### 插入模式
 
@@ -116,7 +145,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 ### 命令模式
 
-在普通模式下按 `:`/`/` 即可进入命令模式. 按 ESC 回到普通模式.  
+在普通模式下按 `:`/`/` 即可进入命令模式. 按 `ESC` 回到普通模式.  
 
 | 命令      | 描述                         |
 | --------- | ---------------------------- |
@@ -133,13 +162,17 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 ### 可视模式
 
-在普通模式下按 `v` 即可进入可视模式. 按 ESC 回到普通模式.  
+在普通模式下按 `v` 即可进入可视模式. 按 `ESC` 回到普通模式.  
 
 ## 拓展
 
-- [Vim Cheat Sheet](https://vim.rtorr.com/lang/zh_cn)
-- [Vi/Vim Cheat Sheet and Tutorial](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 - <https://en.wikipedia.org/wiki/Editor_war> Vi 与 Emacs 之间的编辑器之战
 - <https://vimawesome.com/>
 
-[^1]: 也有提供 GUI 的分支项目, 如 gVim/macVim.
+## 参考
+
+- <https://quickref.me/vim> Vim 速查表
+- <http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html> Vi/Vim 速查表和教程
+
+[^1]: 也有提供 GUI 的分支项目, 如 gVim/[macVim](https://github.com/macvim-dev/macvim).
+[^2]: [Vim](https://neovim.io/doc/user/usr_01.html)/[Neovim](https://neovim.io/doc/user/usr_01.html).
