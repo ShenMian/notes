@@ -50,6 +50,9 @@ theme:
     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=features+navigation+tabs#navigation-tabs
     - navigation.tabs
 
+plugins:
+  - tags
+
 # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
 markdown_extensions:
   - meta
@@ -80,6 +83,3 @@ extra:
   #   - name: English
   #     link: en/
   #     lang: en
-
-plugins:
-  - tags
