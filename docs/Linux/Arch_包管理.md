@@ -39,3 +39,6 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 ```sh
 sudo pacman -S archlinuxcn-keyring
 ```
+## 参见
+
+- [常用软件](../其他/常用软件.md)
