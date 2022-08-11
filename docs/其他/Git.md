@@ -1,17 +1,15 @@
 # Git
 
+![Git 常用命令速查表](assets/git_cheat_sheet.jpg)  
+
 !!! info
     以下内容基于 2.X 版本.  
 
 [Git](https://git-scm.com/) 是一款版本控制软件. 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
 
-## 基本命令
-
-![Git 常用命令速查表](assets/git_cheat_sheet.jpg)  
-
 ## 工作流程
 
-![Git 工作流程](assets/git_flow.png)  
+![Git 工作流程](assets/git_flow.png){ align=right width=50% }  
 
 ### 分支
 
@@ -27,13 +25,6 @@
 可以借助工具 [commitlint
 ](https://github.com/conventional-changelog/commitlint) 来进行检查.  
 
-| Command                      | New Files | Modified Files | Deleted Files | Description                            |
-| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
-| `git add -A`                 | ✔️        | ✔️             | ✔️            | Stage all files.                       |
-| `git add .`                  | ✔️        | ✔️             | ✔️            | Stage all files in current folder.     |
-| `git add --ignore-removal .` | ✔️        | ✔️             | ❌             | Stage new and modified files only.     |
-| `git add -u`                 | ❌         | ✔️             | ✔️            | Stage modified and deleted files only. |
-
 ## 代码托管平台
 
 - [GitHub](https://github.com/).
@@ -41,6 +32,15 @@
 - [Bitbucket](https://bitbucket.org/).
 
 使用平台进行对仓库托管还可以利用平台提供的相关功能, 但绝不能产生依赖. 因确保项目随时可以脱离该平台并正常运作.  
+
+## 暂存
+
+| Command                      | New Files | Modified Files | Deleted Files | Description                            |
+| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
+| `git add -A`                 | ✔️        | ✔️             | ✔️            | Stage all files.                       |
+| `git add .`                  | ✔️        | ✔️             | ✔️            | Stage all files in current folder.     |
+| `git add --ignore-removal .` | ✔️        | ✔️             | ❌             | Stage new and modified files only.     |
+| `git add -u`                 | ❌         | ✔️             | ✔️            | Stage modified and deleted files only. |
 
 ## 清空仓库
 
