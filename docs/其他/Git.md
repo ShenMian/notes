@@ -53,7 +53,7 @@ git commit --allow-empty -m 'first commit'
 git push origin empty:<branch> --force
 ```
 
-!!! waning
+!!! warning
     该操作将清空仓库指定分支的全部历史记录.  
 
 ## GUI 客户端
