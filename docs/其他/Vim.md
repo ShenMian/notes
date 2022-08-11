@@ -12,7 +12,7 @@ Vim(**V**i **im**proved) 最初是为了模仿 Vi, 后面 Vim 加入了许多新
 
 ### 怎么学
 
-![Vim tutor mode](./assets/vim_tutor_mode.png){ align=right width=40% }  
+![Vim tutor mode](./assets/vim_tutor_mode.png){ align=right width=50% }  
 
 对于已经熟悉了直观 GUI 的用户来说, Vim 显得不那么友善. 刚开始使用 Vim 的过程会比较坎坷, 因为一些简单的编辑功能需要重新学习. 但在逐渐熟悉操作后, 效率会逐渐提高, 直至超越曾经使用的 GUI.  
 
