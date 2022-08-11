@@ -12,24 +12,27 @@
 
 ## 分支
 
-- main: 包含生产代码.
-- develop.
-- release/xxx.
-- feature/xxx.
-- hotfix/xxx.
+- main: 包含稳定的代码.
+- develop: 包含不稳定的代码, 将合并到 main.
+- feature/xxx: 包含新功能的代码, 将合并到 develop.
+- hotfix/xxx: .
+- release/xxx: .
 
 ## 提交
 
 ## 清空仓库
 
 ```sh
-git clone https://github.com/<ACCOUNT>/<REPO>.git
-cd <REPO>
+git clone https://github.com/<account>/<repo>.git
+cd <repo>
 git checkout --orphan empty # 创建孤儿分支 empty
 git rm --cached -r .
 git commit --allow-empty -m 'first commit'
-git push origin empty:master --force
+git push origin empty:<branch> --force
 ```
+
+!!! waning
+    该操作将清空仓库指定分支的全部历史记录.  
 
 ## GUI 客户端
 

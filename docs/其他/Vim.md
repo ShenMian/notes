@@ -31,8 +31,9 @@ Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多. 掌
 可以借助 [SpaceVim](https://spacevim.org/cn/) 来配置 Vim/Neovim.  
 
 ```sh
-sudo pacman -S nvim python-pynvim
-curl -sLf https://spacevim.org/cn/install.sh | bash
+sudo pacman -S nvim                                 # 安装 Neovim
+sudo pacman -S python-pynvim                        # 或 pip install pynvim, 添加 python 功能, 用于支持部分插件
+curl -sLf https://spacevim.org/cn/install.sh | bash # 安装 SpaceVim
 ```
 
 ## SpaceVim
