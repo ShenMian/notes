@@ -18,7 +18,9 @@ sudo apt autoremove # 自动删除不需要的包
 
 ## 镜像源
 
-将文件 `/etc/apt/sources.list` 中的内容修改为以下内容:
+将文件 `/etc/apt/sources.list` 中的内容修改为以下内容:  
+
+### Kali
 
 ```conf
 # USTC 中科大
