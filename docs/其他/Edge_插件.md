@@ -49,30 +49,30 @@
 
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
 
-[NoScript]:                https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=en-US
-[uBlock Origin]:           https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak
+[NoScript]:                     https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=en-US
+[uBlock Origin]:                https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak
 
-[Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
-[Dark Reader]:             https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc
-[Proxy SwitchyOmega]:      https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc
-[Simple Allow Copy]:       https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
-[YouTube™ dual subtitles]: https://microsoftedge.microsoft.com/addons/detail/youtube%E2%84%A2-dual-subtitles/kicjdgmlfepkcglkdcaalgikoaphdbbp
+[Tampermonkey]:                 https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd
+[Dark Reader]:                  https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc
+[Proxy SwitchyOmega]:           https://microsoftedge.microsoft.com/addons/detail/proxy-switchyomega/fdbloeknjpnloaggplaobopplkdhnikc
+[Simple Allow Copy]:            https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
+[YouTube™ dual subtitles]:      https://microsoftedge.microsoft.com/addons/detail/youtube%E2%84%A2-dual-subtitles/kicjdgmlfepkcglkdcaalgikoaphdbbp
 
-[Vimium C]:                https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
-[NeatDownloadManager]:     https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
-[Edge Translate]:          https://microsoftedge.microsoft.com/addons/detail/edge-translate/bfdogplmndidlpjfhoijckpakkdjkkil
+[Vimium C]:                     https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
+[NeatDownloadManager]:          https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
+[Edge Translate]:               https://microsoftedge.microsoft.com/addons/detail/edge-translate/bfdogplmndidlpjfhoijckpakkdjkkil
 
-[Adblock Plus]:            https://microsoftedge.microsoft.com/addons/detail/gmgoamodcdcjnbaobigkjelfplakmdhh
-[YouTube Adblock]:         https://microsoftedge.microsoft.com/addons/detail/bbocfgcdelebeaboidkmglbdkimdpojb
-[Baidu Capsule]:           https://microsoftedge.microsoft.com/addons/detail/%E7%99%BE%E5%BA%A6%E8%8D%AF%E4%B8%B8-baidu-capsule/hbljbaljilkocckmkgdjghgjaidnkdlc
+[Adblock Plus]:                 https://microsoftedge.microsoft.com/addons/detail/gmgoamodcdcjnbaobigkjelfplakmdhh
+[YouTube Adblock]:              https://microsoftedge.microsoft.com/addons/detail/bbocfgcdelebeaboidkmglbdkimdpojb
+[Baidu Capsule]:                https://microsoftedge.microsoft.com/addons/detail/%E7%99%BE%E5%BA%A6%E8%8D%AF%E4%B8%B8-baidu-capsule/hbljbaljilkocckmkgdjghgjaidnkdlc
 
 [LanguageTool]:                 https://microsoftedge.microsoft.com/addons/detail/grammar-spell-checker-%E2%80%94/hfjadhjooeceemgojogkhlppanjkbobc
 [Microsoft Editor]:             https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh
 [Grammarly for Microsoft Edge]: https://microsoftedge.microsoft.com/addons/detail/grammarly-grammar-checke/cnlefmmeadmemmdciolhbnfeacpdfbkd
 
-[Global Speed]:               https://microsoftedge.microsoft.com/addons/detail/global-speed/mjhlabbcmjflkpjknnicihkfnmbdfced
-[Smooth Picture in picture]: https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
+[Global Speed]:                 https://microsoftedge.microsoft.com/addons/detail/global-speed/mjhlabbcmjflkpjknnicihkfnmbdfced
+[Smooth Picture in picture]:    https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
 
-[Gitako]:                  https://microsoftedge.microsoft.com/addons/detail/alpoloddcggjhakjemghahlkofjekbca
-[Refined Github]:          https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
-[Github Web IDE]:          https://microsoftedge.microsoft.com/addons/detail/github-web-ide/akjbkjciknacicbnkfjbnlaeednpadcf
+[Gitako]:                       https://microsoftedge.microsoft.com/addons/detail/alpoloddcggjhakjemghahlkofjekbca
+[Refined Github]:               https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
+[Github Web IDE]:               https://microsoftedge.microsoft.com/addons/detail/github-web-ide/akjbkjciknacicbnkfjbnlaeednpadcf
