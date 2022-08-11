@@ -54,7 +54,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 
 ## 基本用法
 
-![Vi/Vim Graphical Cheat Sheet - www.viemu.com](assets/vi_vim_graphical_cheat_sheet.gif)  
+![Vi/Vim Graphical Cheat Sheet - www.viemu.com](assets/vi_vim_cheat_sheet.gif)  
 
 ### 模式
 

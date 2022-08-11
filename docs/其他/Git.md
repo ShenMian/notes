@@ -1,14 +1,16 @@
 # Git
 
-Git 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
+[Git](https://git-scm.com/) 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
 
 ## 基本命令
 
-![Git 常用命令速查表](assets/git_commands.jpg)  
+![Git 常用命令速查表](assets/git_cheat_sheet.jpg)  
 
-## 工作流程(Workflow)
+## 工作流程
 
-分支:
+![Git 工作流程](assets/git_flow.png)  
+
+## 分支
 
 - main: 包含生产代码.
 - develop.
@@ -16,7 +18,7 @@ Git 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语
 - feature/xxx.
 - hotfix/xxx.
 
-![Git 工作流程](assets/git-flow.png)  
+## 提交
 
 ## 清空仓库
 
