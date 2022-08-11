@@ -100,8 +100,8 @@
 ## 参见
 
 - [Steam 成就](https://steamcommunity.com/stats/403640/achievements)
-- [全收集流程](https://www.bilibili.com/video/BV1kt411B7tj)
-- [界外魔之死DLC 全收集流程](https://www.bilibili.com/video/BV1H4411V7HN)
+- [Bilibili 全收集流程](https://www.bilibili.com/video/BV1kt411B7tj)
+- [Bilibili 界外魔之死DLC 全收集流程](https://www.bilibili.com/video/BV1H4411V7HN)
 
 ## 参考
 

@@ -80,7 +80,8 @@ git config --global https.proxy 'socks5://127.0.0.1:7891'
 ## 参见
 
 - [Git 文档](https://git-scm.com/doc)
-- [入门视频](https://www.bilibili.com/video/BV1KD4y1S7FL)
-- [进阶视频](https://www.bilibili.com/video/BV1hA411v7qX)
+- [Git FAQ](https://git.wiki.kernel.org/index.php/GitFaq)
+- [Bilibili 入门视频](https://www.bilibili.com/video/BV1KD4y1S7FL)
+- [Bilibili 进阶视频](https://www.bilibili.com/video/BV1hA411v7qX)
 
 [^1]: https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F
