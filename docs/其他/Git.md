@@ -1,6 +1,9 @@
 # Git
 
-[Git](https://git-scm.com/) 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
+!!! info
+    以下内容基于 2.X 版本.  
+
+[Git](https://git-scm.com/) 是一款版本控制软件. 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
 
 ## 基本命令
 
@@ -10,7 +13,7 @@
 
 ![Git 工作流程](assets/git_flow.png)  
 
-## 分支
+### 分支
 
 - main: 包含稳定的代码.
 - develop: 包含不稳定的代码, 将合并到 main.
@@ -18,7 +21,16 @@
 - hotfix/xxx: .
 - release/xxx: .
 
-## 提交
+### 提交
+
+提交信息的编写方式可以参考 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 里面列举了一些[例子](https://www.conventionalcommits.org/en/v1.0.0/#examples)和[优点](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits).  
+
+| Command                      | New Files | Modified Files | Deleted Files | Description                            |
+| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
+| `git add -A`                 | ✔️        | ✔️             | ✔️            | Stage all files.                       |
+| `git add .`                  | ✔️        | ✔️             | ✔️            | Stage all files in current folder.     |
+| `git add --ignore-removal .` | ✔️        | ✔️             | ❌             | Stage new and modified files only.     |
+| `git add -u`                 | ❌         | ✔️             | ✔️            | Stage modified and deleted files only. |
 
 ## 清空仓库
 
