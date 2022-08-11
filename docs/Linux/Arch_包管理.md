@@ -2,6 +2,9 @@
 
 **操作系统**: Arch, Manjaro.  
 
+!!! info
+    Arch 和 Manjaro 有一定区别, 二者不可以混淆.  
+
 ## 进行全面更新
 
 ```sh

@@ -39,3 +39,7 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 # deb http://security.kali.org/kali-security kali-rolling/updates main contrib non-free
 # deb-src http://security.kali.org/kali-security kali-rolling/updates main contrib non-free
 ```
+
+### Ubuntu
+
+需要根据具体的版本号进行选择.  
