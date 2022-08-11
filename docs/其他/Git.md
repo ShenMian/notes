@@ -24,6 +24,8 @@
 ### 提交
 
 提交信息的编写方式可以参考 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 里面列举了一些[例子](https://www.conventionalcommits.org/en/v1.0.0/#examples)和[优点](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits).  
+可以借助工具 [commitlint
+](https://github.com/conventional-changelog/commitlint) 来进行检查.  
 
 | Command                      | New Files | Modified Files | Deleted Files | Description                            |
 | ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
@@ -31,6 +33,14 @@
 | `git add .`                  | ✔️        | ✔️             | ✔️            | Stage all files in current folder.     |
 | `git add --ignore-removal .` | ✔️        | ✔️             | ❌             | Stage new and modified files only.     |
 | `git add -u`                 | ❌         | ✔️             | ✔️            | Stage modified and deleted files only. |
+
+## 代码托管平台
+
+- [GitHub](https://github.com/).
+- [GitLab](https://about.gitlab.com/).
+- [Bitbucket](https://bitbucket.org/).
+
+使用平台进行对仓库托管还可以利用平台提供的相关功能, 但绝不能产生依赖. 因确保项目随时可以脱离该平台并正常运作.  
 
 ## 清空仓库
 
