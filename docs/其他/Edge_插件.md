@@ -41,11 +41,11 @@
 
 ## Github
 
-- [Gitako] 文件树侧边栏.
+- [Gitako] 在 Code 页面文件树侧边栏.
 - [Refined Github] 对 Github 页面进行了一些改进.
-- [Github Web IDE] 添加一些通过 Web IDE 打开仓库的按钮.
+- [Github Web IDE] 在 Code 页面添加按钮, 用于通过一些 Web IDE 打开仓库.
 
-## 链接
+## 参见
 
 - [Microsoft Edge 插件商城](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home)
 
