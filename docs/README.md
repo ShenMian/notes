@@ -1,6 +1,6 @@
 # Notes
 
-![Give up github](https://sfconservancy.org/img/GiveUpGitHub.png){ width="200" style="display: block; margin: 0 auto" }
+![Give up github](https://sfconservancy.org/img/GiveUpGitHub.png){ width=20% style="display: block; margin: 0 auto" }
 
 ---
 
