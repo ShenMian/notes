@@ -1,6 +1,6 @@
 # Debian 包管理
 
-**操作系统**: Ubuntu, Kali.  
+**操作系统**: Ubuntu, Kali, Deepin, Pop!_OS, Q4OS, SparkyLinux, Zorin OS, Devuan, MX Linux, KDE Neon.  
 
 ## 更新
 
