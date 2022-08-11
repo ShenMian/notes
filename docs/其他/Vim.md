@@ -161,6 +161,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 | ------------------- | ------------------- |
 | `:Tutor`            | vimtutor 交互式教程 |
 | `:h key`(`:help`)   | 查看帮助            |
+| `:h quickref`       | 查看快速参考        |
 | `:n`                | 定位到第 `n` 行     |
 | `:!cmd`             | 执行命令 `cmd`      |
 | `:ter`(`:terminal`) | 打开内置终端        |
@@ -172,9 +173,7 @@ SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/)(�
 ## 参见
 
 - [Vi 与 Emacs 之间的编辑器之战](https://en.wikipedia.org/wiki/Editor_war)
-- [Vim Quick Ref](http://vimdoc.sourceforge.net/htmldoc/quickref.html)
-- [Neovim Quick Ref](https://neovim.io/doc/user/quickref.html)
-- <https://vimawesome.com/>
+- [Vim 插件合集](https://vimawesome.com/)
 
 ## 参考
 
