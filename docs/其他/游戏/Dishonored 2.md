@@ -33,7 +33,7 @@
 
 ## 背景
 
-故事发生在第一代策反事件15年之后, 艾米莉成为了群岛帝国(Empire of the Isles)新的女皇. 曾被道德(Daud)流放到虚空之境的德莱拉(Delilah Copperspoon)回归并成功夺取了政权, 声称自己才是皇位真正的继承人.  
+故事发生在第一代策反事件15年之后, 艾米莉成为了群岛帝国(Empire of the Isles)新的女皇. 曾被道德(Daud)流放到虚空之境(The void)的德莱拉(Delilah Copperspoon)回归并成功夺取了政权, 声称自己才是皇位真正的继承人.  
 
 ### 主角
 
