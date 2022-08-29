@@ -118,9 +118,10 @@
 
 4. Fearless Fall: 从研究院最高处跳下并处决下方的一名敌人.  
    ![Fearless Fall](assets/fearless_fall.jpg)  
+   最高处位于研究院中央建筑顶部的屋顶, 有一个放置了骸骨护符的鸟巢.  
    可以先投掷手榴弹吸引敌人前来调查.  
 
-5. Heartbeat Reaper: 1.5秒内杀死6个敌人.  
+5. Heartbeat Reaper: 1.5 秒内杀死 6 个敌人.  
    ![Heartbeat Reaper](assets/heartbeat_reaper.jpg)  
    击晕六个敌人放在一起, 然后使用范围性攻击同时击杀他们.  
 
