@@ -4,7 +4,13 @@
 
 - GNOME Terminal 上程序颜色显示异常
 
-   勾选 *Profile->Colors->Palette->Show bold text in bright colors*.  
+    勾选 *Profile->Colors->Palette->Show bold text in bright colors*.  
+
+- 无线投屏
+
+    ```sh
+    pamac build gnome-network-displays
+    ```
 
 ## 参见
 
