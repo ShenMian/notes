@@ -73,10 +73,8 @@
 | 名称                        | 描述                                      |
 | --------------------------- | ----------------------------------------- |
 | [Global Speed]              | 控制视频播放速度, 可微调, 拓展播放器功能. |
-| [Smooth Picture in picture] | 画中画, 拓展播放器功能.                   |
 
 [Global Speed]:              https://microsoftedge.microsoft.com/addons/detail/global-speed/mjhlabbcmjflkpjknnicihkfnmbdfced
-[Smooth Picture in picture]: https://microsoftedge.microsoft.com/addons/detail/smooth-picture-in-picture/fjoecbhldoelmencfldgmgbainnnkgbe
 
 ## GitHub
 
