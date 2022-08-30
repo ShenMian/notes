@@ -28,7 +28,7 @@
 3. 監聽 Wi-Fi 信號.
 
     ```sh
-    sudo airodunp-ng wlan0mon
+    sudo airodump-ng wlan0mon
     ```
 
     當發現目標 Wi-Fi 時按`Ctrl+C`停止掃描. 並記錄 BSSID 和 CH 兩個參數.
@@ -56,14 +56,14 @@
     - 使用 Hashcat. (推薦)
 
         ```sh
-        aircrack-ng [.cap存檔文件] -j [.haccpx文件]   # 將 .cap 文件轉爲 hashcat 接受的 .haccpx 文件
-        hashcat -m 2500 -a 0 [.hccapx文件] [字典文件] # 利用 hashcat 進行破解
+        aircrack-ng [.cap存檔文件] -j [.haccpx文件名称] # 將 .cap 文件轉爲 hashcat 接受的 .haccpx 文件
+        hashcat -m 2500 -a 0 [.hccapx文件] [字典文件]   # 利用 hashcat 進行破解
         ```
 
     - 使用 aircrack-ng.
 
         ```sh
-        aircrack-ng -w [.cap存檔文件] [字典文件]
+        aircrack-ng [.cap存檔文件] -w [字典文件]
         ```
 
 8. 關閉無線網卡監聽模式.
