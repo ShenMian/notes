@@ -154,11 +154,15 @@
 
 ## 参见
 
-- [Bilibili 耻辱 1 剧情简介](https://www.bilibili.com/video/BV1pG411b7eK)
-- [Bilibili 耻辱 2 剧情简介](https://www.bilibili.com/video/BV1cG41157qU)
-- [Steam 成就](https://steamcommunity.com/stats/403640/achievements)
-- [Bilibili 全收集流程](https://www.bilibili.com/video/BV1kt411B7tj)
-- [Bilibili 界外魔之死 DLC 全收集流程](https://www.bilibili.com/video/BV1H4411V7HN)
+- 剧情简介视频
+    - [耻辱 1](https://www.bilibili.com/video/BV1pG411b7eK)
+    - [耻辱 2](https://www.bilibili.com/video/BV1cG41157qU)
+- 全收集流程视频
+    - [耻辱 2](https://www.bilibili.com/video/BV1kt411B7tj)
+    - [界外魔之死 DLC](https://www.bilibili.com/video/BV1H4411V7HN)
+- Steam 成就
+    - [耻辱 2](https://steamcommunity.com/stats/403640/achievements)
+    - [界外魔之死 DLC](https://steamcommunity.com/stats/614570/achievements)
 - *The Art of Dishonored 2* 官方艺术设定集图册
 - <https://dishonored.fandom.com/wiki/Paintings>
 
