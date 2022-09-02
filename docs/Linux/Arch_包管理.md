@@ -25,6 +25,16 @@
     sudo pacman -R $(pacman -Qtdq)
     ```
 
+- 自定义下载器
+
+    允许用户使用自定义下载器以提高下载速度, 比如使用 aria2. 在 `/etc/pacman.conf` 的 `options.XferCommand` 修改为以下内容:  
+
+    ```sh
+    /usr/bin/aria2c --allow-overwrite=true --continue=true --file-allocation=none --log-level=error --max-tries=2 --max-connection-per-server=2 --max-file-not-found=5 --min-split-size=5M --no-conf --remote-time=true --summary-interval=60 --timeout=5 --dir=/ --out %o %u
+    ```
+
+    详情请参考 [ArchWiki](https://wiki.archlinux.org/title/Pacman/Tips_and_tricks#Performance).  
+
 ## 使用 AUR
 
 安装 yay.  
