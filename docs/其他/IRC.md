@@ -1,20 +1,25 @@
 # IRC
 
-## Weechat
+## 客户端
 
-Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.  
-初次使用 Weechat 可以参考 [Weechat Quick Start Guide](https://weechat.org/files/doc/stable/weechat_quickstart.en.html#join_part_irc_channels) 来进行配置.  
+- Thunderbird.
+- Weechat
 
-!!! warning
-    涉及保密内容的字串需要使用 `/secure` 命令来加密存储, 否则会以明文的形式直接显示在配置文件中.  
+    Weechat 是终端下的 IRC 客户端, 配置/使用起来十分方便.  
+    初次使用 Weechat 可以参考 [Weechat Quick Start Guide](https://weechat.org/files/doc/stable/weechat_quickstart.en.html#join_part_irc_channels) 来进行配置.  
 
-连接服务器后自动加入频道:  
+    !!! warning
+        涉及保密内容的字串需要使用 `/secure` 命令来加密存储, 否则会以明文的形式直接显示在配置文件中.  
 
-```
-/set irc.server.libera.autojoin "#archlinux-cn-offtopic,#C++,##English,#c_lang_cn,#archlinux-cn"
-```
+    连接服务器后自动加入频道:  
 
-其他客户端还有: Thunderbird.  
+    ```
+    /set irc.server.libera.autojoin "#archlinux-cn-offtopic,#C++,##English,#c_lang_cn,#archlinux-cn"
+    ```
+
+## 常用操作
+
+- 提及/回复某人: 语法 `nickname msg`/`nickname: msg`, 通常客户端支持 Tab 键补全.
 
 ## 安全
 
