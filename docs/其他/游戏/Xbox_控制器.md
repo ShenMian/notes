@@ -45,7 +45,7 @@
 
 - 部分游戏在使用蓝牙连接手柄时存在断连现象
 
-  首先需要确认问题出在软件上, 比如断连的现象仅存在于部分游戏中.  
+    首先需要确认问题出在软件上, 比如断连的现象仅存在于部分游戏中.  
 
-  - [更新手柄固件](https://www.microsoft.com/en-au/p/xbox-accessories/9nblggh30xj3?rtc=1&activetab=pivot:overviewtab)
-  - [更新蓝牙驱动](https://downloadcenter.intel.com/download/29919/Intel-Wireless-Bluetooth-for-Windows-10)
+    - [更新手柄固件](https://www.microsoft.com/en-au/p/xbox-accessories/9nblggh30xj3?rtc=1&activetab=pivot:overviewtab)
+    - [更新蓝牙驱动](https://downloadcenter.intel.com/download/29919/Intel-Wireless-Bluetooth-for-Windows-10)
