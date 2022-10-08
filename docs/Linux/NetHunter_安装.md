@@ -1,4 +1,4 @@
-# NetHunter
+# NetHunter 安装
 
 基于 Kali Linux 的手机渗透测试平台.  
 
