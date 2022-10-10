@@ -18,7 +18,7 @@
 ![Manjaro official webside](assets/manjaro_official_gnome.png){ width=40% }  
 
 默认是 `Full` 完整版, 也可以选择 `Minimal` 最小版, 仅提供了基本的桌面环境, 没有安装附加的软件.  
-点击红色按钮 `Download Full Image` 直接下载镜像文件, 点击青色的 `Download Full Torrent` 下载种子文件.  
+点击 `Image` 直接下载镜像文件, 点击 `Torrent` 下载种子文件.  
 
 若使用种子下载需使用专门的下载器进行下载.  
 
