@@ -212,6 +212,10 @@ rm -rf ~/.cache/nvim
 - 更新插件: `:PackerSync`.
 - 查看快捷键: `:Telescope keymaps`.
 
+## 错误排查
+
+若部分功能无法正常使用, 可以通过执行 `:checkhealth` 来进行自动排查故障, 并根据结果修复故障.  
+
 ## 参见
 
 - [Vi 与 Emacs 之间的编辑器之战](https://en.wikipedia.org/wiki/Editor_war)
