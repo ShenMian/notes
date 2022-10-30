@@ -8,8 +8,8 @@
 
 下载并安装 Termux:  
 
-- <https://github.com/termux/termux-app/releases>
-- <https://f-droid.org/packages/com.termux>
+- [Github Release](https://github.com/termux/termux-app/releases)
+- [F-Droid](https://f-droid.org/packages/com.termux)
 
 打开 Termux 并执行以下命令:  
 
@@ -55,7 +55,7 @@ chmod +x install-nethunter-termux
 
 ## 参见
 
-- <https://www.kali.org/docs/nethunter/nethunter-rootless/>
+- [NetHunter Rootless | Kali Linux Documentation](https://www.kali.org/docs/nethunter/nethunter-rootless/)
 
 ## 参考
 
