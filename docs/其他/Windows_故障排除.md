@@ -31,6 +31,17 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
     powercfg -attributes SUB_BUTTONS 5ca83367-6e45-459f-a27b-476b1d01c936 +ATTRIB_HIDE
     ```
 
+## 删除 MISO EFI 分区
+
+磁盘管理器中无法对 MISO EFI 分区进行任何操作. 下面操作可以清空整个**盘**:  
+
+```bat
+diskpart
+list disk
+sel disk <disk-id>
+clean
+```
+
 ## 打开启动项文件夹
 
 运行 `shell:startup`.  
