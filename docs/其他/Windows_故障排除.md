@@ -45,3 +45,9 @@ clean
 ## 打开启动项文件夹
 
 运行 `shell:startup`.  
+
+## 显示已连接 Wi-Fi 的密码
+
+```
+netsh wlan show profile name="<SSID>" key=clear
+```
