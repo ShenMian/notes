@@ -46,8 +46,11 @@ clean
 
 运行 `shell:startup`.  
 
-## 显示已连接 Wi-Fi 的密码
+## 显示连接过 Wi-Fi 的密码
 
 ```
+REM SSID 填写 * 显示全部连接过 Wi-Fi 的密码
 netsh wlan show profile name="<SSID>" key=clear
 ```
+
+明文密码位于 `Security settings->Key Content`.  
