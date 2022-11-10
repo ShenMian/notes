@@ -8,8 +8,9 @@
 
 ## 梗概
 
-1. 制作 Manjaro 的 USB 启动盘.
-2. 利用 Manjaro 自带的安装程序安装 Manjaro 到硬盘.
+1. 制作 Manjaro 的 USB 启动盘(Live USB).
+2. 从 U 盘启动 Manjaro.
+3. 利用 Manjaro 自带的安装程序安装 Manjaro 到硬盘.
 
 ## 下载系统镜像
 
