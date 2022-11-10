@@ -221,6 +221,7 @@ rm -rf ~/.cache/nvim
 - [Vi 与 Emacs 之间的编辑器之战](https://en.wikipedia.org/wiki/Editor_war)
 - [Vim 插件合集](https://vimawesome.com/)
 - [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
+- [A guide to using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
 
 ## 参考
 
