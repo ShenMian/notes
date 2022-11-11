@@ -36,7 +36,7 @@
 4. 捕獲指定 Wi-Fi 通信內容.
 
     ```sh
-    sudo airodump-ng -w [.cap存檔名稱] -c [CH] --bssid  [BSSID] wlan0mon
+    sudo airodump-ng -w [.cap存檔名稱] -c [CH] --bssid [BSSID] wlan0mon
     ```
 
 5. 斷開指定設備與指定 Wi-Fi 的鏈接.
