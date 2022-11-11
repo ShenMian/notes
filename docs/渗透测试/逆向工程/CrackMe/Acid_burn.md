@@ -1,8 +1,11 @@
 # Acid burn
 
+## 基本信息
+
 名称: Acid burn.  
 类型: Nag, Name/Serial, Serial.  
 语言: Borland Delphi 3.0.  
+壳: 无.
 
 ## 准备工作
 
