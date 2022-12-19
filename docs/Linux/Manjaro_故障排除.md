@@ -32,7 +32,7 @@ amixer -D pulse sset Master toggle
 利用 Timeshift[^1] 进行备份/还原可以排除新引入的故障.
 
 !!! warning
-Timeshift 默认并不备份用户目录, 因此当还原后问题依然存在可能是由用户目录中文件所导致的.
+    Timeshift 默认并不备份用户目录, 因此当还原后问题依然存在可能是由用户目录中文件所导致的.
 
 ## 设置
 
