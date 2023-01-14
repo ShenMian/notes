@@ -47,4 +47,8 @@ amixer -D pulse sset Master toggle
 - 服务: `/etc/systemd`.
 - 用户安装字体: `~/.local/share/fonts`.
 
+## 参见
+
+- [[HowTo] Find system information - Manjaro forum](https://forum.manjaro.org/t/howto-find-system-information/105212).
+
 [^1]: [linuxmint/timeshift](https://github.com/linuxmint/timeshift)/[teejee2008/timeshift](https://github.com/teejee2008/timeshift)(原仓库, 已停止更新)
