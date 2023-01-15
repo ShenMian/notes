@@ -4,7 +4,9 @@
 
 ## 条件
 
-- U盘: 将被格式化, 因此应先转移U盘内已有的数据.
+1.  U 盘: 将被格式化, 因此应先转移U盘内已有的数据.
+2. 良好的网络: 安装时会使用到网络.
+3. 充足的电量.
 
 ## 梗概
 
@@ -34,20 +36,20 @@
 !!! warning
     自动更新可能失效, 新的系统镜像使用较早版本的 Rufus 可能导致失败, 因此建议从官网下载最新版本.  
 
-## 烧录镜像到U盘中
+## 烧录镜像到 U 盘中
 
-1. 插入U盘.
+1. 插入 U 盘.
 2. 选项设置可参考下图.
 
-    ![Rufus usage](assets/rufus_usage.png){ width=50% }  
+    ![Rufus usage](assets/old/rufus_usage.png){ width=50% }  <!-- FIXME -->
 
 3. 点击 `开始` 按钮.
 
-Rufus 快速格式化U盘并开始写入镜像, 耗时大约 3-5 min.  
+Rufus 快速格式化 U 盘并开始写入镜像, 耗时大约 3-5 min.  
 
-## 从U盘中启动
+## 从 U 盘中启动
 
-开机时按下指定按键进入 BIOS 设置, 然后选择从U盘启动.  
+开机时按下指定按键进入 BIOS 设置, 然后选择从 U 盘启动.  
 
 | 制造商  | 按键             |
 | ------- | ---------------- |
@@ -68,76 +70,91 @@ Rufus 快速格式化U盘并开始写入镜像, 耗时大约 3-5 min.
 | others  | F12, Esc         |
 
 !!! tip
-    不同电脑进入 BIOS 设置的方式和从U盘启动的操作不同, 需根据自己的电脑型号查找具体操作方式.  
+    不同电脑进入 BIOS 设置的方式和从 U 盘启动的操作不同, 需根据自己的电脑型号查找具体操作方式.  
 
 !!! warning
     修改前需拍照备份, 方便失败后复原.  
 
 ## [更新 pacman 镜像源](../Arch_包管理.md#更新镜像源)
 
-后续安装将使用到 pacman 下载内容, 因此提前更新镜像源可以提高安装速度和成功率.  
+后续安装将使用到 pacman 下载内容, 因此提前更新镜像源可以提高成功率.  
 
 ## 安装 Manjaro
 
-启动后单击任务栏最右侧的图标启动 Manjaro 安装程序.  
-
 ### 欢迎
 
-![Install Manjaro Linux](assets/install_manjaro_linux.png){ width=80% style="display: block; margin: 0 auto" }  
+![Manjaro Hello](assets/1_manjaro_hello.png){ width=80% style="display: block; margin: 0 auto" }  
+
+点击窗口最下方的 `Launch installer`.  
+
+![Manjaro Linux Installer](assets/2_manjaro_linux_installer.png){ width=80% style="display: block; margin: 0 auto" }  
 
 ### 位置
 
 选择时区和系统语言.  
 
-![Time zone and system language](assets/position.png){ width=80% style="display: block; margin: 0 auto" }  
+![Time zone and system language](assets/3_location.png){ width=80% style="display: block; margin: 0 auto" }  
 
 ### 键盘
 
-选择键盘布局.  
+选择键盘类型与布局, 通常默认设置即可.  
+如果使用的不是美式键盘或布局不是 QWERTY 则需注意.  
 
-!!! warning
-    `Chinese(汉语)` 键盘布局可能存在问题, 建议使用美式键盘布局.  
-
-![Keyboard layout](assets/keyboard.png){ width=80% style="display: block; margin: 0 auto" }  
+![Keyboard layout](assets/4_keyboard.png){ width=80% style="display: block; margin: 0 auto" }  
 
 ### 分区
 
 !!! danger
     该步骤存在较高风险, 需谨慎操作.  
+    如果已经安装了 Windows, 注意不要修改属于 Windows 的 NTFS 文件系统类型的分区.  
 
 选择手动分区.  
 
-![manual](assets/manual.png){ width=80% style="display: block; margin: 0 auto" }  
+![Partitions](assets/5_partitions.png){ width=80% style="display: block; margin: 0 auto" }  
 
 根据硬盘类型和空间进行分区. 在进行分区时, 应该先对 [FHS] 具有基本了解.  
 
 - SSD: EFI(`/boot/efi`), root(`/`), swap.
 - HDD: home(`/home`).
 
-![efi](assets/efi.png){ width=80% }  
-![swap](assets/swap.png){ width=80% }  
-![root](assets/root.png){ width=80% }  
-![var](assets/var.png){ width=80% }  
-![home](assets/home.png){ width=80% }  
+![efi](assets/6_efi.png){ width=80% }  
+![root](assets/7_root.png){ width=80% }  
+![swap](assets/8_swap.png){ width=80% }  
+![var](assets/9_var.png){ width=80% }  
+![home](assets/10_home.png){ width=80% }  
+
+![overview 1](assets/11_overview_1.png){ width=80% }  
+![overview 2](assets/12_overview_2.png){ width=80% }  
 
 ### 用户
 
 设置用户名/计算机名/密码.  
 
+![Users](assets/13_users.png){ width=80% style="display: block; margin: 0 auto" }  
+
+### 总览
+
+![Summary](assets/14_summary.png){ width=80% style="display: block; margin: 0 auto" }  
+
 ### 安装
 
-点击 `安装` 开始在指定分区安装 Manjaro.  
+点击 `Install` 开始在指定分区安装 Manjaro.  
 
-![Install](assets/install.png){ width=80% style="display: block; margin: 0 auto" }  
+![](assets/15.png){ style="display: block; margin: 0 auto" }  
+![Install](assets/16_install.png){ width=80% style="display: block; margin: 0 auto" }  
 
 !!! info
     `misc postinstall configurations` 步骤需要调用 pacman 下载内容, 因此可能耗时较长.  
+
+可以点击进度条右侧的按钮显示安装日志.  
+
+![Install log](assets/17_install_log.png){ width=80% style="display: block; margin: 0 auto" }  
 
 ### 结束
 
 系统成功安装后将显示此提示.  
 
-![Finished](assets/finished.png){ width=80% style="display: block; margin: 0 auto" }  
+![Finish](assets/18_finish.png){ width=80% style="display: block; margin: 0 auto" }  
 
 ## 安装后配置
 
