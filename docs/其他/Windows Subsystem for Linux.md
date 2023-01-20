@@ -1,6 +1,6 @@
-# WSL
+# Windows Subsystem for Linux
 
-**全称**: Windows Subsystem for Linux.  
+**缩写**: WSL.  
 
 ## 启用 WSL
 
