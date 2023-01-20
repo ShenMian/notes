@@ -6,7 +6,7 @@
 - [Vim](./其他/编辑器/Vim.md).
 - [反汇编器](./渗透测试/逆向工程/反汇编器.md).
 - [Manjaro 安装](./Linux/Manjaro_安装.md).
-- [Dishonored 2](./其他/游戏/评价/Dishonored 2.md).
+- [Dishonored 2](<./其他/游戏/评价/Dishonored 2.md>).
 
 ---
 
