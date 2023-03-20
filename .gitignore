@@ -1,0 +1,19 @@
+
+# Build
+[Bb]ild/
+[Oo]ut/
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# IntelliJ IDEA
+.idea/
+
+# ctags
+tags
+
+# Obsidian
+.obsidian/
