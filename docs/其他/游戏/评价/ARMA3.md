@@ -82,6 +82,8 @@ GPU_DetectedFramesAhead=1;
 
 - [Automatic ViewDistance]\: 根据帧率自动调节视距.
 - [Advanced Garbage Collector]\: 将尸体替换为裹尸袋, 减少对象三角形数.
+- [Optimize Performance]\: 优化相关模组合集.
 
 [Automatic ViewDistance]: https://steamcommunity.com/sharedfiles/filedetails/?id=1544955993
 [Advanced Garbage Collector]: https://steamcommunity.com/sharedfiles/filedetails/?id=1724884525
+[Optimize Performance]: https://steamcommunity.com/sharedfiles/filedetails/?id=2779217051
