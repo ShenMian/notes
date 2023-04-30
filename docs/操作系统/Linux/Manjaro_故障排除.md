@@ -29,6 +29,10 @@ xdg-mime query default inode/directory
 - X11
 
     ```sh
+    gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+    ```
+
+    ```sh
     sudo pacman -S mutter-x11-scaling gnome-control-center-x11-scaling
     gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']" # 启用
 
@@ -83,6 +87,7 @@ amixer -D pulse sset Master toggle
 
 ## 参见
 
+- [HiDPI - ArchWiki](https://wiki.archlinux.org/title/HiDPI).
 - [[HowTo] Find system information - Manjaro forum](https://forum.manjaro.org/t/howto-find-system-information/105212).
 
 [^1]: [linuxmint/timeshift](https://github.com/linuxmint/timeshift)/[teejee2008/timeshift](https://github.com/teejee2008/timeshift)(原仓库, 已停止更新)
