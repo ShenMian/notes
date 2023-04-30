@@ -24,3 +24,14 @@
 
 - 枪械模型质量很高.
 - PvE + PvP.
+
+## 优化
+
+- 阴影质量(Shadow Quality): `中` 或更高.
+- 运动模糊(Motion Blur): `关`.
+- 布娃娃数量(Ragdoll Count): `低`.
+- 材质流池(Texture Streaming Pool): `高`.
+
+## 参见
+
+- [不同选项画面对比](https://www.reddit.com/r/insurgency/comments/rjl6wu/comment/hp43udc/?utm_source=share&utm_medium=web2x&context=3).
