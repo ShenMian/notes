@@ -1,4 +1,4 @@
-# Raspberry Pi OS
+# Raspberry Pi OS 安装
 
 安装 Raspberry Pi Imager.  
 
