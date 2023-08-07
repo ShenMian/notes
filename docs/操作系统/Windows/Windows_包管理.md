@@ -9,6 +9,7 @@
 ## 安装 scoop
 
 ```ps1
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 $env:SCOOP='D:\'                                                   # 指定安装路径, 直接在此路径下安装
 [environment]::setEnvironmentVariable('SCOOP', $env:SCOOP, 'User') # 设置环境变量
 iwr -useb get.scoop.sh | iex                                       # 安装 scoop
@@ -20,20 +21,6 @@ sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 
 scoop checkup # 检查潜在问题
 
 scoop bucket add extras
-```
-
-### 提高包搜索速度
-
-安装 scoop-search:  
-
-```ps1
-scoop install scoop-search
-```
-
-使用 `scoop-search` 替代 `scoop search`, 或在 Powershell profile (位于 `$PROFILE`)中添加以下内容:  
-
-```ps1
-Invoke-Expression (&scoop-search --hook)
 ```
 
 ## 常用操作
