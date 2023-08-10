@@ -8,9 +8,10 @@
 sudo pacman -Ss <package>       # 搜索包
 sudo pacman -S <package>        # 安装包
 sudo pacman -Rns <package>      # 删除包(包括依赖项)
-sudo pacman-mirrors -c China    # 更新镜像源(仅限 Manjaro)
 sudo pacman -Syyu               # 进行全面更新
 sudo pacman -Rs $(pacman -Qtdq) # 删除无用的包
+
+sudo pacman-mirrors -c China    # 更新镜像源(仅限 Manjaro)
 yay -Ps                         # 列出外存占用情况和10个体积最大的包
 ```
 
