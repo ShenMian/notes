@@ -53,6 +53,8 @@ xdg-mime query default inode/directory
 
 ## 无音频输出
 
+以下方法只能暂时缓解该问题, **暂未找到该问题的永久解决方法**.  
+
 ```sh
 systemctl --user restart pulseaudio.service
 systemctl --user restart pulseaudio.socket
