@@ -13,8 +13,9 @@ flatpak install org.kde.KStyle.Adwaita
 
 ## 故障排除
 
-- Error: While pulling ... from remote flathub: URI ... exceeded maximum size of ... bytes.[^1]
+- Partial data loss of static deltas[^1]
 
+    出现 `404 Not Found` 或 `Error: While pulling ... from remote flathub: URI ... exceeded maximum size of ... bytes.` 错误提示.  
     附加参数 `--no-static-deltas`.  
 
 ## 参考
