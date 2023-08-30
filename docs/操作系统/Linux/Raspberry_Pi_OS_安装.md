@@ -4,7 +4,7 @@
 
 ```console
 > scoop install raspberry-pi-imager # Windows
-> sudo apt install rpi-imager
+> sudo apt install rpi-imager       # Debian
 ```
 
 ![](assets/rpi_imager_0.png)  
