@@ -13,7 +13,11 @@ flatpak install org.kde.KStyle.Adwaita
 
 ## 故障排除
 
-- Error: While pulling ... from remote flathub: URI ... exceeded maximum size of ... bytes.
+- Error: While pulling ... from remote flathub: URI ... exceeded maximum size of ... bytes.[^1]
 
     附加参数 `--no-static-deltas`.  
+
+## 参考
+
+[^1]: https://status.flathub.org/issues/2023-01-14-deltas/
 
