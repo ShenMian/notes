@@ -2,6 +2,10 @@
 
 **中文**: 叛乱: 沙漠风暴.  
 
+![封面 - New World Interactive](assets/insurgency_sandstorm_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
+
+## 测评
+
 **类型**: FPS, 单人, 多人合作, 多人竞技.  
 
 | 项目 | 评分 | 描述             |

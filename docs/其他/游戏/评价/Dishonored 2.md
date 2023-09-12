@@ -1,8 +1,8 @@
 # Dishonored 2
 
-![截图 - Arkane Studio](assets/4.png)  
-
 **中文**: 耻辱 2.  
+
+![封面 - Arkane Studio](assets/dishonored_2_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 测评
 
@@ -17,6 +17,8 @@
 | 剧情 | 8    |                  |
 
 ### 优点
+
+![截图 - Arkane Studio](assets/4.png){ width=70% style="display: block; margin: 0 auto" }  
 
 - 优秀的关卡设计: 如机关宅邸(Clockwork mansion).
 - 玩法多样: 通过武器和超能力可以看出这款游戏并不只有潜行一种玩法, 直接与敌人正面冲突也是一种十分刺激的玩法. 虽然存在 "混乱度" 的设定, 但对游玩的影响不大.

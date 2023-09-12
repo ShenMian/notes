@@ -2,6 +2,8 @@
 
 **中文**: 尘埃拉力赛 2.0.  
 
+![封面 - Codemasters](assets/dirt_rally_2.0_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
+
 ## 测评
 
 **类型**: 赛车, 拟真, 单人, 多人竞技.  

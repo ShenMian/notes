@@ -1,7 +1,9 @@
-# ArmA3
+# Arma 3
 
 **全称**: Armed Assault 3.  
 **中文**: 武装突袭 3.  
+
+![封面 - Bohemia Interactive](assets/arma_3_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 测评
 

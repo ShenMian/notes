@@ -2,6 +2,8 @@
 
 **中文**: 未转变者.  
 
+![封面 - Smartly Dressed Games](assets/unturned_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
+
 ## 测评
 
 **类型**: 生存, 末日, FPS/TPS, 多人合作.  

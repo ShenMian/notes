@@ -2,6 +2,8 @@
 
 **中文**: 星露谷物语.  
 
+![封面 - ConcernedApe](assets/stardew_valley_cover.jpg){ width=30% style="display: block; margin: 0 auto" }  
+
 ## 前置准备
 
 1. 观看各类入门教程.
