@@ -32,8 +32,8 @@
 
 ## 辅助工具
 
-完成度检查: https://mouseypounds.github.io/stardew-checkup/
-预测器: https://mouseypounds.github.io/stardew-predictor/
+- 完成度检查: <https://mouseypounds.github.io/stardew-checkup/>
+- 预测器: <https://mouseypounds.github.io/stardew-predictor/>
 
 ## 春季
 
