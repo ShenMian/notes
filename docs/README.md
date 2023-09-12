@@ -2,17 +2,13 @@
 
 示例笔记:
 
-* [常用软件](docs/操作系统/常用软件.md).
-* [Vim](docs/其他/编辑器/Vim.md).
-* [反汇编器](docs/渗透测试/逆向工程/反汇编器.md).
-* [Manjaro 安装](docs/操作系统/Linux/Manjaro\_安装.md).
-* [Dishonored 2](<docs/其他/游戏/评价/Dishonored 2.md>).
-
-
+* [常用软件](操作系统/常用软件.md).
+* [Vim](其他/编辑器/Vim.md).
+* [反汇编器](渗透测试/逆向工程/反汇编器.md).
+* [Manjaro 安装](操作系统/Linux/Manjaro\_安装.md).
+* [Dishonored 2](<其他/游戏/评价/Dishonored 2.md>).
 
 [![Give up GitHub](https://sfconservancy.org/img/GiveUpGitHub.png){ width=20% style="display: block; margin: 0 auto" }](https://sfconservancy.org/GiveUpGitHub/)
-
-
 
 ![License](assets/LICENSE.png){ align=right }
 
