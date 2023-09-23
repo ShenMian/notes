@@ -1,4 +1,4 @@
-# Python 故障排查
+# Python 故障排除
 
 ## 安装 pip
 
