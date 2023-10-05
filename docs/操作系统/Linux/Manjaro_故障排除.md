@@ -7,6 +7,54 @@
 !!! warning
     Timeshift 默认并不备份用户目录, 因此当还原后问题依然存在可能是由用户目录中文件所导致的.  
 
+## Secure Boot
+
+```sh
+> sudo pacman -S sbctl
+> sbctl status
+Installed:	✗ sbctl is not installed
+Setup Mode:	✓ Disabled
+Secure Boot:	✗ Disabled
+Vendor Keys:	microsoft
+> sbctl status
+Installed:	✓ sbctl is installed
+Owner GUID:	7f6711c7-2f33-42d1-b1a5-c3b00eee5758
+Setup Mode:	✗ Enabled
+Secure Boot:	✗ Disabled
+Vendor Keys:	none
+> sudo sbctl create-keys
+Created Owner UUID 7f6711c7-2f33-42d1-b1a5-c3b00eee5758
+Creating secure boot keys...✓ 
+Secure boot keys created!
+> sudo sbctl enroll-keys --microsoft
+Enrolling keys to EFI variables...
+With vendor keys from microsoft...✓ 
+Enrolled keys to the EFI variables!
+> sbctl status
+Installed:	✓ sbctl is installed
+Owner GUID:	7f6711c7-2f33-42d1-b1a5-c3b00eee5758
+Setup Mode:	✓ Disabled
+Secure Boot:	✗ Disabled
+Vendor Keys:	microsoft
+> sudo sbctl verify
+Verifying file database and EFI images in /boot/efi...
+✗ /boot/efi/EFI/Boot/bootx64.efi is not signed
+...
+> sudo sbctl sign -s /boot/efi/EFI/Manjaro/grubx64.efi
+✓ Signed /boot/efi/EFI/Manjaro/grubx64.efi
+> sudo sbctl verify
+Verifying file database and EFI images in /boot/efi...
+✓ /boot/efi/EFI/Manjaro/grubx64.efi is signed
+...
+> sbctl status
+Installed:	✓ sbctl is installed
+Owner GUID:	7f6711c7-2f33-42d1-b1a5-c3b00eee5758
+Setup Mode:	✓ Disabled
+Secure Boot:	✗ Disabled
+Vendor Keys:	microsoft
+> reboot
+```
+
 ## 默认文件管理器
 
 **DE**: Gnome.  
