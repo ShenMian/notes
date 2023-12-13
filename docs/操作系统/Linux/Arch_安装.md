@@ -1,7 +1,7 @@
 # Arch 安装
 
 命令输出过长可以先传递给 `less`, 如: `ip addr | less`.  
-通过 `Ctrl` `Alt` F1-6 切换到其他终端, 可同时执行命令.  
+通过 `Ctrl` `Alt` F1-6 切换到其他终端, 可同时执行命令.
 
 ## 连接 Wi-Fi
 
@@ -14,6 +14,11 @@
 [iwd]# exit                          # 连接成功后即可退出
 ```
 
+```console
+# nmcli dev wifi
+# nmcli dev wifi connect <ESSID> password <PASSWORD>
+```
+
 ## 网络
 
 ```console
@@ -23,14 +28,14 @@
 
 ## 更换源
 
-请参见: <https://archlinux.org/mirrorlist/>.  
+请参见: <https://archlinux.org/mirrorlist/>.
 
 ## 分区
 
 !!! danger
-    该步骤存在较高风险, 需谨慎操作.  
-    如果已经安装了 Windows, 注意不要修改属于 Windows 的 NTFS 文件系统类型的分区.  
-    可以使用 `lsblk --fs` 查看文件系统类型.  
+该步骤存在较高风险, 需谨慎操作.  
+ 如果已经安装了 Windows, 注意不要修改属于 Windows 的 NTFS 文件系统类型的分区.  
+ 可以使用 `lsblk --fs` 查看文件系统类型.
 
 ```console
 # fdisk -l
@@ -39,25 +44,25 @@
 # lsblk
 ```
 
-现代计算机标签类型建议选择 GPT.  
+现代计算机标签类型建议选择 GPT.
 
 bootloader 分区大小通常为 128/256/512.  
-创建完分区后选中该分区, 按 `b` 标记为可启动的.  
+创建完分区后选中该分区, 按 `b` 标记为可启动的.
 
-按需创建其他分区, 至少创建一个. 用于存放根目录.  
+按需创建其他分区, 至少创建一个. 用于存放根目录.
 
-创建完全部分区后按 `W` 写入来应用修改. 然后按 `q` 退出.  
+创建完全部分区后按 `W` 写入来应用修改. 然后按 `q` 退出.
 
 ## 格式化分区
 
-选择合适的文件系统格式化分区.  
+选择合适的文件系统格式化分区.
 
 ```console
 # mkfs.ext4 /dev/sda1
 # mkfs.ext4 /dev/sda2
 ```
 
-交换分区使用的命令是 `mkswap`.  
+交换分区使用的命令是 `mkswap`.
 
 ## 挂载分区
 
@@ -74,7 +79,7 @@ bootloader 分区大小通常为 128/256/512.
 # pacstrap /mnt linux linux-firmware base base-devel neovim
 ```
 
-安装基本软件. 可以将 neovim 替换成其他编辑器或使用 nano.  
+安装基本软件. 可以将 neovim 替换成其他编辑器或使用 nano.
 
 ```console
 # genfstab -U /mnt >> /mnt/etc/fstab
@@ -101,7 +106,7 @@ bootloader 分区大小通常为 128/256/512.
 
 ## 安装 microcode
 
-根据 CPU 安装 microcode.  
+根据 CPU 安装 microcode.
 
 ```console
 []# pacman -S intel-ucode # Intel CPU
@@ -115,19 +120,19 @@ bootloader 分区大小通常为 128/256/512.
 ```
 
 !!! warning
-    使用数字键盘时需注意 `Num Lock`.  
+使用数字键盘时需注意 `Num Lock`.
 
 ## 设置语言
 
 修改文件 `/etc/local.gen`, 取消需要使用语言的注释, 可以同时启用 UTF-8 和 ISO-8859-1.
 
-应用修改:  
+应用修改:
 
 ```console
 []# locale-gen
 ```
 
-修改文件 `/etc/locale.conf`, 添加下面内容来设置需要使用的语言:  
+修改文件 `/etc/locale.conf`, 添加下面内容来设置需要使用的语言:
 
 ```conf
 LANG=en-US.UTF-8
@@ -135,7 +140,7 @@ LANG=en-US.UTF-8
 
 ## 设置主机名
 
-修改文件 `/etc/hostname`, 填写主机名.  
+修改文件 `/etc/hostname`, 填写主机名.
 
 ## 设置时区
 
