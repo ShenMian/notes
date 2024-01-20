@@ -114,6 +114,16 @@ gh auth setup-git         # 配置 Git
 - hotfix/xxx: <!-- TODO -->.
 - release/xxx: 发布版本.
 
+## 常见错误
+
+```sh
+gpg: skipped "XXXXXXXXXXXXXXXX": No secret key
+```
+
+检查是否使用的正确的 `gpg.exe`. 通过下面命令指定使用的 `gpg.exe`:
+
+git config --global gpg.program "path/to/gpg.exe"
+
 ## 参见
 
 - [Git 文档](https://git-scm.com/doc)
@@ -123,4 +133,4 @@ gh auth setup-git         # 配置 Git
 - [入门视频2 - 奇乐编程学院](https://www.bilibili.com/video/BV1hA411v7qX)
 - <https://git-send-email.io/>
 
-[^1]: https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F
+[^1]: <https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F>
