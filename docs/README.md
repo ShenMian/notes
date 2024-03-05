@@ -12,4 +12,4 @@
 
 ![License](assets/LICENSE.png){ align=right }
 
-该系列文章遵循 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 协议发布. 部分图片来源于互联网.
+该系列文章遵循 :fontawesome-brands-creative-commons: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 协议发布. 部分图片来源于互联网.
