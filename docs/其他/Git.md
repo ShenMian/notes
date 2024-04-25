@@ -7,6 +7,15 @@
 
 [Git](https://git-scm.com/) 是一款版本控制系统(Version control system, VCS). 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".  
 
+## 暂存
+
+| Command                      | New Files | Modified Files | Deleted Files | Description                            |
+| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
+| `git add -A`                 | √         | √              | √             | Stage all files.                       |
+| `git add .`                  | √         | √              | √             | Stage all files in current folder.     |
+| `git add --ignore-removal .` | √         | √              | ×             | Stage new and modified files only.     |
+| `git add -u`                 | ×         | √              | √             | Stage modified and deleted files only. |
+
 ## 提交
 
 提交信息的编写方式可以参考 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 里面列举了一些[例子](https://www.conventionalcommits.org/en/v1.0.0/#examples)和[优点](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits).  
@@ -25,15 +34,6 @@
 | ci       | 更改持续集成文件和脚本.                                                          |
 | chore    | 其他不修改 src 或 test 文件.                                                     |
 | revert   | commit 回退.                                                                     |
-
-## 暂存
-
-| Command                      | New Files | Modified Files | Deleted Files | Description                            |
-| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
-| `git add -A`                 | √         | √              | √             | Stage all files.                       |
-| `git add .`                  | √         | √              | √             | Stage all files in current folder.     |
-| `git add --ignore-removal .` | √         | √              | ×             | Stage new and modified files only.     |
-| `git add -u`                 | ×         | √              | √             | Stage modified and deleted files only. |
 
 ## 忽略文件
 
@@ -86,6 +86,7 @@ git config --global alias.st status
 - [GitHub](https://github.com/).
 - [GitLab](https://about.gitlab.com/).
 - [Bitbucket](https://bitbucket.org/).
+- [Gitea](https://gitea.com/).
 
 使用平台进行对仓库托管还可以利用平台提供的相关功能, 但不应该产生依赖. 应确保项目随时可以脱离该平台并正常运作.  
 
@@ -96,23 +97,11 @@ GitHub CLI 是 GitHub 官方提供的跨平台的命令行工具. [安装教程]
 
 ```sh
 sudo pacman -S github-cli # Arch Linux
-choco install gh          # Windows
+scoop install gh          # Windows
 
 gh auth login             # 登录 GitHub 账号
 gh auth setup-git         # 配置 Git
 ```
-
-## 工作流程
-
-![Git 分支](assets/git_branch.png){ align=right width=40% }  
-
-### 分支
-
-- main: 包含稳定的代码.
-- develop: 包含不稳定的代码, 将合并到 main.
-- feature/xxx: 包含新功能的代码, 将合并到 develop.
-- hotfix/xxx: <!-- TODO -->.
-- release/xxx: 发布版本.
 
 ## 常见错误
 
