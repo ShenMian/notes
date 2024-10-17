@@ -23,9 +23,6 @@ scoop install git
 # Scoop 中的部分软件可能需要管理员权限才能正常安装, sudo 命令可以以管理员权限执行指定命令
 scoop install sudo
 
-# 启用长路径支持, 如果存在长度超过 260 个字符的路径, 需要启用该功能才能正常工作
-sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
-
 scoop install 7zip dark innounp
 scoop checkup # 检查是否还存在其他潜在问题
 
