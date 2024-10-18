@@ -2,11 +2,13 @@
 
 **英文**: Petri net
 
+![Petri net](assets/petri_net.jpg){ width=80% style="display: block; margin: 0 auto" }
+
 Petri 网由三种元素组成:
 
-1. 库所(Place): 圆形节点.
-2. 变迁(Transition): 方形节点.
-3. 有向弧(Arc): 用于链接库所和变迁.
+1. **库所(Place)**: 即上图的圆形节点.
+2. **变迁(Transition)**: 即上图的方形节点.
+3. **有向弧(Arc)**: 用于链接库所和变迁.
 
 ---
 
@@ -41,6 +43,6 @@ struct Transition {
 
 ## 参见
 
+- <https://pes.vsb.cz/petrineteditor/>.
 - [Petri Net Markup Language](https://www.pnml.org/papers/PNML_CTT.pdf).
-
 - <http://petrinet.org/>.
