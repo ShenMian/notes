@@ -22,36 +22,16 @@ Petri 网是一个三元组 $N = (P, T, F)$, 其中:
 - $P$ 和 $T$ 是两个不相交的有限集, 分别表示库所和变迁.
 - $F \subseteq (P \times T) \cup (T \times P)$ 是弧的集合.
 
----
+TODO: 令牌(Token).  
+TODO: 说明 Petri 网的运行方式.
 
-令牌(Token).
+## 高级 Petri 网 (High-level Petri nets)
 
----
+高级 Petri 网在 Petri 网的基础上添加了以下内容:
 
-```txt
-place <place_name>
-transition <transition_name>
-
-p1(red)
-p2(yellow)
-p3(green)
-t1[]
-t2[]
-t3[]
-
-p1 -> t1 -> p2 -> t2 -> p3 -> t3 -> p1
-```
-
-```rs
-struct Place {
-    label: String,
-    next: Vec<Rc<Transition>>,
-}
-
-struct Transition {
-    next: Vec<Rc<Place>>,
-}
-```
+- Color: 令牌可以包含其他属性. 可为其他属性建模.
+- Time: 变迁带有 $T_{min}$ 和 $T_{max}$ 属性, 表示激发所需要的最短完成和最长完成时间. 可用于性能分析.
+- Hierarchy: Petri 网可以包含子网(subnet), 而子网可以包含其他子网.
 
 ## 参见
 
