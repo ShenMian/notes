@@ -8,7 +8,7 @@
 
 ![GNFA](assets/gnfa.png){ width=60% style="display: block; margin: 0 auto" }  
 
-### 定义
+### 正式定义
 
 一个 GNFA $G$ 是一个五元组 $(Q, \Sigma, \delta, s, a)$, 其中:
 
