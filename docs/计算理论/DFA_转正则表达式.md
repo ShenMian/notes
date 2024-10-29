@@ -12,11 +12,11 @@
 
 一个 GNFA $G$ 是一个五元组 $(Q, \Sigma, \delta, s, a)$, 其中:
 
-- $Q$ 是**状态**的有限集.
-- $\Sigma$ 是由**字母表**符号组成的有限集.
-- $T: (S \setminus \{a\}) \times (S \setminus \{s\}) \rightarrow R$ 是**转移函数**.
-- $s \in S$ 是**初始状态**.
-- $a \in S$ 是**接受状态**.
+- $Q$ 是状态的有限集.
+- $\Sigma$ 是由字母表符号组成的有限集.
+- $T: (S \setminus \{a\}) \times (S \setminus \{s\}) \rightarrow R$ 是转移函数.
+- $s \in S$ 是初始状态.
+- $a \in S$ 是接受状态.
 
 **引理**: 任意 GNFA $G$ 都有对应的正则表达式 $R$.
 
