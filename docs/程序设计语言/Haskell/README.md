@@ -23,8 +23,15 @@ scoop install msys2
 Set-ExecutionPolicy Bypass -Scope Process -Force;[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; try { & ([ScriptBlock]::Create((Invoke-WebRequest https://www.haskell.org/ghcup/sh/bootstrap-haskell.ps1 -UseBasicParsing))) -Interactive -DisableCurl } catch { Write-Error $_ }
 ```
 
+## 资源
+
+- [Haskell CheatSheet](https://cheatsheet.codeslower.com/CheatSheet.pdf).
+
 ---
 
-`data` 类似 `enum`.
-`class` 类似 `trait`.
-`instance` 类似 `impl`.
+Rust 在类型系统方面受到了 Haskell 的影响. 如果曾学习过 Rust, 则可以加速 Haskell 这方面的内容的学习.  
+下面列举了它们之间的一些相似之处:
+
+- Haskell 的 `data` 类似 Rust 的 `enum`.
+- Haskell 的 `class` 类似 Rust 的 `trait`.
+- Haskell 的 `instance` 类似 Rust 的 `impl`.

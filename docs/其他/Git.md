@@ -118,6 +118,11 @@ scoop install gh          # Windows
 
 gh auth login             # 登录 GitHub 账号
 gh auth setup-git         # 配置 Git
+
+gh extension install github/gh-copilot # 安装 Copilot 拓展
+
+gh copilot explain "sudo apt-get"         # 解释命令
+gh copilot suggest "Undo the last commit" # 生成命令
 ```
 
 ## 常见错误
