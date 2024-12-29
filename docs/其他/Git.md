@@ -7,54 +7,6 @@
 
 [Git](https://git-scm.com/) 是一款版本控制系统 (Version control system, VCS). 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语代表 "令人讨厌的人".
 
-## 暂存
-
-| Command                      | New Files | Modified Files | Deleted Files | Description                            |
-| ---------------------------- | --------- | -------------- | ------------- | -------------------------------------- |
-| `git add -A`                 | √         | √              | √             | Stage all files.                       |
-| `git add .`                  | √         | √              | √             | Stage all files in current folder.     |
-| `git add --ignore-removal .` | √         | √              | ×             | Stage new and modified files only.     |
-| `git add -u`                 | ×         | √              | √             | Stage modified and deleted files only. |
-
-## 提交信息
-
-提交信息的编写方式可以参考 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 里面列举了一些[例子](https://www.conventionalcommits.org/en/v1.0.0/#examples)和[优点](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits).  
-可以借助工具 [commitlint](https://github.com/conventional-changelog/commitlint) 来进行检查.
-
-| 类型     | 描述                                                                             |
-| -------- | -------------------------------------------------------------------------------- |
-| refactor | 代码重构，既不修复错误也不添加功能.                                              |
-| feat     | 类型为 feat 的提交表示在代码库中新增了一个功能(这和语义化版本中的 MINOR 相对应). |
-| fix      | 类型为 fix 的 提交表示在代码库中修复了一个 bug(这和语义化版本中的 PATCH 相对应). |
-| style    | 不影响代码含义的变化(空白/格式化/缺少分号等).                                    |
-| perf     | 改进性能的代码更改.                                                              |
-| test     | 添加确实测试或更正现有的测试.                                                    |
-| build    | 影响构建系统或外部依赖关系的更改.                                                |
-| docs     | 只是更改文档.                                                                    |
-| ci       | 更改持续集成文件和脚本.                                                          |
-| chore    | 其他不修改 src 或 test 文件.                                                     |
-| revert   | commit 回退.                                                                     |
-
-## 忽略文件
-
-不想使用 Git 进行跟踪和管理的文件可以在 `.gitignore` 文件中指定, 语法十分简洁易懂.  
-对于常见开发环境通常忽略的文件, 可以利用 gitignore.io ([Web](https://www.toptal.com/developers/gitignore)/[CLI](https://docs.gitignore.io/install/command-line)) 生成.
-
-## 清空仓库
-
-以下代码用于清空仓库指定分支的全部历史记录, 执行操作后提交历史将会**永久丢失**.
-
-```sh
-git checkout --orphan empty        || exit 1
-git branch -D main                 || exit 1
-git add -A                         || exit 1
-git commit -m 'feat: first commit' || exit 1
-git push origin empty:main --force || exit 1
-git checkout main                  || exit 1
-git branch -D empty
-git pull origin main --allow-unrelated-histories
-```
-
 ## 配置 Git
 
 ```sh
@@ -123,6 +75,54 @@ gh extension install github/gh-copilot # 安装 Copilot 拓展
 
 gh copilot explain "sudo apt-get"         # 解释命令
 gh copilot suggest "Undo the last commit" # 生成命令
+```
+
+## 暂存
+
+| Command                      | New Files | Modified Files | Deleted Files | Description                            |
+|------------------------------|-----------|----------------|---------------|----------------------------------------|
+| `git add -A`                 | √         | √              | √             | Stage all files.                       |
+| `git add .`                  | √         | √              | √             | Stage all files in current folder.     |
+| `git add --ignore-removal .` | √         | √              | ×             | Stage new and modified files only.     |
+| `git add -u`                 | ×         | √              | √             | Stage modified and deleted files only. |
+
+## 提交信息
+
+提交信息的编写方式可以参考 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), 里面列举了一些[例子](https://www.conventionalcommits.org/en/v1.0.0/#examples)和[优点](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits).  
+可以借助工具 [commitlint](https://github.com/conventional-changelog/commitlint) 来进行检查.
+
+| 类型     | 描述                                                                             |
+|----------|--------------------------------------------------------------------------------|
+| refactor | 代码重构，既不修复错误也不添加功能.                                               |
+| feat     | 类型为 feat 的提交表示在代码库中新增了一个功能(这和语义化版本中的 MINOR 相对应). |
+| fix      | 类型为 fix 的 提交表示在代码库中修复了一个 bug(这和语义化版本中的 PATCH 相对应). |
+| style    | 不影响代码含义的变化(空白/格式化/缺少分号等).                                    |
+| perf     | 改进性能的代码更改.                                                              |
+| test     | 添加确实测试或更正现有的测试.                                                    |
+| build    | 影响构建系统或外部依赖关系的更改.                                                |
+| docs     | 只是更改文档.                                                                    |
+| ci       | 更改持续集成文件和脚本.                                                          |
+| chore    | 其他不修改 src 或 test 文件.                                                     |
+| revert   | commit 回退.                                                                     |
+
+## 忽略文件
+
+不想使用 Git 进行跟踪和管理的文件可以在 `.gitignore` 文件中指定, 语法十分简洁易懂.  
+对于常见开发环境通常忽略的文件, 可以利用 gitignore.io ([Web](https://www.toptal.com/developers/gitignore)/[CLI](https://docs.gitignore.io/install/command-line)) 生成.
+
+## 清空仓库
+
+以下代码用于清空仓库指定分支的全部历史记录, 执行操作后提交历史将会**永久丢失**.
+
+```sh
+git checkout --orphan empty        || exit 1
+git branch -D main                 || exit 1
+git add -A                         || exit 1
+git commit -m 'feat: first commit' || exit 1
+git push origin empty:main --force || exit 1
+git checkout main                  || exit 1
+git branch -D empty
+git pull origin main --allow-unrelated-histories
 ```
 
 ## 常见错误
