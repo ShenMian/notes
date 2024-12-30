@@ -10,4 +10,6 @@
 > adb pull <APK_PATH> path/to/target # 将 APK 文件下载到电脑的指定位置
 ```
 
-<https://stackoverflow.com/a/18003462/14268755>
+## 参考
+
+- <https://stackoverflow.com/a/18003462/14268755>.
