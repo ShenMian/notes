@@ -1,12 +1,14 @@
 # Arch 安装
 
+官方安装指南: <https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97>.
+
 ## 下载镜像文件
 
 从[官网](https://archlinux.org/download/)下载镜像文件和 PGP 签名文件.
 
 ![Image and sig file](assets/image_and_sig_file.png)
 
-## 验证镜像文件
+## 验证镜像文件 (可选)
 
 使用 OpenPGP 验证镜像文件.
 
@@ -23,9 +25,9 @@
 ### CLI
 
 ```console
-> gpg --keyserver-options auto-key-retrieve --verify archlinux-2024.08.01-x86_64.iso.sig
-gpg: assuming signed data in 'archlinux-2024.08.01-x86_64.iso'
-gpg: Signature made 08/01/24 15:38:39 W. Europe Standard Time
+> gpg --keyserver-options auto-key-retrieve --verify .\archlinux-2024.12.01-x86_64.iso.sig
+gpg: assuming signed data in '.\\archlinux-2024.12.01-x86_64.iso'
+gpg: Signature made 12/01/24 05:50:47 GMT Standard Time
 gpg:                using EDDSA key 3E80CA1A8B89F69CBA57D98A76A5EF9054449A5C
 gpg:                issuer "pierre@archlinux.org"
 gpg: Good signature from "Pierre Schmitz <pierre@archlinux.org>" [full]
@@ -37,12 +39,21 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
 !!! info
     其他验证方法 (如 sha256sum) 请参考[官网](https://archlinux.org/download/)上的 `Download verification` 部分.
 
----
+## Live USB
 
-命令输出过长可以先传递给 `less`, 如: `ip addr | less`.  
-通过 `Ctrl` `Alt` F1-6 切换到其他终端, 可同时执行命令.
+将镜像文件 (即下载的 iso 文件) 烧录到 U 盘中, 然后从 U 盘启动 Arch Linux.  
+后续将通过从 U 盘上启动的 Arch Linux 来为电脑安装新的 Arch Linux.
+
+## 从 Live USB 启动 Arch Linux
+
+成功启动后应该能看到如下界面:
 
 ![Screenshot](assets/screenshot_1.png)
+
+若命令输出大量内容可能超出显示范围, 可以将其传递给 `less` 命令来查看完整内容, 如: `ip addr | less`.  
+通过 `Ctrl` `Alt` F1-6 切换到其他终端, 可同时执行命令.
+
+如遇到空间不足的问题, 可以通过下面命令解决:
 
 ```console
 # mount -o remount,size=2G /run/archiso/cowspace
@@ -100,11 +111,12 @@ bootloader 分区大小通常为 128/256/512.
 
 ## 创建分区
 
-选择合适的文件系统创建并格式化分区, 下面以 Ext4 为例.
+选择合适的文件系统创建并格式化分区, 下面以 ext4 为例.
 
 ```console
-# mkfs.ext4 /dev/sda1
-# mkfs.ext4 /dev/sda2
+# mkfs.fat -F 32 /dev/efi_system_partition
+# mkfs.ext4 /dev/root_partition
+# mkswap /dev/swap_partition
 ```
 
 其他文件系统请参考 [ArchWiki](https://wiki.archlinux.org/title/File_systems#Types_of_file_systems).
@@ -114,10 +126,18 @@ bootloader 分区大小通常为 128/256/512.
 ## 挂载分区
 
 ```console
-# mount /dev/sda2 /mnt
+# mount /dev/root_partition /mnt
 # mkdir /mnt/boot
-# mount /dev/sda1 /mnt/boot
+# mount /dev/efi_system_partition /mnt/boot
 # lsblk
+```
+
+<!-- TODO: mount --mkdir /dev/efi_system_partition /mnt/boot -->
+
+如果有 swap 分区, 还需执行下面命令:
+
+```console
+# swapon /dev/swap_partition
 ```
 
 ## 安装
@@ -126,7 +146,8 @@ bootloader 分区大小通常为 128/256/512.
 # pacstrap /mnt linux linux-firmware base base-devel neovim
 ```
 
-安装基本软件. 可以将 neovim 替换成其他编辑器或使用 nano.
+安装基本软件. 可以将 neovim 替换成其他编辑器或使用 nano.  
+也可以在后续 chroot 进入新系统环境后进行安装.
 
 ```console
 # genfstab -U /mnt >> /mnt/etc/fstab
@@ -146,6 +167,8 @@ bootloader 分区大小通常为 128/256/512.
 
 ## 安装网络管理器
 
+根据系统的用途选择合适的网络管理器.
+
 ```console
 []# pacman -S networkmanager
 []# systemctl enable NetworkManager
@@ -153,7 +176,7 @@ bootloader 分区大小通常为 128/256/512.
 
 ## 安装 microcode
 
-根据 CPU 安装 microcode.
+根据 CPU 品牌安装 microcode, 只需要安装一个.
 
 ```console
 []# pacman -S intel-ucode # Intel CPU
@@ -161,6 +184,8 @@ bootloader 分区大小通常为 128/256/512.
 ```
 
 ## 设置密码
+
+通过下面的命令为 root 设置密码:
 
 ```console
 []# passwd
