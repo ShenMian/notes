@@ -135,11 +135,9 @@ bootloader 分区大小通常为 128/256/512.
 ```console
 # mount /dev/root_partition /mnt
 # mkdir /mnt/boot
-# mount /dev/efi_system_partition /mnt/boot
+# mount --mkdir /dev/efi_system_partition /mnt/boot
 # lsblk
 ```
-
-<!-- TODO: mount --mkdir /dev/efi_system_partition /mnt/boot -->
 
 如果有 swap 分区, 还需执行下面命令:
 
