@@ -2,6 +2,13 @@
 
 官方安装指南: <https://wiki.archlinuxcn.org/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97>.
 
+## 前置条件
+
+1. U 盘: 将被格式化, 因此应先转移U盘内已有的数据.
+2. 良好的网络: 安装时会使用到网络.
+3. 充足的电量.
+4. 准备安装 Arch Linux 的电脑有至少 3GiB 的外存空间.
+
 ## 下载镜像文件
 
 从[官网](https://archlinux.org/download/)下载镜像文件和 PGP 签名文件.
