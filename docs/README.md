@@ -10,9 +10,10 @@
 
 活跃模块:
 
+- [计算理论](https://github.com/ShenMian/theory_of_computation).
+- [现代推箱子教程](https://shenmian.github.io/sokoban-tutorial/).
 - 计算机网络.
 - 数据库开发.
-- [现代推箱子教程](https://shenmian.github.io/sokoban-tutorial/).
 
 ## 许可协议
 
