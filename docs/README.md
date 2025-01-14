@@ -7,10 +7,10 @@
 - [反汇编器](渗透测试/逆向工程/反汇编器.md).
 - [Manjaro 安装](操作系统/Linux/Manjaro/Manjaro_安装.md).
 - [Dishonored 2](<其他/游戏/评价/Dishonored_2.md>).
+- [计算理论](https://github.com/ShenMian/theory_of_computation).
 
 活跃模块:
 
-- [计算理论](https://github.com/ShenMian/theory_of_computation).
 - [现代推箱子教程](https://shenmian.github.io/sokoban-tutorial/).
 - 计算机网络.
 - 数据库开发.
