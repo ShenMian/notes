@@ -1,7 +1,7 @@
 # Metasploit
 
 该工具存在免费版本 Metasploit Framework 和付费版本 Metasploit Pro, 后者提供了许多实用的专业功能, 可以简化工作流程, 但是天价.  
-以下内容均以 Metasploit Framework(MSF) 为例.
+以下内容均以 Metasploit Framework (MSF) 为例.
 
 ## 数据库
 
