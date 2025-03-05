@@ -64,12 +64,6 @@ gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffe
 
 比如任务栏被桌面遮挡, 可以从 Layouts 中重新设置桌面布局, 便可恢复正常.
 
-## 参见
-
-- [GNOME Apps](https://wiki.gnome.org/Apps).
-- [GNOME Wiki](https://wiki.gnome.org/Home).
-- [GNOME 插件管理](https://extensions.gnome.org/): 安装插件后可以直接利用浏览器管理 GNOME 插件.
-
 ## 默认文件管理器
 
 打开文件夹的默认程序被设置为 VSCode.
@@ -78,3 +72,9 @@ gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffe
 xdg-mime default org.gnome.Nautilus.desktop inode/directory
 xdg-mime query default inode/directory
 ```
+
+## 参见
+
+- [GNOME Apps](https://wiki.gnome.org/Apps).
+- [GNOME Wiki](https://wiki.gnome.org/Home).
+- [GNOME 插件管理](https://extensions.gnome.org/): 安装插件后可以直接利用浏览器管理 GNOME 插件.
