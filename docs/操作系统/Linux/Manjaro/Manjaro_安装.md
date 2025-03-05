@@ -35,7 +35,7 @@
 - 点击 `Torrent` 下载种子文件, 然后使用 BitTorrent 下载器进行下载.
 - 点击 `Checksum` 下载校验哈希值.
 
-## 验证镜像文件
+## 验证镜像文件 (可跳过)
 
 ```ps1
 certutil -hashfile <IMAGE_FILE_PATH> SHA256
