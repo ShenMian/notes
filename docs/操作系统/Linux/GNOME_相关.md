@@ -3,7 +3,7 @@
 ## 插件
 
 | 名称            | 描述                                |
-| --------------- | ----------------------------------- |
+|-----------------|-------------------------------------|
 | [Blur my Shell] | 添加模糊透明等视觉效果.             |
 | [TopHat]        | 显示CPU/内存/网络/外存使用率等信息. |
 | [GSConnect]     | KDE Connect.                        |
@@ -24,7 +24,7 @@ pamac build gnome-network-displays
 
 勾选 `Profile | Colors | Palette | Show bold text in bright colors`.
 
-### 分数倍缩放倍率(Fractional scaling)
+### 分数倍缩放 (Fractional scaling)
 
 **关键字**: HiDPI.
 
