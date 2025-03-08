@@ -35,7 +35,7 @@
 - 点击 `Torrent` 下载种子文件, 然后使用 BitTorrent 下载器进行下载.
 - 点击 `Checksum` 下载校验哈希值.
 
-## 验证镜像文件 (可跳过)
+## 验证镜像文件
 
 ```ps1
 certutil -hashfile <IMAGE_FILE_PATH> SHA256
@@ -89,11 +89,13 @@ CertUtil: -hashfile command completed successfully.
 ## 烧录镜像到 U 盘中
 
 1. 插入 U 盘.
-2. 在烧录软件中选择对应的 U 盘和系统镜像文件.
-3. 开始烧录, 耗时大约 3-5 min.
+2. 具体选项设置可参考下图.
 
-    !!! warning
-        U 盘将被快速格式化.
+    ![Rufus usage](assets/rufus_usage.png){ width=50% }
+
+3. 点击 `开始` 按钮.
+
+Rufus 快速格式化 U 盘并开始写入镜像, 耗时大约 3-5 min.  
 
 ## 从 Live USB 启动
 
