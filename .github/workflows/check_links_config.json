@@ -1,0 +1,25 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": [
+        "https://www.ollydbg.de/version2.html",
+        "https://www.onlinegdb.com/",
+        "https://whoer.net/",
+        "https://store.nethunter.com/",
+        "https://www.microsoft.com/en-us/edge",
+        "https://www.epicgames.com/",
+      ]
+    }
+  ],
+  "httpHeaders": [
+    {
+      "urls": ["https://github.com/", "https://guides.github.com/", "https://help.github.com/", "https://docs.github.com/"],
+      "headers": {
+        "Accept-Encoding": "zstd, br, gzip, deflate"
+      }
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "aliveStatusCodes": [200, 206]
+}
