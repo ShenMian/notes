@@ -139,7 +139,7 @@ fdisk 分区常用命令:
 
 其他文件系统请参考 [Gentoo 手册](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Filesystems)和 [ArchWiki](https://wiki.archlinux.org/title/File_systems#Types_of_file_systems).
 
-[^1]: btrfs 的[主要特性已经稳定](https://btrfs.readthedocs.io/en/latest/Status.html#overview). 越来越多的发行版已经将 btrfs 作为默认文件系统, 从最早的 ​SUSE Linux (2013), Fedora (2020) 到最近的 Manjaro (2025).
+[^1]: btrfs 的[主要特性已经稳定](https://btrfs.readthedocs.io/en/latest/Status.html#overview). 越来越多的发行版已经将 btrfs 作为默认文件系统, 从最早的 SUSE Linux (2013), Fedora (2020) 到最近的 Manjaro (2025).
 
 如果对 btrfs 兴趣不大, 只是想快速且简单的完成系统的安装, 建议使用 ext4.  
 后续可以通过 `btrfs-convert` 命令将 ext4 转换为 btrfs, 反之则无法直接转换, 需要先对数据进行备份, 会麻烦许多.
