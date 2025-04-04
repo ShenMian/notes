@@ -1,5 +1,56 @@
 # GNOME 相关
 
+## 分数倍缩放 (Fractional scaling)
+
+**关键字**: HiDPI.
+
+!!! warning
+    截至 GNOME 48, 分数倍缩放依然为实验性功能. 部分 X11 应用可能存在性能和画面模糊的问题.   
+    相比之下, KDE Plasma 对分数倍缩放 (Wayland 和 X11 应用) 已经有成熟和稳定的支持.
+
+如果使用 GNOME 47 及以上版本和 Wayland, 可以通过下面命令启用实验性的分数倍缩放功能:
+
+```sh
+gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer", "xwayland-native-scaling"]'
+```
+
+重启以应用修改, 然后在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
+
+如果依然在使用 X11, 建议尽快切换到 Wayland. 因为 GNOME Shell 和 KDE Plasma 正在为淘汰 X11 做准备工作.
+
+如果你使用的是 GNOME 46 及以下版本:
+
+- Wayland
+
+    ```sh
+    gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+    ```
+
+- X11
+
+    ```sh
+    gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
+    ```
+
+    ```sh
+    yay -S mutter-x11-scaling
+    gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
+    ```
+
+    Manjaro:
+
+    ```sh
+    sudo pacman -S mutter-x11-scaling gnome-control-center-x11-scaling
+    ```
+
+    设置完毕需要重启, 然后启用 `Settings | Displays | Fractional Scaling` 并在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
+
+禁用实验性特性:
+
+```sh
+gsettings reset org.gnome.mutter experimental-features
+```
+
 ## 插件
 
 | 名称            | 描述                                |
@@ -23,42 +74,6 @@ pamac build gnome-network-displays
 ### GNOME Terminal 上程序颜色显示异常
 
 勾选 `Profile | Colors | Palette | Show bold text in bright colors`.
-
-### 分数倍缩放 (Fractional scaling)
-
-**关键字**: HiDPI.
-
-- Wayland
-
-    ```sh
-    gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-    ```
-
-- X11
-
-    ```sh
-    gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
-    ```
-
-    ```sh
-    yay -S mutter-x11-scaling
-    gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']" # 启用
-    gsettings reset org.gnome.mutter experimental-features                                  # 禁用
-    ```
-
-    Manjaro:
-
-    ```sh
-    sudo pacman -S mutter-x11-scaling gnome-control-center-x11-scaling
-    ```
-
-    设置完毕需要重启, 然后启用 `Settings | Displays | Fractional Scaling` 并在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
-
-增强的分数倍缩放 (GNOME 47 引入):
-
-```sh
-gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer", "xwayland-native-scaling"]'
-```
 
 ### 桌面显示异常
 
