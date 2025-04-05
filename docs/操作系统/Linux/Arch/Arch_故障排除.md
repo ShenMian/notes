@@ -13,3 +13,9 @@ pacman-key --refresh-keys
 pacman-key -l Caleb
 # 密钥有效
 ```
+
+## 无音频设备
+
+```sh
+sudo pacman -S sof-firmware
+```
