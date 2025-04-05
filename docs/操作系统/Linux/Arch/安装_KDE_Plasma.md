@@ -2,6 +2,8 @@
 
 ![KDE Plasma](assets/kde_plasma.png)
 
+进入登录界面或桌面环境后, 通过组合按键 `Ctrl` `Alt` `F3` 切换到其他 TTY, 通过组合按键 `Ctrl` `Alt` `F2` 切回登录界面或桌面环境.
+
 ## 安装 Plasma
 
 ```sh
@@ -34,6 +36,8 @@ xdg-user-dirs-update
 pacman -S sddm
 systemctl enable sddm.service
 ```
+
+请确保已经创建一个普通用户, 否则 SDDM 将不会显示任何可登录的用户.
 
 ### 启用 HiDPI
 

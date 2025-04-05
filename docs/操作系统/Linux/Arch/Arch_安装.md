@@ -354,63 +354,7 @@ TODO: grub-btrfs
 # passwd <username>
 ```
 
-https://wiki.archlinux.org/title/Users_and_groups#User_groups
-
-### 手动权限管理
-
-```console
-# useradd <username>
-# passwd <username>
-
-# mkdir /home/<username>
-# chown <username> /home/<username>
-# chgrp <username> /home/<username>
-# chmod 700 /home/<username>
-```
-
-!!! info
-    Arch Linux 默认不包含 `adduser`, 可以从 AUR 安装. 但是 AUR 安装器通常需要非 root 权限用户. 因此手动添加用户.
-
-### 安装 Plasma
-
-```console
-# pacman -S plasma-meta
-```
-
-建议选项:
-
-- 音频: `pipewire-jack`.
-- 字体: `noto-fonts`.
-
-显示服务器建议默认使用 Wayland, 较为保守的用户可以使用 X Window System.
-
-```console
-# pacman -S plasma-wayland-session
-```
-
-可以选择性安装模拟终端, 以便在桌面环境下使用终端.
-
-```console
-pacman -S alacritty
-```
-
-或者在进入桌面环境后, 通过组合按键 `Ctrl` `Alt` `F3` 切换到其他 TTY, 通过组合按键 `Ctrl` `Alt` `F2` 切回桌面环境.
-
----
-
-开启 SDDM 自动登录
-
----
-
-```console
-sudo systemctl enable sddm.service
-```
-
----
-
-```
-xdg-user-dirs-update
-```
+详情请参考 [ArchWiki](https://wiki.archlinux.org/title/Users_and_groups#User_groups).
 
 ## 启用 pacman 彩色输出
 
