@@ -411,3 +411,7 @@ sudo systemctl enable sddm.service
 ```
 xdg-user-dirs-update
 ```
+
+## 启用 pacman 彩色输出
+
+从文件 `/etc/pacman.conf` 中取消注释 `Color`.
