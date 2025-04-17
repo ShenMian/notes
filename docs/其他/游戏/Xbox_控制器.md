@@ -48,4 +48,4 @@
     首先需要确认问题出在软件上, 比如断连的现象仅存在于部分游戏中.
 
     - [更新手柄固件](https://www.microsoft.com/en-au/p/xbox-accessories/9nblggh30xj3?rtc=1&activetab=pivot:overviewtab)
-    - [更新蓝牙驱动](https://downloadcenter.intel.com/download/29919/Intel-Wireless-Bluetooth-for-Windows-10)
+    - [更新蓝牙驱动](https://www.intel.com/content/www/us/en/download/18649/intel-wireless-bluetooth-drivers-for-windows-10-and-windows-11.html)

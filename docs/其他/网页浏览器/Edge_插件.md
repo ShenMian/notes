@@ -35,7 +35,7 @@
 [Simple Allow Copy]:       https://microsoftedge.microsoft.com/addons/detail/simple-allow-copy/kkemgiffjdndikokhpoecoloebgeibde
 [Modern for Hacker News]:  https://chrome.google.com/webstore/detail/modern-for-hacker-news/dabkegjlekdcmefifaolmdhnhdcplklo
 [Refined GitHub]:          https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf
-[Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendn
+[Tampermonkey]:            https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd
 [YouTube™ dual subtitles]: https://microsoftedge.microsoft.com/addons/detail/youtube%E2%84%A2-dual-subtitles/kicjdgmlfepkcglkdcaalgikoaphdbbp
 
 ## 效率

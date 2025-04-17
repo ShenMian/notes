@@ -32,4 +32,4 @@ https://github.com/refi64/stylepak
 
 ## 参考
 
-[^1]: <https://status.flathub.org/issues/2023-01-14-deltas/>
+[^1]: <https://github.com/flatpak/flatpak/issues/5648>

@@ -36,5 +36,5 @@ TODO: 说明 Petri 网的运行方式.
 ## 参见
 
 - <https://pes.vsb.cz/petrineteditor/>.
-- [Petri Net Markup Language](https://www.pnml.org/papers/PNML_CTT.pdf).
+- [Petri Net Markup Language - Archive](https://web.archive.org/web/20220302223459/https://www.pnml.org/papers/PNML_CTT.pdf).
 - <http://petrinet.org/>.
