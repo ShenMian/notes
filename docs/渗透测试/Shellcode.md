@@ -20,7 +20,7 @@ _start:
     int  0x80     ; syscall
 ```
 
-可以使用在线工具 [Compiler Explorer](https://godbolt.org/) 进行编译, 在 Linux 下可以使用 [NASM](https://www.nasm.us/) 进行编译:
+可以使用在线工具 [Compiler Explorer](https://godbolt.org/) 进行编译, 在 Linux 下可以使用 [NASM - Archive](https://web.archive.org/web/20250408120856/https://www.nasm.us/) 进行编译:
 
 ```sh
 nasm -f elf32 shellcode.asm             # 编译
@@ -28,7 +28,7 @@ ld -m elf_i386 -o shellcode shellcode.o # 链接
 objdump -d shellcode                    # 打印反汇编结果
 ```
 
-设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断即可. 其他指令集的用法有所不同, 具体使用方式请参考 [Linux 系统调用](https://publicki.top/syscall.html).
+设置参数并将系统调用的 NR(number) 写入指定寄存器后触发中断即可. 其他指令集的用法有所不同, 具体使用方式请参考 [Linux 系统调用 - Archive](https://web.archive.org/web/20230602025500/https://publicki.top/syscall.html).
 
 ## 定制
 
