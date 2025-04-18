@@ -7,7 +7,7 @@
 ## 安装 Plasma
 
 ```sh
-pacman -S plasma-meta
+pacman -S plasma-meta power-profiles-daemon
 ```
 
 建议选项:
