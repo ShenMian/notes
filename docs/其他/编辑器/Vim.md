@@ -317,7 +317,7 @@ GUI 可以为 Vim/Neovim 提供界面美化 (如内部窗口的透明模糊背�
 
 ## 参考
 
-- [Interactive Vim tutorial (openvim.com)](https://www.openvim.com/tutorial.html)
+- [Interactive Vim tutorial (openvim.com)](https://openvim.com/index.html)
 - [Vim Cheat Sheet & Quick Reference](https://quickref.me/vim)
 - [Graphical vi-vim Cheat Sheet and Tutorial (viemu.com)](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html)
 

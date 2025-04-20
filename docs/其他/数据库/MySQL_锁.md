@@ -43,8 +43,8 @@ TODO: 说明意向锁和表锁之间的区别
 
 ## 参考
 
-- <https://dev.mysql.com/doc/refman/9.1/en/innodb-locking.html>.
+- <https://dev.mysql.com/doc/refman/9.3/en/innodb-locking.html>.
 
 ## 参见
 
-- <https://dev.mysql.com/doc/refman/9.1/en/lock-tables.html>.
+- <https://dev.mysql.com/doc/refman/9.3/en/lock-tables.html>.
