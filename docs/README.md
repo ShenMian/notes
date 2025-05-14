@@ -1,6 +1,6 @@
 # Notes
 
-示例笔记:
+## 示例笔记
 
 - [Manjaro 安装](操作系统/Linux/Manjaro/Manjaro_安装.md).
 - [反汇编器](渗透测试/逆向工程/反汇编器.md).
