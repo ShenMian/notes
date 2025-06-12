@@ -177,8 +177,8 @@ CertUtil: -hashfile command completed successfully.
 ![var](assets/9_var.webp){ width=80% }  
 ![home](assets/10_home.webp){ width=80% }  
 
-![overview 1](assets/11_overview_1.webp){ width=80% }  
-![overview 2](assets/12_overview_2.webp){ width=80% }  
+![Overview 1](assets/11_overview_1.webp){ width=80% }  
+![Overview 2](assets/12_overview_2.webp){ width=80% }  
 
 ### 用户
 

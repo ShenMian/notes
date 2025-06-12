@@ -9,7 +9,7 @@ sudo pacman -Ss <package>       # 搜索包
 sudo pacman -Si <package>       # 显示包信息
 sudo pacman -S <package>        # 安装包
 sudo pacman -Rns <package>      # 删除包 (包括不再需要的依赖项)
-sudo pacman -Syyu               # 进行全面更新
+sudo pacman -Syu                # 进行全面更新 (如果更换了镜像源, 请使用 -Syyu)
 sudo pacman -Rs $(pacman -Qtdq) # 删除无用的包
 
 yay -Ps # 列出外存占用情况和 10 个体积最大的包

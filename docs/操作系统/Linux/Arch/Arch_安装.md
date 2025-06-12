@@ -159,12 +159,12 @@ fdisk 分区常用命令:
 创建分区后, 就需要选择合适的文件系统对分区进行格式化.  
 根分区建议使用的文件系统为:
 
-- btrfs[^1]: 更新一代的文件系统. 提供先进特性如快照/通过校验和进行自我修复/透明压缩/子卷和集成 RAID.
+- btrfs[^btrfs]: 更新一代的文件系统. 提供先进特性如快照/通过校验和进行自我修复/透明压缩/子卷和集成 RAID.
 - ext4: 一个可靠的/通用的/全平台的文件系统, 尽管它缺少现代特性如 reflinks.
 
 其他文件系统请参考 [Gentoo 手册](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Filesystems)和 [ArchWiki](https://wiki.archlinux.org/title/File_systems#Types_of_file_systems).
 
-[^1]: btrfs 的[主要特性已经稳定](https://btrfs.readthedocs.io/en/latest/Status.html#overview). 越来越多的发行版已经将 btrfs 作为默认文件系统, 从最早的 SUSE Linux (2013), Fedora (2020) 到最近的 Manjaro (2025).
+[^btrfs]: btrfs 的[主要特性已经稳定](https://btrfs.readthedocs.io/en/latest/Status.html#overview). 越来越多的发行版已经将 btrfs 作为默认文件系统, 从最早的 SUSE Linux (2013), Fedora (2020) 到最近的 Manjaro (2025).
 
 如果对 btrfs 兴趣不大, 只是想快速且简单的完成系统的安装, 建议使用 ext4.  
 后续可以通过 `btrfs-convert` 命令将 ext4 转换为 btrfs, 反之则无法直接转换, 需要先对数据进行备份, 然后再进行转移, 会麻烦许多.
@@ -194,7 +194,7 @@ fdisk 分区常用命令:
 # umount /mnt
 ```
 
-下面是参考 openSUSE (2018) 的子卷布局方案[^2]:
+下面是参考 openSUSE (2018) 的子卷布局方案[^1]:
 
 | 名称          | 挂载点        | 建议挂载参数                    |
 |---------------|---------------|---------------------------------|
@@ -208,16 +208,16 @@ fdisk 分区常用命令:
 | `@var`        | `/var`        | `nodatacow,nodev,noexec,nosuid` |
 | `@.snapshots` | `/.snapshots` |                                 |
 
-[^2]: https://en.opensuse.org/SDB:BTRFS
+[^1]: <https://en.opensuse.org/SDB:BTRFS>
 
 用户可以根据自己的需求创建子卷, 比如游戏玩家可以创建 `@games` 子卷, 用于存储游戏.  
 创建子卷的主要目的是允许为不同的子卷配置不同的挂载参数, 以及进行单独的快照.
 
 !!! warning
-    如果需要使用 Timeshift 管理快照, 必须创建名为 `@` 和 `@home` 的子卷. [^3]  
+    如果需要使用 Timeshift 管理快照, 必须创建名为 `@` 和 `@home` 的子卷. [^2]  
     否则可能能成功创建快照, 但是在还原快照的时候摧毁系统.
 
-[^3]: https://github.com/teejee2008/timeshift/issues/370
+[^2]: <https://github.com/teejee2008/timeshift/issues/370>
 
 更多关于 Arch 下 btrfs 子卷布局的讨论可以参考[这里](https://github.com/archlinux/archinstall/issues/781).
 
@@ -400,7 +400,9 @@ sudo pacman -S timeshift grub-btrfs
 ```
 
 - `timeshift`: btrfs 快照的 GUI 管理器.
-- `grub-btrfs`: 在 GRUB 引导菜单里添加 btrfs 快照入口.
+- `grub-btrfs`: 在 GRUB 引导菜单里添加 btrfs 快照入口 (允许从快照启动).[^grub-btrfs]
+
+[^grub-btrfs]: <https://github.com/Antynea/grub-btrfs>
 
 若要在 Timeshift 创建快照时自动更新 GRUB 入口, 请查看 [ArchWiki](https://wiki.archlinux.org/title/Timeshift#GRUB_entries_for_btrfs_snapshots).
 
