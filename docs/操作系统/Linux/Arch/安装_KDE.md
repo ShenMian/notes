@@ -22,6 +22,31 @@ pacman -S plasma-meta power-profiles-daemon
 pacman -S noto-fonts-cjk
 ```
 
+默认日语字体优先级别更高, 会导致中文显示异常. 在 `~/.fonts.conf` 中写入下面内容, 修改优先级:
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>Noto Sans CJK SC</family> <!-- 简体中文优先 -->
+      <family>Noto Sans CJK TC</family>
+      <family>Noto Sans CJK JP</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Sans Mono CJK SC</family>
+      <family>Noto Sans Mono CJK TC</family>
+      <family>Noto Sans Mono CJK JP</family>
+    </prefer>
+  </alias>
+</fontconfig>
+```
+
 如果不使用 Discover (KDE 的包管理 GUI 程序), 可以通过下面命令卸载:
 
 ```sh
