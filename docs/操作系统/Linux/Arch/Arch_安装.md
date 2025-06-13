@@ -387,7 +387,7 @@ LANG=en_US.UTF-8
 创建普通用户并设置密码.
 
 ```console
-# useradd -m -G wheel <username> # 创建家目录并将用户添加到 wheel 用户组. useradd --create-home --groups <username>
+# useradd -m -U -G lp,sys,wheel <username> # 创建家目录并将用户添加到指定用户组. useradd --create-home --user-group --groups <username>
 # passwd <username>
 ```
 
