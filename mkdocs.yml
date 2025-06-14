@@ -1,0 +1,69 @@
+site_name: Notes
+site_description: Learning notes.
+site_author: ShenMian
+site_url: https://shenmian.github.io/notes/
+
+repo_name: ShenMian/notes
+repo_url: https://github.com/ShenMian/notes/
+
+# https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+theme:
+  name: material
+  custom_dir: overrides
+  # favicon: docs/assets/icon.ico
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/?h=language#configuration
+  language: zh
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=font#configuration
+  font:
+    text: fonts/SourceHanSerifSC-Regular.otf, Roboto
+    code: fonts/CascadiaCodeNF.woff2
+
+  # enable search
+  include_search_page: false
+  search_index_only: true
+
+  static_templates:
+    - 404.html
+
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/?h=palette#color-palette-toggle
+  palette:
+    - scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: 浅色模式
+    - scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: 深色模式
+
+  features:
+    # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=features+navigation+tabs#navigation-tabs
+    - navigation.tabs
+
+# https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/
+markdown_extensions:
+  # - meta # FIXME: 启用会导致搜索功能失效, 包括往文件中写入 meta 数据
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social#social-links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ShenMian

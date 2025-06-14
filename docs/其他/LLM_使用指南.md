@@ -1,0 +1,160 @@
+# LLM 使用指南
+
+## 客户端
+
+### 优点
+
+- **界面统一**: 可以通过统一的界面使用各种 LLM. 通过 API 接入各种 LLM 提供商, 可以访问不同的 LLM.
+
+    ![Select Models](assets/cherry_select_models.png){ width=70% style="display: block; margin: 0 auto" }  
+
+- **支持 MCP**: 部分客户端支持 MCP.
+- **参数可调**: 可以自定义 Temperature/Top-P/最大上下文等参数.
+- **离线可用**: 客户端通常支持运行本地 LLM, 确保离线可用且数据安全.
+- **开源透明**: 部分 LLM 客户端采用开源许可.
+
+### 缺点
+
+- **需要 API**: 会增加使用难度, 并产生额外成本. LLM 提供商的网页版通常可以免费使用, 而 API 则需要付费使用. 不过 API 价格通常较便宜, 而且用途更加广泛 (比如可以让翻译插件接入 LLM).
+- **需要配置**: 初次使用需要配置 LLM 提供商的 API 密钥, 增加了使用门槛.
+- **硬件要求**: 运行本地 LLM 需要强大的硬件.
+
+### 推荐
+
+- **[Cherry Studio]**: 跨平台, 部分开源 (个人使用免费), 支持 MCP, 在线搜索, 图片/文档解析, 知识库, Ollama/LM Studio.
+- **[LobeChat]**: 跨平台, 部分开源 (个人使用免费), 支持知识库, Ollama.
+- **[LM Studio]**: 跨平台, 闭源免费, **仅支持离线模型**, 界面简洁易用. 支持图片/文档解析.
+- **[Msty]**: 跨平台, 闭源免费 (提供付费高级版), 支持在线搜索 (效果较差), 图片/文档解析, 知识库, Ollama.
+- **[Jan]**: 跨平台, 开源 (Apache-2.0).
+
+[Cherry Studio]: https://github.com/CherryHQ/cherry-studio
+[LobeChat]: https://github.com/lobehub/lobe-chat
+[LM Studio]:https://lmstudio.ai/
+[Msty]: https://msty.app/
+[Jan]: https://github.com/menloresearch/jan
+
+## MCP
+
+MCP 是一种开源协议, 旨在以标准化的方式向 LLM 提供上下文信息.  
+LLM 可以与 MCP 服务器通信, 以拓展其功能.
+
+MCP 服务器有以下部署方式:
+
+- **远程部署**：适用于网页爬虫/API 调用等通用功能.
+- **本地部署**：适用于文件系统访问/本地数据库操作等涉及敏感数据的功能, 确保离线可用且数据安全.
+
+![MCP Server Settings](assets/cherry_mcp_server_settings.png){ width=80% style="display: block; margin: 0 auto" }  
+
+点击上图右上角的 `Search MCP` 按钮, 即可快速添加常见 MCP 配置.
+
+![Cherry MCP Servers](assets/cherry_mcps.png){ width=80% style="display: block; margin: 0 auto" }  
+
+后续便可用通过下面方式在会话中启用 MCP:
+
+![Enable MCP](assets/cherry_mcp_servers.png){ width=60% style="display: block; margin: 0 auto" }  
+
+### 推荐
+
+- (内置) `@cherry/fetch`: 可以将网页 URL 直接发给 LLM, LLM 会爬取页面内容.
+- `@modelcontextprotocol/server-sequential-thinking`: 引导 LLM 通过结构化思维过程实现动态和反思性解决问题.
+- `@modelcontextprotocol/server-filesystem`: 访问本地文件系统.
+
+## 本地 LLM
+
+### 内存需求
+
+| **参数规模/量化级别** | **FP16** | **Q8**  | **Q4**  | **Q2**  |
+|-----------------------|----------|---------|---------|---------|
+| **7B**                | ~16 GiB  | ~8 GiB  | ~4 GiB  | ~2 GiB  |
+| **8B**                | ~18 GiB  | ~9 GiB  | ~5 GiB  | ~3 GiB  |
+| **13B**               | ~29 GiB  | ~15 GiB | ~7 GiB  | ~4 GiB  |
+| **30B**               | ~67 GiB  | ~34 GiB | ~17 GiB | ~9 GiB  |
+| **70B**               | ~156 GiB | ~78 GiB | ~39 GiB | ~20 GiB |
+
+$$
+\text{内存需求 (GiB)} = \frac{\text{参数数量} \times \text{量化位数 (B)}}{1024^3}
+$$
+
+### 量化级别
+
+| 量化级别 | 质量 | 速度 | 内存占用 | 适用场景       |
+|----------|----|-----|---------|------------|
+| **FP16** | 最高 | 慢   | 最大     | 对质量要求极高 |
+| **Q8**   | 很高 | 较慢 | 大       | 平衡质量和性能 |
+| **Q4**   | 良好 | 快   | 中等     | **最佳平衡点** |
+| **Q2**   | 一般 | 最快 | 最小     | 硬件受限场景   |
+
+以 [DeepSeek-R1-0528-Qwen3-8B] 为例, 其参数量为 8B, 量化为 Q4_K_M.  
+通过上表可以推测出所需内存大概为 5 GiB, 实际显存使用量为 5.3 GiB.
+
+### 推荐
+
+- **[DeepSeek-R1-0528-Qwen3-8B]**: 推理模型, 45.5 tok/sec, 约 5.3 GiB 内存占用.
+- **[Qwen3-14B]**: 混合推理模型, 14 tok/sec, 约 5.6 GiB 内存占用.
+- **[gemma-3-12b-it]**: 图像识别, 8.5 tok/sec, 约 7.7 GiB 内存占用.
+
+**测试 GPU**: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).  
+若使用 LM Studio, 还可以启用 Flash Attention.
+
+!!! info
+    实际内存占用率还取决于上下文长度等参数.
+
+[DeepSeek-R1-0528-Qwen3-8B]: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+[Qwen3-14B]: https://huggingface.co/Qwen/Qwen3-14B
+[gemma-3-12b-it]: https://huggingface.co/google/gemma-3-12b-it
+
+## 参数
+
+### 温度 (Temperature)
+
+控制模型输出的随机性和创造性.
+
+- **低温度**: 模型倾向于选择概率最高的词, 输出更确定.
+- **高温度**: 增加低概率词被选中的机会, 输出更随机. 过高的温度可能导致输出内容不连贯 (逻辑性弱).
+
+| 使用案例            | 温度 |
+|-------------------|------|
+| 代码生成/数学解题   | 0.0  |
+| 数据抽取/分析       | 1.0  |
+| 一通用对话          | 1.3  |
+| 翻译                | 1.3  |
+| 创意类写作/诗歌创作 | 1.5  |
+
+如果使用的是推理模型, 可以适当降低温度 (如 $0.6$ [^temperature]).
+
+对于编码/数学类任务, 为了提高逻辑性和质量, 应该将温度设为 $0$, 使其总是选择概率最高的词.
+
+[^temperature]: <https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B#temperature>
+
+### 核采样 (Top-P)
+
+影响模型考虑的候选词范围.
+
+- **低核采样**: 只考虑最可能的少数词. 输出容易理解.
+- **高核采样**: 考虑更多可能的词选择. 输出词汇更加丰富多样.
+
+## Token
+
+Token 是 LLM 处理文本的基本单位[^token], 也是 API 计费使用到的单位. 其与自然语言文本的换算关系大致为:
+
+- 1 个英文字符 $\approx$ 0.3 token.
+- 1 个中文字符 $\approx$ 0.6 token.
+
+部分 LLM 客户端会显示精确的 token 数, 方便用户计算对话消耗的费用. 如果需要自行计算 token 数量, 则需要使用到相应模型的分词器 (tokenizer)[^tokenizer].
+
+[^token]: 可以理解为 LLM 所使用语言的词, 该语言非任何人类语言.
+[^tokenizer]: 不同模型的分词器并不相同.
+
+## 供应商
+
+- **[DeepSeek]**: [价格](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/), 价格便宜, 非高峰时段使用有优惠.
+- **[OpenAI]**: 必须使用电话号码注册. [价格](https://openai.com/api/pricing/), 价格及其昂贵.
+- **[GitHub Models]**: GitHub 提供限制较严格的免费试用, 实际供应商为 Azure AI.
+- **[SiliconFlow]**: 必须使用电话号码注册. 有几个 7B-9B 的免费模型, 但是速率限制非常严格, 难以用于网页翻译.
+- **[OpenRouter]**.
+
+[DeepSeek]: https://platform.deepseek.com/
+[OpenAI]: https://platform.openai.com/
+[GitHub Models]: https://github.com/marketplace?type=models
+[SiliconFlow]: https://cloud.siliconflow.cn/
+[OpenRouter]: https://openrouter.ai/
