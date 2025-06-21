@@ -197,13 +197,13 @@ hashcat 成功查找到结果, 得到用户 `root` 和 `admin` 的密码 `l12345
 
 使用 VLC 接收 RTSP 流, 格式为 `rtsp://<user>:<passwd>@<ip>:<port>`.
 
-![VLC open network stream](assets/vlc_open_network_stream.webp){ width=50% style="display: block; margin: 0 auto" }  
+![VLC open network stream](assets/vlc_open_network_stream.webp){ width=60% style="display: block; margin: 0 auto" }  
 
 ### HTTP
 
 直接通过 IP Camera 提供的 HTTP 协议登录后台.
 
-![Hikvision IP Camera backend](assets/hikvision_backend.webp){ width=80% style="display: block; margin: 0 auto" }  
+![Hikvision IP Camera backend](assets/hikvision_backend.webp){ width=90% style="display: block; margin: 0 auto" }  
 
 ## 防范
 
