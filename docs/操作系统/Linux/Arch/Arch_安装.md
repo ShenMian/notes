@@ -121,11 +121,11 @@ curl "https://archlinux.org/mirrorlist/?country=CN" > /etc/pacman.d/mirrorlist
 
 ### 布局
 
-| 路径                        | 挂载点  | 类型                | 建议大小                                                        |
-|-----------------------------|---------|---------------------|-----------------------------------------------------------------|
-| `/dev/efi_system_partition` | `/boot` | EFI System          | 1 GiB                                                           |
-| `/dev/root_partition`       | `/`     | Linux root (x86-64) | 除了 EFI 系统分区和交换分区的全部剩余空间                       |
-| `/dev/swap_partition`       |         | Linux swap          | RAM 大小的一到两倍. 如果需要支持休眠, 则必须至少与 RAM 大小相等 |
+| 路径                        | 挂载点 | 类型                | 建议大小                                                        |
+|-----------------------------|--------|---------------------|-----------------------------------------------------------------|
+| `/dev/efi_system_partition` | `/efi` | EFI System          | 1 GiB                                                           |
+| `/dev/root_partition`       | `/`    | Linux root (x86-64) | 除了 EFI 系统分区和交换分区的全部剩余空间                       |
+| `/dev/swap_partition`       |        | Linux swap          | RAM 大小的一到两倍. 如果需要支持休眠, 则必须至少与 RAM 大小相等 |
 
 !!! info
     如果硬盘为 SSD/HDD 混合, 应将交换分区划分在 SSD 上.
@@ -225,7 +225,7 @@ fdisk 分区常用命令:
 
 ```console
 # mount -o subvol=@,compress=zstd /dev/root_partition /mnt
-# mount --mkdir /dev/efi_system_partition /mnt/boot
+# mount --mkdir /dev/efi_system_partition /mnt/efi
 # mount -o subvol=@home,compress=zstd /dev/root_partition /mnt/home
 ```
 
@@ -360,8 +360,8 @@ LANG=en_US.UTF-8
 
 ```console
 []# pacman -S grub efibootmgr os-prober
-[]# grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
-[]# grub-mkconfig -o /boot/grub/grub.cfg
+[]# grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+[]# grub-mkconfig -o /efi/grub/grub.cfg
 ```
 
 注意 `grub-mkconfig` 的输出结果, 是否检测到了已安装的其他操作系统.  
