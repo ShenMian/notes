@@ -34,8 +34,9 @@ sudo pacman-mirrors -c China # 更新镜像源 (仅限 Manjaro)
 可以通过下面命令手动安装:
 
 ```sh
-sudo pacman -S --needed git base-devel rustup
+sudo pacman -S --needed base-devel git rustup
 rustup default stable
+
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
