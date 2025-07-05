@@ -23,3 +23,19 @@ irm https://get.activated.win | iex
 ```
 
 <https://massgrave.dev/>
+
+## 清理日志
+
+```ps1
+wevtutil enum-logs | ForEach-Object { wevtutil clear-log $_ }
+
+(Get-EventLog -List).Log | ForEach-Object { Clear-EventLog -LogName $_ }
+```
+
+日志清理后会在 `Windows Logs | System` 留下一个 `Log clear` 类型事件.
+
+---
+
+```ps1
+Stop-Service -Name EventLog -Force -ErrorAction Stop
+```
