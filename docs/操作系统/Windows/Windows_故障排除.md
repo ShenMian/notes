@@ -1,5 +1,23 @@
 # Windows 故障排除
 
+## 蓝屏
+
+蓝屏时系统将创建一个拓展名为 `.dmp` 的内存转储文件到 `C:\Windows\Minidump` 目录下.
+
+```console
+> ll C:\Windows\Minidump
+----- 7.8M 16 Jun 08:45  061625-18812-01.dmp
+-----  11M 20 Jun 20:40  062025-26937-01.dmp
+```
+
+可以看出近期有两次蓝屏, 分别发生在 6 月 16 日和 20 日.
+
+[BlueScreenView](https://www.nirsoft.net/utils/blue_screen_view.html) 可以帮助用户分析 `.dmp` 文件, 找出系统崩溃的原因.
+
+![BlueScreenView 截图](assets/bluescreenview.png)
+
+如上图所示, 很容易看出选中的崩溃是由第三方驱动 WinBtrfs 导致的.
+
 ## 开机时 Num Lock 自动启用
 
 ```bat
