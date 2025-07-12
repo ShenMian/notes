@@ -32,6 +32,12 @@ sudo systemd-analyze blame    # 查看服务启动时间
 sudo systemd-analyze security # 查看服务安全性分析
 ```
 
+## 日志
+
+```sh
+journalctl -u <UNIT> # 查看指定服务的日志
+```
+
 ## 参见
 
 - [systemctl cheat sheet](https://linux-audit.com/cheat-sheets/systemctl/).
