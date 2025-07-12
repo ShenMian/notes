@@ -2,55 +2,64 @@
   "projectBaseUrl": "${workspaceFolder}",
   "ignorePatterns": [
     {
-      "pattern": "^https://platform.deepseek.com"
+      "pattern": "^https://platform.deepseek.com/"
     },
     {
-      "pattern": "^https://platform.openai.com"
+      "pattern": "^https://platform.openai.com/"
     },
     {
-      "pattern": "^https://openai.com"
+      "pattern": "^https://openai.com/"
     },
     {
-      "pattern": "^https://www.epicgames.com"
+      "pattern": "^https://www.epicgames.com/"
     },
     {
-      "pattern": "^https://dev.epicgames.com"
+      "pattern": "^https://dev.epicgames.com/"
     },
     {
-      "pattern": "^https://dev.mysql.com"
+      "pattern": "^https://dev.mysql.com/"
     },
     {
-      "pattern": "^https://stackoverflow.com"
+      "pattern": "^https://stackoverflow.com/"
     },
     {
-      "pattern": "^https://www.reddit.com"
+      "pattern": "^https://www.reddit.com/"
     },
     {
-      "pattern": "^https://www.zhihu.com"
+      "pattern": "^https://www.zhihu.com/"
     },
     {
-      "pattern": "^https://www.intel.com"
+      "pattern": "^https://www.intel.com/"
     },
     {
-      "pattern": "^https://dl.acm.org"
+      "pattern": "^https://dl.acm.org/"
     },
     {
       "pattern": "^https://www.microsoft.com/en-us/edge"
     },
     {
-      "pattern": "^https://www.onlinegdb.com"
+      "pattern": "^https://www.onlinegdb.com/"
     },
     {
-      "pattern": "^https://whoer.net"
+      "pattern": "^https://whoer.net/"
     },
     {
-      "pattern": "^https://store.nethunter.com"
+      "pattern": "^https://store.nethunter.com/"
     },
     {
-      "pattern": "^https://www.coolapk.com"
+      "pattern": "^https://www.coolapk.com/"
     },
     {
       "pattern": "https://www.ollydbg.de/version2.html"
+    },
+    {
+      "pattern": "^https://www.blender.org/"
+    },
+    {
+      "pattern": "^https://linux-audit.com/"
+    },
+    {
+      "pattern": "^https://microg.org/"
     }
   ],
   "httpHeaders": [
