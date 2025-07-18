@@ -41,6 +41,8 @@ flowchart LR
     driver --> GPU[GPU 硬件]
 ```
 
+WebGPU 标准的[介绍](https://gpuweb.github.io/gpuweb/#intro)包含了一段简洁的说明, 可以帮助用户快速了解相关基本概念.
+
 !!! info
     一个有趣的事情是, Firefox 的 WebGPU 实现是基于 wgpu 的, 这意味着基于 wgpu 编写的 WASM 在 Firefox 上运行时会调用 Firefox 的 wgpu. 🤯
 
@@ -48,7 +50,7 @@ flowchart LR
 
 ## 初始化
 
-下面是 wgpu 初始化的流程图.
+wgpu 的初始化 (从创建 `Instance` 开始, 到创建交换链), 一共只需要 **19** 行代码. 下面是该过程的流程图:
 
 ```mermaid
 flowchart TD
@@ -58,13 +60,12 @@ flowchart TD
     A[Adapter]
     D[Device]
     Q[Queue]
-    SCap[SurfaceCapabilities]
     SConf[SurfaceConfiguration]
 
     create_surface([Instance::create_surface])
     request_adapter([Instance::request_adapter])
     request_device([Adapter::request_device])
-    get_capabilities([Surface::get_capabilities])
+    get_default_config([Surface::get_default_config])
     surface_configure(["Surface::configure (Swapchain)"])
 
     I --> create_surface
@@ -79,12 +80,10 @@ flowchart TD
     request_device --> D
     request_device --> Q
 
-    S --> get_capabilities
-    A --> get_capabilities
-    get_capabilities --> SCap
-
-    SCap --> SConf
-    W -->|Window::inner_size| SConf
+    S --> get_default_config
+    A --> get_default_config
+    W -->|Window::inner_size| get_default_config
+    get_default_config --> SConf
 
     S --> surface_configure
     SConf --> surface_configure
@@ -106,8 +105,10 @@ wgpu 的初始化流程与 Vulkan 十分相似, 早期版本也包含 [`wgpu::Sw
 [`wgpu::Swapchain`]: https://docs.rs/wgpu/0.9.0/wgpu/struct.SwapChain.html
 
 ```rs
+// 创建 Instance, 默认启用所有后端.
 let instance = wgpu::Instance::new(&wgpu::InstanceDescriptor::default());
 
+// 创建 Surface, 为所有已启用的后端创建对应的 Surface.
 let surface = instance.create_surface(window.clone()).unwrap();
 
 // 获取符合条件的 Adapter.
@@ -163,6 +164,7 @@ for adapter in instance.enumerate_adapters(wgpu::Backends::all()) {
 
 ```rs
 let size = window.inner_size();
+// Safety: 仅当 Surface 与 Adapter 不兼容时返回 None.
 let config = surface
     .get_default_config(&adapter, size.width, size.height)
     .unwrap();
@@ -172,7 +174,7 @@ surface.configure(&device, &config);
 `Surface` 配置完毕后就完成了基本的初始化工作, 后续可以用来将渲染得到的结构展示在窗口中.  
 后续的渲染任务主要通过调用 `Device` 和 `Queue` 来完成.
 
-上面的初始化代码一共只有 **19** 行:
+下面是完整的初始化代码:
 
 ```rs
 let instance = wgpu::Instance::new(&wgpu::InstanceDescriptor::default());
@@ -195,8 +197,6 @@ let config = surface
     .unwrap();
 surface.configure(&device, &config);
 ```
-
-- <https://gpuweb.github.io/gpuweb/#intro>.
 
 ## 着色器
 
