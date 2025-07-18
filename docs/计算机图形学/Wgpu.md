@@ -127,7 +127,7 @@ let (device, queue) = adapter
     .expect("Failed to create device");
 ```
 
-创建 `Instance` 后, 即可通过 `Instance::request_adapter` 函数获取符合条件的 `Adapter`, 也就是物理 GPU 设备. 筛选条件可以通过 `RequestAdapterOptions` 结构体指定, 分为硬性约束和软性约束, 如果硬性约束不被满足, 则会返回未找到错误.
+创建 `Instance` 后, 即可通过 `Instance::request_adapter` 函数获取符合条件的 `Adapter`, 也就是图形/计算设备 (通常为物理 GPU, 但也可能是基于 CPU 的软渲染器). 筛选条件可以通过 `RequestAdapterOptions` 结构体指定, 分为硬性约束和软性约束, 如果硬性约束不被满足, 则会返回未找到错误.
 
 以上面代码为例, 存在下面约束:
 
@@ -161,8 +161,40 @@ for adapter in instance.enumerate_adapters(wgpu::Backends::all()) {
     - `DeviceDescriptor` 结构体则用于指定 "打开方式", 限制了后续对该句柄的使用方式.
     - `Device` 则是打开该文件后获得的句柄.
 
+```rs
+let size = window.inner_size();
+let config = surface
+    .get_default_config(&adapter, size.width, size.height)
+    .unwrap();
+surface.configure(&device, &config);
+```
+
 `Surface` 配置完毕后就完成了基本的初始化工作, 后续可以用来将渲染得到的结构展示在窗口中.  
 后续的渲染任务主要通过调用 `Device` 和 `Queue` 来完成.
+
+上面的初始化代码一共只有 **19** 行:
+
+```rs
+let instance = wgpu::Instance::new(&wgpu::InstanceDescriptor::default());
+let surface = instance.create_surface(window.clone()).unwrap();
+let adapter = instance
+    .request_adapter(&wgpu::RequestAdapterOptions {
+        power_preference: wgpu::PowerPreference::LowPower,
+        compatible_surface: Some(&surface),
+        ..Default::default()
+    })
+    .await
+    .expect("Failed to find an appropriate adapter");
+let (device, queue) = adapter
+    .request_device(&wgpu::DeviceDescriptor::default())
+    .await
+    .expect("Failed to create device");
+let size = window.inner_size();
+let config = surface
+    .get_default_config(&adapter, size.width, size.height)
+    .unwrap();
+surface.configure(&device, &config);
+```
 
 - <https://gpuweb.github.io/gpuweb/#intro>.
 
