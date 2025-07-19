@@ -5,7 +5,7 @@
     部分插件使用前请仔细阅读描述中括号内的内容.  
 
 !!! warning
-    建议在安装只针对部分站点的插件的时候选定其能访问的站点, 已避免在后续使用过程中对其他站点造成未知影响.  
+    建议在安装只针对部分站点的插件的时候选定其能访问的站点, 以避免在后续使用过程中对其他站点造成未知影响.  
 
 ## 安全
 
@@ -24,7 +24,7 @@
 | [Dark Reader]             | 提供任意页面的自适应黑暗主题, 开源. (**可能导致二维码无法被识别**)   |
 | [Immersive Translate]     | 双语翻译.                                                            |
 | Proxy SwitchyOmega        | 手动/自动切换代理.                                                   |
-| [Simple Allow Copy]       | 在禁止拷贝内容的网页里拷贝内容. (**开启时可能导致部网页分功能失效**) |
+| [Simple Allow Copy]       | 在禁止拷贝内容的网页里拷贝内容. (**开启时可能导致部分网页功能失效**) |
 | [Modern for Hacker News]  | 美化 Hacker News 网站界面.                                           |
 | [Refined GitHub]          | 对 GitHub 页面进行了一些改进.                                        |
 | [Tampermonkey]            | 插件中的插件, 可以安装更多实用的脚本.                                |
@@ -40,10 +40,10 @@
 
 ## 效率
 
-| 名称                  | 描述                                                                                                                                |
-|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Vimium C]            | VIM 快捷键. (**会覆盖部分浏览器快捷键, 进而导致部分页面功能失效**)                                                                  |
-| [NeatDownloadManager] | 下载器, 需要结合[本地服务](https://www.neatdownloadmanager.com/index.php/en/)使用. (仅支持 Windows/macOS, 有时会无法连接到本地服务) |
+| 名称                  | 描述                                                                                                                              |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [Vimium C]            | VIM 快捷键. (**会覆盖部分浏览器快捷键, 进而导致部分页面功能失效**)                                                                |
+| [NeatDownloadManager] | 下载器, 需要结合[本地服务](https://www.neatdownloadmanager.com/index.php/en/)使用. (仅支持 Windows/macOS, 偶尔无法连接到本地服务) |
 
 [Vimium C]:            https://microsoftedge.microsoft.com/addons/detail/aibcglbfblnogfjhbcmmpobjhnomhcdo
 [NeatDownloadManager]: https://microsoftedge.microsoft.com/addons/detail/neatdownloadmanager-exten/pbghcbaeehloijjcebiflemhcebmlnke
