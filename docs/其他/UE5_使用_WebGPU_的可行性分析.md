@@ -19,9 +19,8 @@ UE 4.23 是官方提供的最后支持 HTML5 导出的版本, 本文旨在分析
 ### UEPlus for H5
 
 - 官网: <https://www.uipower.com/UEPlus.html>
+- 在线演示: **不可用**. 官网有提供链接, 但是打开后显示页面不存在 (HTTP 404).
 - 收费标准: 未知.
-
-**不存在可用的在线演示**, 官网有提供链接, 但是打开后显示页面不存在 (HTTP 404).
 
 支持本地部署 (导出为 HTML5/WASM).
 
@@ -34,7 +33,7 @@ UE 4.23 是官方提供的最后支持 HTML5 导出的版本, 本文旨在分析
 
 astlouis44 声称他们 (Wonder Interactive) 的实现方法是为 UE 添加 WebGPU 和 WASM支持.  
 宣称其特点是支持流式资源传输, 但在线演示至少需先下载 500MB 的内容 (WASM).  
-官网信息不足, 没有具体支持的 UE 版本范围, 仅能从 astlouis44 推测支持 UE5, 且可能支持 UE4.
+官网信息不足, 没有具体支持的 UE 版本范围, 仅能从 astlouis44 的发言推测支持 UE5, 且可能支持 UE4.
 
 !!! warning
     不支持本地部署, 只能租用他们提供的服务器.
@@ -49,9 +48,10 @@ astlouis44 声称他们 (Wonder Interactive) 的实现方法是为 UE 添加 Web
 
 ### SpeculativeCoder/UnrealEngine
 
-- 代码仓库: <https://github.com/SpeculativeCoder/UnrealEngine>
+- 代码仓库
+    - UE 4.27 分支 <https://github.com/SpeculativeCoder/UnrealEngine/tree/4.27-html5-es3>
+    - ~~UE 5.5 分支~~ (停滞): <https://github.com/SpeculativeCoder/UnrealEngine/tree/5.5-html5-es3-dev>
 - 代码量: +117273 -66210
-- UE 5.5 分支: <https://github.com/SpeculativeCoder/UnrealEngine/tree/5.5-html5-es3-dev>
 
 该社区分支提供 UE **4.27** 的 HTML5 导出功能.
 
@@ -115,6 +115,6 @@ Bevy 和 Nanite WebGPU 的实现中均借助第三方库 meshoptimizer (用于�
 flowchart TD
     A{UE4 或 UE5?} -->|UE4| B[UE-HTML5 或 SpeculativeCoder/UnrealEngine]
     A -->|UE5| C{是否本地部署?}
-    C -->|是| D[像素流送]
-    C -->|否| E[UEPlus for H5 或 SimplyStream]
+    C -->|是| D[像素流送或 UEPlus for H5]
+    C -->|否| E[SimplyStream]
 ```
