@@ -56,7 +56,7 @@ CertUtil: -hashfile command completed successfully.
 8a121303e64d78832399336f7aed307887f31f010886bcf408c34aa3ee8d5fc5  manjaro-gnome-24.0.3-240702-linux69.iso
 ```
 
-校验哈希值一致, 镜像文件完整.
+校验哈希值一致, 系统镜像文件完整.
 
 ## 下载烧录软件
 

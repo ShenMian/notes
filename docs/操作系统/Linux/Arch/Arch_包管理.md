@@ -8,9 +8,9 @@
 sudo pacman -Ss <package>       # 搜索包
 sudo pacman -Si <package>       # 显示包信息
 sudo pacman -S <package>        # 安装包
-sudo pacman -Rns <package>      # 删除包 (包括不再需要的依赖项)
+sudo pacman -Rns <package>      # 卸载包 (包括不再需要的依赖项)
 sudo pacman -Syu                # 进行全面更新 (如果更换了镜像源, 请使用 -Syyu)
-sudo pacman -Rs $(pacman -Qtdq) # 删除无用的包
+sudo pacman -Rs $(pacman -Qtdq) # 卸载未使用的包
 
 yay -Ps # 列出外存占用情况和 10 个体积最大的包
 
@@ -19,7 +19,7 @@ sudo pacman-mirrors -c China # 更新镜像源 (仅限 Manjaro)
 
 ## 使用 AUR
 
-在安装 AUR 包之前, 需要先手动安装一个 AUR Helper. 通过这类工具可以方便地从 AUR (Arch User Repository) 获取和安装包.
+在安装 AUR (Arch User Repository) 包之前, 需要先**手动安装**一个 AUR Helper. 通过这类工具可以方便地从 AUR 获取和安装包.
 
 以下是两种常见 AUR Helper 的安装方法. 虽然它们的使用方式基本相同, 但在默认配置上存在一些差异.  
 这些工具均基于 pacman 进行了封装, 能够同时管理官方仓库和 AUR 中的包, 且调用时无需使用 `sudo`.
@@ -66,14 +66,6 @@ sudo pacman -S yay
 从文件 `/etc/pacman.conf` 中取消注释 `Color`.
 
 详情请参考 <https://github.com/Jguer/yay/issues/123#issuecomment-361910482>.
-
-## Flatpak
-
-```sh
-sudo pacman -S flatpak
-```
-
-建议在使用 flatpak 安装软件前重启.
 
 ## 自定义下载器
 

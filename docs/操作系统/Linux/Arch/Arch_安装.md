@@ -17,7 +17,7 @@
 
 ## 下载镜像文件
 
-从[官网](https://archlinux.org/download/)下载 ISO 镜像文件和对应的 PGP 签名文件.
+从[官网](https://archlinux.org/download/)下载 ISO 系统镜像文件和对应的 PGP 签名文件.
 
 ```txt
 -a--- 1.2G  5 Apr 01:24  archlinux-2025.04.01-x86_64.iso
@@ -26,7 +26,7 @@
 
 ## 验证镜像文件 (可选)
 
-使用 GPG 验证镜像文件:
+使用 GPG 验证系统镜像文件:
 
 ```console
 > gpg --keyserver-options auto-key-retrieve --verify archlinux-2025.04.01-x86_64.iso.sig
@@ -45,7 +45,7 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
 
 ## Live USB
 
-将镜像文件 (即下载的 iso 文件) 烧录到 U 盘中, 然后从 U 盘启动 Arch Linux.  
+将系统镜像文件烧录到 U 盘中, 然后从 U 盘启动 Arch Linux.  
 后续将通过从 U 盘上启动的 Arch Linux 来为电脑安装新的 Arch Linux.
 
 ## 从 Live USB 启动
@@ -104,7 +104,7 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
 # timedatectl set-ntp true # 时间同步
 ```
 
-## 更换源 (可选)
+## 更换镜像源 (可选)
 
 在 Arch Linux 官方提供的[生成器](https://archlinux.org/mirrorlist/)中选择自己所在的国家, 获取镜像源列表.  
 然后将内容写入到 `/etc/pacman.d/mirrorlist` 中, 替换原有内容.
@@ -115,7 +115,7 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
 curl "https://archlinux.org/mirrorlist/?country=CN" > /etc/pacman.d/mirrorlist
 ```
 
-然后通过取消注释来启用要使用的镜像服务器.
+然后通过**取消注释**来启用要使用的镜像服务器.
 
 ## 分区
 
