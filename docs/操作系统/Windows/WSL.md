@@ -14,7 +14,7 @@
 
 - 方法 2
 
-    打开 `optionalfeatures.exe`, 勾选 Windows Subsystem for Linux.
+    运行 `OptionalFeatures.exe`, 勾选 Windows Subsystem for Linux.
 
     !!! tip
         该步骤需要重启计算机.  
@@ -37,7 +37,7 @@ wsl --manage archlinux --set-default-user sms # 设置 Arch Linux 的默认用�
 - `WslRegisterDistribution failed with error: 0x800701bc`  
     <https://docs.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package>
 - `WslRegisterDistribution failed with error: 0x80370102`  
-    打开 `optionalfeatures.exe`, 勾选 Hyper-V.  
+    运行 `OptionalFeatures.exe`, 勾选 Hyper-V.  
 - `Class not registered Error code: Wsl/CallMsi/REGDB_E_CLASSNOTREG`
     从 [GitHub](https://github.com/microsoft/WSL/releases) 上下载并安装 WSL.
 

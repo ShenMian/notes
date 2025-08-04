@@ -63,6 +63,21 @@
     },
     {
       "pattern": "^https://microg.org/"
+    },
+    {
+      "pattern": "^https://github.com/ufna/UnrealEngine/tree/4.24-html5"
+    },
+    {
+      "pattern": "^https://www.thunderbird.net/"
+    },
+    {
+      "pattern": "^https://www.huorong.cn/"
+    },
+    {
+      "pattern": "^https://defkey.com/"
+    },
+    {
+      "pattern": "^https://kraken.nswardh.com/"
     }
   ],
   "httpHeaders": [
