@@ -37,6 +37,8 @@ sudo flatpak remote-modify flathub --url=https://dl.flathub.org/repo
 项目 [stylepak](https://github.com/refi64/stylepak) 可以调用 Flatpak 自动安装当前系统环境所使用的主题.
 
 ```sh
+sudo pacman -S appstream-glib
+
 # GTK theme
 mkdir -p ~/.themes
 cp -r /usr/share/themes/Adwaita-dark ~/.themes/Adwaita-dark
@@ -46,6 +48,9 @@ sudo flatpak override --filesystem=$HOME/.themes
 # Qt theme
 flatpak install org.kde.KStyle.Adwaita
 ```
+
+!!! info
+    无需安装 README 中给出的依赖项 `ostree`, 因为这已经是 Flatpak 的依赖项了.
 
 ## 故障排除
 
@@ -69,6 +74,10 @@ flatpak install org.kde.KStyle.Adwaita
     ```sh
     flatpak override --talk-name=org.kde.kwalletd6 <APP>
     ```
+
+## 参见
+
+- <https://blogs.gnome.org/alexl/2017/10/02/on-application-sizes-and-bloat-in-flatpak/>
 
 ## 参考
 
