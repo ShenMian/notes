@@ -65,7 +65,10 @@
       "pattern": "^https://microg.org/"
     },
     {
-      "pattern": "^https://github.com/ufna/UnrealEngine/tree/4.24-html5"
+      "pattern": "^https://github.com/ufna/UnrealEngine/tree/"
+    },
+    {
+      "pattern": "^https://github.com/SpeculativeCoder/UnrealEngine/tree/"
     },
     {
       "pattern": "^https://www.thunderbird.net/"
