@@ -9,7 +9,7 @@ flatpak update                            # 更新所有包
 flatpak install <package>                 # 安装包
 flatpak uninstall <package>               # 卸载包 (保留用户数据)
 flatpak uninstall --delete-data <package> # 卸载包 (删除用户数据)
-flatpak list                              # 列出已安装的包
+flatpak list --app                        # 列出已安装的应用程序
 flatpak uninstall --unused                # 卸载未使用的包
 ```
 
@@ -31,12 +31,6 @@ sudo flatpak remote-modify flathub --url=https://dl.flathub.org/repo
 ```
 
 详情请参考 [USTC Mirror Help](https://mirrors.ustc.edu.cn/help/flathub.html).
-
-## 工作原理
-
-Flatpak 通过 OSTree 管理软件包, 其应用程序和运行时的安装目录位于 OSTree 仓库中.
-
-TODO
 
 ## 主题安装
 

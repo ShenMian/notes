@@ -81,6 +81,9 @@
     },
     {
       "pattern": "^https://kraken.nswardh.com/"
+    },
+    {
+      "pattern": "^https://mirrors.ustc.edu.cn/help/"
     }
   ],
   "httpHeaders": [
