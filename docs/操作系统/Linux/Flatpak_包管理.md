@@ -1,6 +1,6 @@
 # Flatpak 包管理
 
-Flatpak 上的内容可以分为应用和运行时两类, 下面统称为包.
+Flatpak 上的内容可以分为应用 (Application) 和运行时 (Runtime) 两类, 下面统称为包.
 
 ## 常用操作
 
