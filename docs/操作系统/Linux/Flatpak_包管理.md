@@ -1,6 +1,6 @@
 # Flatpak 包管理
 
-Flatpak 上的内容可以分为应用 (Application) 和运行时 (Runtime) 两类, 下面统称为包.
+Flatpak 上的内容可以分为应用程序 (Application) 和运行时 (Runtime) 两类, 下面统称为包.
 
 ## 常用操作
 
@@ -16,7 +16,7 @@ flatpak uninstall --unused                # 卸载未使用的包
 ## 更换镜像源
 
 !!! warning
-    部分私有的应用程序不允许再分发 (例如 [VSCode](https://github.com/flathub/com.visualstudio.code/blob/0f98512a00cca879c91f2f37f9e6325a4356b545/com.visualstudio.code.yaml#L123)), 因此安装这些包时依然需要从应用官方指定的位置下载二进制包.
+    部分私有的应用程序不允许再分发, 因此安装这些包时依然需要从应用官方指定的位置下载二进制包.
 
 执行下面命令使用 USTC 提供的 Flathub 缓存:
 
@@ -31,6 +31,12 @@ sudo flatpak remote-modify flathub --url=https://dl.flathub.org/repo
 ```
 
 详情请参考 [USTC Mirror Help](https://mirrors.ustc.edu.cn/help/flathub.html).
+
+## 工作原理
+
+Flatpak 通过 OSTree 管理软件包, 其应用程序和运行时的安装目录位于 OSTree 仓库中.
+
+TODO
 
 ## 主题安装
 
