@@ -18,7 +18,7 @@ flatpak uninstall --unused                # 卸载未使用的包
 !!! warning
     部分私有的应用程序不允许再分发, 因此安装这些包时依然需要从应用官方指定的位置下载二进制包.
 
-执行下面命令使用 USTC 提供的 Flathub 缓存:
+执行下面命令使用 USTC 提供的 Flathub 镜像仓库:
 
 ```sh
 sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
@@ -30,7 +30,30 @@ sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
 sudo flatpak remote-modify flathub --url=https://dl.flathub.org/repo
 ```
 
+查看当前 Flathub 的 URL:
+
+```sh
+flatpak remotes --columns=name,url
+
+# 本质上是一个 OSTree 仓库, 因此也可以通过下面方式查看
+ostree remote --repo=/var/lib/flatpak/repo show-url flathub
+```
+
 详情请参考 [USTC Mirror Help](https://mirrors.ustc.edu.cn/help/flathub.html).
+
+## 离线安装
+
+Flatpak 还可以通过 `.flatpak` 文件进行离线安装:
+
+```sh
+flatpak install <app.flatpak>
+```
+
+但官方并未提供直接 `.flatpak` 文件, 需要先在联网的计算机上自行打包:
+
+```sh
+flatpak build-bundle /var/lib/flatpak/repo libreoffice.flatpak org.libreoffice.LibreOffice stable
+```
 
 ## 主题安装
 
