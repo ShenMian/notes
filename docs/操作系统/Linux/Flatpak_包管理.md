@@ -55,6 +55,8 @@ flatpak install <app.flatpak>
 flatpak build-bundle /var/lib/flatpak/repo libreoffice.flatpak org.libreoffice.LibreOffice stable
 ```
 
+默认情况下, 打包为使用 OSTree 格式数据的单个 `.flatpak` 文件, 也可以通过参数 `--oci` 生成 OCI 镜像文件夹.
+
 ## 主题安装
 
 项目 [stylepak](https://github.com/refi64/stylepak) 可以调用 Flatpak 自动安装当前系统环境所使用的主题.
