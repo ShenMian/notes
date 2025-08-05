@@ -2,6 +2,9 @@
 
 Termux 是一个 Android 终端模拟器.
 
+!!! warning
+    Google Play 上的 Termux 已经停止维护, 请从 GitHub 或 F-Droid 下载.
+
 链接移动设备需要以下软件:
 
 - ssh: 用于互连, 使电脑可以接管移动设备.
