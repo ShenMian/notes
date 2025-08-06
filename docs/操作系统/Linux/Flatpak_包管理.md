@@ -57,13 +57,32 @@ flatpak build-bundle /var/lib/flatpak/repo libreoffice.flatpak org.libreoffice.L
 
 默认情况下, 打包为使用 OSTree 格式数据的单个 `.flatpak` 文件, 也可以通过参数 `--oci` 生成 OCI 镜像文件夹.
 
-## 主题安装
+## 主题同步
+
+```sh
+flatpak install flathub org.gtk.Gtk3theme.Breeze-Dark
+```
+
+---
+
+```sh
+flatpak -u override --filesystem=xdg-config/gtk-3.0:ro
+flatpak -u override --filesystem=xdg-config/gtk-4.0:ro
+```
 
 项目 [stylepak](https://github.com/refi64/stylepak) 可以调用 Flatpak 自动安装当前系统环境所使用的主题.
 
 ```sh
 sudo pacman -S appstream-glib
+git clone https://github.com/refi64/stylepak
+cd stylepak/
+./stylepak install-user
+```
 
+!!! info
+    无需安装 stylepak 的依赖项 `ostree`, 因为这已经是 Flatpak 的依赖项了.
+
+```sh
 # GTK theme
 mkdir -p ~/.themes
 cp -r /usr/share/themes/Adwaita-dark ~/.themes/Adwaita-dark
@@ -73,9 +92,6 @@ sudo flatpak override --filesystem=$HOME/.themes
 # Qt theme
 flatpak install org.kde.KStyle.Adwaita
 ```
-
-!!! info
-    无需安装 README 中给出的依赖项 `ostree`, 因为这已经是 Flatpak 的依赖项了.
 
 ## 故障排除
 
