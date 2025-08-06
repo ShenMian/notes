@@ -415,31 +415,6 @@ sudo pacman -S timeshift grub-btrfs
 
 若要在 Timeshift 创建快照时自动更新 GRUB 入口, 请查看 [ArchWiki](https://wiki.archlinux.org/title/Timeshift#GRUB_entries_for_btrfs_snapshots).
 
-## 安全加固 (可选)
-
-### 防火墙
-
-```sh
-paru -S ufw
-
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-
-sudo ufw enable
-sudo ufw status verbose
-```
-
-### 自动审查
-
-[lynis] 是一个自动审查系统安全的脚本, 可以帮助发现潜在的安全问题:
-
-```sh
-paru -S lynis
-sudo lynis audit system
-```
-
-[lynis]: https://github.com/CISOfy/lynis
-
 ## 参考
 
 - <https://en.opensuse.org/SDB:BTRFS>.
