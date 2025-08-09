@@ -5,45 +5,35 @@
 **关键字**: HiDPI.
 
 !!! warning
-    截至 GNOME 48, 分数倍缩放依然为实验性功能. 部分 X11 应用可能存在性能和画面模糊的问题.   
-    相比之下, KDE Plasma 对分数倍缩放 (Wayland 和 X11 应用) 已经有成熟和稳定的支持.
+    该功能为**实验性功能**, 效果较差且存在严重的性能问题. 短期内不会解决.
 
-如果使用 GNOME 47 及以上版本和 Wayland, 可以通过下面命令启用实验性的分数倍缩放功能:
+!!! info
+    本文**不讨论 X11 的解决方案**, 如果依然在使用 X11, 建议尽快切换到 Wayland. 因为 GNOME Shell 和 KDE Plasma 正在为淘汰 X11 做准备工作.
+
+截至 GNOME 48.3, 分数倍缩放依然为实验性功能.  
+相比之下, KDE Plasma 对分数倍缩放 (Wayland 和 X11 应用) 已经有成熟和稳定的支持.
+
+如果使用 **GNOME 47 及以上版本**, 可以通过下面命令启用实验性的分数倍缩放功能:
 
 ```sh
 gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer", "xwayland-native-scaling"]'
 ```
 
-重启以应用修改, 然后在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
+然后在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
 
-如果依然在使用 X11, 建议尽快切换到 Wayland. 因为 GNOME Shell 和 KDE Plasma 正在为淘汰 X11 做准备工作.
+由于 GTK 不支持分数被缩放, 因此这部分应用 (包括大部分 GNOME 原生应用) 将使用超采样来实现分数倍缩放.  
+这将导致下面问题:
 
-如果你使用的是 GNOME 46 及以下版本:
+- 超采样通常被应用于抗锯齿, 因此应用的界面将变得模糊.
+- 需要先以更高的分辨率渲染, 因此会有非常巨大的性能开销. 部分实时渲染应用可能因为严重的性能问题, 而变得不可用.
 
-- Wayland
+如果使用 **GNOME 46 及以下版本**, 可以通过下面命令启用实验性的分数倍缩放功能:
 
-    ```sh
-    gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-    ```
+```sh
+gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+```
 
-- X11
-
-    ```sh
-    gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
-    ```
-
-    ```sh
-    paru -S mutter-x11-scaling
-    gsettings set org.gnome.mutter experimental-features "['x11-randr-fractional-scaling']"
-    ```
-
-    Manjaro:
-
-    ```sh
-    sudo pacman -S mutter-x11-scaling gnome-control-center-x11-scaling
-    ```
-
-    设置完毕需要重启, 然后启用 `Settings | Displays | Fractional Scaling` 并在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
+但更推荐的做法是更新到 GNOME 47 版本.
 
 禁用实验性特性:
 
