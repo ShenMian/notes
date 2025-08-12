@@ -56,11 +56,15 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra:
   # https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/?h=extra+social#social-links
