@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set cache id (weekly)
+        id: set_cache_id
+        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_OUTPUT
+
+      - name: Cache
+        uses: actions/cache@v4
+        with:
+          key: mkdocs-material-${{ steps.set_cache_id.outputs.cache_id }}
+          path: ~/.cache
+          restore-keys: mkdocs-material-
+
+      - name: Install dependencies
+        run: pip install mkdocs-material pymdown-extensions
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
