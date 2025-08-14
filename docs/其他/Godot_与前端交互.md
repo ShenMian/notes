@@ -7,7 +7,7 @@
 
 [JavaScriptBridge]: https://docs.godotengine.org/en/latest/classes/class_javascriptbridge.html
 
-### Godot 调用 JS
+## Godot 调用 JS
 
 现在前端创建一个全局的 JS 函数:
 
@@ -24,7 +24,7 @@ var window = JavaScriptBridge.get_interface("window")
 window.helloFromGodot()
 ```
 
-### JS 调用 Godot
+## JS 调用 Godot
 
 Godot 创建一个 JS 函数 (`helloFromJs`), 并将其回调绑定到一个 GDScript 函数:
 
