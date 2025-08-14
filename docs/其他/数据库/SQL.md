@@ -1,4 +1,4 @@
-# SQL(Structured Query Language)
+# SQL (Structured Query Language)
 
 SQL 命令根据功能可以分为以下几类:
 
@@ -26,7 +26,10 @@ SQL 命令根据功能可以分为以下几类:
 
 ## 事务控制语言
 
-- `BEGIN TRANSACTION`: 开始事务. 与 `COMMIT`, `ROLLBACK` 配对使用.
+- `BEGIN`: 开始事务. 与 `COMMIT`, `ROLLBACK` 配对使用.
+
+    部分数据库也使用 `START TRANSACTION`.
+
 - `COMMIT`: 提交事务, 即应用事务内的全部操作.
 - `ROLLBACK`: 回滚事务, 即撤销事务内的全部操作.
 
