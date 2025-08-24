@@ -2,7 +2,7 @@
 
 ## 蓝屏
 
-蓝屏时系统将创建一个拓展名为 `.dmp` 的内存转储文件到 `C:\Windows\Minidump` 目录 (默认路径) 下.
+蓝屏时系统将创建一个扩展名为 `.dmp` 的内存转储文件到 `C:\Windows\Minidump` 目录 (默认路径) 下.
 
 ```console
 > ll C:\Windows\Minidump

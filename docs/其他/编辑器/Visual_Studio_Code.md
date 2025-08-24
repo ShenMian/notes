@@ -6,13 +6,13 @@ VSCode 主要有以下版本:
 
 - [VSCode] : 官方提供的版本, 属于私有软件, 包含微软的遥测功能.
 - [VSCodium] : 社区提供的版本, 属于开源软件, 剔除了微软的遥测功能.
-    - **不支持部分 VSCode 插件**: 如果你需要使用这些插件 (如 Live Share, Remote - SSH 等), 请考虑使用 VSCode. 详情请参考[拓展兼容性](https://github.com/VSCodium/vscodium/blob/master/docs/extensions-compatibility.md).
+    - **不支持部分 VSCode 插件**: 如果你需要使用这些插件 (如 Live Share, Remote - SSH 等), 请考虑使用 VSCode. 详情请参考[扩展兼容性](https://github.com/VSCodium/vscodium/blob/master/docs/extensions-compatibility.md).
     - **插件来源于 <https://open-vsx.org>**: 部分插件需要从 <https://marketplace.visualstudio.com/vscode> 手动下载并安装 (如 GitHub Copilot).
 
 [VSCode]: https://github.com/microsoft/vscode
 [VSCodium]: https://github.com/VSCodium/vscodium
 
-## 拓展 (Extensions)
+## 扩展 (Extensions)
 
 - [Error Lens] : 行内错误提示.
 - EditorConfig for VS Code.

@@ -71,7 +71,7 @@ Vendor Keys: microsoft
 
 1. Settings: 系统的基本设置.
 2. Tweaks: 系统的高级设置.
-3. Extensions: 拓展的设置.
+3. Extensions: 扩展的设置.
 4. Manjaro Settings: 系统内核/驱动的设置.
 5. Layouts: 桌面布局基本设置.
 
