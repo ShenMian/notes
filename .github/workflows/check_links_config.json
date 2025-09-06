@@ -1,0 +1,108 @@
+{
+  "projectBaseUrl": "${workspaceFolder}",
+  "ignorePatterns": [
+    {
+      "pattern": "^https://platform.deepseek.com/"
+    },
+    {
+      "pattern": "^https://platform.openai.com/"
+    },
+    {
+      "pattern": "^https://openai.com/"
+    },
+    {
+      "pattern": "^https://www.epicgames.com/"
+    },
+    {
+      "pattern": "^https://dev.epicgames.com/"
+    },
+    {
+      "pattern": "^https://dev.mysql.com/"
+    },
+    {
+      "pattern": "^https://stackoverflow.com/"
+    },
+    {
+      "pattern": "^https://www.reddit.com/"
+    },
+    {
+      "pattern": "^https://www.zhihu.com/"
+    },
+    {
+      "pattern": "^https://www.intel.com/"
+    },
+    {
+      "pattern": "^https://dl.acm.org/"
+    },
+    {
+      "pattern": "^https://www.microsoft.com/en-us/edge"
+    },
+    {
+      "pattern": "^https://www.onlinegdb.com/"
+    },
+    {
+      "pattern": "^https://whoer.net/"
+    },
+    {
+      "pattern": "^https://store.nethunter.com/"
+    },
+    {
+      "pattern": "^https://www.coolapk.com/"
+    },
+    {
+      "pattern": "https://www.ollydbg.de/version2.html"
+    },
+    {
+      "pattern": "^https://www.blender.org/"
+    },
+    {
+      "pattern": "^https://linux-audit.com/"
+    },
+    {
+      "pattern": "^https://store.epicgames.com/"
+    },
+    {
+      "pattern": "^https://microg.org/"
+    },
+    {
+      "pattern": "^https://github.com/ufna/UnrealEngine/tree/"
+    },
+    {
+      "pattern": "^https://github.com/SpeculativeCoder/UnrealEngine/tree/"
+    },
+    {
+      "pattern": "^https://www.thunderbird.net/"
+    },
+    {
+      "pattern": "^https://www.huorong.cn/"
+    },
+    {
+      "pattern": "^https://defkey.com/"
+    },
+    {
+      "pattern": "^https://kraken.nswardh.com/"
+    },
+    {
+      "pattern": "^https://mirrors.ustc.edu.cn/help/"
+    }
+  ],
+  "httpHeaders": [
+    {
+      "urls": [
+        "https://github.com/",
+        "https://guides.github.com/",
+        "https://help.github.com/",
+        "https://docs.github.com/"
+      ],
+      "headers": {
+        "Accept-Encoding": "zstd, br, gzip, deflate"
+      }
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "aliveStatusCodes": [
+    200,
+    206
+  ]
+}
