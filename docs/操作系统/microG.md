@@ -12,7 +12,7 @@ microG 是 GMS 的开源实现 (Apache 2.0), 主要特点可以参考[官方 Wik
 
 ## 安装
 
-可以从 [microG 官网](https://microg.org/download.html)下载或从 microG 的 F-Droid 仓库[^1]安装下面服务:
+可以从 [GitHub](https://github.com/microg/GmsCore/wiki/Downloads)下载或从 microG 的 F-Droid 仓库[^1]安装下面服务:
 
 需先安装 microG 的三款软件:
 
@@ -56,5 +56,5 @@ F-Droid 不是 Google Play 的替代品, 以 Element X 应用为例:
 
 与 F-Droid 不同, Aurora Store 的 APK 文件是直接从官方的 Google Play 商店下载[^2].
 
-[^1]: 需启用 microG F-Droid repo 仓库 (https://microg.org/fdroid/repo).
-[^2]: https://gitlab.com/AuroraOSS/AuroraStore#aurora-store
+[^1]: 需启用 microG F-Droid repo 仓库 (<https://microg.org/fdroid/repo>).
+[^2]: <https://gitlab.com/AuroraOSS/AuroraStore#aurora-store>
