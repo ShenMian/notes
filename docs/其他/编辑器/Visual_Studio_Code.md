@@ -41,11 +41,13 @@ VSCode 主要有以下版本:
 - [Even Better TOML].
 - [Dependi] : 提供依赖项版本信息.
 - [CodeLLDB] : 调试.
+- [Flowistry] : 程序切片.
 
 [rust-analyzer]: https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer
 [Even Better TOML]: https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml
 [Dependi]: https://marketplace.visualstudio.com/items?itemName=fill-labs.dependi
 [CodeLLDB]: https://open-vsx.org/extension/vadimcn/vscode-lldb
+[Flowistry]: https://marketplace.visualstudio.com/items?itemName=wcrichton.flowistry
 
 ### Markdown
 
