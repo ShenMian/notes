@@ -94,19 +94,15 @@ GreeterEnvironment=QT_SCREEN_SCALE_FACTORS=1.5,QT_FONT_DPI=192
 
 ## 启用 Num Lock
 
-### 命令行启用
+### 登录后启用
 
-详情请参考 [ArchWiki](https://wiki.archlinux.org/title/Activating_numlock_on_bootup#Console).
+将 `System Settings | Keyboard | NumLock on startup` 设置为 `Turn on`.
 
 ### 登录界面启用 (SDDM)
 
 点击 `System Settings | Colors & Themes | Login Screen (SDDM) | Apply Plasma Settings...`.
 
 ![Apply Plasma Settings](assets/apply_plasma_settings.webp){ width=80% style="display: block; margin: 0 auto" }  
-
-### 登录后启用
-
-将 `System Settings | Keyboard | NumLock on startup` 设置为 `Turn on`.
 
 ## 打印机
 
