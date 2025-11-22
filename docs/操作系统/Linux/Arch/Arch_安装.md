@@ -159,8 +159,8 @@ fdisk 分区常用命令:
 创建分区后, 就需要选择合适的文件系统对分区进行格式化.  
 根分区建议使用的文件系统为:
 
-- btrfs[^btrfs]: 更新一代的文件系统. 提供先进特性如快照/通过校验和进行自我修复/透明压缩/子卷和集成 RAID.
-- ext4: 一个可靠的/通用的/全平台的文件系统, 尽管它缺少现代特性如 reflinks.
+- **btrfs**[^btrfs]: 更新一代的文件系统. 提供先进特性如快照/通过校验和进行自我修复/透明压缩/子卷和集成 RAID.
+- **ext4**: 一个可靠的/通用的/全平台的文件系统, 尽管它缺少现代特性如 reflinks.
 
 其他文件系统请参考 [Gentoo 手册](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Filesystems)和 [ArchWiki](https://wiki.archlinux.org/title/File_systems#Types_of_file_systems).
 
