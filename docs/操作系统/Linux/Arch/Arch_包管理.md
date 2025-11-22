@@ -84,7 +84,7 @@ sudo pacman -S yay
 
 在文件 `/etc/pacman.conf` 中添加以下内容:
 
-```conf
+```conf title="/etc/pacman.conf"
 [archlinuxcn]
 Server = https://repo.archlinuxcn.org/$arch
 ```

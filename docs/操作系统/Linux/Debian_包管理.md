@@ -20,7 +20,7 @@ sudo apt autoremove        # 卸载未使用的包
 
 在文件 `/etc/apt/sources.list` 的**头部**添加下面内容:
 
-```conf
+```conf title="/etc/apt/sources.list"
 # USTC 中科大镜像
 deb https://mirrors.ustc.edu.cn/kali kali-rolling main non-free non-free-firmware contrib
 deb-src https://mirrors.ustc.edu.cn/kali kali-rolling main non-free non-free-firmware contrib

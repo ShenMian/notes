@@ -326,7 +326,7 @@ fdisk 分区常用命令:
 
 修改文件 `/etc/locale.conf`, 添加下面内容来设置需要使用的语言:
 
-```conf
+```conf title="/etc/locale.conf"
 LANG=en_US.UTF-8
 ```
 

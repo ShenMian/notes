@@ -24,7 +24,7 @@ sudo pacman -S noto-fonts-cjk
 
 默认日语字体优先级别更高, 会导致中文显示异常. 在 `~/.fonts.conf` 中写入下面内容, 修改优先级:
 
-```xml
+```xml title="~/.fonts.conf"
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
@@ -75,7 +75,7 @@ sudo systemctl enable sddm.service
 
 在文件 `/etc/sddm.conf.d/hidpi.conf` 中添加下面内容:
 
-```conf
+```conf title="/etc/sddm.conf.d/hidpi.conf"
 [Wayland]
 EnableHiDPI=true
 
@@ -85,7 +85,7 @@ EnableHiDPI=true
 
 如果选择基于 Qt 的登录界面 (如 Breeze), 以 150% 的缩放倍率为例, 还需要追加下面内容:
 
-```conf
+```conf title="/etc/sddm.conf.d/hidpi.conf"
 [General]
 GreeterEnvironment=QT_SCREEN_SCALE_FACTORS=1.5,QT_FONT_DPI=192
 ```
