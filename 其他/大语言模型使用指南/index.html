@@ -10570,14 +10570,13 @@ RAG 一共有以下三个关键阶段:</p>
 </tr>
 </tbody>
 </table>
-<p>以 <a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B">DeepSeek-R1-0528-Qwen3-8B</a> 为例, 其参数量为 8B, 量化为 Q4_K_M.<br />
+<p>以 DeepSeek-R1-0528-Qwen3-8B 为例, 其参数量为 8B, 量化为 Q4_K_M.<br />
 通过上表可以推测出所需内存大概为 5 GiB, 实际显存使用量为 5.3 GiB.</p>
 <h3 id="_11">推荐模型<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[gpt-oss-20b]</strong>: 推理模型, 13 tok/sec, 约 6.8 GiB 内存占用.</li>
-<li><strong><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B">DeepSeek-R1-0528-Qwen3-8B</a></strong>: 推理模型, 45.5 tok/sec, 约 5.3 GiB 内存占用.</li>
-<li><strong><a href="https://huggingface.co/Qwen/Qwen3-14B">Qwen3-14B</a></strong>: 混合推理模型, 14 tok/sec, 约 5.6 GiB 内存占用.</li>
-<li><strong><a href="https://huggingface.co/google/gemma-3-12b-it">gemma-3-12b-it</a></strong>: 图像识别, 13 tok/sec, 约 7.7 GiB 内存占用.</li>
+<li><strong><a href="https://huggingface.co/Qwen/Qwen3-14B">Qwen3-14B</a></strong>: 混合推理模型, 10 tok/sec, 约 6.4 GiB 内存占用.</li>
+<li><strong><a href="https://huggingface.co/openai/gpt-oss-20b">gpt-oss-20b</a></strong>: 推理模型, 24 tok/sec, 约 6.2 GiB 内存占用.</li>
+<li><strong><a href="https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct">qwen3-vl-8b</a></strong>: 图像识别, 27.53 tok/sec, 约 6.8 GiB 内存占用.</li>
 </ul>
 <p><strong>测试 GPU</strong>: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).<br />
 若使用 LM Studio 或 PocketPal, <strong>建议启用 Flash Attention</strong>, 以获得更快的推理速度和更大的上下文窗口.</p>
@@ -10688,7 +10687,7 @@ RAG 一共有以下三个关键阶段:</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月29日 01:56:52 CST">2025年9月29日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月24日 07:23:18 CST">2025年11月24日</span>
   </span>
 
     
