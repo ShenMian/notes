@@ -303,7 +303,7 @@ sudo pacman -S tk
 
 ### Lazygit
 
-[Lazygit](https://github.com/jesseduffield/lazygit) 是一个基于 TUI 的 Git 客户端, 可以简化 Git 相关的操作.  
+[Lazygit](https://github.com/jesseduffield/lazygit) 是一个基于 TUI 的开源 (MIT) Git 客户端, 可以简化 Git 相关的操作.  
 该工具功能丰富, 在终端环境下使用特别方便, 可作为各种 Git 交互式功能的上位替代, 支持补丁暂存.
 
 ```sh
@@ -311,6 +311,8 @@ sudo pacman -S tk
 sudo pacman -S lazygit # Arch Linux
 scoop install lazygit  # Windows
 ```
+
+Lazygit 中的操作均可以通过快捷键完成, 可以随时按下 `?` 来查看当前可用的快捷键.
 
 ### GitHub Desktop
 
