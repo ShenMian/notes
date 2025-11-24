@@ -135,7 +135,7 @@ let (device, queue) = adapter
 
 以上面代码为例, 存在下面约束:
 
-- `power_preference`: 游戏笔记本电脑通常有集成显卡和独立显卡两个 GPU, 集成显卡性能较差, 但是比较节能, 独立显卡性能较好, 但是功耗较大. 可以根据当前应用的使用常见选择, 如果是游戏, 则应该优先选择高性能的 GPU 设备.
+- `power_preference`: 游戏笔记本电脑通常有集成显卡和独立显卡两个 GPU, 集成显卡性能较差, 但是比较节能, 独立显卡性能较好, 但是功耗较大. 可以根据当前应用的使用场景选择, 如果是游戏, 则应该优先选择高性能的 GPU 设备.
 - `force_fallback_adapter`: 表示是否**强制使用回退适配器**. 如果设置为 `true`, 会返回一个通常由操作系统实现的软渲染器, 例如 Windows 上的 "Microsoft Basic Render Driver". 正常情况下, 应该总是设置为 `false`, 以避免使用性能较差的软渲染器.
 - `compatible_surface`: 确保选择的 GPU 兼容当前的 `Surface`, 即所选 GPU 渲染的结果可以通过该 `Surface` 进行展示.
 
@@ -174,7 +174,7 @@ let config = surface
 surface.configure(&device, &config);
 ```
 
-`Surface` 配置完毕后就完成了基本的初始化工作, 后续可以用来将渲染得到的结构展示在窗口中.  
+`Surface` 配置完毕后就完成了基本的初始化工作, 后续可以用来将渲染得到的结果展示在窗口中.  
 后续的渲染任务主要通过调用 `Device` 和 `Queue` 来完成.
 
 下面是完整的初始化代码:
