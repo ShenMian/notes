@@ -10577,7 +10577,7 @@ RAG 一共有以下三个关键阶段:</p>
 <li><strong><a href="https://huggingface.co/Qwen/Qwen3-14B">Qwen3-14B</a></strong>: 混合推理模型, 10 tok/sec, 约 6.4 GiB 内存占用.</li>
 <li><strong><a href="https://huggingface.co/openai/gpt-oss-20b">gpt-oss-20b</a></strong>: 推理模型, 24 tok/sec, 约 6.2 GiB 内存占用.</li>
 <li><strong><a href="https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct">qwen3-vl-8b</a></strong>: 图像识别, 28 tok/sec, 约 6.8 GiB 内存占用.</li>
-<li><strong><a href="https://huggingface.co/ibm-granite/granite-4.0-h-tiny">granite-4-h-tiny</a></strong>: 推理快且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.</li>
+<li><strong><a href="https://huggingface.co/ibm-granite/granite-4.0-h-tiny">granite-4-h-tiny</a></strong>: 推理效率高 (激活参数 1B) 且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.<sup id="fnref:granite-4"><a class="footnote-ref" href="#fn:granite-4">2</a></sup></li>
 </ul>
 <p><strong>测试 GPU</strong>: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).<br />
 若使用 LM Studio 或 PocketPal, <strong>建议启用 Flash Attention</strong>, 以获得更快的推理速度和更大的上下文窗口.</p>
@@ -10618,7 +10618,7 @@ RAG 一共有以下三个关键阶段:</p>
 </tr>
 </tbody>
 </table>
-<p>如果使用的是推理模型, 可以适当降低温度 (如 <span class="arithmatex">\(0.6\)</span> <sup id="fnref:temperature"><a class="footnote-ref" href="#fn:temperature">2</a></sup>).</p>
+<p>如果使用的是推理模型, 可以适当降低温度 (如 <span class="arithmatex">\(0.6\)</span> <sup id="fnref:temperature"><a class="footnote-ref" href="#fn:temperature">3</a></sup>).</p>
 <p>对于编码/数学类任务, 为了提高逻辑性和质量, 应该将温度设为 <span class="arithmatex">\(0\)</span>, 使其总是选择概率最高的词.</p>
 <h3 id="top-p">核采样 (Top-P)<a class="headerlink" href="#top-p" title="Permanent link">&para;</a></h3>
 <p>影响模型考虑的候选词范围.</p>
@@ -10627,12 +10627,12 @@ RAG 一共有以下三个关键阶段:</p>
 <li><strong>高核采样</strong>: 考虑更多可能的词选择. 输出词汇更加丰富多样.</li>
 </ul>
 <h2 id="token">Token<a class="headerlink" href="#token" title="Permanent link">&para;</a></h2>
-<p>Token 是 LLM 处理文本的基本单位<sup id="fnref:token"><a class="footnote-ref" href="#fn:token">3</a></sup>, 也是 API 计费使用到的单位. 其与自然语言文本的换算关系大致为:</p>
+<p>Token 是 LLM 处理文本的基本单位<sup id="fnref:token"><a class="footnote-ref" href="#fn:token">4</a></sup>, 也是 API 计费使用到的单位. 其与自然语言文本的换算关系大致为:</p>
 <ul>
 <li>1 个英文字符 <span class="arithmatex">\(\approx\)</span> 0.3 token.</li>
 <li>1 个中文字符 <span class="arithmatex">\(\approx\)</span> 0.6 token.</li>
 </ul>
-<p>部分 LLM 客户端会显示精确的 token 数, 方便用户计算对话消耗的费用. 如果需要自行计算 token 数量, 则需要使用到相应模型的分词器 (tokenizer)<sup id="fnref:tokenizer"><a class="footnote-ref" href="#fn:tokenizer">4</a></sup>.</p>
+<p>部分 LLM 客户端会显示精确的 token 数, 方便用户计算对话消耗的费用. 如果需要自行计算 token 数量, 则需要使用到相应模型的分词器 (tokenizer)<sup id="fnref:tokenizer"><a class="footnote-ref" href="#fn:tokenizer">5</a></sup>.</p>
 <h2 id="_13">供应商<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <p>受支持最广泛的 API 格式为 <a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI API</a>, 除此自外还有 <a href="https://ai.google.dev/gemini-api/docs">Gemini API</a> 和 <a href="https://docs.anthropic.com/en/home">Anthropic API</a>.<br />
 下面 LLM 供应商均支持 OpenAI API 格式接口:</p>
@@ -10657,14 +10657,17 @@ RAG 一共有以下三个关键阶段:</p>
 <li id="fn:mcp">
 <p>由 Anthropic 公司于 2024 年 11 月提出.&#160;<a class="footnote-backref" href="#fnref:mcp" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
+<li id="fn:granite-4">
+<p>https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models&#160;<a class="footnote-backref" href="#fnref:granite-4" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
 <li id="fn:temperature">
-<p><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B#temperature">https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B#temperature</a>&#160;<a class="footnote-backref" href="#fnref:temperature" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p><a href="https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B#temperature">https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B#temperature</a>&#160;<a class="footnote-backref" href="#fnref:temperature" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:token">
-<p>可以理解为 LLM 所使用语言的词, 该语言非任何人类语言.&#160;<a class="footnote-backref" href="#fnref:token" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p>可以理解为 LLM 所使用语言的词, 该语言非任何人类语言.&#160;<a class="footnote-backref" href="#fnref:token" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:tokenizer">
-<p>不同模型的分词器并不相同.&#160;<a class="footnote-backref" href="#fnref:tokenizer" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>不同模型的分词器并不相同.&#160;<a class="footnote-backref" href="#fnref:tokenizer" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -10688,7 +10691,7 @@ RAG 一共有以下三个关键阶段:</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月24日 07:43:39 CST">2025年11月24日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月24日 08:02:27 CST">2025年11月24日</span>
   </span>
 
     
