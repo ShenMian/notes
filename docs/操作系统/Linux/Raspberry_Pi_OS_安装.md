@@ -7,6 +7,9 @@
 > sudo apt install rpi-imager       # Debian
 ```
 
+!!! warning
+    下面内容已部分过时. Raspberry PI Imager 已于 2025 年 11 月 24 日发布新的 2.0 版本.
+
 ![](assets/rpi_imager_0.webp)  
 
 选择操作系统, 本文以 `Raspberry Pi OS (64-bit)` 为例.  
