@@ -80,9 +80,19 @@ scoop config aria2-warning-enabled false
 
 ## 网络代理
 
+可以使用下面命令设置网络代理:
+
 ```ps1
 scoop config proxy [username:password@]host:port # 设置网络代理
 ```
+
+取消设置网络代理:
+
+```ps1
+scoop config rm proxy
+```
+
+详情请参考 [Wiki](https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy#config-examples).
 
 ## 故障排除
 

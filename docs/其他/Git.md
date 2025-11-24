@@ -46,14 +46,23 @@ git config --global branch.sort -committerdate
 
 ### 网络代理
 
-Git 尊重代理相关的环境变量, 也可以通过下面命令进行重写:
+Git 尊重代理相关的环境变量[^proxy-env], 也可以通过下面命令进行重写:
 
 ```sh
-git config --global http.proxy 'http://<IP>:<PORT>'
-git config --global https.proxy 'http://<IP>:<PORT>'
+git config --global http.proxy '[protocol://][user[:password]@]host[:port][/path]'
+git config --global https.proxy '[protocol://][user[:password]@]host[:port][/path]'
+```
+
+取消设置网络代理:
+
+```sh
+git config unset --global http.proxy
+git config unset --global https.proxy
 ```
 
 详情请参考[官方文档](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy).
+
+[^proxy-env]: 如 `http_proxy`, `https_proxy` 和 `all_proxy`.
 
 ### GPG 签名
 
