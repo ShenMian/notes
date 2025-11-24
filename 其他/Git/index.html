@@ -10675,40 +10675,44 @@
 <a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>branch.sort<span class="w"> </span>-committerdate
 </code></pre></div>
 <h3 id="_3">网络代理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>Git 尊重代理相关的环境变量, 也可以通过下面命令进行重写:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span><span class="s1">&#39;http://&lt;IP&gt;:&lt;PORT&gt;&#39;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span><span class="s1">&#39;http://&lt;IP&gt;:&lt;PORT&gt;&#39;</span>
+<p>Git 尊重代理相关的环境变量<sup id="fnref:proxy-env"><a class="footnote-ref" href="#fn:proxy-env">2</a></sup>, 也可以通过下面命令进行重写:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span><span class="s1">&#39;[protocol://][user[:password]@]host[:port][/path]&#39;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span><span class="s1">&#39;[protocol://][user[:password]@]host[:port][/path]&#39;</span>
+</code></pre></div>
+<p>取消设置网络代理:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>git<span class="w"> </span>config<span class="w"> </span><span class="nb">unset</span><span class="w"> </span>--global<span class="w"> </span>http.proxy
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>git<span class="w"> </span>config<span class="w"> </span><span class="nb">unset</span><span class="w"> </span>--global<span class="w"> </span>https.proxy
 </code></pre></div>
 <p>详情请参考<a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-httpproxy">官方文档</a>.</p>
 <h3 id="gpg">GPG 签名<a class="headerlink" href="#gpg" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gpg<span class="w"> </span>--list-secret-keys<span class="w"> </span>--keyid-format<span class="o">=</span>long
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>gpg<span class="w"> </span>--list-secret-keys<span class="w"> </span>--keyid-format<span class="o">=</span>long
 </code></pre></div>
 <p>执行上面命令后可以得到下面格式的输出:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[keyboxd]
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>---------
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sec   ed25519/&lt;KEY_ID&gt; 2023-12-28 [SC]
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>uid                 [ultimate] ShenMian &lt;sms_school@outlook.com&gt;
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>ssb   cv25519/&lt;SUB_KEY_ID&gt; 2023-12-28 [E]
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>[keyboxd]
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>---------
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sec   ed25519/&lt;KEY_ID&gt; 2023-12-28 [SC]
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>uid                 [ultimate] ShenMian &lt;sms_school@outlook.com&gt;
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>ssb   cv25519/&lt;SUB_KEY_ID&gt; 2023-12-28 [E]
 </code></pre></div>
 <p>可以看出, 只有主密钥具备签名功能, 因此可以使用下面命令指定使用主密钥进行签名:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingKey<span class="w"> </span>&lt;KEY_ID&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingKey<span class="w"> </span>&lt;KEY_ID&gt;
 </code></pre></div>
 <p>如果要使用具有签名功能的子密钥, 可以使用下面命令:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingKey<span class="w"> </span>&lt;SUB_KEY_ID&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.signingKey<span class="w"> </span>&lt;SUB_KEY_ID&gt;
 </code></pre></div>
 <p>最后, 启用签名功能:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.gpgSign<span class="w"> </span><span class="nb">true</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>tag.gpgSign<span class="w"> </span><span class="nb">true</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>commit.gpgSign<span class="w"> </span><span class="nb">true</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>tag.gpgSign<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
 <p>在 Windows 环境下, 可能有多个 GPG 程序. 比如 Git 自带的 gpg, 和 gpg4win.<br />
 请确定密钥所在的 GPG, 并通过下面命令指定该 <code>gpg.exe</code> 的路径:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.program<span class="w"> </span>&lt;GPG_PATH&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.program<span class="w"> </span>&lt;GPG_PATH&gt;
 </code></pre></div>
 <p>详情请参考 <a href="https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key">GitHub Docs</a>.</p>
 <p>下面命令可以用于验证签名的有效性:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>git<span class="w"> </span>verify-commit<span class="w"> </span>&lt;COMMIT_ID&gt;
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>verify-tag<span class="w"> </span>&lt;TAG_NAME&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>verify-commit<span class="w"> </span>&lt;COMMIT_ID&gt;
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>git<span class="w"> </span>verify-tag<span class="w"> </span>&lt;TAG_NAME&gt;
 </code></pre></div>
 <h2 id="_4">常用命令<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart LR
@@ -10780,30 +10784,30 @@
 </ul>
 <p>具体的提交内容建议使用 LLM 自动生成, 然后再做调整.  </p>
 <p>下面是一份最初由 Tim Pope 编写的提交信息模板:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>首字母大写的摘要 (不多于 50 个字符)
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>如果必要的话, 加入更详细的解释文字. 在大概 72 个字符的时候换行.
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>在某些情形下, 第一行被当作一封电子邮件的标题, 剩下的文本作为正文.
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>分隔摘要与正文的空行是必须的（除非你完全省略正文）, 
-<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>如果你将两者混在一起, 那么在使用例如变基这样的工具时, 它们会生成难以阅读的输出, 让人困惑.
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>使用指令式的语气来编写提交信息: 使用 &quot;Fix bug&quot; 而非 &quot;Fixed bug&quot; 或 &quot;Fixes bug&quot;.
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>此约定与 git merge 和 git revert 命令生成提交说明相同.
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>空行接着更进一步的段落.
-<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
-<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>- 标号也是可以的.
-<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>- 项目符号可以使用典型的连字符或星号, 后跟一个空格, 行之间用空行隔开, 但是可以依据不同的惯例有所不同.
-<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>- 使用悬挂式缩进.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>首字母大写的摘要 (不多于 50 个字符)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>如果必要的话, 加入更详细的解释文字. 在大概 72 个字符的时候换行.
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>在某些情形下, 第一行被当作一封电子邮件的标题, 剩下的文本作为正文.
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>分隔摘要与正文的空行是必须的（除非你完全省略正文）, 
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>如果你将两者混在一起, 那么在使用例如变基这样的工具时, 它们会生成难以阅读的输出, 让人困惑.
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>使用指令式的语气来编写提交信息: 使用 &quot;Fix bug&quot; 而非 &quot;Fixed bug&quot; 或 &quot;Fixes bug&quot;.
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>此约定与 git merge 和 git revert 命令生成提交说明相同.
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>空行接着更进一步的段落.
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>- 标号也是可以的.
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>- 项目符号可以使用典型的连字符或星号, 后跟一个空格, 行之间用空行隔开, 但是可以依据不同的惯例有所不同.
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>- 使用悬挂式缩进.
 </code></pre></div>
 <h2 id="_6">贮藏<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>可以通过将当前工作区和暂存区的内容存入贮藏栈来获得一个干净的工作区.</p>
 <p>部分 Git 命令需要当前工作区和暂存区是干净的 (即没有未提交的修改), 直接提交未完成的修改显然不是一个好方法, 另一个方法则是将修改临时保存到贮藏栈中.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>git<span class="w"> </span>stash<span class="w"> </span>list<span class="w">         </span><span class="c1"># 列出贮藏栈内容</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>git<span class="w"> </span>stash<span class="w">              </span><span class="c1"># 贮藏工作区和暂存区的修改</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>git<span class="w"> </span>stash<span class="w"> </span>--keep-index<span class="w"> </span><span class="c1"># 仅贮藏工作区的修改</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w">          </span><span class="c1"># 应用并删除上一个贮藏栈条目</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w">         </span><span class="c1"># 删除上一个贮藏栈条目</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>stash<span class="w"> </span>list<span class="w">         </span><span class="c1"># 列出贮藏栈内容</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>git<span class="w"> </span>stash<span class="w">              </span><span class="c1"># 贮藏工作区和暂存区的修改</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>git<span class="w"> </span>stash<span class="w"> </span>--keep-index<span class="w"> </span><span class="c1"># 仅贮藏工作区的修改</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w">          </span><span class="c1"># 应用并删除上一个贮藏栈条目</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w">         </span><span class="c1"># 删除上一个贮藏栈条目</span>
 </code></pre></div>
 <p>其中 <code>git stash pop</code> 的作用类似 <code>git stash apply</code> 然后 <code>git stash drop</code>.<br />
 如果不确定某个 stash 条目是否为所需的内容, 可以先尝试 apply, 确认无误后再 drop.</p>
@@ -10874,7 +10878,7 @@
 <p><strong>丢失最近 3 个提交的访问</strong>: 可以通过引用日志轻松找回.</p>
 <p>执行 <code>git reflog</code> 查看引用日志, 查找需要还原到的 <code>HEAD</code> 状态.<br />
 由于误操作刚刚被执行, 因此应该还原到 <code>HEAD</code> 的上一个值, 即 <code>HEAD@{1}</code>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span><span class="s2">&quot;HEAD@{1}&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span><span class="s2">&quot;HEAD@{1}&quot;</span>
 </code></pre></div>
 </li>
 <li>
@@ -10882,13 +10886,13 @@
 <p>由于还未提交, Tree 对象没有保存, 因此文件名/目录结构等数据均永久丢失.<br />
 但暂存区内的文件内容已经作为 Blob 对象被保存到了对象数据库, 因此可以找回, 但难度可能比较高.</p>
 <p>这部分 Blob 对象将变为悬垂对象, 可以通过下面命令找出它们:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>fsck<span class="w"> </span>--full<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;dangling blob&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>fsck<span class="w"> </span>--full<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;dangling blob&quot;</span>
 </code></pre></div>
 <p>然后可以通过下面命令查看其内容:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>git<span class="w"> </span>show<span class="w"> </span>&lt;HASH&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>show<span class="w"> </span>&lt;HASH&gt;
 </code></pre></div>
 <p>找出需要还原的 Blob 对象后, 使用下面命令将它们重新添加到暂存区中:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">100644</span>,&lt;HASH&gt;,path/to/file
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>git<span class="w"> </span>update-index<span class="w"> </span>--cacheinfo<span class="w"> </span><span class="m">100644</span>,&lt;HASH&gt;,path/to/file
 </code></pre></div>
 </li>
 </ol>
@@ -10899,15 +10903,15 @@
 <li>git-gui: 用于仓库管理.</li>
 </ul>
 <p>这两个工具均基于 Tcl/Tk, 如需使用还需要安装以下依赖项:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>tk
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>tk
 </code></pre></div>
 <p>下面将推荐一些合并了这两款工具功能的上位替代.</p>
 <h3 id="lazygit">Lazygit<a class="headerlink" href="#lazygit" title="Permanent link">&para;</a></h3>
 <p><a href="https://github.com/jesseduffield/lazygit">Lazygit</a> 是一个基于 TUI 的开源 (MIT) Git 客户端, 可以简化 Git 相关的操作.<br />
 该工具功能丰富, 在终端环境下使用特别方便, 可作为各种 Git 交互式功能的上位替代, 支持补丁暂存.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 安装</span>
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>lazygit<span class="w"> </span><span class="c1"># Arch Linux</span>
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>scoop<span class="w"> </span>install<span class="w"> </span>lazygit<span class="w">  </span><span class="c1"># Windows</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>lazygit<span class="w"> </span><span class="c1"># Arch Linux</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>scoop<span class="w"> </span>install<span class="w"> </span>lazygit<span class="w">  </span><span class="c1"># Windows</span>
 </code></pre></div>
 <p>Lazygit 中的操作均可以通过快捷键完成, 可以随时按下 <code>?</code> 来查看当前可用的快捷键.</p>
 <h3 id="github-desktop">GitHub Desktop<a class="headerlink" href="#github-desktop" title="Permanent link">&para;</a></h3>
@@ -10920,17 +10924,17 @@
 <li><strong>作为 Git 的凭证助手 (credential helper)</strong>: 快速帮助通过 GitHub 身份验证. 不需要再手动配置 SSH 身份验证.</li>
 <li><strong>快速克隆 GitHub 仓库</strong>: 比如执行 <code>gh repo clone abc</code> 即可克隆当前用户的 <code>abc</code> 仓库, 会比输入完整的远程 URL 稍快一点.</li>
 </ul>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 安装</span>
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>github-cli<span class="w"> </span><span class="c1"># Arch Linux</span>
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>scoop<span class="w"> </span>install<span class="w"> </span>gh<span class="w">          </span><span class="c1"># Windows</span>
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>gh<span class="w"> </span>auth<span class="w"> </span>login<span class="w">     </span><span class="c1"># 登录 GitHub 账号</span>
-<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>gh<span class="w"> </span>auth<span class="w"> </span>setup-git<span class="w"> </span><span class="c1"># 将自己设为 Git 的凭证助手</span>
-<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>
-<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># Copilot 扩展</span>
-<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>gh<span class="w"> </span>extension<span class="w"> </span>install<span class="w"> </span>github/gh-copilot<span class="w">    </span><span class="c1"># 安装</span>
-<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>gh<span class="w"> </span>copilot<span class="w"> </span>explain<span class="w"> </span><span class="s2">&quot;sudo apt-get&quot;</span><span class="w">         </span><span class="c1"># 解释命令</span>
-<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>gh<span class="w"> </span>copilot<span class="w"> </span>suggest<span class="w"> </span><span class="s2">&quot;Undo the last commit&quot;</span><span class="w"> </span><span class="c1"># 生成命令</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>github-cli<span class="w"> </span><span class="c1"># Arch Linux</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>scoop<span class="w"> </span>install<span class="w"> </span>gh<span class="w">          </span><span class="c1"># Windows</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>gh<span class="w"> </span>auth<span class="w"> </span>login<span class="w">     </span><span class="c1"># 登录 GitHub 账号</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>gh<span class="w"> </span>auth<span class="w"> </span>setup-git<span class="w"> </span><span class="c1"># 将自己设为 Git 的凭证助手</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1"># Copilot 扩展</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>gh<span class="w"> </span>extension<span class="w"> </span>install<span class="w"> </span>github/gh-copilot<span class="w">    </span><span class="c1"># 安装</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>gh<span class="w"> </span>copilot<span class="w"> </span>explain<span class="w"> </span><span class="s2">&quot;sudo apt-get&quot;</span><span class="w">         </span><span class="c1"># 解释命令</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>gh<span class="w"> </span>copilot<span class="w"> </span>suggest<span class="w"> </span><span class="s2">&quot;Undo the last commit&quot;</span><span class="w"> </span><span class="c1"># 生成命令</span>
 </code></pre></div>
 <h2 id="_10">仓库托管<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <p>以下平台提供了 Git 远程仓库托管服务:</p>
@@ -10954,32 +10958,32 @@
 <p>该功能对于游戏项目来说非常重要, 因为游戏资源文件通常为体积较大的二进制文件, 对这些文件进行修改会导致 Git 仓库体积急速增长.</p>
 <p>Linux 下需要专门安装该扩展, 而 Windows 下, LFS 是安装 Git 时默认勾选的组件.<br />
 安装扩展后, 可以通过下面命令为当前用户启用 LFS:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>git<span class="w"> </span>lfs<span class="w"> </span>install
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>git<span class="w"> </span>lfs<span class="w"> </span>install
 </code></pre></div>
 <p>Git LFS 主要提供两个功能:</p>
 <ul>
 <li>
 <p><strong>大文件按需下载</strong>: 被 LFS 跟踪的文件将被存储在 LFS 服务器上, Git 仓库中只保留一个轻量的指针. 这使得 Git 仓库的体积与大文件无关, 可以仅在执行检出操作时下载必要的大文件. 这方面有点类似 Subversion (SVN).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 指定需要 LFS 跟踪的文件类型</span>
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.glb&quot;</span>
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="c1"># 可锁定 (lockable) 文件是默认只读的, 锁定后才变为可写的</span>
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.scn&quot;</span><span class="w"> </span>--lockable
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
-<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="c1"># 查看当前 LFS 跟踪的文件类型</span>
-<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
-<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>git<span class="w"> </span>lfs<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span><span class="c1"># 下载全部 LFS 对象</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 指定需要 LFS 跟踪的文件类型</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.glb&quot;</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="c1"># 可锁定 (lockable) 文件是默认只读的, 锁定后才变为可写的</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.scn&quot;</span><span class="w"> </span>--lockable
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="c1"># 查看当前 LFS 跟踪的文件类型</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>git<span class="w"> </span>lfs<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span><span class="c1"># 下载全部 LFS 对象</span>
 </code></pre></div>
 </li>
 <li>
 <p><strong>文件上锁</strong>: 由于二进制文件的编辑总是会导致冲突, LFS 还提供了文件上锁的功能. 防止多个用户同时编辑单个二进制文件, 最终导致合并冲突. 加锁信息由 LFS 服务器管理.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>git<span class="w"> </span>lfs<span class="w"> </span>locks<span class="w"> </span><span class="c1"># 查看当前锁定的文件和持有该锁的用户</span>
-<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>
-<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>git<span class="w"> </span>lfs<span class="w"> </span>lock<span class="w"> </span>&lt;PATH&gt;<span class="w">   </span><span class="c1"># 锁定文件</span>
-<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>git<span class="w"> </span>lfs<span class="w"> </span>unlock<span class="w"> </span>&lt;PATH&gt;<span class="w"> </span><span class="c1"># 解锁文件</span>
-<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
-<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="c1"># 强制解锁文件</span>
-<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># 可以解锁由其他用户上锁的文件</span>
-<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>git<span class="w"> </span>lfs<span class="w"> </span>unlock<span class="w"> </span>--force<span class="w"> </span>&lt;PATH&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>git<span class="w"> </span>lfs<span class="w"> </span>locks<span class="w"> </span><span class="c1"># 查看当前锁定的文件和持有该锁的用户</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>git<span class="w"> </span>lfs<span class="w"> </span>lock<span class="w"> </span>&lt;PATH&gt;<span class="w">   </span><span class="c1"># 锁定文件</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>git<span class="w"> </span>lfs<span class="w"> </span>unlock<span class="w"> </span>&lt;PATH&gt;<span class="w"> </span><span class="c1"># 解锁文件</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="c1"># 强制解锁文件</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c1"># 可以解锁由其他用户上锁的文件</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>git<span class="w"> </span>lfs<span class="w"> </span>unlock<span class="w"> </span>--force<span class="w"> </span>&lt;PATH&gt;
 </code></pre></div>
 <p>文件上锁情况由 LFS 服务器管理, 因此该功能必须联网使用.</p>
 </li>
@@ -10989,21 +10993,21 @@
 <h2 id="_11">钩子<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <p>Git 钩子就是执行特定命令的触发器, 这些自定义脚本存储在 <code>hooks/</code> 目录下.<br />
 下面是一个自定义脚本 <code>hooks/pre-commit</code> 的简单示例:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="ch">#!/usr/bin/env bash</span>
-<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="c1"># .git/hooks/pre-commit</span>
-<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
-<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1"># 任何命令失败立即终止脚本执行, 并返回错误码</span>
-<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="nb">set</span><span class="w"> </span>-e
-<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
-<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CARGO_TERM_COLOR</span><span class="o">=</span>always
-<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RUSTFLAGS</span><span class="o">=</span><span class="s2">&quot;--deny warnings&quot;</span>
-<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RUSTDOCFLAGS</span><span class="o">=</span><span class="s2">&quot;--deny warnings&quot;</span>
-<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>
-<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span>Cargo.toml<span class="w"> </span><span class="o">]]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
-<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
-<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>cargo<span class="w"> </span>clippy<span class="w"> </span>--locked<span class="w"> </span>--workspace<span class="w"> </span>--all-targets<span class="w"> </span>--all-features<span class="w"> </span>--<span class="w"> </span>--deny<span class="w"> </span>warnings
-<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>cargo<span class="w"> </span>+nightly<span class="w"> </span>fmt<span class="w"> </span>--all<span class="w"> </span>--<span class="w"> </span>--check
-<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>cargo<span class="w"> </span>doc<span class="w"> </span>--locked<span class="w"> </span>--workspace<span class="w"> </span>--all-features<span class="w"> </span>--document-private-items<span class="w"> </span>--no-deps
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="ch">#!/usr/bin/env bash</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="c1"># .git/hooks/pre-commit</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="c1"># 任何命令失败立即终止脚本执行, 并返回错误码</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="nb">set</span><span class="w"> </span>-e
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CARGO_TERM_COLOR</span><span class="o">=</span>always
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RUSTFLAGS</span><span class="o">=</span><span class="s2">&quot;--deny warnings&quot;</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RUSTDOCFLAGS</span><span class="o">=</span><span class="s2">&quot;--deny warnings&quot;</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="o">[[</span><span class="w"> </span>-f<span class="w"> </span>Cargo.toml<span class="w"> </span><span class="o">]]</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>cargo<span class="w"> </span>clippy<span class="w"> </span>--locked<span class="w"> </span>--workspace<span class="w"> </span>--all-targets<span class="w"> </span>--all-features<span class="w"> </span>--<span class="w"> </span>--deny<span class="w"> </span>warnings
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>cargo<span class="w"> </span>+nightly<span class="w"> </span>fmt<span class="w"> </span>--all<span class="w"> </span>--<span class="w"> </span>--check
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>cargo<span class="w"> </span>doc<span class="w"> </span>--locked<span class="w"> </span>--workspace<span class="w"> </span>--all-features<span class="w"> </span>--document-private-items<span class="w"> </span>--no-deps
 </code></pre></div>
 <p>该脚本会在 <code>git commit</code> 命令执行时被调用, 自动检查代码和文档能否通过编译以及代码格式是否能通过检查.<br />
 从而避免用户创建无效的提交.</p>
@@ -11011,27 +11015,27 @@
 <p>本节将讲解部分 Git 底层工作原理, 以及相关的低级 (low-level) 命令. 这些命令不需要在实际项目中使用, 但了解它们有助于深入理解 Git 的内部机制.</p>
 <h3 id="_13">仓库结构<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <p>下面是 Git 仓库结构的树形图:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>.git/
-<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>|-- config        (本地仓库配置, 包含远程仓库信息等内容)
-<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>|-- description   (仅供 GitWeb 程序使用, 可忽略)
-<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>|-- index         (暂存区)
-<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>|-- packed-refs   (refs 目录的打包)
-<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>|-- HEAD          (指向当前检出分支或提交的引用)
-<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>├── hooks/        (钩子脚本)
-<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>├── info/
-<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>│   ├── exclude   (类似本地 .gitignore)
-<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>│   └── refs      (哑协议使用)
-<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>├── logs/         (reflog, 即引用日志)
-<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>├── objects/      (对象数据库)
-<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>│   ├── 0a/       (以对象哈希值前两位命名的目录)
-<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>│   ├── ...       (其他松散对象)
-<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>│   ├── info/
-<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>│   |   └── packs (哑协议使用)
-<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>│   └── pack/     (包文件)
-<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>└── refs/         (引用)
-<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a>    ├── heads/    (本地引用)
-<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>    ├── remotes/  (远程引用)
-<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>    └── tags/     (标签)
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>.git/
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>|-- config        (本地仓库配置, 包含远程仓库信息等内容)
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>|-- description   (仅供 GitWeb 程序使用, 可忽略)
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>|-- index         (暂存区)
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>|-- packed-refs   (refs 目录的打包)
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>|-- HEAD          (指向当前检出分支或提交的引用)
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>├── hooks/        (钩子脚本)
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>├── info/
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>│   ├── exclude   (类似本地 .gitignore)
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>│   └── refs      (哑协议使用)
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>├── logs/         (reflog, 即引用日志)
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>├── objects/      (对象数据库)
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>│   ├── 0a/       (以对象哈希值前两位命名的目录)
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>│   ├── ...       (其他松散对象)
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>│   ├── info/
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>│   |   └── packs (哑协议使用)
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>│   └── pack/     (包文件)
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>└── refs/         (引用)
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>    ├── heads/    (本地引用)
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>    ├── remotes/  (远程引用)
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>    └── tags/     (标签)
 </code></pre></div>
 <p>实际的仓库可能包含更多甚至更少的文件和目录, 该树形图仅列出较为主要的部分供参考.</p>
 <h3 id="_14">对象<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
@@ -11201,26 +11205,26 @@
 <p>该章节的代码片段可能导致数据丢失, 请谨慎操作.</p>
 </div>
 <p>下面代码可以清空仓库中指定分支的所有提交历史:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>--orphan<span class="w"> </span>empty<span class="w">          </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>main<span class="w">                   </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w">                           </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;feat: initial commit&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>empty:main<span class="w"> </span>--force<span class="w">   </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
-<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>empty
-<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main<span class="w"> </span>--allow-unrelated-histories
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>--orphan<span class="w"> </span>empty<span class="w">          </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>main<span class="w">                   </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w">                           </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s1">&#39;feat: initial commit&#39;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>empty:main<span class="w"> </span>--force<span class="w">   </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w">                    </span><span class="o">||</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>empty
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>main<span class="w"> </span>--allow-unrelated-histories
 </code></pre></div>
 <p>其中, 前面命令失败后立即终止十分重要, 否则可能导致数据丢失.</p>
 <p>在确认执行成功后, 可以执行下面命令来清除无用的历史, 此举将导致之前的提交历史<strong>不可找回</strong>.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>git<span class="w"> </span>reflog<span class="w"> </span>expire<span class="w"> </span>--expire-unreachable<span class="o">=</span>now<span class="w"> </span>--all
-<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>git<span class="w"> </span>gc<span class="w"> </span>--prune<span class="o">=</span>now
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>git<span class="w"> </span>reflog<span class="w"> </span>expire<span class="w"> </span>--expire-unreachable<span class="o">=</span>now<span class="w"> </span>--all
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>git<span class="w"> </span>gc<span class="w"> </span>--prune<span class="o">=</span>now
 </code></pre></div>
 <h2 id="_23">故障排除<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p><code>gpg: skipped "XXXXXXXXXXXXXXXX": No secret key</code></p>
 <p>检查是否使用了正确的 <code>gpg.exe</code>, 然后通过下面命令指定要使用的 <code>gpg.exe</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.program<span class="w"> </span><span class="s2">&quot;path/to/gpg.exe&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>gpg.program<span class="w"> </span><span class="s2">&quot;path/to/gpg.exe&quot;</span>
 </code></pre></div>
 <p>详情请参考 <a href="#gpg-签名">GPG 签名</a>.</p>
 </li>
@@ -11238,6 +11242,9 @@
 <ol>
 <li id="fn:1">
 <p><a href="https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F">https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F</a>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:proxy-env">
+<p>如 <code>http_proxy</code>, <code>https_proxy</code> 和 <code>all_proxy</code>.&#160;<a class="footnote-backref" href="#fnref:proxy-env" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>
@@ -11261,7 +11268,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月23日 08:27:46 CST">2025年11月23日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月24日 19:05:07 CST">2025年11月24日</span>
   </span>
 
     
