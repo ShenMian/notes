@@ -3,7 +3,7 @@
 ## 最小化到托盘
 
 1. 在 `Settings | System Integration` 中勾选 `When (Thunderbird | Betterbird) is minimized, move it to the tray`.
-2. 安装插件 [Minimize on Close](https://github.com/rsjtdrjgfuzkfg/thunderbird-minimizeonclose).
+2. 安装插件 [Close to Tray (for Windows)](https://addons.thunderbird.net/en-US/thunderbird/addon/close-to-tray/).
 
 ## 开机启动
 
