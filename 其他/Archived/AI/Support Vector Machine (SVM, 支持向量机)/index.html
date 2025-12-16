@@ -9848,11 +9848,11 @@
 <p>发明者: Vapinik [苏]</p>
 <p>Linear support vector machine(LSVM) in the linearly separable case and Hard Margin Maximization.</p>
 <p>LSVM in the linearly separable case suppose a training dataset in a feature space, is given 
-   <span class="arithmatex">\(<span class="arithmatex">\(T = \{(x_1. y_1), (x_2, y_2), ..., (x_n, y_n)\}\)</span>\)</span>
+   $<span class="arithmatex">\(T = \{(x_1. y_1), (x_2, y_2), ..., (x_n, y_n)\}\)</span>$
    where <span class="arithmatex">\(x_i \in X\)</span> = <span class="arithmatex">\(R^n\)</span>, <span class="arithmatex">\(y_i \in Y = \{+1, -1\}\)</span>, <span class="arithmatex">\(i=1,2,...,N\)</span>.</p>
 <p>Definition (linear separability of dataset)
    Given T, if there is a hyper plane (超平面)
-   <span class="arithmatex">\(<span class="arithmatex">\(S: \omega \cdot X + b = 0\)</span>\)</span>
+   $<span class="arithmatex">\(S: \omega \cdot X + b = 0\)</span>$
    Than can precisely divide the positive instance points and negative instance points of dataset into both sides of the hyper plane.</p>
 <p>i.e. For all instances <span class="arithmatex">\(i\)</span> with <span class="arithmatex">\(y_i=+1\)</span>, <span class="arithmatex">\(W \cdot x + b &gt; 0\)</span> and for all instances with <span class="arithmatex">\(y_i\)</span>=-1, <span class="arithmatex">\(\omega \cdot x + b &lt; 0\)</span>. Then the dataset T is called a linearly separate data.</p>
 <hr />
@@ -9873,14 +9873,14 @@
 <p>Function margin and Geometric margin</p>
 <ol>
 <li>Function margin: with regard to the give training dataset T and the hyperplane(<span class="arithmatex">\(W\)</span>, <span class="arithmatex">\(b\)</span>). Define the functional margin of hyperplane on sample point <span class="arithmatex">\((x_i, y_i)\)</span> as
-   <span class="arithmatex">\(<span class="arithmatex">\(\hat{\gamma}_i = y_i(\omega \cdot x_i + b)\)</span>\)</span>
-   <span class="arithmatex">\(<span class="arithmatex">\(\hat{\gamma} = \min_{i=0,...,N}\hat{\gamma}_i\)</span>\)</span></li>
+   $<span class="arithmatex">\(\hat{\gamma}_i = y_i(\omega \cdot x_i + b)\)</span>$
+   $<span class="arithmatex">\(\hat{\gamma} = \min_{i=0,...,N}\hat{\gamma}_i\)</span>$</li>
 <li>Two facts<ol>
 <li><span class="arithmatex">\((\omega^*, b^*)\)</span> 与 <span class="arithmatex">\((a\omega^*, ab^*)\)</span> 相同.</li>
 <li>Distance from <span class="arithmatex">\((x_0, y_0)\)</span> to the plane <span class="arithmatex">\(\omega_1x + \omega_2y + b = 0\)</span>:
-   <span class="arithmatex">\(<span class="arithmatex">\(d = \frac{|\omega_1x + \omega_2y + b|}{\sqrt{\omega_1^2 + \omega_2^2}} = \frac{|\omega_1x + \omega_2y + b|}{||\omega||}\)</span>\)</span>
+   $<span class="arithmatex">\(d = \frac{|\omega_1x + \omega_2y + b|}{\sqrt{\omega_1^2 + \omega_2^2}} = \frac{|\omega_1x + \omega_2y + b|}{||\omega||}\)</span>$
    Vector <span class="arithmatex">\(\vec{x}_0\)</span> to the hyperplane <span class="arithmatex">\(\omega_1x + \omega_2y + b = 0\)</span>:
-   <span class="arithmatex">\(<span class="arithmatex">\(d = \frac{|\omega^* \cdot x_0 + b^*|}{||\omega^*||}\)</span>\)</span></li>
+   $<span class="arithmatex">\(d = \frac{|\omega^* \cdot x_0 + b^*|}{||\omega^*||}\)</span>$</li>
 </ol>
 </li>
 </ol>

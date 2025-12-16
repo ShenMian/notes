@@ -1200,6 +1200,17 @@
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       
+        参见
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         参考
       
     </span>
@@ -10331,6 +10342,17 @@
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
       
+        参见
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         参考
       
     </span>
@@ -10415,7 +10437,7 @@ LLM 可以与 MCP 服务器通信, 以扩展其功能.</p>
 <p><img alt="Cherry Studio 的 MCP 服务器设置" src="../assets/cherry_mcp_server_settings.png" style="display: block; margin: 0 auto" width="80%" />  </p>
 <p>点击上图右上角的 <code>Search MCP</code> 按钮, 即可快速添加常见 MCP 服务器配置.</p>
 <p><img alt="Cherry Studio 提供的内置 MCP 服务器" src="../assets/cherry_mcp_servers.png" style="display: block; margin: 0 auto" width="80%" />  </p>
-<p>后续便可用通过下面方式在会话中启用 MCP 服务器:</p>
+<p>后续便可通过下面方式在会话中启用 MCP 服务器:</p>
 <p><img alt="启用 MCP" src="../assets/cherry_enable_mcp_server.png" style="display: block; margin: 0 auto" width="60%" />  </p>
 <h3 id="mcp">推荐 MCP 服务器<a class="headerlink" href="#mcp" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10467,20 +10489,21 @@ RAG 一共有以下三个关键阶段:</p>
 <p>其中重排序模型是可选的, 但可以显著提高检索结果的质量.</p>
 <p>下面将以 Cherry Studio 为例, 描述如何创建一个关于 wgpu 的知识库:</p>
 <p><img alt="Cherry Studio 添加知识库" src="../assets/cherry_add_knowledge_base.png" style="display: block; margin: 0 auto" width="50%" />  </p>
-<p>其中 "Requested Document Chunks" 可以理解为搜索返回相关文本片段数, 这些片段一般被称为块 (Chunk). 该值过大可能导致过度检索, 无关信息过多反, 而降低生成质量.</p>
+<p>其中 "Requested Document Chunks" 可以理解为搜索返回相关文本片段数, 这些片段一般被称为块 (Chunk). 该值过大可能导致过度检索, 无关信息过多反, 反而降低生成质量.</p>
 <p>找到 wgpu 的文档网站首页后, 通过 <a href="https://www.xml-sitemaps.com">https://www.xml-sitemaps.com</a> 等工具生成 Sitemap, 里面包含了该网页下所有子页面的 URL. 然后将 Sitemap 的 URL 添加到 Cherry Studio 中.</p>
 <p><img alt="Cherry Studio 知识库添加网站地图" src="../assets/cherry_add_sitemap.png" style="display: block; margin: 0 auto" width="70%" />  </p>
 <p>稍等片刻后即可看到绿色对勾, 表示向量数据库创建成功. 此时知识库已准备就绪, 可以在对话中启用.</p>
 <h2 id="llm">本地 LLM<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h2>
 <h3 id="_9">内存需求<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>下面表格提供大概的参考值, 实际情况视具体模型而定.</p>
 <table>
 <thead>
 <tr>
-<th><strong>参数规模/量化级别</strong></th>
-<th><strong>FP16</strong></th>
-<th><strong>Q8</strong></th>
-<th><strong>Q4</strong></th>
-<th><strong>Q2</strong></th>
+<th>参数规模/量化级别</th>
+<th>FP16</th>
+<th>Q8</th>
+<th>Q4</th>
+<th>Q2</th>
 </tr>
 </thead>
 <tbody>
@@ -10533,6 +10556,7 @@ RAG 一共有以下三个关键阶段:</p>
 <p>LM Studio 会预估模型带来的负载, 在下载前尽量选择 <code>Full GPU Offload Possible</code> 的, 这样可以将模型完整的加载进显存, 使得推理效率最大化. <code>Partial GPU Offload Possible</code> 的通常可以运行, 但是效率会显著降低. 值得注意的是, 与模型进行对话也会增加内存使用量, 所以并非能加载就能正常使用.</p>
 </div>
 <h3 id="_10">量化级别<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>下面表格提供大概的参考值, 实际情况视具体模型和硬件而定.</p>
 <table>
 <thead>
 <tr>
@@ -10578,7 +10602,7 @@ RAG 一共有以下三个关键阶段:</p>
 通过上表可以推测出所需内存大概为 5 GiB, 实际显存使用量为 5.3 GiB.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>LM Studio 会自动根据硬件评估何时的量化版本, 一般使用默认的即可.</p>
+<p>LM Studio 会自动根据硬件评估合适的量化版本, 一般使用默认的即可.</p>
 </div>
 <h3 id="_11">推荐模型<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <ul>
@@ -10613,7 +10637,7 @@ RAG 一共有以下三个关键阶段:</p>
 <td>1.0</td>
 </tr>
 <tr>
-<td>一通用对话</td>
+<td>通用对话</td>
 <td>1.3</td>
 </tr>
 <tr>
@@ -10642,11 +10666,11 @@ RAG 一共有以下三个关键阶段:</p>
 </ul>
 <p>部分 LLM 客户端会显示精确的 token 数, 方便用户计算对话消耗的费用. 如果需要自行计算 token 数量, 则需要使用到相应模型的分词器 (tokenizer)<sup id="fnref:tokenizer"><a class="footnote-ref" href="#fn:tokenizer">5</a></sup>.</p>
 <h2 id="_13">供应商<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<p>受支持最广泛的 API 格式为 <a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI API</a>, 除此自外还有 <a href="https://ai.google.dev/gemini-api/docs">Gemini API</a> 和 <a href="https://docs.anthropic.com/en/home">Anthropic API</a>.<br />
+<p>受支持最广泛的 API 格式为 <a href="https://platform.openai.com/docs/api-reference/introduction">OpenAI API</a>, 除此之外还有 <a href="https://ai.google.dev/gemini-api/docs">Gemini API</a> 和 <a href="https://docs.anthropic.com/en/home">Anthropic API</a>.<br />
 下面 LLM 供应商均支持 OpenAI API 格式接口:</p>
 <ul>
 <li><strong><a href="https://platform.deepseek.com/">DeepSeek</a></strong>: <a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">价格</a>, 价格便宜, 非高峰时段使用有优惠.</li>
-<li><strong><a href="https://platform.openai.com/">OpenAI</a></strong>: 必须使用电话号码注册. <a href="https://openai.com/api/pricing/">价格</a>, 价格及其昂贵.</li>
+<li><strong><a href="https://platform.openai.com/">OpenAI</a></strong>: 必须使用电话号码注册. <a href="https://openai.com/api/pricing/">价格</a>, 价格极其昂贵.</li>
 <li><strong><a href="https://github.com/marketplace?type=models">GitHub Models</a></strong>: GitHub 提供限制较严格的免费试用, 实际供应商为 Azure AI.</li>
 <li><strong><a href="https://cloud.siliconflow.cn/">SiliconFlow</a></strong>: 必须使用电话号码注册. 有几个 7B-9B 的免费模型, 但是速率限制非常严格, 难以用于网页翻译.</li>
 <li><strong><a href="https://openrouter.ai/">OpenRouter</a></strong>.</li>
@@ -10655,7 +10679,11 @@ RAG 一共有以下三个关键阶段:</p>
 <p>通常 LLM 模型都是经过审查的, 会拒绝回答部分问题 (比如涉及违法的内容). 未审查 (uncensored) 模型则不会或很少拒绝回答.<br />
 可以通过 <code>abliterated</code> 和 <code>uncensored</code> 关键字检索未审查模型.</p>
 <p>详情请参考 <a href="https://github.com/Sumandora/remove-refusals-with-transformers">remove-refusals-with-transformers</a>.</p>
-<h2 id="_15">参考<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h2 id="_15">参见<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1PAUrBVEc8">常见基准测试 - 飞天闪客 - Bilibili</a></li>
+</ul>
+<h2 id="_16">参考<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">https://en.wikipedia.org/wiki/Retrieval-augmented_generation</a>.</li>
 </ul>
@@ -10699,7 +10727,7 @@ RAG 一共有以下三个关键阶段:</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年12月6日 03:19:30 CST">2025年12月6日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年12月17日 05:09:41 CST">2025年12月17日</span>
   </span>
 
     
