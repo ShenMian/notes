@@ -44,7 +44,7 @@ makepkg -si
 
 ### Yay
 
-使用 Go 编写的主流 AUR Helper.
+使用 Go 编写的 AUR Helper.
 
 可以通过下面命令手动安装:
 
@@ -103,6 +103,10 @@ sudo pacman -S archlinuxcn-keyring
 - 网络环境正常, 但安装时出现网络错误
 
     可能是由于本地包数据库过时, 先执行 `pacman -Syu` 进行更新.
+
+- `(paru|yay): error while loading shared libraries: libalpm.so.XX: cannot open shared object file: No such file or directory`
+
+    重新安装 AUR Helper, 对其进行手动升级.
 
 ## 参见
 
