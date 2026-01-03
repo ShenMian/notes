@@ -3264,7 +3264,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        教程
+        单位克制关系
       
     </span>
   </a>
@@ -3314,7 +3314,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        资源
+        教程
       
     </span>
   </a>
@@ -3323,6 +3323,17 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -9952,7 +9963,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        教程
+        单位克制关系
       
     </span>
   </a>
@@ -10002,7 +10013,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        资源
+        教程
       
     </span>
   </a>
@@ -10011,6 +10022,17 @@
       
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资源
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -10043,10 +10065,72 @@
 
 <h1 id="broken-arrow">Broken Arrow<a class="headerlink" href="#broken-arrow" title="Permanent link">&para;</a></h1>
 <p><strong>中文</strong>: 断箭.  </p>
-<h2 id="_1">教程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3501205842">For those who aren't military geeks</a>: 介绍了常见的概念和术语, 可以帮助快速入门.</li>
-</ul>
+<h2 id="_1">单位克制关系<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    %% ========== 样式定义 ==========
+    classDef recon fill:#f1c40f,stroke:#f39c12,color:#000
+    classDef armor fill:#27ae60,stroke:#2d4a3a,color:#fff
+    classDef infantry fill:#16a085,stroke:#0b5345,color:#fff
+    classDef air fill:#3498db,stroke:#2980b9,color:#fff
+    classDef aa fill:#e74c3c,stroke:#c0392b,color:#fff
+    classDef artillery fill:#9b59b6,stroke:#8e44ad,color:#fff
+
+    %% ========== 核心节点 ==========
+    RECON["&lt;b&gt;侦察 Recon&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;视野 / 目标指示核心&lt;/font&gt;"]:::recon
+
+    MBT["&lt;b&gt;主战坦克 MBT&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;平原突破 / 抗线核心&lt;/font&gt;"]:::armor
+    IFV["&lt;b&gt;步兵战车 IFV&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;机炮压制 / 机动反甲&lt;/font&gt;"]:::armor
+
+    INF["&lt;b&gt;步兵 Infantry&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;城镇 / 森林控制&lt;/font&gt;"]:::infantry
+    ATGM["&lt;b&gt;反坦克小组 ATGM&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;远程开罐 / 地形伏击&lt;/font&gt;"]:::infantry
+
+    HELI["&lt;b&gt;武装直升机 Heli&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;低空舔地 / 快速反应&lt;/font&gt;"]:::air
+    JET_CAS["&lt;b&gt;攻击机 CAS&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;精确轰炸 / 装甲杀手&lt;/font&gt;"]:::air
+    JET_SEAD["&lt;b&gt;防空压制 SEAD&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;反辐射导弹 / 拆伞&lt;/font&gt;"]:::air
+
+    AA_RADAR["&lt;b&gt;雷达防空 Radar AA&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;高空远距 / 区域拒止&lt;/font&gt;"]:::aa
+    AA_IR["&lt;b&gt;红外防空 IR / MANPADS&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;隐蔽拦截 / 直升机克星&lt;/font&gt;"]:::aa
+
+    ARTY["&lt;b&gt;火炮 / 火箭炮 Artillery&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;范围覆盖 / 压制 / 反炮&lt;/font&gt;"]:::artillery
+
+    %% ========== 核心逻辑：侦察驱动 ==========
+    RECON --&gt;|提供视野与目标| ARTY
+    RECON --&gt;|引导锁定| ATGM
+    RECON --&gt;|前沿侦查| HELI
+    RECON -.-&gt;|发现即摧毁| MBT
+
+    %% ========== 地面攻防链 ==========
+    MBT --&gt;|平原碾压| INF
+    MBT --&gt;|直射火力| AA_RADAR
+
+    IFV --&gt;|机炮清扫| INF
+    IFV --&gt;|导弹狙击| MBT
+
+    subgraph Terrain_Bonus["地形加成单位组"]
+        INF --&gt;|城镇 / 森林伏击| MBT
+        INF --&gt;|便携防空伏击| HELI
+        ATGM --&gt;|远程开罐| MBT
+        ATGM --&gt;|伏击| IFV
+    end
+
+    %% ========== 空中优势链 ==========
+    HELI --&gt;|猎杀| MBT
+    HELI --&gt;|压制| INF
+    HELI -.-&gt;|低空突防| AA_RADAR
+
+    JET_CAS --&gt;|精确轰炸| MBT
+    JET_SEAD --&gt;|反辐射打击| AA_RADAR
+
+    %% ========== 防空与反制链 ==========
+    AA_RADAR --&gt;|区域拒止| JET_CAS
+    AA_RADAR --&gt;|远距拦截| JET_SEAD
+    AA_IR --&gt;|隐蔽猎杀| HELI
+    AA_IR --&gt;|驱离| JET_CAS
+
+    %% ========== 炮兵体系链 ==========
+    ARTY --&gt;|火力覆盖| INF
+    ARTY --&gt;|压制 / 摧毁| AA_RADAR
+    ARTY -.-&gt;|反炮兵对决| ARTY</code></pre>
 <h2 id="_2">金牌要求<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>获取金牌的条件需且仅需满足金牌要求, 可以忽略铜牌和银牌要求.</p>
 <h3 id="_3">美军任务<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
@@ -10147,12 +10231,16 @@
 </tr>
 </tbody>
 </table>
-<h2 id="_5">资源<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_5">教程<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3501205842">For those who aren't military geeks</a>: 介绍了常见的概念和术语, 可以帮助快速入门.</li>
+</ul>
+<h2 id="_6">资源<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://ba-hub.net">https://ba-hub.net</a></li>
 <li><a href="https://barmory.net">https://barmory.net</a></li>
 </ul>
-<h2 id="_6">参考<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_7">参考<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3505492842">https://steamcommunity.com/sharedfiles/filedetails/?id=3505492842</a></li>
 </ul>
@@ -10176,7 +10264,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月29日 01:56:52 CST">2025年9月29日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月4日 05:28:09 CST">2026年1月4日</span>
   </span>
 
     
