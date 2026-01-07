@@ -2,12 +2,21 @@
 
 **中文**: 断箭.  
 
+## 防空压制
+
+防空压制 (Suppression of Enemy Air Defenses, SEAD) 是指通过使用反辐射导弹 (Anti-Radiation Missile, ARM) 来摧毁或压制敌方防空雷达和导弹系统的战术.
+
 以下是具备 SEAD 能力的战斗机:
 
-- **俄罗斯**: Su-24MP (x3), Su-34 (x2), MiG-35 (x4), Su-57 (x4), Su-25 (x2).
 - **美国**: Prowler (x4), F-16CJ (x4), F-35A (x2), F-15EX (x2).
+- **俄罗斯**: Su-24MP (x3), Su-34 (x2), MiG-35 (x4), Su-57 (x4), Su-25 (x2).
 
-其中 (xN) 表示最多可携带 N 枚反辐射导弹 (Anti-Radiation Missile, ARM).
+其中 (xN) 表示最多可携带 N 枚 ARM.
+
+以下是具备 SEAD 能力的直升机:
+
+- **美国**: AH-1Z Viper (x2).
+- **俄罗斯**: Ka-52 Katran (x2).
 
 以下作战单位应该设置编号, 便于快速选中:
 
