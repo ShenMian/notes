@@ -3360,6 +3360,17 @@
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
+        美军
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         俄军
       
     </span>
@@ -3378,7 +3389,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         教程
@@ -3389,7 +3400,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         资源
@@ -3400,7 +3411,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -10126,6 +10137,17 @@
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
+        美军
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         俄军
       
     </span>
@@ -10144,7 +10166,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         教程
@@ -10155,7 +10177,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         资源
@@ -10166,7 +10188,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
+  <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
       
         参考
@@ -10401,12 +10423,33 @@
 <li>集中兵力防御单个位置, 所有位置都被敌方占领才会判定为任务失败.</li>
 </ul>
 <h3 id="_8">人物关系<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
-<h4 id="_9">俄军<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<h4 id="_9">美军<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
 <pre class="mermaid"><code>graph TD
-    Lena["莱娜 (Lena)&lt;br/&gt;SVR特工 / 指挥官"]
-    Demidov["德米多夫 (Demidov)&lt;br/&gt;资深上校 / 战争英雄"]
-    Batalin["巴塔林 (Batalin)&lt;br/&gt;陆军上尉 / 崇拜者"]
-    Player["指挥官 (Commander)&lt;br/&gt;玩家角色 / 战术核心"]
+    Bennet["&lt;b&gt;将军 (Bennet)&lt;/b&gt;&lt;br/&gt;陆军中将 / 最高指挥"]
+    Williams["&lt;b&gt;威廉姆斯&lt;/b&gt;&lt;br/&gt;少校 → 中校 / 前线指挥"]
+    Miller["&lt;b&gt;米勒&lt;/b&gt;&lt;br/&gt;律师/CIA / 权力夺取者"]
+    Player["&lt;b&gt;指挥官&lt;/b&gt;&lt;br/&gt;玩家角色 / 道德关键"]
+
+    Bennet --&gt;|信任与战术指令| Williams
+    Bennet --&gt;|对立 昔日友谊破裂| Miller
+    Williams --&gt;|执行任务 建立信任| Player
+
+    Miller --&gt;|权力夺取 国家安全命令| Bennet
+    Miller --&gt;|提拔与胁迫| Williams
+    Miller --&gt;|强制指挥| Player
+
+    Williams -.-&gt;|共同反抗 道德同盟| Player
+
+    style Bennet fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
+    style Williams fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:2px
+    style Miller fill:#F5A623,color:#000,stroke:#D97C1A,stroke-width:3px
+    style Player fill:#BD10E0,color:#000,stroke:#8B06A0,stroke-width:2px</code></pre>
+<h4 id="_10">俄军<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>graph TD
+    Lena["&lt;b&gt;莱娜 (Lena)&lt;/b&gt;&lt;br/&gt;SVR特工 / 指挥官"]
+    Demidov["&lt;b&gt;德米多夫 (Demidov)&lt;/b&gt;&lt;br/&gt;资深上校 / 战争英雄"]
+    Batalin["&lt;b&gt;巴塔林 (Batalin)&lt;/b&gt;&lt;br/&gt;陆军上尉 / 崇拜者"]
+    Player["&lt;b&gt;指挥官 (Commander)&lt;/b&gt;&lt;br/&gt;玩家角色 / 战术核心"]
 
     Lena -- "指挥与监视" --&gt; Demidov
     Lena -- "利用与诱导" --&gt; Batalin
@@ -10418,20 +10461,20 @@
 
     Lena -- "揭露/报复" --&gt; Demidov
 
-    style Lena fill:#f96,stroke:#333
-    style Demidov fill:#69f,stroke:#333
-    style Batalin fill:#9f9,stroke:#333
-    style Player fill:#ccc,stroke:#333,stroke-width:4px</code></pre>
-<h2 id="_10">教程<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+    style Lena fill:#f96,color:#000,stroke:#333
+    style Demidov fill:#69f,color:#000,stroke:#333
+    style Batalin fill:#9f9,color:#000,stroke:#333
+    style Player fill:#ccc,color:#000,stroke:#333,stroke-width:4px</code></pre>
+<h2 id="_11">教程<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3501205842">For those who aren't military geeks</a>: 介绍了常见的概念和术语, 可以帮助快速入门.</li>
 </ul>
-<h2 id="_11">资源<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h2 id="_12">资源<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://ba-hub.net">https://ba-hub.net</a></li>
 <li><a href="https://barmory.net">https://barmory.net</a></li>
 </ul>
-<h2 id="_12">参考<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h2 id="_13">参考<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3505492842">https://steamcommunity.com/sharedfiles/filedetails/?id=3505492842</a></li>
 </ul>
@@ -10455,7 +10498,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月8日 21:53:34 CST">2026年1月8日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月8日 21:59:31 CST">2026年1月8日</span>
   </span>
 
     
