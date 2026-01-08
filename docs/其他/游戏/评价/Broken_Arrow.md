@@ -152,9 +152,9 @@ flowchart TD
 ```mermaid
 graph TD
     Bennet["<b>将军 (Bennet)</b><br/>陆军中将 / 最高指挥"]
-    Williams["<b>威廉姆斯</b><br/>少校 → 中校 / 前线指挥"]
-    Miller["<b>米勒</b><br/>律师/CIA / 权力夺取者"]
-    Player["<b>指挥官</b><br/>玩家角色 / 道德关键"]
+    Williams["<b>威廉姆斯 (Williams)</b><br/>少校 → 中校 / 前线指挥"]
+    Miller["<b>米勒 (Miller)</b><br/>律师/CIA / 权力夺取者"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家角色 / 道德关键"]
     
     Bennet -->|信任与战术指令| Williams
     Bennet -->|对立 昔日友谊破裂| Miller
