@@ -166,17 +166,17 @@ graph TD
     
     Williams -. "共同反抗 道德同盟" .- Player
     
-    style Bennet fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
-    style Williams fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:2px
     style Miller fill:#F5A623,color:#000,stroke:#D97C1A,stroke-width:3px
-    style Player fill:#BD10E0,color:#000,stroke:#8B06A0,stroke-width:2px
+    style Bennet fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
+    style Williams fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:3px
+    style Player fill:#BD10E0,color:#000,stroke:#8B06A0,stroke-width:3px
 ```
 
 #### 俄军
 
 ```mermaid
 graph TD
-    Lena["<b>莱娜 (Lena)</b><br/>SVR特工 / 指挥官"]
+    Lena["<b>莱娜 (Lena)</b><br/>SVR 特工 / 指挥官"]
     Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄"]
     Batalin["<b>巴塔林 (Batalin)</b><br/>陆军上尉 / 崇拜者"]
     Player["<b>指挥官 (Commander)</b><br/>玩家 / 战术核心"]
@@ -191,10 +191,10 @@ graph TD
     
     Lena -- "揭露/报复" --> Demidov
 
-    style Lena fill:#f96,color:#000,stroke:#333
-    style Demidov fill:#69f,color:#000,stroke:#333
-    style Batalin fill:#9f9,color:#000,stroke:#333
-    style Player fill:#ccc,color:#000,stroke:#333,stroke-width:4px
+    style Lena fill:#F5A623,color:#000,stroke:#D97C1A,stroke-width:3px
+    style Demidov fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
+    style Batalin fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:3px
+    style Player fill:#BD10E0,color:#000,stroke:#8B06A0,stroke-width:3px
 ```
 
 ## 教程
