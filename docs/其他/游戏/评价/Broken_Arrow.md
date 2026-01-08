@@ -122,10 +122,10 @@ flowchart TD
 | 请出示证件 (Papers Please)         | • 在困难难度下完成任务.<br/>• 使用最少的乘员组.                             |
 | 停电 (Blackout)                    | • 在困难难度下完成任务.<br/>• 撤离全部幸存步兵与车辆.                       |
 | 冷港行动 (Operation Cold Harbour)  | • 在困难难度下完成任务.<br/>• 不借助巴塔林 (Batalin), 独自占领港口全部目标. |
-| 自助加油 (Self Service)            | • 在困难难度下完成任务.<br/>• 在 45 分钟内完成任务.                         |
+| 自助服务 (Self Service)            | • 在困难难度下完成任务.<br/>• 在 45 分钟内完成任务.                         |
 | 禁航水域 (Forbidden Waters)        | • 在困难难度下完成任务.<br/>• 用 SSO 或 Spetsnaz VMF 击杀 50 个敌方单位.    |
-| 搜救 (Search & Rescue)             | • 在困难难度下完成任务.<br/>• 在 40 分钟内占领城市.                         |
-| 空降兵之旅 (The Ride of the VDV)   | • 在困难难度下完成任务.<br/>• 不使用 BMD-4M 或 Sprut-SD.                    |
+| 搜索与救援 (Search & Rescue)       | • 在困难难度下完成任务.<br/>• 在 40 分钟内占领城市.                         |
+| 舍我其谁 (The Ride of the VDV)     | • 在困难难度下完成任务.<br/>• 不使用 BMD-4M 或 Sprut-SD.                    |
 | 归宿之路 (Road to Fiddler's Green) | • 在困难难度下完成任务.<br/>• 不向上校请求任何援助.                         |
 
 ### 金牌技巧
