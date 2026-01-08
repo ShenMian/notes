@@ -153,8 +153,8 @@ flowchart TD
 graph TD
     Bennet["<b>将军 (Bennet)</b><br/>陆军中将 / 最高指挥"]
     Williams["<b>威廉姆斯 (Williams)</b><br/>少校 → 中校 / 前线指挥"]
-    Miller["<b>米勒 (Miller)</b><br/>律师/CIA / 权力夺取者"]
-    Player["<b>指挥官 (Commander)</b><br/>玩家角色 / 道德关键"]
+    Miller["<b>米勒 (Miller)</b><br/>律师/顾问 / CIA 权力夺取者"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家 / 道德关键"]
     
     Bennet -->|信任与战术指令| Williams
     Bennet -->|对立 昔日友谊破裂| Miller
@@ -179,7 +179,7 @@ graph TD
     Lena["<b>莱娜 (Lena)</b><br/>SVR特工 / 指挥官"]
     Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄"]
     Batalin["<b>巴塔林 (Batalin)</b><br/>陆军上尉 / 崇拜者"]
-    Player["<b>指挥官 (Commander)</b><br/>玩家角色 / 战术核心"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家 / 战术核心"]
 
     Lena -- "指挥与监视" --> Demidov
     Lena -- "利用与诱导" --> Batalin
