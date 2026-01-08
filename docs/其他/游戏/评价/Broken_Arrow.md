@@ -164,7 +164,7 @@ graph TD
     Miller -->|提拔与胁迫| Williams
     Miller -->|强制指挥| Player
     
-    Williams -.->|共同反抗 道德同盟| Player
+    Williams -. "共同反抗 道德同盟" .- Player
     
     style Bennet fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
     style Williams fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:2px
