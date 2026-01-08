@@ -147,14 +147,39 @@ flowchart TD
 
 ### 人物关系
 
+#### 美军
+
+```mermaid
+graph TD
+    Bennet["<b>将军 (Bennet)</b><br/>陆军中将 / 最高指挥"]
+    Williams["<b>威廉姆斯</b><br/>少校 → 中校 / 前线指挥"]
+    Miller["<b>米勒</b><br/>律师/CIA / 权力夺取者"]
+    Player["<b>指挥官</b><br/>玩家角色 / 道德关键"]
+    
+    Bennet -->|信任与战术指令| Williams
+    Bennet -->|对立 昔日友谊破裂| Miller
+    Williams -->|执行任务 建立信任| Player
+    
+    Miller -->|权力夺取 国家安全命令| Bennet
+    Miller -->|提拔与胁迫| Williams
+    Miller -->|强制指挥| Player
+    
+    Williams -.->|共同反抗 道德同盟| Player
+    
+    style Bennet fill:#4A90E2,color:#000,stroke:#2E5C8A,stroke-width:3px
+    style Williams fill:#7ED321,color:#000,stroke:#5BA80E,stroke-width:2px
+    style Miller fill:#F5A623,color:#000,stroke:#D97C1A,stroke-width:3px
+    style Player fill:#BD10E0,color:#000,stroke:#8B06A0,stroke-width:2px
+```
+
 #### 俄军
 
 ```mermaid
 graph TD
-    Lena["莱娜 (Lena)<br/>SVR特工 / 指挥官"]
-    Demidov["德米多夫 (Demidov)<br/>资深上校 / 战争英雄"]
-    Batalin["巴塔林 (Batalin)<br/>陆军上尉 / 崇拜者"]
-    Player["指挥官 (Commander)<br/>玩家角色 / 战术核心"]
+    Lena["<b>莱娜 (Lena)</b><br/>SVR特工 / 指挥官"]
+    Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄"]
+    Batalin["<b>巴塔林 (Batalin)</b><br/>陆军上尉 / 崇拜者"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家角色 / 战术核心"]
 
     Lena -- "指挥与监视" --> Demidov
     Lena -- "利用与诱导" --> Batalin
@@ -166,10 +191,10 @@ graph TD
     
     Lena -- "揭露/报复" --> Demidov
 
-    style Lena fill:#f96,stroke:#333
-    style Demidov fill:#69f,stroke:#333
-    style Batalin fill:#9f9,stroke:#333
-    style Player fill:#ccc,stroke:#333,stroke-width:4px
+    style Lena fill:#f96,color:#000,stroke:#333
+    style Demidov fill:#69f,color:#000,stroke:#333
+    style Batalin fill:#9f9,color:#000,stroke:#333
+    style Player fill:#ccc,color:#000,stroke:#333,stroke-width:4px
 ```
 
 ## 教程
