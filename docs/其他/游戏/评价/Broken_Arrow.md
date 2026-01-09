@@ -2,6 +2,10 @@
 
 **中文**: 断箭.  
 
+## 卡组
+
+卡组文件位于 `%USERPROFILE%\AppData\LocalLow\SteelBalalaikaStudio\BrokenArrow\Decks`.
+
 ## 防空压制
 
 防空压制 (Suppression of Enemy Air Defenses, SEAD) 是指通过使用反辐射导弹 (Anti-Radiation Missile, ARM) 来摧毁或压制敌方防空雷达和导弹系统的战术.
