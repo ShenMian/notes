@@ -10529,17 +10529,19 @@
     RECON --&gt;|视野/引导| ARTY
 
     subgraph INF["&lt;b&gt;步兵 Infantry&lt;/b&gt;"]
-        ATGM["&lt;b&gt;反坦克小组&lt;/b&gt;"]:::infantry
-        AA_INF["&lt;b&gt;防空兵&lt;/b&gt;"]:::infantry
+        ATGM["反坦克小组"]
+        AA_INF["防空兵"]
+        class ATGM,AA_INF infantry
     end
 
     ATGM --&gt;|阻止| MBT
     AA_INF --&gt;|阻止| HELI
 
     subgraph VEH["&lt;b&gt;载具 Vehicles&lt;/b&gt;"]
-        MBT["&lt;b&gt;主战坦克&lt;/b&gt;"]:::vehicle
-        IFV["&lt;b&gt;步兵战车&lt;/b&gt;"]:::vehicle
-        APC["&lt;b&gt;装甲运兵车&lt;/b&gt;"]:::vehicle
+        MBT["主战坦克"]
+        IFV["步兵战车"]
+        APC["装甲运兵车"]
+        class MBT,IFV,APC vehicle
     end
 
     MBT --&gt;|消灭| IFV
@@ -10549,9 +10551,10 @@
     INF --&gt;|阻止| VEH
 
     subgraph SUP["&lt;b&gt;支援 Support&lt;/b&gt;"]
-        ARTY["&lt;b&gt;火炮&lt;/b&gt;"]:::support
-        SHORAD["&lt;b&gt;近程防空&lt;/b&gt;"]:::support
-        HIMAD["&lt;b&gt;中高空防空&lt;/b&gt;"]:::support
+        ARTY["火炮"]
+        SHORAD["近程防空"]
+        HIMAD["中高空防空"]
+        class ARTY,SHORAD,HIMAD support
     end
 
     SHORAD --&gt;|消灭| HELI
@@ -10560,11 +10563,13 @@
     HELI["&lt;b&gt;直升机 Helicopters&lt;/b&gt;"]:::aircraft
     HELI --&gt;|消灭| MBT
     HELI --&gt;|消灭| INF
-    HELI --&gt;|压制| SHORAD
 
     JET["&lt;b&gt;固定翼 Aircraft&lt;/b&gt;"]:::aircraft
     JET --&gt;|消灭| VEH
     JET --&gt;|消灭| INF
+
+    %% SEAD
+    HELI --&gt;|压制| SHORAD
     JET --&gt;|压制| HIMAD
 
     classDef recon fill:#2a4d7e,stroke:#4a7dff,stroke-width:2px,color:#fff
@@ -10984,7 +10989,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月10日 22:59:29 CST">2026年1月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月10日 23:05:53 CST">2026年1月10日</span>
   </span>
 
     
