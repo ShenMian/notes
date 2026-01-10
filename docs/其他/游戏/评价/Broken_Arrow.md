@@ -35,17 +35,19 @@ flowchart TD
     RECON -->|视野/引导| ARTY
 
     subgraph INF["<b>步兵 Infantry</b>"]
-        ATGM["<b>反坦克小组</b>"]:::infantry
-        AA_INF["<b>防空兵</b>"]:::infantry
+        ATGM["反坦克小组"]
+        AA_INF["防空兵"]
+        class ATGM,AA_INF infantry
     end
 
     ATGM -->|阻止| MBT
     AA_INF -->|阻止| HELI
 
     subgraph VEH["<b>载具 Vehicles</b>"]
-        MBT["<b>主战坦克</b>"]:::vehicle
-        IFV["<b>步兵战车</b>"]:::vehicle
-        APC["<b>装甲运兵车</b>"]:::vehicle
+        MBT["主战坦克"]
+        IFV["步兵战车"]
+        APC["装甲运兵车"]
+        class MBT,IFV,APC vehicle
     end
 
     MBT -->|消灭| IFV
@@ -55,9 +57,10 @@ flowchart TD
     INF -->|阻止| VEH
 
     subgraph SUP["<b>支援 Support</b>"]
-        ARTY["<b>火炮</b>"]:::support
-        SHORAD["<b>近程防空</b>"]:::support
-        HIMAD["<b>中高空防空</b>"]:::support
+        ARTY["火炮"]
+        SHORAD["近程防空"]
+        HIMAD["中高空防空"]
+        class ARTY,SHORAD,HIMAD support
     end
 
     SHORAD -->|消灭| HELI
@@ -66,11 +69,13 @@ flowchart TD
     HELI["<b>直升机 Helicopters</b>"]:::aircraft
     HELI -->|消灭| MBT
     HELI -->|消灭| INF
-    HELI -->|压制| SHORAD
 
     JET["<b>固定翼 Aircraft</b>"]:::aircraft
     JET -->|消灭| VEH
     JET -->|消灭| INF
+
+    %% SEAD
+    HELI -->|压制| SHORAD
     JET -->|压制| HIMAD
 
     classDef recon fill:#2a4d7e,stroke:#4a7dff,stroke-width:2px,color:#fff
