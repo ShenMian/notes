@@ -41,7 +41,6 @@ flowchart TD
     end
 
     ATGM -->|阻止| MBT
-    AA_INF -->|阻止| HELI
 
     subgraph VEH["<b>载具 Vehicles</b>"]
         MBT["主战坦克"]
@@ -63,6 +62,8 @@ flowchart TD
         class ARTY,SHORAD,HIMAD support
     end
 
+    %% 防空
+    AA_INF -->|阻止| HELI
     SHORAD -->|消灭| HELI
     HIMAD -->|消灭| JET
 
