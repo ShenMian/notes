@@ -40,8 +40,6 @@ flowchart TD
         class ATGM,AA_INF infantry
     end
 
-    ATGM -->|阻止| MBT
-
     subgraph VEH["<b>载具 Vehicles</b>"]
         MBT["主战坦克"]
         IFV["步兵战车"]
