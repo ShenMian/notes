@@ -3286,7 +3286,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        单位克制关系
+        克制关系
       
     </span>
   </a>
@@ -10190,7 +10190,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        单位克制关系
+        克制关系
       
     </span>
   </a>
@@ -10523,72 +10523,55 @@
 <li><strong>远程火力</strong>: 快速为前线提供火力支援.</li>
 <li><strong>雷达防空</strong>: 便于在发现 SEAD-capable 战机时快速关闭雷达.</li>
 </ul>
-<h2 id="_3">单位克制关系<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_3">克制关系<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>flowchart TD
-    %% ========== 样式定义 ==========
-    classDef recon fill:#f1c40f,stroke:#f39c12,color:#000
-    classDef armor fill:#27ae60,stroke:#2d4a3a,color:#fff
-    classDef infantry fill:#16a085,stroke:#0b5345,color:#fff
-    classDef air fill:#3498db,stroke:#2980b9,color:#fff
-    classDef aa fill:#e74c3c,stroke:#c0392b,color:#fff
-    classDef artillery fill:#9b59b6,stroke:#8e44ad,color:#fff
+    RECON["&lt;b&gt;侦察 Recon&lt;/b&gt;"]:::recon
+    RECON --&gt;|视野/引导| ARTY
 
-    %% ========== 核心节点 ==========
-    RECON["&lt;b&gt;侦察 Recon&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;视野 / 目标指示核心&lt;/font&gt;"]:::recon
-
-    MBT["&lt;b&gt;主战坦克 MBT&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;平原突破 / 抗线核心&lt;/font&gt;"]:::armor
-    IFV["&lt;b&gt;步兵战车 IFV&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;机炮压制 / 机动反甲&lt;/font&gt;"]:::armor
-
-    INF["&lt;b&gt;步兵 Infantry&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;城镇 / 森林控制&lt;/font&gt;"]:::infantry
-    ATGM["&lt;b&gt;反坦克小组 ATGM&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;远程开罐 / 地形伏击&lt;/font&gt;"]:::infantry
-
-    HELI["&lt;b&gt;武装直升机 Heli&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;低空舔地 / 快速反应&lt;/font&gt;"]:::air
-    JET_CAS["&lt;b&gt;攻击机 CAS&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;精确轰炸 / 装甲杀手&lt;/font&gt;"]:::air
-    JET_SEAD["&lt;b&gt;防空压制 SEAD&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;反辐射导弹 / 拆伞&lt;/font&gt;"]:::air
-
-    AA_RADAR["&lt;b&gt;雷达防空 Radar AA&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;高空远距 / 区域拒止&lt;/font&gt;"]:::aa
-    AA_IR["&lt;b&gt;红外防空 IR / MANPADS&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;隐蔽拦截 / 直升机克星&lt;/font&gt;"]:::aa
-
-    ARTY["&lt;b&gt;火炮 / 火箭炮 Artillery&lt;/b&gt;&lt;br/&gt;&lt;font size=2&gt;范围覆盖 / 压制 / 反炮&lt;/font&gt;"]:::artillery
-
-    %% ========== 核心逻辑：侦察驱动 ==========
-    RECON --&gt;|提供视野与目标| ARTY
-    RECON --&gt;|引导锁定| ATGM
-    RECON --&gt;|前沿侦查| HELI
-    RECON -.-&gt;|发现即摧毁| MBT
-
-    %% ========== 地面攻防链 ==========
-    MBT --&gt;|平原碾压| INF
-    MBT --&gt;|直射火力| AA_RADAR
-
-    IFV --&gt;|机炮清扫| INF
-    IFV --&gt;|导弹狙击| MBT
-
-    subgraph Terrain_Bonus["地形加成单位组"]
-        INF --&gt;|城镇 / 森林伏击| MBT
-        INF --&gt;|便携防空伏击| HELI
-        ATGM --&gt;|远程开罐| MBT
-        ATGM --&gt;|伏击| IFV
+    subgraph INF["&lt;b&gt;步兵 Infantry&lt;/b&gt;"]
+        ATGM["&lt;b&gt;反坦克小组&lt;/b&gt;"]:::infantry
+        AA_INF["&lt;b&gt;防空兵&lt;/b&gt;"]:::infantry
     end
 
-    %% ========== 空中优势链 ==========
-    HELI --&gt;|猎杀| MBT
-    HELI --&gt;|压制| INF
-    HELI -.-&gt;|低空突防| AA_RADAR
+    ATGM --&gt;|阻止| MBT
+    AA_INF --&gt;|阻止| HELI
 
-    JET_CAS --&gt;|精确轰炸| MBT
-    JET_SEAD --&gt;|反辐射打击| AA_RADAR
+    subgraph VEH["&lt;b&gt;载具 Vehicles&lt;/b&gt;"]
+        MBT["&lt;b&gt;主战坦克&lt;/b&gt;"]:::vehicle
+        IFV["&lt;b&gt;步兵战车&lt;/b&gt;"]:::vehicle
+        APC["&lt;b&gt;装甲运兵车&lt;/b&gt;"]:::vehicle
+    end
 
-    %% ========== 防空与反制链 ==========
-    AA_RADAR --&gt;|区域拒止| JET_CAS
-    AA_RADAR --&gt;|远距拦截| JET_SEAD
-    AA_IR --&gt;|隐蔽猎杀| HELI
-    AA_IR --&gt;|驱离| JET_CAS
+    MBT --&gt;|消灭| IFV
+    INF --&gt;|消灭| APC
+    MBT --&gt;|消灭| SHORAD
+    VEH --&gt;|消灭| INF
+    INF --&gt;|阻止| VEH
 
-    %% ========== 炮兵体系链 ==========
-    ARTY --&gt;|火力覆盖| INF
-    ARTY --&gt;|压制 / 摧毁| AA_RADAR
-    ARTY -.-&gt;|反炮兵对决| ARTY</code></pre>
+    subgraph SUP["&lt;b&gt;支援 Support&lt;/b&gt;"]
+        ARTY["&lt;b&gt;火炮&lt;/b&gt;"]:::support
+        SHORAD["&lt;b&gt;近程防空&lt;/b&gt;"]:::support
+        HIMAD["&lt;b&gt;中高空防空&lt;/b&gt;"]:::support
+    end
+
+    SHORAD --&gt;|消灭| HELI
+    HIMAD --&gt;|消灭| JET
+
+    HELI["&lt;b&gt;直升机 Helicopters&lt;/b&gt;"]:::aircraft
+    HELI --&gt;|消灭| MBT
+    HELI --&gt;|消灭| INF
+    HELI --&gt;|压制| SHORAD
+
+    JET["&lt;b&gt;固定翼 Aircraft&lt;/b&gt;"]:::aircraft
+    JET --&gt;|消灭| VEH
+    JET --&gt;|消灭| INF
+    JET --&gt;|压制| HIMAD
+
+    classDef recon fill:#2a4d7e,stroke:#4a7dff,stroke-width:2px,color:#fff
+    classDef infantry fill:#2e7d32,stroke:#4caf50,stroke-width:2px,color:#fff
+    classDef support fill:#c62828,stroke:#ff5252,stroke-width:2px,color:#fff
+    classDef vehicle fill:#6a1b9a,stroke:#9c4dcc,stroke-width:2px,color:#fff
+    classDef aircraft fill:#ff8f00,stroke:#ffb74d,stroke-width:2px,color:#fff</code></pre>
 <h2 id="_4">波罗的海战役<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <h3 id="_5">金牌要求<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>获取金牌的条件<strong>需且仅需满足金牌要求</strong>, 无需同时满足铜牌和银牌要求.</p>
@@ -11001,7 +10984,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月10日 21:55:40 CST">2026年1月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月10日 22:58:51 CST">2026年1月10日</span>
   </span>
 
     
