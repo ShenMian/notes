@@ -49,7 +49,7 @@ flowchart TD
     end
 
     MBT -->|消灭| IFV
-    INF -->|消灭| APC
+    IFV -->|消灭| APC
     MBT -->|消灭| SHORAD
     VEH -->|消灭| INF
     INF -->|阻止| VEH
