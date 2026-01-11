@@ -100,7 +100,7 @@ flowchart TD
 | 巨浪 (The Big Wave)                            | • 在困难难度下完成任务.<br/>• 在 10 分钟内占领堡垒.                           |
 | 钢铁洪流 (Tracked and Furious)                 | • 在困难难度下完成任务.<br/>• 不要损失任何一辆车辆.                           |
 | 夜幕主宰者 (We Own The Night)                  | • 在困难难度下完成任务.<br/>• 不要损失任何一架直升机.                         |
-| 吸血鬼! (Vampires!)                             | • 在困难难度下完成任务.<br/>• 不要损失任何一架飞机.                           |
+| 吸血鬼! (Vampires!)                            | • 在困难难度下完成任务.<br/>• 不要损失任何一架飞机.                           |
 | 铁雨天降 (Heavy Rain)                          | • 在困难难度下完成任务.<br/>• 不要让任何单位被伊斯坎德尔 (Iskander) 导弹击毁. |
 | 狩猎季节 (Hunting Season)                      | • 在困难难度下完成任务.<br/>• 消灭防空设施且不损失直升机.                     |
 | 好友相助 (With a little help from our friends) | • 在困难难度下完成任务.<br/>• 不使用豹式坦克 (Leopards) 赢得任务.             |
@@ -170,7 +170,7 @@ graph TD
     Bennet["<b>将军 (Bennet)</b><br/>陆军中将 / 最高指挥"]
     Williams["<b>威廉姆斯 (Williams)</b><br/>少校 → 中校 / 前线指挥"]
     Miller["<b>米勒 (Miller)</b><br/>律师/顾问 / CIA 权力夺取者"]
-    Player["<b>指挥官 (Commander)</b><br/>玩家 / 道德关键"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家"]
     
     Bennet -->|信任与战术指令| Williams
     Bennet -->|对立 昔日友谊破裂| Miller
@@ -195,7 +195,7 @@ graph TD
     Lena["<b>莱娜 (Lena)</b><br/>SVR 特工 / 指挥官"]
     Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄"]
     Batalin["<b>巴塔林 (Batalin)</b><br/>陆军上尉 / 崇拜者"]
-    Player["<b>指挥官 (Commander)</b><br/>玩家 / 战术核心"]
+    Player["<b>指挥官 (Commander)</b><br/>玩家"]
 
     Lena -- "指挥与监视" --> Demidov
     Lena -- "利用与诱导" --> Batalin
