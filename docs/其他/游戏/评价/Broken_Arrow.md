@@ -193,7 +193,7 @@ graph TD
 ```mermaid
 graph TD
     Lena["<b>莱娜 (Lena)</b><br/>SVR 特工 / 指挥官"]
-    Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄"]
+    Demidov["<b>德米多夫 (Demidov)</b><br/>资深上校 / 战争英雄 → 冒名顶替者"]
     Batalin["<b>巴塔林 (Batalin)</b><br/>陆军上尉 / 崇拜者"]
     Player["<b>指挥官 (Commander)</b><br/>玩家"]
 
