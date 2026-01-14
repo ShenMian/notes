@@ -98,9 +98,9 @@ flowchart TD
 | 和平捍卫者 (Peacekeeper)                       | • 在困难难度下完成任务.<br/>• 不要损失任何单位.                               |
 | 空军基地惊天劫案 (Airbase Heist)               | • 在困难难度下完成任务.<br/>• 在 30 分钟内完成任务.                           |
 | 巨浪 (The Big Wave)                            | • 在困难难度下完成任务.<br/>• 在 10 分钟内占领堡垒.                           |
-| 钢铁洪流 (Tracked and Furious)                 | • 在困难难度下完成任务.<br/>• 不要损失任何一辆车辆.                           |
+| 钢铁洪流 (Tracked and Furious)                 | • 在困难难度下完成任务.<br/>• 不要损失任何一辆车辆 (包括车队).                |
 | 夜幕主宰者 (We Own The Night)                  | • 在困难难度下完成任务.<br/>• 不要损失任何一架直升机.                         |
-| 吸血鬼! (Vampires!)                            | • 在困难难度下完成任务.<br/>• 不要损失任何一架飞机.                           |
+| 吸血鬼! (Vampires!)                            | • 在困难难度下完成任务.<br/>• 不要损失任何一架飞机 (包括直升机).              |
 | 铁雨天降 (Heavy Rain)                          | • 在困难难度下完成任务.<br/>• 不要让任何单位被伊斯坎德尔 (Iskander) 导弹击毁. |
 | 狩猎季节 (Hunting Season)                      | • 在困难难度下完成任务.<br/>• 消灭防空设施且不损失直升机.                     |
 | 好友相助 (With a little help from our friends) | • 在困难难度下完成任务.<br/>• 不使用豹式坦克 (Leopards) 赢得任务.             |
