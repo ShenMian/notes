@@ -2,7 +2,7 @@
 
 **中文**: 星露谷物语.  
 
-![封面 - ConcernedApe](assets/stardew_valley_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+![封面 - ConcernedApe](assets/Stardew_Valley/stardew_valley_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 前置准备
 
@@ -110,7 +110,7 @@
 2. 购买 `草莓种子`.
 3. 与 `刘易斯` 交谈参与比赛, 请**提前**查看藏宝图 (下方). 在 50 秒内收集到至少 9 个彩蛋, 赢得比赛. 得到奖励 `草帽` (帽子均为纯粹的装饰品), 后续复活节奖励为 `1000G`.
 
-    ![寻宝图](./assets/Egg_Festival_18_Eggs.webp)  
+    ![寻宝图](./assets/Stardew_Valley/egg_festival_18_eggs.webp)  
 
 ## 夏季
 
@@ -137,4 +137,4 @@
 
 迷宫终点有一个`黄金南瓜`, 可用于制作`女巫冒`或直接出售 (2500G).  
 
-![](assets/gift.webp)  
+![](assets/Stardew_Valley/gift.webp)  
