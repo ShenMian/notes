@@ -10,7 +10,7 @@
 - [反汇编器](渗透测试/逆向工程/反汇编器.md).
 - [Dishonored 2](<其他/游戏/评价/Dishonored_2.md>).
 - [Vim](其他/编辑器/Vim.md).
-- [计算理论导论](https://github.com/ShenMian/theory_of_computation): 由 Typst 编写的高质量笔记.
+- [大学课程笔记](https://github.com/ShenMian/lectures).
 - [现代推箱子教程](https://shenmian.github.io/sokoban-tutorial/).
 
 ## 构建
