@@ -2,7 +2,7 @@
 
 **中文**: 耻辱 2.  
 
-![封面 - Arkane Studio](assets/dishonored_2_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+![封面 - Arkane Studio](assets/Dishonored_2/dishonored_2_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 测评
 
@@ -18,7 +18,7 @@
 
 ### 优点
 
-![截图 - Arkane Studio](assets/4.webp){ width=70% style="display: block; margin: 0 auto" }  
+![截图 - Arkane Studio](assets/Dishonored_2/4.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 - 优秀的关卡设计: 如机关宅邸 (Clockwork mansion).
 - 玩法多样: 通过武器和超能力可以看出这款游戏并不只有潜行一种玩法, 直接与敌人正面冲突也是一种十分刺激的玩法. 虽然存在 "混乱度" 的设定, 但对游玩的影响不大.
@@ -31,7 +31,7 @@
 - 优化不佳: 在较大的场景下帧率的波动会变得十分严重, 带来卡顿感.
 - 存在崩溃现象: 在游玩时遇到过若干次崩溃现象, 部分玩家存在到达特定区域就崩溃的现象.
 
-![背景 - Arkane Studio](assets/0.webp){ width=70% style="display: block; margin: 0 auto" }  
+![背景 - Arkane Studio](assets/Dishonored_2/0.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 ## 背景
 
@@ -62,7 +62,7 @@
 
 ### 敌人
 
-![敌人 - Arkane Studio](assets/8.webp){ width=70% style="display: block; margin: 0 auto" }  
+![敌人 - Arkane Studio](assets/Dishonored_2/8.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 敌人的状态有以下几种:  
 
@@ -88,7 +88,7 @@
 
 ### 超能力
 
-![超能力 - Arkane Studio](assets/2.webp){ width=70% style="display: block; margin: 0 auto" }  
+![超能力 - Arkane Studio](assets/Dishonored_2/2.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 以下几个能力较为重要:  
 
@@ -115,37 +115,37 @@
 
 1. Clean Hands: 全关卡不击杀任何人.
 
-    ![Clean Hands](assets/clean_hands.webp)  
+    ![Clean Hands](assets/Dishonored_2/clean_hands.webp)  
     包括平民, 人类敌人(包括目标). 每个主要目标都有一个不杀死而解除其威胁的方法.  
     值得注意的是, 最后一关中, 击杀目标德莱拉的分身不算击杀.  
 
 2. Shadow: 全关卡不被发现.
 
-    ![Shadow](assets/shadow.webp)  
+    ![Shadow](assets/Dishonored_2/shadow.webp)  
     该成就难度最高. 被发现的标志是 `红色的感叹号`, 即使平民也可能出现. 因此不要在平民的面前进行犯罪行为, 或者在其出现 `红色的感叹号` 前将其勒晕.  
     `带红色边框的白色感叹号` 代表警觉, 并不算被发现.  
 
 3. Flesh and Steel: 不使用超能力.
 
-    ![Flesh and Steel](assets/flesh_and_steel.webp)  
+    ![Flesh and Steel](assets/Dishonored_2/flesh_and_steel.webp)  
     该成就对游戏体验影响很大, 建议在确保通关至少一次再尝试. 其中 `瞬移` 能力是到达某些地方的必要前提. 而且只有拥有超能力才能制作 `骸骨护符`.  
     作为 `光幕` 能源的风力发电机无法被关闭, 因此 `自动布线器` 会更加有用. 也可以通过走其他路线绕过 `光幕`.  
     达成此成就的方法很简单, 在 `界外魔` 向你提供 `虚空印记` 的时候拒绝, 并通关即可.  
 
 4. Fearless Fall: 从研究院最高处跳下并处决下方的一名敌人.
 
-    ![Fearless Fall](assets/fearless_fall.webp)  
+    ![Fearless Fall](assets/Dishonored_2/fearless_fall.webp)  
     最高处位于研究院中央建筑顶部的屋顶, 有一个放置了骸骨护符的鸟巢.  
     可以先投掷手榴弹吸引敌人前来调查.  
 
 5. Heartbeat Reaper: 1.5 秒内杀死 6 个敌人.
 
-    ![Heartbeat Reaper](assets/heartbeat_reaper.webp)  
+    ![Heartbeat Reaper](assets/Dishonored_2/heartbeat_reaper.webp)  
     击晕六个敌人放在一起, 然后使用范围性攻击同时击杀他们.  
 
 6. Fatal Redirect: 用敌人的子弹击杀敌人.
 
-    ![Fatal Redirect](assets/fatal_redirect.webp)  
+    ![Fatal Redirect](assets/Dishonored_2/fatal_redirect.webp)  
     获得反弹子弹能力后贴着使用枪械的敌人的脸.  
 
 利用存档可以快速/没有副作用的完成某些成就, 比如某些需要击杀敌人的成就可以存在再击杀然后回档, 这样既可以解锁成就又不算击杀.  

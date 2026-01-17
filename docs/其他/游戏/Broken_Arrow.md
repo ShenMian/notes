@@ -131,7 +131,7 @@ flowchart TD
 - 任务是坚守路口 10 分钟, 后期可以打伏击, 并使用烟雾弹拖延敌人的进攻.
 - 巴塔林支援路口时, 其所乘坐的 T-90AK Batalin 是无敌的, 可以吸引大量火力, 然后将其余兵力隐藏在树林中.
 
-    ![无敌的 T-90AK Batalin 正在吸引火力](assets/T-90AK_Batalin.jpg)
+    ![无敌的 T-90AK Batalin 正在吸引火力](assets/Broken_Arrow/T-90AK_Batalin.jpg)
 
 **禁航水域**
 

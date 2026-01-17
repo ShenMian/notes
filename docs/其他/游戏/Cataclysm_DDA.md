@@ -1,6 +1,6 @@
 # Cataclysm: Dark Days Ahead
 
-![Main menu](assets/cabin.webp)
+![Screenshot](assets/Cataclysm_DDA/cabin.webp)
 
 !!! info
     本文基于 `0.H (Herbert) Stable Release` (2024-11-23) 版本.
