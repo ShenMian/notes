@@ -76,4 +76,4 @@
 
 ## 自动化
 
-可以利用 Airgeddon/[wifite2](https://github.com/derv82/wifite2)/[WEF](https://github.com/D3Ext/WEF) 等工具来简化上面的流程.
+可以借助 Airgeddon/[wifite2](https://github.com/derv82/wifite2)/[WEF](https://github.com/D3Ext/WEF) 等工具来自动化上述流程.
