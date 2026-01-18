@@ -10,8 +10,8 @@
 !!! info
     本文**不讨论 X11 的解决方案**, 如果依然在使用 X11, 建议尽快切换到 Wayland. 因为:
 
-    - GNOME 49 已弃用 X11, 同时进一步改进 HiDPI 支持.
-    - KDE Plasma 6.8 将弃用 X11.
+    - GNOME 50 弃用 X11, 同时进一步改进 HiDPI 支持.
+    - KDE Plasma 6.8 弃用 X11.
 
 截至 GNOME 48.3, 分数倍缩放依然为实验性功能.  
 相比之下, KDE Plasma 对分数倍缩放 (Wayland 和 X11 应用) 已经有成熟和稳定的支持.
