@@ -9993,19 +9993,19 @@ Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件�
 </code></pre></div>
 <p>可以考虑使用 <code>innounp-unicode</code> 替代 <code>innounp</code>, 详情请见<a href="#innounp-unicode">故障排除</a>.</p>
 <h2 id="_2">常用操作<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">scoop</span> <span class="n">search</span> <span class="p">&lt;</span><span class="n">app</span><span class="p">&gt;</span>         <span class="c"># 搜索应用</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">scoop</span> <span class="n">install</span> <span class="p">&lt;</span><span class="n">app</span><span class="p">&gt;</span>        <span class="c"># 安装应用</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">scoop</span> <span class="n">uninstall</span> <span class="p">&lt;</span><span class="n">app</span><span class="p">&gt;</span> <span class="p">[</span><span class="n">-p</span><span class="p">]</span> <span class="c"># 卸载应用 (包括依赖项), 选项 p 表示同时清除该应用的持久化数据</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">scoop</span> <span class="n">update</span> <span class="p">*</span>             <span class="c"># 更新全部应用</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">scoop</span> <span class="n">list</span>                 <span class="c"># 列出已安装的全部应用</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">scoop</span> <span class="n">search</span> <span class="p">&lt;</span><span class="n">NAME</span><span class="p">&gt;</span>         <span class="c"># 搜索应用</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">scoop</span> <span class="n">install</span> <span class="p">&lt;</span><span class="n">NAME</span><span class="p">&gt;</span>        <span class="c"># 安装应用</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">scoop</span> <span class="n">uninstall</span> <span class="p">&lt;</span><span class="n">NAME</span><span class="p">&gt;</span> <span class="p">[</span><span class="n">-p</span><span class="p">]</span> <span class="c"># 卸载应用 (包括依赖项), 选项 p 表示同时清除该应用的持久化数据</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">scoop</span> <span class="n">update</span> <span class="p">*</span>              <span class="c"># 更新全部应用</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">scoop</span> <span class="n">list</span>                  <span class="c"># 列出已安装的全部应用</span>
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="n">add</span> <span class="p">&lt;</span><span class="n">name</span><span class="p">&gt;</span> <span class="no">[repo]</span> <span class="c"># 添加 Bucket</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="nb">rm </span><span class="p">&lt;</span><span class="n">name</span><span class="p">&gt;</span>         <span class="c"># 移除 Bucket</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="n">list</span>              <span class="c"># 列出添加的 Bucket</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="n">add</span> <span class="p">&lt;</span><span class="n">URL</span><span class="p">&gt;</span> <span class="no">[repo]</span> <span class="c"># 添加 Bucket</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="nb">rm </span><span class="p">&lt;</span><span class="n">URL</span><span class="p">&gt;</span>         <span class="c"># 移除 Bucket</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">scoop</span> <span class="n">bucket</span> <span class="n">list</span>             <span class="c"># 列出添加的 Bucket</span>
 </code></pre></div>
 <h2 id="_3">查询频次限制<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>由于 <code>scoop search</code> 命令需要调用 API, 因此有调用频次限制. 可以通过设置个人 GitHub 账号的 token 来放宽限制.  </p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">scoop</span> <span class="n">config</span> <span class="n">gh_token</span> <span class="p">&lt;</span><span class="n">github_token</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">scoop</span> <span class="n">config</span> <span class="n">gh_token</span> <span class="p">&lt;</span><span class="n">GITHUB_TOKEN</span><span class="p">&gt;</span>
 </code></pre></div>
 <p>创建新的 Personal access token: <a href="https://github.com/settings/personal-access-tokens/new">https://github.com/settings/personal-access-tokens/new</a>.</p>
 <p>详情请参考 <a href="https://github.com/ScoopInstaller/Scoop/wiki/Using-Scoop-behind-a-proxy">Scoop Wiki</a>.</p>
@@ -10064,7 +10064,7 @@ Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件�
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年11月24日 19:05:07 CST">2025年11月24日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年1月30日 19:25:45 CST">2026年1月30日</span>
   </span>
 
     
