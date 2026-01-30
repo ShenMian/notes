@@ -5,3 +5,12 @@
 - [scoop](Scoop.md).
 - [winget](https://github.com/microsoft/winget-cli).
 - [choco](https://github.com/chocolatey/choco).
+
+## WinGet
+
+```
+winget install <PACKAGE>
+winget uninstall <PACKAGE>
+winget search <PACKAGE>
+winget upgrade --all --silent
+```

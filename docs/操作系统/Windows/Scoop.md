@@ -45,15 +45,15 @@ scoop bucket add extras
 ## 常用操作
 
 ```ps1
-scoop search <app>         # 搜索应用
-scoop install <app>        # 安装应用
-scoop uninstall <app> [-p] # 卸载应用 (包括依赖项), 选项 p 表示同时清除该应用的持久化数据
-scoop update *             # 更新全部应用
-scoop list                 # 列出已安装的全部应用
+scoop search <NAME>         # 搜索应用
+scoop install <NAME>        # 安装应用
+scoop uninstall <NAME> [-p] # 卸载应用 (包括依赖项), 选项 p 表示同时清除该应用的持久化数据
+scoop update *              # 更新全部应用
+scoop list                  # 列出已安装的全部应用
 
-scoop bucket add <name> [repo] # 添加 Bucket
-scoop bucket rm <name>         # 移除 Bucket
-scoop bucket list              # 列出添加的 Bucket
+scoop bucket add <URL> [repo] # 添加 Bucket
+scoop bucket rm <URL>         # 移除 Bucket
+scoop bucket list             # 列出添加的 Bucket
 ```
 
 ## 查询频次限制
@@ -61,7 +61,7 @@ scoop bucket list              # 列出添加的 Bucket
 由于 `scoop search` 命令需要调用 API, 因此有调用频次限制. 可以通过设置个人 GitHub 账号的 token 来放宽限制.  
 
 ```ps1
-scoop config gh_token <github_token>
+scoop config gh_token <GITHUB_TOKEN>
 ```
 
 创建新的 Personal access token: <https://github.com/settings/personal-access-tokens/new>.
