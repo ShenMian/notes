@@ -24,6 +24,12 @@
 
 https://www.pcgamer.com/resident-evil-4-remake-cave-puzzle/
 
+### 第 7 章
+
+**珍藏室**: 铁剑, 金剑, 血剑, 锈剑.
+
+![珍藏室谜题答案](assets/collection_room.webp)
+
 ## 收集
 
 16 个发条城堡位置: <https://www.pcgamer.com/resident-evil-4-remake-clockwork-castellan-locations-salazar/>
