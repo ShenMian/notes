@@ -1,5 +1,6 @@
 # Resident Evil 4
 
+**别名**: Biohazard 4, Requiem.  
 **中文**: 生化危机 4.
 
 ![Ashley Graham](assets/resident_evil_4.webp)
