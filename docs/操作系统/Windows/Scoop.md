@@ -9,7 +9,7 @@
 Scoop 安装路径可以通过环境变量 `SCOOP` 指定, 建议选择无需管理员权限的路径.  
 Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件夹.
 
-将下面命令中的 `<install_path>` 替换为 Scoop 安装路径, 并在 Powershell (需要 5.1 或更高版本) 中执行:
+将下面命令中的 `<install_path>` 替换为 Scoop 的**完整安装路径**, 并在 Powershell (需要 5.1 或更高版本) 中执行:
 
 ```ps1
 # 指定 Scoop 的完整安装路径, Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件夹
