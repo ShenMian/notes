@@ -4,6 +4,7 @@
 **中文**: 生化危机 4.
 
 ![Ashley Graham](assets/resident_evil_4.webp)
+![Ada Wong](assets/ada.webp)
 
 ## 解谜
 
@@ -36,6 +37,14 @@ https://www.pcgamer.com/resident-evil-4-remake-cave-puzzle/
 **珍藏室**: 铁剑, 金剑, 血剑, 锈剑.
 
 ![珍藏室谜题答案](assets/collection_room.webp)
+
+## 逆命殊途 第 1 章
+
+与主线剧情中第 4 章的解密方式相同.
+
+**密码**: 4 点钟方向, 9 点钟方向, 12 点钟方向.
+
+![密码](assets/ada_puzzle.webp)
 
 ## 收集
 
