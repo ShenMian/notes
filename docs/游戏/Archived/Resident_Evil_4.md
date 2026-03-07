@@ -1,6 +1,6 @@
 # Resident Evil 4
 
-**别名**: Biohazard 4, Requiem.  
+**别名**: Biohazard 4.  
 **中文**: 生化危机 4.
 
 ## 主线故事
