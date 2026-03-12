@@ -1,5 +1,5 @@
 # Supported image extensions
-$imageExtensions = @('*.jpg', '*.jpeg', '*.png', '*.gif', '*.bmp', '*.tiff', '*.tif')
+$imageExtensions = @('*.jpg', '*.jpeg', '*.png', '*.bmp', '*.tiff', '*.tif')
 
 # Recursively get all image files
 Get-ChildItem -Path . -Recurse -Include $imageExtensions | ForEach-Object {
