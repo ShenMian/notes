@@ -131,7 +131,7 @@
 
 ### Day 16 (星露谷展览会)
 
-自动寻找分数最高的组合: https://mouseypounds.github.io/stardew-fair-helper/
+自动寻找分数最高的组合: <https://mouseypounds.github.io/stardew-fair-helper/>.
 
 ### Day 27 (万灵节)
 
