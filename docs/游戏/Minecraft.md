@@ -11,6 +11,11 @@
 
 Windows 下的 `.minecraft` 文件夹通常位于 `%APPDATA%/.minecraft`.
 
+## 启动器 (Launcher)
+
+- **[Prism Launcher](https://github.com/PrismLauncher/PrismLauncher)**: 开源 (GPL-3.0)/跨平台, 支持快速安装模组/材质包/光影等.
+- **[Minecraft Launcher](https://www.minecraft.net/en-us/download)**: 官方启动器, 甚至还需要一个启动器来启动该启动器, 启动极其的缓慢.
+
 ## 资源包 (Resource Pack)
 
 推荐资源包:
