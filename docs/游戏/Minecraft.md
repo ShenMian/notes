@@ -16,6 +16,19 @@ Windows 下的 `.minecraft` 文件夹通常位于 `%APPDATA%/.minecraft`.
 - **[Prism Launcher](https://github.com/PrismLauncher/PrismLauncher)**: 开源 (GPL-3.0)/跨平台, 支持快速安装和更新模组/材质包/光影等资源.
 - **[Minecraft Launcher](https://www.minecraft.net/en-us/download)**: 官方启动器, 甚至还需要一个启动器来启动该启动器, 启动极其的缓慢.
 
+### 独立显卡
+
+#### Windows
+
+1. 从 Prism Launcher 设置里获取 `javaw.exe` 的路径.
+2. 运行 `ms-settings:display-advancedgraphics`.
+3. 点击 `Add desktop app` 按钮, 选择 `javaw.exe` 的路径.
+4. 将对应选项的 `GPU preference` 设置为 `High performance (...)`.
+
+### Linux
+
+<!-- TODO: Prism Launcher 设置支持该选项 -->
+
 ## 资源包 (Resource Pack)
 
 推荐资源包:
