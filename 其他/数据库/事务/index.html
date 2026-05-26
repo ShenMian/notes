@@ -2072,7 +2072,7 @@
 <p><strong>持久性 (<em>D</em>urability)</strong>: 持久性确保事务提交后, 即使立即发生系统故障(例如停电或崩溃), 也会保持提交状态.</p>
 <p>通常, DBMS 会利用延迟写 (Delayed write) 机制提高性能, 即在修改内存中的数据后, 延迟更新磁盘中的数据.<br />
 但故障发生时, 内存中还未更新到磁盘的数据将丢失.</p>
-<p>为保证持久性, DBMS 会利用Write-ahead logging (WAL) 机制, 先永久记录要执行的操作, 再执行这些操作.<br />
+<p>为保证持久性, DBMS 会利用 Write-ahead logging (WAL) 机制, 先永久记录要执行的操作, 再执行这些操作.<br />
 这样即使发生故障, 也能通过磁盘里的记录, 恢复内存中的数据.</p>
 <p>结合延迟写和 WAL 机制, DBMS 可以在确保持久性的情况下, 高效的进行事务处理.</p>
 </li>
@@ -2114,7 +2114,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年4月30日 13:51:54 CST">2026年4月30日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月26日 08:27:09 CST">2026年5月26日</span>
   </span>
 
     

@@ -2212,7 +2212,7 @@
 
 
 <h1 id="llm">LLM 入门指南<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h1>
-<p>大语言模型 (Large Language Model, LLM) 指由具有大量参数 (通常大于 1B) 的神经网络组成的语言模型.<br />
+<p>大语言模型 (Large Language Model, LLM) 指由具有大量参数 (通常大于 1 B) 的神经网络组成的语言模型.<br />
 本文不涉及技术细节, 专门介绍<strong>如何使用 LLM</strong>, 帮助读者快速上手.</p>
 <h2 id="_1">客户端<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h3 id="_2">优点<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
@@ -2255,7 +2255,7 @@
 <h3 id="_5">移动端<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>目前常见手机只能以较慢的速度 (6 tok/sec) 运行 8B 参数的模型.</p>
+<p>目前常见手机只能以较慢的速度 (6 tok/sec) 运行 8 B 参数的模型.</p>
 </div>
 <p>以下客户端均支持 Android:</p>
 <ul>
@@ -2339,35 +2339,35 @@ RAG 一共有以下三个关键阶段:</p>
 </thead>
 <tbody>
 <tr>
-<td><strong>7B</strong></td>
+<td><strong>7 B</strong></td>
 <td>~16 GiB</td>
 <td>~8 GiB</td>
 <td>~4 GiB</td>
 <td>~2 GiB</td>
 </tr>
 <tr>
-<td><strong>8B</strong></td>
+<td><strong>8 B</strong></td>
 <td>~18 GiB</td>
 <td>~9 GiB</td>
 <td>~5 GiB</td>
 <td>~3 GiB</td>
 </tr>
 <tr>
-<td><strong>13B</strong></td>
+<td><strong>13 B</strong></td>
 <td>~29 GiB</td>
 <td>~15 GiB</td>
 <td>~7 GiB</td>
 <td>~4 GiB</td>
 </tr>
 <tr>
-<td><strong>30B</strong></td>
+<td><strong>30 B</strong></td>
 <td>~67 GiB</td>
 <td>~34 GiB</td>
 <td>~17 GiB</td>
 <td>~9 GiB</td>
 </tr>
 <tr>
-<td><strong>70B</strong></td>
+<td><strong>70 B</strong></td>
 <td>~156 GiB</td>
 <td>~78 GiB</td>
 <td>~39 GiB</td>
@@ -2429,7 +2429,7 @@ RAG 一共有以下三个关键阶段:</p>
 </tr>
 </tbody>
 </table>
-<p>以 DeepSeek-R1-0528-Qwen3-8B 为例, 其参数量为 8B, 量化为 Q4_K_M.<br />
+<p>以 DeepSeek-R1-0528-Qwen3-8B 为例, 其参数量为 8 B, 量化为 Q4_K_M.<br />
 通过上表可以推测出所需内存大概为 5 GiB, 实际显存使用量为 5.3 GiB.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -2439,7 +2439,7 @@ RAG 一共有以下三个关键阶段:</p>
 <ul>
 <li><strong><a href="https://huggingface.co/google/gemma-4-E4B">gemma-4-e4b</a></strong>: 支持多模态/混合推理, 43 tok/sec, 约 5.2 GiB 内存占用.<sup id="fnref:gemma-4"><a class="footnote-ref" href="#fn:gemma-4">2</a></sup></li>
 <li><strong><a href="https://huggingface.co/Qwen/Qwen3.5-9B">qwen3.5-9b</a></strong>: 支持多模态/混合推理 (Reasoning), 23 tok/sec, 约 5.5 GiB 内存占用.</li>
-<li><strong><a href="https://huggingface.co/ibm-granite/granite-4.0-h-tiny">granite-4-h-tiny</a></strong>: 推理效率高 (激活参数 1B) 且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.<sup id="fnref:granite-4"><a class="footnote-ref" href="#fn:granite-4">3</a></sup></li>
+<li><strong><a href="https://huggingface.co/ibm-granite/granite-4.0-h-tiny">granite-4-h-tiny</a></strong>: 推理效率高 (激活参数 1 B) 且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.<sup id="fnref:granite-4"><a class="footnote-ref" href="#fn:granite-4">3</a></sup></li>
 </ul>
 <p><strong>测试 GPU</strong>: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).<br />
 若使用 PocketPal, <strong>建议启用 Flash Attention</strong>, 以获得更快的推理速度和更大的上下文窗口.</p>
@@ -2559,7 +2559,7 @@ RAG 一共有以下三个关键阶段:</p>
 <li><strong><a href="https://platform.deepseek.com/">DeepSeek</a></strong>: <a href="https://api-docs.deepseek.com/zh-cn/quick_start/pricing/">价格</a>.</li>
 <li><strong><a href="https://platform.openai.com/">OpenAI</a></strong>: 必须使用电话号码注册. <a href="https://openai.com/api/pricing/">价格</a>.</li>
 <li><strong><a href="https://openrouter.ai/">OpenRouter</a></strong>.</li>
-<li><strong><a href="https://cloud.siliconflow.cn/">SiliconFlow</a></strong>: 必须使用电话号码注册. 有几个 7B-9B 的免费模型, 但是速率限制非常严格, 难以用于网页翻译.</li>
+<li><strong><a href="https://cloud.siliconflow.cn/">SiliconFlow</a></strong>: 必须使用电话号码注册. 有几个 7-9 B 的免费模型, 但是速率限制非常严格, 难以用于网页翻译.</li>
 <li><strong><a href="https://github.com/marketplace?type=models">GitHub Models</a></strong>: GitHub 提供限制较严格的免费试用, 实际供应商为 Azure AI.</li>
 </ul>
 <h2 id="_14">未审查模型<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
@@ -2618,7 +2618,7 @@ RAG 一共有以下三个关键阶段:</p>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月21日 21:37:57 CST">2026年5月21日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月26日 08:27:09 CST">2026年5月26日</span>
   </span>
 
     
