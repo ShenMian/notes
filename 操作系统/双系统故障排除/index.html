@@ -1597,10 +1597,10 @@
 </ul>
 <p>因此, 如果用户需要在 Linux 下访问 Windows 的 NTFS 分区, 或无线网卡存在异常, 建议禁用 Fast Startup.</p>
 <p>运行 <code>control.exe /name Microsoft.PowerOptions /page pageGlobalSettings</code>, 然后禁用 <code>Turn on fast startup (recommended)</code>, 最后重启系统.</p>
-<p>临时解决办法是让 Windows <strong>重启</strong>, 而非关机. 然后在重启时直接切换至 Linux.</p>
+<p>临时解决办法是让 Windows <strong>重启</strong>, 然后在重启时直接切换至 Linux.</p>
 <h2 id="_2">时间不一致<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>这是因为主板上的硬件时钟 (Real-Time Clock, RTC) 不包含时区信息. 默认情况下, Linux 将 RTC 解读为 UTC 时间, 而 Windows 将其解读为本地时间.<br />
-因此, 只要用户的本地时间与 UTC 时间不一致, 双系统的时间就会不一致.</p>
+<p>由于主板上的硬件时钟 (Real-Time Clock, RTC) 不包含时区信息, 默认情况下, Linux 会将 RTC 视为 UTC 时间, 而 Windows 则将其视为本地时间.<br />
+因此, 只要本地时间与 UTC 时间存在偏差, 就会造成双系统时间不一致.</p>
 <p>下面提供两种统一时间的解决方案:</p>
 <ul>
 <li>
@@ -1647,7 +1647,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年4月20日 23:34:48 CST">2026年4月20日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月28日 09:27:14 CST">2026年5月28日</span>
   </span>
 
     
