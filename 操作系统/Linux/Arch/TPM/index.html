@@ -12,13 +12,13 @@
         <meta name="author" content="ShenMian">
       
       
-        <link rel="canonical" href="https://shenmian.github.io/notes/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/Arch/%E6%B8%B8%E6%88%8F%E7%8E%AF%E5%A2%83/">
+        <link rel="canonical" href="https://shenmian.github.io/notes/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Linux/Arch/TPM/">
       
       
-        <link rel="prev" href="../%E5%AE%89%E8%A3%85_KDE/">
+        <link rel="prev" href="../Arch_%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/">
       
       
-        <link rel="next" href="../%E6%BF%80%E6%B4%BB/">
+        <link rel="next" href="../%E5%AE%89%E8%A3%85_KDE/">
       
       
         
@@ -32,7 +32,7 @@
     
     
       
-        <title>游戏环境 - Notes</title>
+        <title>TPM - Notes</title>
       
     
     
@@ -89,7 +89,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#tpm" class="md-skip">
           跳转至
         </a>
       
@@ -123,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              游戏环境
+              TPM
             
           </span>
         </div>
@@ -1617,10 +1617,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../TPM/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1636,6 +1645,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1673,37 +1683,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    游戏环境
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E6%B8%B8%E6%88%8F%E7%8E%AF%E5%A2%83/" class="md-nav__link">
         
   
   
@@ -1719,37 +1702,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#proton-ge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        安装 Proton-GE
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2287,25 +2239,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#proton-ge" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        安装 Proton-GE
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -2409,33 +2342,15 @@
   
 
 
-<h1 id="_1">游戏环境<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="proton-ge">安装 Proton-GE<a class="headerlink" href="#proton-ge" title="Permanent link">&para;</a></h2>
-<pre class="mermaid"><code>graph LR
-    A["Wine (社区维护)"]
-    A --&gt;|fork| B["Proton (Valve 维护)"]
-    B --&gt;|fork| C["Proton-GE (社区维护)"]</code></pre>
-<p>主要有三种方法:</p>
-<ol>
-<li>
-<p>Flatpak (仅适用于 Flatpak 下的 Steam)</p>
-<p>如果你使用的是 Flatpak 版本的 Steam, 可以通过下面命令一步到位:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flatpak<span class="w"> </span>install<span class="w"> </span>com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+<h1 id="tpm">TPM<a class="headerlink" href="#tpm" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>systemd-cryptenroll<span class="w"> </span>--tpm2-device<span class="o">=</span>auto<span class="w"> </span>--tpm2-pcrs<span class="o">=</span><span class="m">7</span><span class="w"> </span>/dev/nvme1n1p2
 </code></pre></div>
-</li>
-<li>
-<p>ProtonUp-Qt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>paru<span class="w"> </span>-S<span class="w"> </span>protonup-qt-bin<span class="w">                       </span><span class="c1"># AUR</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>net.davidotek.pupgui2<span class="w"> </span><span class="c1"># Flatpak</span>
+<div class="highlight"><span class="filename">/etc/cmdline.d/root.conf</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rd.luks.name<span class="o">=</span>&lt;UUID&gt;<span class="o">=</span>root<span class="w"> </span>rd.luks.options<span class="o">=</span>tpm2-device<span class="o">=</span>auto<span class="w"> </span><span class="nv">root</span><span class="o">=</span>/dev/mapper/root<span class="w"> </span><span class="nv">rootflags</span><span class="o">=</span><span class="nv">subvol</span><span class="o">=</span>@<span class="w"> </span>rw
 </code></pre></div>
-<p>通过 ProtonUp-Qt 为 Steam 安装任意版本的 Proton-GE.</p>
-</li>
-<li>
-<p>手动安装</p>
-<p>请参考<a href="https://github.com/GloriousEggroll/proton-ge-custom#installation">官方文档</a>.</p>
-</li>
-</ol>
-<p>安装 <a href="https://github.com/GloriousEggroll/proton-ge-custom">Proton-GE</a> 后即可重启 Steam, 然后在 <code>Settings | Compatibility | Default compatibility tool</code> 下拉菜单选择 <code>GP-Proton</code> 开头的选项.</p>
+<div class="highlight"><span class="filename">/etc/mkinitcpio.conf</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole block sd-encrypt filesystems fsck)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>sudo<span class="w"> </span>mkinitcpio<span class="w"> </span>-P
+</code></pre></div>
 
 
 
@@ -2456,7 +2371,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月30日 20:08:39 CST">2026年5月30日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年6月10日 19:56:55 CST">2026年6月10日</span>
   </span>
 
     
