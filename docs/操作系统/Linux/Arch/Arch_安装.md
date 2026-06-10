@@ -67,6 +67,14 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
     # mount -o remount,size=2G /run/archiso/cowspace
     ```
 
+!!! info
+    如果屏幕亮度较低, 可以通过下面命令调节屏幕亮度:
+
+    ```console
+    # cat /sys/class/backlight/<DEVICE_NAME>/max_brightness    # 查看最大亮度
+    # echo 100 > /sys/class/backlight/<DEVICE_NAME>/brightness # 调整亮度
+    ```
+
 ## 连接互联网
 
 ### 连接 Wi-Fi
