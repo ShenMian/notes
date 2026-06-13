@@ -1736,6 +1736,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        环境配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#proton-ge" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2305,6 +2316,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        环境配置
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#proton-ge" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2432,6 +2454,17 @@
 
 
 <h1 id="_1">游戏环境<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">环境配置<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>nvidia-prime</code>: 提供 <code>prime-run</code> 脚本, 使程序按需调用 NVIDIA 独显.</li>
+<li><code>gamemode</code>: 提供 <code>gamemoderun</code> 命令, 优化系统性能.</li>
+<li><code>xpadneo-dkms</code>: Xbox 蓝牙手柄的高级驱动. 解决原生 <code>xpad</code> 驱动下可能出现的异常行为 (如游戏退出后手柄持续震动/触发高频异常按键事件等), 并且添加扳机震动支持.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>paru<span class="w"> </span>-S<span class="w"> </span>nvidia-prime<span class="w"> </span>gamemode<span class="w"> </span>xpadneo-dkms
+</code></pre></div>
+<p>Steam 游戏启动参数:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>prime-run gamemoderun %command%
+</code></pre></div>
 <h2 id="proton-ge">安装 Proton-GE<a class="headerlink" href="#proton-ge" title="Permanent link">&para;</a></h2>
 <pre class="mermaid"><code>graph LR
     A["Wine (社区维护)"]
@@ -2442,13 +2475,13 @@
 <li>
 <p>Flatpak (仅适用于 Flatpak 下的 Steam)</p>
 <p>如果你使用的是 Flatpak 版本的 Steam, 可以通过下面命令一步到位:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>flatpak<span class="w"> </span>install<span class="w"> </span>com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>flatpak<span class="w"> </span>install<span class="w"> </span>com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 </code></pre></div>
 </li>
 <li>
 <p>ProtonUp-Qt</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>paru<span class="w"> </span>-S<span class="w"> </span>protonup-qt-bin<span class="w">                       </span><span class="c1"># AUR</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>net.davidotek.pupgui2<span class="w"> </span><span class="c1"># Flatpak</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>paru<span class="w"> </span>-S<span class="w"> </span>protonup-qt-bin<span class="w">                       </span><span class="c1"># AUR</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>net.davidotek.pupgui2<span class="w"> </span><span class="c1"># Flatpak</span>
 </code></pre></div>
 <p>通过 ProtonUp-Qt 为 Steam 安装任意版本的 Proton-GE.</p>
 </li>
@@ -2480,7 +2513,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年6月12日 22:38:25 CST">2026年6月12日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年6月13日 10:39:19 CST">2026年6月13日</span>
   </span>
 
     

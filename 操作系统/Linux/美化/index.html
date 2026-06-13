@@ -1505,6 +1505,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="GRUB 主题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手动安装步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2118,6 +2135,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="GRUB 主题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        手动安装步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2220,8 +2254,23 @@
 </code></pre></div>
 <p>详情请参考 <a href="https://wiki.archlinux.org/title/Plymouth">ArchWiki</a>.</p>
 <h2 id="grub">GRUB 主题<a class="headerlink" href="#grub" title="Permanent link">&para;</a></h2>
-<p><a href="https://github.com/AdisonCavani/distro-grub-themes">distro-grub-themes</a></p>
-<p>手动安装步骤请参考: <a href="https://k1ng.dev/distro-grub-themes/installation#manual-installation">https://k1ng.dev/distro-grub-themes/installation#manual-installation</a>.</p>
+<p><a href="https://github.com/AdisonCavani/distro-grub-themes">distro-grub-themes</a> 是一个高质量的 GRUB 主题库, 在<a href="https://k1ng.dev/distro-grub-themes/preview">此处</a>查看效果预览.</p>
+<h3 id="_2">手动安装步骤<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>https://github.com/AdisonCavani/distro-grub-themes.git
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>distro-grub-themes/themes
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>ls<span class="w"> </span><span class="c1"># 查看全部主题</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/boot/grub/themes/&lt;THEME&gt;
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>sudo<span class="w"> </span>tar<span class="w"> </span>-C<span class="w"> </span>/boot/grub/themes/&lt;THEME&gt;<span class="w"> </span>-xf<span class="w"> </span>&lt;THEME&gt;.tar
+</code></pre></div>
+<p>修改 GRUB 配置文件, 以应用主题:</p>
+<div class="highlight"><span class="filename">/etc/default/grub</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>GRUB_THEME=&quot;/boot/grub/themes/&lt;THEME&gt;/theme.txt&quot;
+</code></pre></div>
+<p>重新生成 GRUB 配置:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>grub-mkconfig<span class="w"> </span>-o<span class="w"> </span>/boot/grub/grub.cfg
+</code></pre></div>
+<p>详情请参考: <a href="https://k1ng.dev/distro-grub-themes/installation#manual-installation">https://k1ng.dev/distro-grub-themes/installation#manual-installation</a>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>不建议安装 <code>grub-customizer</code>, 详情请参考 <a href="https://forum.manjaro.org/t/grub-customizer/172612">Manjaro Linux Forum</a>.</p>
@@ -2246,7 +2295,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年5月30日 20:08:39 CST">2026年5月30日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年6月13日 10:41:34 CST">2026年6月13日</span>
   </span>
 
     
