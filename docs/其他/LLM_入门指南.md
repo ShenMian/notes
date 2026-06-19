@@ -230,9 +230,9 @@ $$
     env_key = "OPENROUTER_API_KEY"
     ```
 
-- Gemini CLI
+- Antigravity CLI
 
-    安装: `npm install -g @google/gemini-cli`.
+    安装: `irm https://antigravity.google/cli/install.ps1 | iex`.
 
 ## 参数
 
