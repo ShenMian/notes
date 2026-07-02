@@ -29,7 +29,7 @@ sudo pacman-mirrors -c China # 更新镜像源 (仅限 Manjaro)
 
 ### Paru
 
-使用 Rust 编写的 AUR Helper.
+[Paru](https://github.com/Morganamilo/paru) 是由 Rust 编写的 AUR Helper.
 
 可以通过下面命令手动安装:
 
@@ -42,9 +42,13 @@ cd paru
 makepkg -si
 ```
 
+直接运行不带任何参数的 `paru` 即可快速进行全面更新，效果等同于 `-Syu`.[^paru-no-args]
+
+[^paru-no-args]: https://github.com/Morganamilo/paru/blob/9ac3578807a87858651e81a02586ceb947686e7c/src/lib.rs#L169-L171
+
 ### Yay
 
-使用 Go 编写的 AUR Helper.
+[Yay](https://github.com/jguer/yay) 是由 Go 编写的 AUR Helper.
 
 可以通过下面命令手动安装:
 
