@@ -24,6 +24,14 @@ irm https://get.activated.win | iex
 
 <https://massgrave.dev/>
 
+## 禁用 DiagTrack 服务
+
+DiagTrack 服务主要负责收集系统的运行数据/错误报告以及用户使用习惯, 并将其发送回微软服务器, 以便微软分析并改进操作系统.
+
+```ps1
+Set-Service -Name "DiagTrack" -StartupType Disabled -Status Stopped
+```
+
 ## 清理日志
 
 ```ps1
