@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -14,19 +17,19 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Set cache id (weekly)
-        id: set_cache_id
-        run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_OUTPUT
-
-      - name: Cache
-        uses: actions/cache@v6
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          key: mkdocs-material-${{ steps.set_cache_id.outputs.cache_id }}
-          path: ~/.cache
-          restore-keys: mkdocs-material-
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install mkdocs-material[imaging] pymdown-extensions mkdocs-git-revision-date-localized-plugin mkdocs-rss-plugin
+        run: pip install zensical
+
+      - name: Build site
+        run: zensical build --clean
 
       - name: Deploy to GitHub Pages
-        run: mkdocs gh-deploy --force
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site

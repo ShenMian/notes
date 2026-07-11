@@ -1,7 +1,11 @@
 # Notes
 
+<!--
+等待 Zensical 提供对更多插件的支持. 详情请参考: <https://zensical.org/compatibility/plugins/#mkdocs-plugin-support>
+
 [![RSS - 新建文章](https://img.shields.io/badge/RSS-新建文章-orange?logo=rss&logoColor=white)](https://shenmian.github.io/notes/feed_rss_created.xml)
-[![RSS - 更新文章](https://img.shields.io/badge/RSS-更新文章-blue?logo=rss&logoColor=white)](https://shenmian.github.io/notes/feed_rss_updated.xml) 
+[![RSS - 更新文章](https://img.shields.io/badge/RSS-更新文章-blue?logo=rss&logoColor=white)](https://shenmian.github.io/notes/feed_rss_updated.xml)
+-->
 
 ## 示例
 
