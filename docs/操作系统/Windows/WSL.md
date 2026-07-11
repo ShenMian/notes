@@ -32,7 +32,7 @@ wsl -d archlinux -u sms # 以用户 sms 登录 Arch Linux
 wsl --manage archlinux --set-default-user sms # 设置 Arch Linux 的默认用户为 sms
 ```
 
-创建用户的方法可以参考 [Arch 安装](../Linux/Arch/Arch_安装.md#添加用户).
+创建用户的方法可以参考 [Arch 安装](../Linux/Arch/Arch_安装.md#add-user).
 
 除此之外, 还可以从 [Microsoft Store](ms-windows-store://search/?query=WSL) 中寻找并安装合适的 Linux 发行版.
 

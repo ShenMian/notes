@@ -64,7 +64,7 @@ git config unset --global https.proxy
 
 [^proxy-env]: 如 `http_proxy`, `https_proxy` 和 `all_proxy`.
 
-### GPG 签名
+### GPG 签名 {#gpg-sign}
 
 ```sh
 gpg --list-secret-keys --keyid-format=long
@@ -494,7 +494,7 @@ Git 核心对象类型一共有四种:
 | blob   | 存储使用 zlib 压缩的二进制数据, 通常是文件内容 |
 | tag    | 存储标签信息, 包含备注等信息                   |
 
-其他类型由[包文件](#包文件)内部增量压缩使用, 全部对象类型请参考 [Git 源码](https://github.com/git/git/blob/2c2ba49d55ff26c1082b8137b1ec5eeccb4337d1/object.h#L97-L109).
+其他类型由[包文件](#packfile)内部增量压缩使用, 全部对象类型请参考 [Git 源码](https://github.com/git/git/blob/2c2ba49d55ff26c1082b8137b1ec5eeccb4337d1/object.h#L97-L109).
 
 它们之间的引用关系如下图所示:
 
@@ -575,7 +575,7 @@ flowchart LR
 | `update-ref`   | 添加/删除和修改引用     | 本质上就是往指定文件写入所指向对象的哈希值.           |
 | `symbolic-ref` | 读取/删除和修改符号引用 | 只能引用 `refs/` 中的引用, 允许将 `HEAD` 引用远程分支 |
 
-### 包文件
+### 包文件 {#packfile}
 
 Git 将松散 (loose) 对象格式文件存储在 `objects/` 中以两个数字或字母开头的目录下. 此处的对象文件均包含完整内容.  
 在执行部分 Git 命令 (如 `git gc`) 时, 这些松散对象会通过增量压缩 (delta compression) 被打包为包文件 (packfile), 存储在 `objects/pack/` 目录下.
@@ -629,7 +629,7 @@ git gc --prune=now
     git config --global gpg.program "path/to/gpg.exe"
     ```
 
-    详情请参考 [GPG 签名](#gpg-签名).
+    详情请参考 [GPG 签名](#gpg-sign).
 
 - `fatal: detected dubious ownership in repository at '<PATH>'`
 

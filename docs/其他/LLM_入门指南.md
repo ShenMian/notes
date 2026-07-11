@@ -44,7 +44,7 @@
 
 Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio 或 Ollama 组合使用, 同时支持本地和远程 LLM.
 
-### 移动端
+### 移动端 {#mobile}
 
 !!! warning
     目前常见手机只能以较慢的速度 (6 tok/sec) 运行 8 B 参数的模型.

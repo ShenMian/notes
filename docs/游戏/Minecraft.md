@@ -62,7 +62,7 @@ Windows 下的 `.minecraft` 文件夹通常位于 `%APPDATA%/.minecraft`.
 推荐模组 (均支持 Fabric):
 
 - **[Fabric API]**: 开源 (Apache-2.0), 仅支持 Fabric.
-- **[Iris Shaders](#光影)**: 光影包加载器.
+- **[Iris Shaders](#shader)**: 光影包加载器.
 - **[Sodium]**: 有源软件, 降低 GPU 负载, 主要是对渲染管线进行优化.
 - **[Lithium]**: 开源 (LGPL-3.0), 降低 CPU 负载, 主要是对游戏逻辑进行优化.
 - **[FerriteCore]**: 开源 (MIT), 降低特定场景下的内存负载, 适合模组数量较多的情况.
@@ -86,7 +86,7 @@ Fabric + Sodium + Lithium 可以在保留原版体验的同时, 降低 CPU/GPU �
 
 将 JAR 文件放入 `.minecraft/mods` 文件夹中即可.
 
-## 光影 (Shader)
+## 光影 (Shader) {#shader}
 
 目前有两种主流的光影加载器:
 

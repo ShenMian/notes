@@ -390,7 +390,7 @@ LANG=en_US.UTF-8
 
 如果安装的网络管理器为 NetworkManager, 则可以通过 `nmtui` 命令启动 TUI 来连接网络.
 
-## 添加用户
+## 添加用户 {#add-user}
 
 创建**管理员用户**并设置密码.
 
