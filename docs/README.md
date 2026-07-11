@@ -18,8 +18,8 @@
 ### HTML
 
 ```sh
-pip install mkdocs-material[imaging] pymdown-extensions mkdocs-git-revision-date-localized-plugin mkdocs-rss-plugin
-mkdocs build
+pip install zensical
+zensical build
 ```
 
 ### PDF

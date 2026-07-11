@@ -114,4 +114,4 @@ sudo pacman -S archlinuxcn-keyring
 
 ## 参见
 
-- [常用软件](../../常用软件.md)
+- [常用软件](../../个人常用软件.md)
