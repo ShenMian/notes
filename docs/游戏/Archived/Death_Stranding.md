@@ -48,4 +48,4 @@
 
 ## 参考
 
-- [【不止游戏】死亡搁浅为什么被骂的那么惨？ - 森纳映画 - bilibili](https://www.bilibili.com/video/BV1MJ411d7MA/).
+- [【不止游戏】死亡搁浅为什么被骂的那么惨？ - 森纳映画 - bilibili](https://www.bilibili.com/video/BV1MJ411d7MA).
