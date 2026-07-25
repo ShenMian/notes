@@ -11,7 +11,7 @@ Cataclysm: Dark Days Ahead (DDA, CDDA) 是一款回合制的末日生存游戏, 
 
 由于该游戏入门门槛较高, 且网上缺乏较新的高质量教学内容. 这里推荐由 世纪枭隼 Peregrine 制作的高质量视频系列:
 
-- <https://www.bilibili.com/video/BV1vZQfYfEM9?p=3&vd_source=b0a1d90ff65d8547a0ffc9ce4d68bcfd>
+- <https://www.bilibili.com/video/BV1vZQfYfEM9?p=3>
 
 ## 常用键位
 

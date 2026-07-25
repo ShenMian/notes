@@ -84,4 +84,4 @@ while(true) {
 ## 参考
 
 - <https://zh.wikipedia.org/wiki/PID控制器>.
-- <https://www.bilibili.com/video/BV1jr4y1P7qK/?spm_id_from=333.788.recommend_more_video.0>.
+- <https://www.bilibili.com/video/BV1jr4y1P7qK>.
