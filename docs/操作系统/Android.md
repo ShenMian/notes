@@ -15,6 +15,12 @@ icon: simple/android
 
 ## 导出 APK
 
+### 通过 AntiSplit-M 导出
+
+在需要导出 APK 的手机上安装 [AntiSplit-M](https://github.com/AbdurazaaqMohammed/AntiSplit-M), 确保已赋予 `Access list of installed apps` 权限, 然后根据应用里的指示导出 APK 文件.
+
+### 通过 ADB 导出
+
 请先确保手机已开启 USB 调试, 并允许当前电脑进行调试.
 
 ```console
@@ -22,6 +28,8 @@ icon: simple/android
 > adb shell pm path <APK_NAME>       # 获取 APK 路径
 > adb pull <APK_PATH> path/to/target # 将 APK 文件下载到电脑的指定位置
 ```
+
+如果获取的 APK 路径只包含单个 `base.apk` 文件即可直接导出并分享该文件, 若存在多个 APK 文件则建议使用上一节的方法.
 
 ## 参考
 
