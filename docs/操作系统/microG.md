@@ -30,7 +30,7 @@ microG 是 GMS 的开源实现 (Apache 2.0), 主要特点可以参考[官方 Wik
 由于这些组件属于服务而非应用, 安装后不会在应用菜单显示图标.  
 需要从应用设置中进入 microG Services 的设置界面, 如下图所示:
 
-![应用设置界面](./assets/com.android.settings.webp){ width=50% style="display: block; margin: 0 auto" }
+![应用设置界面](assets/com.android.settings.webp){ width=50% style="display: block; margin: 0 auto" }
 
 点击右上角的蓝色齿轮图标即可进入 microG 的设置界面.
 

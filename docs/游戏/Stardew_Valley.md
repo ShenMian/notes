@@ -110,7 +110,7 @@
 2. 购买 `草莓种子`.
 3. 与 `刘易斯` 交谈参与比赛, 请**提前**查看藏宝图 (下方). 在 50 秒内收集到至少 9 个彩蛋, 赢得比赛. 得到奖励 `草帽` (帽子均为纯粹的装饰品), 后续复活节奖励为 `1000G`.
 
-    ![寻宝图](./assets/Stardew_Valley/egg_festival_18_eggs.webp)  
+    ![寻宝图](assets/Stardew_Valley/egg_festival_18_eggs.webp)  
 
 ## 夏季
 

@@ -6,7 +6,7 @@ icon: material/microsoft-windows
 
 **全称**: Windows Subsystem for Linux.  
 
-![Screenshot](./assets/wsl.webp){ width=70% style="display: block; margin: 0 auto" }  
+![Screenshot](assets/wsl.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 ## 启用 WSL
 

@@ -48,8 +48,8 @@ flowchart LR
 
 下图为 Unity 项目中的原始场景:
 
-![Unity 截图](./assets/unity_screenshot.webp)
+![Unity 截图](assets/unity_screenshot.webp)
 
 下图为将该场景导入 Godot 并进行修复后的场景:
 
-![Godot 截图](./assets/godot_screenshot.webp)
+![Godot 截图](assets/godot_screenshot.webp)

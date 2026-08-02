@@ -349,7 +349,7 @@ TODO: 完善下面表格
 
 ## 光荣战绩
 
-![The Art of War](./assets/Broken_Arrow/7KD.webp)
+![The Art of War](assets/Broken_Arrow/7KD.webp)
 
 在使用全局最少经济 (5850 pts) 和部署次数 (52x) 的情况下, 获得全局最高的击杀数 (9000)/分数 (9335) 和最少的伤亡数 (1160).
 

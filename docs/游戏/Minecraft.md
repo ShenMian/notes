@@ -29,7 +29,7 @@ Windows 下的 `.minecraft` 文件夹通常位于 `%APPDATA%/.minecraft`.
 
 在 Prism Launcher 的设置里启用 `Use discrete GPU` 选项即可.
 
-![Prism Launcher 独显设置](./assets/Minecraft/prism_launcher_discrete_gpu.webp){ width=80% style="display: block; margin: 0 auto" }
+![Prism Launcher 独显设置](assets/Minecraft/prism_launcher_discrete_gpu.webp){ width=80% style="display: block; margin: 0 auto" }
 
 ## 资源包 (Resource Pack)
 
@@ -140,7 +140,7 @@ Fabric + Sodium + Lithium 可以在保留原版体验的同时, 降低 CPU/GPU �
 
 ### 酿造速查表
 
-![药水酿造速查表](./assets/Minecraft/brewing_simplified.webp)
+![药水酿造速查表](assets/Minecraft/brewing_simplified.webp)
 
 ### 最大帧率
 
