@@ -31,6 +31,22 @@ icon: simple/android
 
 如果获取的 APK 路径只包含单个 `base.apk` 文件即可直接导出并分享该文件, 若存在多个 APK 文件则建议使用上一节的方法.
 
+## 远程控制
+
+可以借助 [scrcpy](https://github.com/genymobile/scrcpy) 通过 USB 直接远程控制手机. 通过下面命令安装:
+
+安装 [scrcpy](https://github.com/genymobile/scrcpy):
+
+```ps1
+scoop install scrcpy
+```
+
+手机需先进入开发者模式, 然后开启 USB 调试选项. 使用数据线连接到电脑后执行下面命令:
+
+```sh
+scrcpy
+```
+
 ## 参考
 
 - <https://stackoverflow.com/a/18003462/14268755>.
