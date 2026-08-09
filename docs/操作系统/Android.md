@@ -41,7 +41,7 @@ icon: simple/android
 scoop install scrcpy
 ```
 
-手机需先进入开发者模式, 然后开启 USB 调试选项. 使用数据线连接到电脑后执行下面命令:
+先在手机上开启开发者模式并启用 USB 调试, 然后通过数据线将手机连接至电脑. 最后执行以下命令:
 
 ```sh
 scrcpy
