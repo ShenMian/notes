@@ -84,6 +84,27 @@
         },
         {
             "pattern": "^https://mirrors.ustc.edu.cn/help/"
+        },
+        {
+            "pattern": "^https://gitlab.torproject.org/"
+        },
+        {
+            "pattern": "^https://pythonarsenal.com/"
+        },
+        {
+            "pattern": "^https://www.realtimerendering.com/"
+        },
+        {
+            "pattern": "^https://unturned.fandom.com/"
+        },
+        {
+            "pattern": "^https://dishonored.fandom.com/"
+        },
+        {
+            "pattern": "^https://(en|zh).cppreference.com/"
+        },
+        {
+            "pattern": "^https://doi.org/"
         }
     ],
     "httpHeaders": [

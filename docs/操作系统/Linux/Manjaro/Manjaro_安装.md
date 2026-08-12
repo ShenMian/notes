@@ -74,7 +74,7 @@ CertUtil: -hashfile command completed successfully.
     scoop install rufus
     ```
 
-    或从[官网](http://rufus.ie/zh/)下载软件.
+    或从[官网](https://rufus.ie/zh/)下载软件.
 
     !!! warning
         自动更新可能失效, 新的系统镜像使用较早版本的 Rufus 可能导致失败, 因此建议从官网下载最新版本.  
