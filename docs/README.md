@@ -9,12 +9,12 @@
 
 ## 示例
 
+<!-- - [大学课程笔记](https://github.com/ShenMian/lectures). -->
 - [Git](软件与工具/Git.md).
 - [Manjaro 安装](操作系统/Linux/Manjaro/Manjaro_安装.md).
 - [反汇编器](渗透测试/逆向工程/反汇编器.md).
 - [Dishonored 2](游戏/Dishonored_2.md).
 - [Vim](软件与工具/编辑器/Vim.md).
-- [大学课程笔记](https://github.com/ShenMian/lectures).
 - [现代推箱子教程](https://shenmian.github.io/sokoban-tutorial/).
 
 ## 许可协议

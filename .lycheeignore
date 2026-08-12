@@ -34,6 +34,8 @@
 ^https://en\.opensuse\.org/
 ^https://cacm\.acm\.org/
 ^https://en\.opensuse\.org/
+^https://www.phoronix.com/
+^https://blog.csdn.net/
 
 ^https://wiki\.manjaro\.org/index\.php/.*
 ^https://.*\.fandom\.com/wiki/
