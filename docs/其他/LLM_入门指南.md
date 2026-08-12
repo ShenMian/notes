@@ -39,7 +39,7 @@
 [Cherry Studio]: https://github.com/CherryHQ/cherry-studio
 [LM Studio]: https://lmstudio.ai/
 [LobeHub]: https://github.com/lobehub/lobehub
-[Msty]: https://msty.app/
+[Msty]: https://msty.ai/
 [Jan]: https://github.com/janhq/jan
 
 Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio 或 Ollama 组合使用, 同时支持本地和远程 LLM.

@@ -13,7 +13,7 @@ icon: simple/kalilinux
 下载并安装 Termux:
 
 - [Github Release](https://github.com/termux/termux-app/releases)
-- [F-Droid](https://f-droid.org/packages/com.termux)
+- [F-Droid](https://f-droid.org/packages/com.termux/)
 
 打开 Termux 并执行以下命令:
 

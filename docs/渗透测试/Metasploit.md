@@ -194,4 +194,4 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
 
 ## 参考
 
-- <https://www.offensive-security.com/metasploit-unleashed/payloads/>.
+- <https://www.offsec.com/metasploit-unleashed/payloads/>.

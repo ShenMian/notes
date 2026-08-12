@@ -24,7 +24,7 @@ icon: simple/manjaro
 !!! info
     Manjaro 官网 UI 更新频繁, 因此相关图片可能已过时. 但操作步骤应该大致不变.
 
-从官网 ([x86](https://manjaro.org/products/download/x86), [ARM](https://manjaro.org/products/download/arm)) 中挑选心仪的桌面环境, 并下载对应的系统镜像文件.  
+从官网 ([x86](https://manjaro.org/products/download/x86/), [ARM](https://manjaro.org/products/download/arm/)) 中挑选心仪的桌面环境, 并下载对应的系统镜像文件.  
 
 - **KDE**: 最好的分数倍缩放支持.
 - **GNOME**: 美观, 对分数倍缩放支持**不佳**.
