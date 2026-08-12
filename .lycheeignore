@@ -37,7 +37,8 @@
 ^https://www.phoronix.com/
 ^https://blog.csdn.net/
 
-^https://wiki\.manjaro\.org/index\.php/.*
+^https://wiki.haskell.org/
+^https://wiki\.manjaro\.org/index\.php/
 ^https://.*\.fandom\.com/wiki/
 ^https://github\.com/.*/.*/tree/
 ^https://github\.com/.*/.*/releases/
