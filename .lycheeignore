@@ -19,8 +19,6 @@
 ^https://linux-audit\.com/
 ^https://store\.epicgames\.com/
 ^https://microg\.org/
-^https://github\.com/ufna/UnrealEngine/tree/
-^https://github\.com/SpeculativeCoder/UnrealEngine/tree/
 ^https://www\.thunderbird\.net/
 ^https://www\.huorong\.cn/
 ^https://defkey\.com/
@@ -33,3 +31,9 @@
 ^https://dishonored\.fandom\.com/
 ^https://(en|zh)\.cppreference\.com/
 ^https://doi\.org/
+^https://en\.opensuse\.org/
+^https://cacm\.acm\.org/
+^https://en\.opensuse\.org/
+
+^https://github\.com/.*/.*/tree/
+^https://github\.com/.*/.*/releases/
