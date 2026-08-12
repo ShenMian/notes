@@ -16,8 +16,8 @@ jobs:
           lfs: true
 
       - name: Check links
-        uses: tcort/github-action-markdown-link-check@v1
+        uses: lycheeverse/lychee-action@v2
         with:
-          use-quiet-mode: "yes"
-          use-verbose-mode: "yes"
-          config-file: ".github/workflows/check_links_config.json"
+          # .lycheeignore and lychee.toml at the repo root are picked up automatically.
+          args: --verbose --no-progress './**/*.md'
+          fail: true

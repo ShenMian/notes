@@ -1,0 +1,9 @@
+# lychee link-checker configuration.
+# Docs: https://lychee.cli.rs/guides/config/
+
+# Per-request timeout in seconds (previously `timeout: "20s"`).
+timeout = 20
+
+# Status codes counted as alive (previously `aliveStatusCodes: [200, 206]`).
+# Anything outside this list fails the check.
+accept = ["200", "206"]
