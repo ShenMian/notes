@@ -283,7 +283,7 @@ $$
 
 - **[DeepSeek]**: [价格](https://api-docs.deepseek.com/zh-cn/quick_start/pricing/).
 - **[OpenAI]**: 必须使用电话号码注册. [价格](https://openai.com/api/pricing/).
-- **[OpenRouter]**.
+- **[OpenRouter]**: 充值时按比例收取服务费, API 价格与实际提供商一致.
 - **[SiliconFlow]**: 必须使用电话号码注册. 有几个 7-9 B 的免费模型, 但是速率限制非常严格, 难以用于网页翻译.
 - **[GitHub Models]**: GitHub 提供限制较严格的免费试用, 实际供应商为 Azure AI.
 
