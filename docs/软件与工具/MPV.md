@@ -36,7 +36,7 @@ graph TD
 - **[MVTools]**: 基于传统算法. 速度快, 依赖 CPU.
 - **[RIFE]**: 基于神经网络. 质量高, 依赖 GPU. 如果 GPU 性能不足, 无法做到实时补帧, 反而可能降低帧率.
 
-[MVTools]: https://github.com/dubhater/vapoursynth-mvtools
+[MVTools]: https://github.com/dubhatervapoursynth/vapoursynth-mvtools
 [RIFE]: https://github.com/AmusementClub/vs-mlrt
 
 ### MVTools

@@ -38,7 +38,7 @@ Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多.
 对于一些简单的编辑操作(例如修改配置文件), 只需掌握 Vim 的基本用法即可.
 但是, 如果要利用 Vim 进行开发, 就需要更深入地学习 Vim 的高级功能, 并且至少要达到纯键盘编辑的效率能够与其他 GUI 编辑器相媲美, 以免降低开发效率.
 
-Vim 高效的键盘使用方案也被其他的现代 IDE 甚至包括浏览器通过插件所支持, 比如 Visual Studio Code 中的 [Vim 插件](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 和 Chrome 浏览器中的 [Vimium C 插件](https://chrome.google.com/webstore/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg).
+Vim 高效的键盘使用方案也被其他的现代 IDE 甚至包括浏览器通过插件所支持, 比如 Visual Studio Code 中的 [Vim 插件](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 和 Chrome 浏览器中的 [Vimium C 插件](https://chromewebstore.google.com/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg).
 因此即使不直接使用 Vim, 学习 Vim 依然十分有价值.
 
 其次是 Vim 本身也出现了一个新的替代品 Neovim, 在功能比 Vim 更加丰富的情况下减少了约 30% 的代码量. 拥有更活跃的社区和其他诸多优点.
@@ -238,33 +238,6 @@ nvim
 - 更新插件: `:PackerSync`.
 - 更新 AstroNvim: `:AstroUpdate`.
 
-#### [SpaceVim](https://spacevim.org/cn/)
-
-适用于 Vim/Neovim.  
-
-```sh
-curl -sLf https://spacevim.org/cn/install.sh | bash                   # 安装
-curl -sLf https://spacevim.org/cn/install.sh | bash -s -- --uninstall # 卸载
-```
-
-[SpaceVim 入门指南](https://spacevim.org/cn/quick-start-guide/)有配置文件说明和快速搭建适用于不同编程语言环境方法的索引.  
-
-- 打开配置文件: `SPC f v d`, 可以通过修改配置文件 `~/.SpaceVim.d/init.toml` 来启用更多功能或安装插件.
-- 更新全部插件: `:SPUpdate`, 对全部已安装的插件进行更新, 包括 SpaceVim 自身.
-- 开启/关闭大纲: `F2`.
-- 开启/关闭文件树: `F3`.
-- 查找当前项目下的文件: `CTRL` `p`.
-
-要启用 nvim-qt 中的右键文本编辑菜单, 往 ginit.vim 中添加一下内容:  
-
-```vim
-nnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
-inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
-vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>
-```
-
-SpaceVim 默认只启用了最基本的 [Layers](https://spacevim.org/layers/) (可以看作是特定功能的合集), 用户可以应根据自身需求启用他们来添加功能. 在用户进行简单的配置并重启后, 会自动下载所需的插件并进行配置.  
-
 #### [NvChad](https://github.com/NvChad/NvChad)
 
 **仅适用于 Neovim**.  
@@ -313,7 +286,6 @@ GUI 可以为 Vim/Neovim 提供界面美化 (如内部窗口的透明模糊背�
 
 ## 参见
 
-- <https://this-week-in-neovim.org/>.
 - [A guide to using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide).
 - [Vi 与 Emacs 之间的编辑器之战](https://en.wikipedia.org/wiki/Editor_war).
 - [Vim Awesome](https://vimawesome.com/).

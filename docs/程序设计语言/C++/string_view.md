@@ -45,4 +45,4 @@ print({v.begin(), v.end()}); // no copy
 
 ## 参考
 
-- [Which String Parameter Type?](https://hackingcpp.com/cpp/recipe/string_parameters.html).
+- [Which String Parameter Type?](https://hackingcpp.com/cpp/recipe/string_parameters).

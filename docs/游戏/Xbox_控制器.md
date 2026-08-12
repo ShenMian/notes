@@ -25,7 +25,7 @@
 ## 校验
 
 即使是正品也依然可能存在质量问题, 因此新手柄应该进行校验, 检查各项功能是否正常.  
-可以使用网站 [Gamepad Tester](https://gamepad-tester.com/) 进行校验.  
+可以使用网站 [Gamepad Tester](https://hardwaretester.com/gamepad) 进行校验.  
 使用无线手柄时需要测试不同连接方式 (有线/蓝牙/无线接收器) 下手柄工作是否正常.
 
 - 按键每次按下都能检测到.

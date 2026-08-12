@@ -171,11 +171,11 @@
 ## 参见
 
 - 剧情简介视频
-    - [耻辱 1 - 附魔星Fms - bilibili](https://www.bilibili.com/video/BV1pG411b7eK)
-    - [耻辱 2 - 附魔星Fms - bilibili](https://www.bilibili.com/video/BV1cG41157qU)
+    - [耻辱 1 - 附魔星Fms - bilibili](https://www.bilibili.com/video/BV1pG411b7eK/)
+    - [耻辱 2 - 附魔星Fms - bilibili](https://www.bilibili.com/video/BV1cG41157qU/)
 - 全收集流程视频
-    - [耻辱 2 - 精分小白 - bilibili](https://www.bilibili.com/video/BV1kt411B7tj)
-    - [界外魔之死 DLC - 精分小白 - bilibili](https://www.bilibili.com/video/BV1H4411V7HN)
+    - [耻辱 2 - 精分小白 - bilibili](https://www.bilibili.com/video/BV1kt411B7tj/)
+    - [界外魔之死 DLC - 精分小白 - bilibili](https://www.bilibili.com/video/BV1H4411V7HN/)
 - Steam 成就
     - [耻辱 2 - Steam](https://steamcommunity.com/stats/403640/achievements)
     - [界外魔之死 DLC - Steam](https://steamcommunity.com/stats/614570/achievements)
@@ -185,4 +185,4 @@
 ## 参考
 
 - <https://dishonored.fandom.com/wiki/Dishonored_Wiki>.
-- <https://www.bilibili.com/read/cv2295412>.
+- <https://www.bilibili.com/opus/233289407908256361>.

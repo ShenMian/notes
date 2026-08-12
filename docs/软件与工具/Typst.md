@@ -46,7 +46,7 @@ Typst 对 CJK 字符的支持还[比较有限](https://github.com/typst/typst/is
 | `\varepsilon` | `epsilon` |
 | `\mid`        | `|`       |
 
-- <https://typst.app/docs/guides/guide-for-latex-users/>.
+- <https://typst.app/docs/guides/for-latex-users/>.
 - <https://qwinsi.github.io/tex2typst-webapp/>.
 - <https://github.com/johanvx/typst-undergradmath>.
 

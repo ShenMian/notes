@@ -32,15 +32,15 @@
         曾存在遥测功能关闭后依然与后台服务器通讯的致命问题: <https://github.com/CherryHQ/cherry-studio/issues/14387>.
 
 - **[LM Studio]**: 跨平台, 闭源免费, **仅支持本地 LLM**, 界面简洁易用. 支持图片/文档解析, Flash Attention, 提供与 OpenAI API 兼容的本地服务器.
-- **[LobeChat]**: 跨平台, 部分开源 (个人使用免费), 支持知识库, Ollama.
+- **[LobeHub]**: 跨平台, 部分开源 (个人使用免费), 支持知识库, Ollama.
 - **[Msty]**: 跨平台, 闭源免费 (提供付费高级版), 同时支持本地或远程 LLM, 支持在线搜索 (效果较差), 图片/文档解析, 知识库, Ollama.
 - **[Jan]**: 跨平台, 开源 (Apache-2.0).
 
 [Cherry Studio]: https://github.com/CherryHQ/cherry-studio
 [LM Studio]: https://lmstudio.ai/
-[LobeChat]: https://github.com/lobehub/lobe-chat
+[LobeHub]: https://github.com/lobehub/lobehub
 [Msty]: https://msty.app/
-[Jan]: https://github.com/menloresearch/jan
+[Jan]: https://github.com/janhq/jan
 
 Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio 或 Ollama 组合使用, 同时支持本地和远程 LLM.
 
@@ -306,9 +306,9 @@ $$
 
 ## 参见
 
-- [常见基准测试 - 飞天闪客 - Bilibili](https://www.bilibili.com/video/BV1PAUrBVEc8)
+- [常见基准测试 - 飞天闪客 - Bilibili](https://www.bilibili.com/video/BV1PAUrBVEc8/)
 
 ## 参考
 
 - <https://en.wikipedia.org/wiki/Retrieval-augmented_generation>.
-- <https://api-docs.deepseek.com/quick_start/token_usage>.
+- <https://api-docs.deepseek.com/quick_start/token_usage/>.

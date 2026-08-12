@@ -92,4 +92,4 @@ GPU_DetectedFramesAhead=1;
 
 ## 参考
 
-- [如何在 Arma 3 中将我的 FPS 翻倍 - 优化性能指南 - 飞龙岩山 - bilibili](https://www.bilibili.com/video/BV1iV4y177YT).
+- [如何在 Arma 3 中将我的 FPS 翻倍 - 优化性能指南 - 飞龙岩山 - bilibili](https://www.bilibili.com/video/BV1iV4y177YT/).
