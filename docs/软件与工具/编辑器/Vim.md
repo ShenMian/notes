@@ -295,7 +295,7 @@ GUI 可以为 Vim/Neovim 提供界面美化 (如内部窗口的透明模糊背�
 
 - [Interactive Vim tutorial (openvim.com)](https://openvim.com/index.html).
 - [Vim Cheat Sheet & Quick Reference](https://quickref.me/vim).
-- [Graphical vi-vim Cheat Sheet and Tutorial (viemu.com)](http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html).
+- [Graphical vi-vim Cheat Sheet and Tutorial (viemu.com)](https://web.archive.org/web/20251227135849/http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html).
 
 [^1]: 也有提供 GUI 的分支项目, 如 gVim/[macVim](https://github.com/macvim-dev/macvim).
 [^2]: [Vim](https://neovim.io/doc/user/usr_01.html)/[Neovim](https://neovim.io/doc/user/usr_01.html).

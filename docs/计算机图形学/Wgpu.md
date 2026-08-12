@@ -99,7 +99,7 @@ flowchart TD
 - 浏览器页面的一个画布 (Canvas).
 
 本文将通过由 winit 库[^winit]创建的窗口 (`winit::Window`) 来创建 `Surface`.  
-自从 winit 0.30 版本后, 创建窗口的方法较为复杂, 具体流程请参考 [winit 的示例](https://github.com/rust-windowing/winit/blob/master/examples/window.rs).  
+自从 winit 0.30 版本后, 创建窗口的方法较为复杂, 具体流程请参考 [winit 的示例](https://github.com/rust-windowing/winit/blob/master/winit/examples/window.rs).  
 
 wgpu 的初始化流程与 Vulkan 十分相似, 早期版本也包含 [`wgpu::Swapchain`] 类型, 后来为了遵循 WebGPU 标准, 该类型在 0.10 版本中被合并到了 `Surface` 类型里.[^swapchain]
 

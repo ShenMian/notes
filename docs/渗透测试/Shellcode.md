@@ -63,4 +63,4 @@ objdump -d shellcode                    # 打印反汇编结果
 ## 参见
 
 - [Exploit Database Shellcodes](https://www.exploit-db.com/shellcodes).
-- <http://shell-storm.org/shellcode/>.
+- [http://shell-storm.org/shellcode/](https://web.archive.org/web/20260322100510/https://shell-storm.org/shellcode/index.html).
