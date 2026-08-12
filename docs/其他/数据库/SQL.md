@@ -160,4 +160,4 @@ WHERE  S.sid IN (SELECT R.sid
 
 ## 参考
 
-- <https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/>.
+- <https://www.geeksforgeeks.org/sql/sql-ddl-dql-dml-dcl-tcl-commands/>.

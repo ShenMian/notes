@@ -25,7 +25,7 @@ alias ls='exa' # 将 ls 作为 exa 的别名
 默认的命令提示符通常只提供了最基本的信息, 如当前所在的目录.  
 通过自定义命令提示符可以向用户提供更多有用的信息, 如: 上一条命令的返回值, 当前目录的 Git 状态等.
 
-[powerlevel10k](https://github.com/romkatv/powerlevel10k.git) 是一个开箱即用的 Zsh 主题, 可以快速的配置一个实用美观的命令行提示符.
+[powerlevel10k](https://github.com/romkatv/powerlevel10k) 是一个开箱即用的 Zsh 主题, 可以快速的配置一个实用美观的命令行提示符.
 
 ![powerlevel10k 效果图](assets/powerlevel10k.webp){ width=70% style="display: block; margin: 0 auto" }
 

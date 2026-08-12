@@ -6,4 +6,4 @@ timeout = 20
 
 # Status codes counted as alive (previously `aliveStatusCodes: [200, 206]`).
 # Anything outside this list fails the check.
-accept = ["200", "206"]
+accept = ["200", "206", "302", "303"]

@@ -35,5 +35,7 @@
 ^https://cacm\.acm\.org/
 ^https://en\.opensuse\.org/
 
+^https://wiki.manjaro.org/index.php/
+^https://.*\.fandom\.com/wiki/
 ^https://github\.com/.*/.*/tree/
 ^https://github\.com/.*/.*/releases/

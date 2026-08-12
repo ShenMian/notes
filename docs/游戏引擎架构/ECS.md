@@ -149,8 +149,7 @@ valgrind --tool=cachegrind <program>
 
 ## 参见
 
-- [https://austinmorlan.com/posts/entity\_component\_system/](https://austinmorlan.com/posts/entity\_component\_system/).
-- [https://wickedengine.net/2019/09/29/entity-component-system/](https://wickedengine.net/2019/09/29/entity-component-system/).
+- <https://turanszkij.wordpress.com/2019/09/29/entity-component-system/>.
 
 ## 参考
 
