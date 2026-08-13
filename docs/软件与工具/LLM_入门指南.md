@@ -9,9 +9,9 @@
 
 - **界面统一**: 可以通过统一的界面使用各种 LLM. 通过 API 接入各种 LLM 提供商, 可以访问不同的 LLM.
 
-    ![Select Models](assets/cherry_select_models.webp){ width=70% style="display: block; margin: 0 auto" }  
+    ![Select Models](assets/cherry_select_models.webp){ width=40% style="display: block; margin: 0 auto" }  
 
-- **支持 MCP**: 部分客户端支持 MCP.
+- **支持 MCP/Skills**: 部分客户端支持 MCP 和 Skills.
 - **参数可调**: 可以自定义 Temperature/Top-P/上下文窗口等参数.
 - **离线可用**: 客户端通常支持运行本地 LLM, 确保离线可用且数据安全.
 - **开源透明**: 部分 LLM 客户端采用开源许可.
@@ -31,7 +31,7 @@
     !!! warning
         曾存在遥测功能关闭后依然与后台服务器通讯的致命问题: <https://github.com/CherryHQ/cherry-studio/issues/14387>.
 
-- **[LM Studio]**: 跨平台, 闭源免费, **仅支持本地 LLM**, 界面简洁易用. 支持图片/文档解析, Flash Attention, 提供与 OpenAI API 兼容的本地服务器.
+- **[LM Studio]**: 跨平台, 闭源免费, **仅支持本地 LLM**, 支持 MCP, 界面简洁易用. 支持图片/文档解析, 提供与 OpenAI API 兼容的本地服务器.
 - **[LobeHub]**: 跨平台, 部分开源 (个人使用免费), 支持知识库, Ollama.
 - **[Msty]**: 跨平台, 闭源免费 (提供付费高级版), 同时支持本地或远程 LLM, 支持在线搜索 (效果较差), 图片/文档解析, 知识库, Ollama.
 - **[Jan]**: 跨平台, 开源 (Apache-2.0).
@@ -52,7 +52,7 @@ Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio �
 以下客户端均支持 Android:
 
 - **[RikkaHub]**: 开源 (AGPLv3), 支持 MCP, 在线搜索 (**效果极差**).
-- **[PocketPal]**: 开源 (MIT), **仅支持本地 LLM**. 支持 Flash Attention.
+- **[PocketPal]**: 开源 (MIT), **仅支持本地 LLM**.
 - **[MNN Chat]**: 开源 (Apache-2.0), **仅支持本地 LLM**, 支持 iOS (需要自行编译), 支持许多模型 (包括但不限于 Qwen3/DeepSeek), 有会话记录.
 - **[Edge Gallery]**: 开源 (Apache-2.0), **仅支持本地 LLM**, 支持最新的 Gemma 3n 系列模型, 无法保持会话记录.
 
@@ -76,10 +76,6 @@ MCP 服务器有以下部署方式:
 Cherry Studio 提供了一些内置 MCP 服务器, 可以在设置里直接启用.
 
 ![Cherry Studio 的内置 MCP 服务器](assets/cherry_builtin_mcp.webp){ width=80% style="display: block; margin: 0 auto" }  
-
-后续便可通过下面方式在会话中启用 MCP 服务器:
-
-![启用 MCP](assets/cherry_enable_mcp_server.webp){ width=60% style="display: block; margin: 0 auto" }  
 
 ## 知识库
 
@@ -126,6 +122,9 @@ flowchart LR
 - **重排序模型 (Re-ranking Model)**: 对检索到的文本进行排序, 以提高相关性. 比如 Qwen3 Reranker (`gte-rerank-v2`).
 
 其中重排序模型是可选的, 但可以显著提高检索结果的质量.
+
+!!! warning
+    下面内容已**过时**, Cherry Studio 2.0 已不再支持从 Sitemap 建立索引.
 
 下面将以 Cherry Studio 为例, 描述如何创建一个关于 wgpu 的知识库:
 
@@ -187,7 +186,6 @@ $$
 - **[granite-4-h-tiny]**: 推理效率高 (激活参数 1 B) 且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.[^granite-4]
 
 **测试 GPU**: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).  
-若使用 PocketPal, **建议启用 Flash Attention**, 以获得更快的推理速度和更大的上下文窗口.
 
 [gemma-4-e4b]: https://huggingface.co/google/gemma-4-E4B
 [qwen3.5-9b]: https://huggingface.co/Qwen/Qwen3.5-9B

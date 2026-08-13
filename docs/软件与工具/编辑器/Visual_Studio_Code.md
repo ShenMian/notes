@@ -28,12 +28,11 @@ VSCode 主要有以下版本:
 
 ### AI
 
-- [GitHub Copilot] : AI 自动补全, 收费 (天价).
 - [TONGYI Lingma] : AI 自动补全, 编写 Git 提交信息 (效果远超 GitHub Copilot).
-- Tabnine AI: AI 自动补全, 有免费版, 收费 (天价).
+- [GitHub Copilot] : AI 自动补全, 收费 (天价).
 
-[GitHub Copilot]: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
 [TONGYI Lingma]: https://marketplace.visualstudio.com/items?itemName=Alibaba-Cloud.tongyi-lingma
+[GitHub Copilot]: https://marketplace.visualstudio.com/items?itemName=GitHub.copilot
 
 ### Rust
 
