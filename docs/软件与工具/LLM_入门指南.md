@@ -181,8 +181,8 @@ $$
 
 ### 推荐模型
 
-- **[gemma-4-e4b]**: 支持多模态/混合推理, 43 tok/sec, 约 5.2 GiB 内存占用.[^gemma-4]
-- **[qwen3.5-9b]**: 支持多模态/混合推理 (Reasoning), 23 tok/sec, 约 5.5 GiB 内存占用.
+- **[gemma-4-e4b]**: 支持多模态/混合推理 (Reasoning), 43 tok/sec, 约 5.2 GiB 内存占用.[^gemma-4]
+- **[qwen3.5-9b]**: 支持多模态/混合推理, 23 tok/sec, 约 5.5 GiB 内存占用.
 - **[granite-4-h-tiny]**: 推理效率高 (激活参数 1 B) 且内存占用低, 64 tok/sec, 4.7 GiB 内存占用.[^granite-4]
 
 **测试 GPU**: NVIDIA GeForce RTX 4060 Laptop GPU (8 GiB 显存).  
