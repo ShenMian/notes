@@ -11,7 +11,7 @@
 
 1. 检索程序基本信息, 如编写语言, 是否加壳.
 2. 将程序放入 IDA 中进行分析.
-3. 添加 Delphi 库函数标签, 打开签名视图(Shift+F5). 右键选择应用新签名并搜索相关签名.
+3. 添加 Delphi 库函数标签, 打开签名视图 (Shift+F5). 右键选择应用新签名并搜索相关签名.
 
     ![Delphi 签名](assets/1_sig_delphi.webp)  
 
@@ -23,7 +23,7 @@
 
 ![启动时弹窗](assets/1_startup_msgbox.webp)  
 
-打开字符串视图(Shift+F12)并搜索相关字符串.  
+打开字符串视图 (Shift+F12) 并搜索相关字符串.  
 
 ![字符串 "hello"](assets/1_ida_str_hello.webp)  
 
@@ -31,7 +31,7 @@
 
 ![字符串 "hello" 的位置](assets/1_str_hello_position.webp)  
 
-通过交叉引用(Ctrl+X)查询引用该字符串的位置.  
+通过交叉引用 (Ctrl+X) 查询引用该字符串的位置.  
 
 ![字符串 "hello" 的交叉引用](assets/1_str_hello_xref.webp)  
 

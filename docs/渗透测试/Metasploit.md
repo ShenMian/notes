@@ -76,7 +76,7 @@ msf > debug                    # 显示诊断信息, 在故障发生后使用
 
 **别名**: 攻击载荷, 有效载荷.
 
-MSF 中的载荷(payload)共有以下三种:
+MSF 中的载荷 (payload) 共有以下三种:
 
 - **Singles**: 包含完整的功能, 不依赖 MSF, 因此不需要通过 exploit/multi/handler 来建立连接.
 - **Stagers**: 小巧可靠, 用于建立连接并接收 Stages.
@@ -150,7 +150,7 @@ meterpreter > run post/windows/gather/smart_hashdump # 导出账户密码 hash
 
 # 清除痕迹
 meterpreter > clearev         # 清除应用/系统/安全日志
-meterpreter > timestomp [...] # 编辑文件属性(包括创建/最后修改时间)
+meterpreter > timestomp [...] # 编辑文件属性 (包括创建/最后修改时间)
 
 # 使用 module
 meterpreter > search type:post  # 列出 post module
@@ -170,7 +170,7 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
 - Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
 
     - MSF 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
-    - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷(类型/系统/架构)与目标上期待的不一致, 解决方法是确保载荷一致.
+    - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷 (类型/系统/架构) 与目标上期待的不一致, 解决方法是确保载荷一致.
     - 被安全软件终止: 该问题会导致会话成功建立却意外关闭, 可能的解决方法有:  
 
         1. 转移进程: 通过 `set AutoRunScript "migrate -n explorer.exe"` 在链接建立后立即转移到其他进程, 以规避安全软件的检测.

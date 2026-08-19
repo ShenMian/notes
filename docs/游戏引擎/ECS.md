@@ -9,7 +9,7 @@
 
 - 模块化: ECS 可以增加代码重用, 避免代码体积迅速膨胀.
 - 避免继承带来的缺陷: 相比传统的继承, ECS 不用担心"菱形继承", 继承关系复杂等问题.
-- 高性能: 数据以组件的形式添加, 内存管理自由, 可以有效利用数据局部性原理(Cache 友好).
+- 高性能: 数据以组件的形式添加, 内存管理自由, 可以有效利用数据局部性原理 (Cache 友好).
 
 ECS 由实体 (*e*ntity), 组件 (*c*omponents) 和系统 (*s*ystem) 三部分组成, 分别对应标识, 数据和行为. 它们之间的具体关系如下图所示:
 
@@ -141,7 +141,7 @@ valgrind --tool=cachegrind <program>
 
 ## Unity ECS
 
-### 内存块(Memory Chunks)
+### 内存块 (Memory Chunks)
 
 实体组件的存储位置取决于其 Archetype. 申请的内存块被简称为 chunk. 每个 chunk 只会存储具有相同 Archetype 的实体.
 

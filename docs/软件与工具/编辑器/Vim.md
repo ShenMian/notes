@@ -35,7 +35,7 @@ Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多.
 相比于其他现代 IDE, 初始 Vim 的功能较为简单, 而且其高度可自定义的特性也受到了 TUI 编辑器的限制.
 因此, 在学习 Vim 之前, 应该先对其优缺点有一个清晰的认识.
 
-对于一些简单的编辑操作(例如修改配置文件), 只需掌握 Vim 的基本用法即可.
+对于一些简单的编辑操作 (例如修改配置文件), 只需掌握 Vim 的基本用法即可.
 但是, 如果要利用 Vim 进行开发, 就需要更深入地学习 Vim 的高级功能, 并且至少要达到纯键盘编辑的效率能够与其他 GUI 编辑器相媲美, 以免降低开发效率.
 
 Vim 高效的键盘使用方案也被其他的现代 IDE 甚至包括浏览器通过插件所支持, 比如 Visual Studio Code 中的 [Vim 插件](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) 和 Chrome 浏览器中的 [Vimium C 插件](https://chromewebstore.google.com/detail/vimium-c-all-by-keyboard/hfjbmagddngcpeloejdejnfgbamkjaeg).
