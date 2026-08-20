@@ -30,11 +30,11 @@
 ## 死亡机制
 
 游戏在塞娜第一次死亡后声称其手上的侵蚀印记会随着死亡次数不断增长, 当侵蚀印记到达塞娜的大脑后, 游戏进度将被重置.  
-但事实上, 侵蚀印记增长到一定程度后便会停止, 永远无法达到大脑.[^1] 这只是制作组的虚张声势, 用于给玩家带来对死亡的恐惧, 却又不至于摧毁玩家的游戏体验.
+但事实上, 侵蚀印记增长到一定程度后便会停止, 永远无法达到大脑.[^permadeath-bluff] 这只是制作组的虚张声势, 用于给玩家带来对死亡的恐惧, 却又不至于摧毁玩家的游戏体验.
 
 ## 参见
 
 - [《地狱之刃：塞娜的献祭》全流程全石碑图文攻略 - Steam Community](https://steamcommunity.com/sharedfiles/filedetails/?id=2410385851)
 - [IGN Walkthrough](https://www.ign.com/wikis/hellblade/Walkthrough)
 
-[^1]: https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice#Death_mechanic
+[^permadeath-bluff]: https://en.wikipedia.org/wiki/Hellblade:_Senua%27s_Sacrifice#Death_mechanic

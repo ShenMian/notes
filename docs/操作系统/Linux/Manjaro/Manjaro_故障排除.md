@@ -6,7 +6,7 @@ icon: lucide/bug-off
 
 ## Timeshift
 
-利用 Timeshift[^1] 进行备份/还原可以排除新引入的故障.
+利用 Timeshift[^timeshift] 进行备份/还原可以排除新引入的故障.
 
 !!! warning
     Timeshift 默认并不备份用户目录, 因此当还原后问题依然存在可能是由用户目录中文件所导致的.
@@ -113,4 +113,4 @@ amixer -D pulse sset Master toggle
 - [HiDPI - ArchWiki](https://wiki.archlinux.org/title/HiDPI).
 - [[HowTo] Find system information - Manjaro forum](https://forum.manjaro.org/t/howto-find-system-information/105212).
 
-[^1]: [linuxmint/timeshift](https://github.com/linuxmint/timeshift)/[teejee2008/timeshift](https://github.com/teejee2008/timeshift)(原仓库, 已停止更新)
+[^timeshift]: [linuxmint/timeshift](https://github.com/linuxmint/timeshift)/[teejee2008/timeshift](https://github.com/teejee2008/timeshift) (原仓库, 已停止更新)

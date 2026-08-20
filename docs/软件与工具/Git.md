@@ -6,9 +6,9 @@ icon: simple/git
 
 ![Git 常用命令速查表 - riku.wowubuntu.com](assets/git_cheat_sheet.webp)  
 
-[Git](https://git-scm.com/) 是一款开源 (GPLv2) 的版本控制系统 (Version Control System, VCS). 名字的由来是项目创始人 Linus 的自嘲[^1], 该词在英语俚语中代表 "令人讨厌的人".
+[Git](https://git-scm.com/) 是一款开源 (GPLv2) 的版本控制系统 (Version Control System, VCS). 名字的由来是项目创始人 Linus 的自嘲[^git-name-faq], 该词在英语俚语中代表 "令人讨厌的人".
 
-[^1]: <https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F>
+[^git-name-faq]: <https://git.wiki.kernel.org/index.php/GitFaq#Why_the_.27Git.27_name.3F>
 
 ## 教程
 

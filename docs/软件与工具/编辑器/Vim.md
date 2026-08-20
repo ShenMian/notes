@@ -10,7 +10,7 @@ icon: simple/vim
 
 ### 是什么
 
-[Vim](https://www.vim.org/) 是一款基于 TUI 的编辑器[^1], 特点是可以只通过键盘使用/高度可自定义. 前者使得 Vim 使用起来十分高效, 后者使得 VIM 可以通过配置添加各种想要的功能.  
+[Vim](https://www.vim.org/) 是一款基于 TUI 的编辑器[^gui-variants], 特点是可以只通过键盘使用/高度可自定义. 前者使得 Vim 使用起来十分高效, 后者使得 VIM 可以通过配置添加各种想要的功能.  
 
 Vim (**V**i **im**proved) 最初是为了模仿 Vi, 后面 Vim 加入了许多新功能变成了 Vi 的改进版. 其中包含了不少现代 IDE 具备的基本功能.  
 
@@ -28,7 +28,7 @@ Vim 的使用并不复杂, 通过速查表可以看出常用命令并不多.
 
 ![Vim tutor mode - github.com/fmoralesc/vim-tutor-mode](assets/vim_tutor_mode.webp){ width=70% style="display: block; margin: 0 auto" }  
 
-其次 Vim User Manual[^2] 也是值得一读的.
+其次 Vim User Manual[^user-manual] 也是值得一读的.
 
 ### 为什么
 
@@ -297,5 +297,5 @@ GUI 可以为 Vim/Neovim 提供界面美化 (如内部窗口的透明模糊背�
 - [Vim Cheat Sheet & Quick Reference](https://quickref.me/vim).
 - [Graphical vi-vim Cheat Sheet and Tutorial (viemu.com)](https://web.archive.org/web/20251227135849/http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html).
 
-[^1]: 也有提供 GUI 的分支项目, 如 gVim/[macVim](https://github.com/macvim-dev/macvim).
-[^2]: [Vim](https://neovim.io/doc/user/usr_01.html)/[Neovim](https://neovim.io/doc/user/usr_01.html).
+[^gui-variants]: 也有提供 GUI 的分支项目, 如 gVim/[macVim](https://github.com/macvim-dev/macvim).
+[^user-manual]: [Vim](https://neovim.io/doc/user/usr_01.html)/[Neovim](https://neovim.io/doc/user/usr_01.html).

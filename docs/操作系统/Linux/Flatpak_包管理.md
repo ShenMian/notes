@@ -100,11 +100,11 @@ flatpak install org.kde.KStyle.Adwaita
 ## 故障排除
 
 !!! warning
-    部分文件夹 (如 `/usr`) 无法给予访问权限[^reserved].
+    部分文件夹 (如 `/usr`) 无法给予访问权限[^reserved-paths].
 
-[^reserved]: https://docs.flatpak.org/en/latest/sandbox-permissions.html#reserved-paths
+[^reserved-paths]: https://docs.flatpak.org/en/latest/sandbox-permissions.html#reserved-paths
 
-- Partial data loss of static deltas[^1]
+- Partial data loss of static deltas[^static-delta-error]
 
     出现 `404 Not Found` 或 `Error: While pulling ... from remote flathub: URI ... exceeded maximum size of ... bytes.` 错误提示.  
     附加参数 `--no-static-deltas`.
@@ -131,4 +131,4 @@ flatpak install org.kde.KStyle.Adwaita
 
 ## 参考
 
-[^1]: <https://github.com/flatpak/flatpak/issues/5648>
+[^static-delta-error]: <https://github.com/flatpak/flatpak/issues/5648>

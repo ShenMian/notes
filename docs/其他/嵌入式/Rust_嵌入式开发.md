@@ -41,7 +41,7 @@ rustup target add thumbv7em-none-eabihf # 有浮点处理单元 (FPU)
 ## Arduino
 
 !!! warning
-    部分 Arduino 开发板 (如 Nano) 的闪存[^1]较小, 因此使用 Rust 开发需要特别注意空间使用情况, 避免程序过大.
+    部分 Arduino 开发板 (如 Nano) 的闪存[^arduino-flash-memory]较小, 因此使用 Rust 开发需要特别注意空间使用情况, 避免程序过大.
 
 ```console
 cargo install cargo-generate
@@ -58,7 +58,7 @@ cargo run
 
 由于模板已经通过 `.cargo/config.toml` 对工具链进行的配置, 此时只需要简单的执行上面命令即可执行烧录.
 
-[^1]: <https://docs.arduino.cc/learn/programming/memory-guide/#flash-memory-measurement>
+[^arduino-flash-memory]: <https://docs.arduino.cc/learn/programming/memory-guide/#flash-memory-measurement>
 
 ## 参考
 
