@@ -118,16 +118,24 @@ gpg:                 aka "Pierre Schmitz <pierre@archlinux.de>" [full]
 
 ## 更换镜像源 (可选)
 
+如果位于中国大陆地区, 建议将镜像源切换至[校园网联合镜像站](#mirrorz).
+
+### 官方镜像列表
+
 在 Arch Linux 官方提供的[生成器](https://archlinux.org/mirrorlist/)中选择自己所在的国家, 获取镜像源列表.  
 然后将内容写入到 `/etc/pacman.d/mirrorlist` 中, 替换原有内容.
 
-下面以中国地区为例:
+下面以中国大陆地区为例:
 
 ```sh
 curl "https://archlinux.org/mirrorlist/?country=CN" > /etc/pacman.d/mirrorlist
 ```
 
 然后通过**取消注释**来启用要使用的镜像服务器.
+
+### 校园网联合镜像站 {#mirrorz}
+
+该镜像站支持在中国大陆大学之间智能路由, 详情请参考 [MirrorZ](https://help.mirrors.cernet.edu.cn/archlinux/).
 
 ## 分区
 

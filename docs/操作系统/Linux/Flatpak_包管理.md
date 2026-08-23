@@ -22,10 +22,10 @@ flatpak uninstall --unused                # 卸载未使用的包
 !!! warning
     部分私有的应用程序不允许再分发, 因此安装这些包时依然需要从应用官方指定的位置下载二进制包.
 
-执行下面命令使用 USTC 提供的 Flathub 镜像仓库:
+执行下面命令将镜像源更换为[校园网联合镜像站](https://help.mirrors.cernet.edu.cn/flathub/):
 
 ```sh
-sudo flatpak remote-modify flathub --url=https://mirrors.ustc.edu.cn/flathub
+sudo flatpak remote-modify flathub --url=https://mirrors.cernet.edu.cn/flathub
 ```
 
 还原默认官方源:
