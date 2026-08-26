@@ -34,8 +34,9 @@
 ^https://en\.opensuse\.org/
 ^https://cacm\.acm\.org/
 ^https://en\.opensuse\.org/
-^https://www.phoronix.com/
-^https://blog.csdn.net/
+^https://www\.phoronix\.com/
+^https://blog\.csdn\.net/
+^https://www\.exploit-db\.com/shellcodes
 
 ^https://wiki.haskell.org/
 ^https://wiki\.manjaro\.org/index\.php/
