@@ -195,9 +195,17 @@ hashcat 成功查找到结果, 得到用户 `root` 和 `admin` 的密码: `l1234
 
 ### RTSP
 
-使用 VLC 接收 RTSP 流, 格式为 `rtsp://<user>:<passwd>@<ip>:<port>`.
+使用视频播放器接收 RTSP 流, 格式为 `rtsp://<user>:<passwd>@<ip>:<port>`.
 
-![VLC open network stream](assets/vlc_open_network_stream.webp){ width=60% style="display: block; margin: 0 auto" }  
+- VLC
+
+    ![VLC open network stream](assets/vlc_open_network_stream.webp){ width=60% style="display: block; margin: 0 auto" }  
+
+- MPV
+
+    ```sh
+    mpv rtsp://admin:l1234567@192.168.2.10:554
+    ```
 
 ### HTTP
 
