@@ -1,6 +1,6 @@
-# Hellblade: Senua's Sacrifice
+# 地狱之刃: 塞娜的献祭
 
-**中文**: 地狱之刃: 塞娜的献祭.
+**英文**: Hellblade: Senua's Sacrifice.
 
 ## 缺点
 

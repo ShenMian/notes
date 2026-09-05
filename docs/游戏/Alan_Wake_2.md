@@ -1,6 +1,6 @@
-# Alan Wake 2
+# 心灵杀手 2
 
-**中文**: 心灵杀手 2.
+**英文**: Alan Wake 2.
 
 ## 原稿碎片 (Manuscript Fragments)
 

@@ -1,6 +1,6 @@
-# Broken Arrow
+# 断箭
 
-**中文**: 断箭.  
+**英文**: Broken Arrow.  
 
 ## 卡组
 

@@ -1,4 +1,6 @@
-# Cataclysm: Dark Days Ahead
+# 大灾变: 黑暗之日
+
+**英文**: Cataclysm: Dark Days Ahead.
 
 ![Screenshot](assets/Cataclysm_DDA/cabin.webp)
 

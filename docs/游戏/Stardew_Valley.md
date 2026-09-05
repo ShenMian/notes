@@ -1,6 +1,6 @@
-# Stardew Valley
+# 星露谷物语
 
-**中文**: 星露谷物语.  
+**英文**: Stardew Valley.
 
 ![封面 - ConcernedApe](assets/Stardew_Valley/stardew_valley_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
 

@@ -1,6 +1,6 @@
-# Dishonored 2
+# 耻辱 2
 
-**中文**: 耻辱 2.  
+**英文**: Dishonored 2.
 
 ![封面 - Arkane Studio](assets/Dishonored_2/dishonored_2_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
 

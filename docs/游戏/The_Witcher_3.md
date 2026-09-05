@@ -1,6 +1,6 @@
 # 巫师 3: 狂猎
 
-**中文**: The Witcher 3: Wild Hunt
+**英文**: The Witcher 3: Wild Hunt
 
 ## Pro Tips
 
