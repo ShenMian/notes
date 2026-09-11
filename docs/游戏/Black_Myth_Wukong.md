@@ -2,6 +2,8 @@
 
 **英文**: Black Myth: Wukong.
 
+![封面](assets/Black_Myth_Wukong/cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+
 ## 剧情
 
 关于本作的剧情, 有必要先澄清一点: 虽然游戏科学在宣传片中声称本作改编自*西游记*, 但实际情况远比这一说法更为复杂. 以下为改编关系示意图:
@@ -80,7 +82,7 @@ graph LR
 
     沿下游方向 (西方) 前行. 最终从悬崖边上落下, 即可到达**极乐谷 - 瓜田**土地庙.
 
-!["极乐谷 - 瓜田" 土地庙相对位置](assets/黑神话_悟空/瓜田土地庙.webp){ width=80% style="display: block; margin: 0 auto" }  
+!["极乐谷 - 瓜田" 土地庙相对位置](assets/Black_Myth_Wukong/瓜田土地庙.webp){ width=80% style="display: block; margin: 0 auto" }  
 
 完成该支线即可获得*禁字法*奇术, 其次完成该支线为隐藏结局的前置条件.
 

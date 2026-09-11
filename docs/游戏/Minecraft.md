@@ -2,6 +2,8 @@
 
 **英文**: Minecraft.
 
+![封面](assets/Minecraft/cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+
 我的世界目前有两个版本:
 
 - **Java 版 (Java Edition)**: 使用 Java 编写.

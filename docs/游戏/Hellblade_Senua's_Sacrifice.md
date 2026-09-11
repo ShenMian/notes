@@ -2,6 +2,8 @@
 
 **英文**: Hellblade: Senua's Sacrifice.
 
+![封面](assets/Hellblade_Senua's_Sacrifice/cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+
 ## 缺点
 
 - **存在严重恶性** BUG: 游戏存在可能导致游戏无法继续的 BUG.
