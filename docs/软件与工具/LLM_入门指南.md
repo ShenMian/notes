@@ -26,14 +26,14 @@
 
 以下客户端均支持 Windows, Linux 和 macOS:
 
-- **[Cherry Studio]**: 跨平台, 部分开源 (个人使用免费), 支持 MCP, 在线搜索, 图片/文档解析, 知识库, Ollama/LM Studio, GitHub Copilot. (该软件重度依赖 Vibe Coding)
+- **[Cherry Studio]**: 跨平台, 部分开源 (个人使用免费), 支持 MCP, 在线搜索, 图片/文档解析, 知识库, LM Studio, GitHub Copilot. (该软件重度依赖 Vibe Coding)
 
     !!! warning
         曾存在遥测功能关闭后依然与后台服务器通讯的致命问题: <https://github.com/CherryHQ/cherry-studio/issues/14387>.
 
 - **[LM Studio]**: 跨平台, 闭源免费, **仅支持本地 LLM**, 支持 MCP, 界面简洁易用. 支持图片/文档解析, 提供与 OpenAI API 兼容的本地服务器.
-- **[LobeHub]**: 跨平台, 部分开源 (个人使用免费), 支持知识库, Ollama.
-- **[Msty]**: 跨平台, 闭源免费 (提供付费高级版), 同时支持本地或远程 LLM, 支持在线搜索 (效果较差), 图片/文档解析, 知识库, Ollama.
+- **[LobeHub]**: 跨平台, 部分开源 (个人使用免费), 支持知识库.
+- **[Msty]**: 跨平台, 闭源免费 (提供付费高级版), 同时支持本地或远程 LLM, 支持在线搜索 (效果较差), 图片/文档解析, 知识库.
 - **[Jan]**: 跨平台, 开源 (Apache-2.0).
 
 [Cherry Studio]: https://github.com/CherryHQ/cherry-studio
@@ -42,7 +42,7 @@
 [Msty]: https://msty.ai/
 [Jan]: https://github.com/janhq/jan
 
-Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio 或 Ollama 组合使用, 同时支持本地和远程 LLM.
+Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio 组合使用, 同时支持本地和远程 LLM.
 
 ### 移动端 {#mobile}
 
