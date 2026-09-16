@@ -1,7 +1,7 @@
 # 计算机网络 (Computer Networks)
 
 - 代码: CS 144 (Stanford University).
-- 主页: <https://cs144.github.io/>.
+- 主页: <https://online.stanford.edu/courses/cs144-introduction-computer-networking>.
 
 ## ToC
 
