@@ -64,7 +64,8 @@ Cherry Studio 等客户端本身并不支持本地 LLM, 但可以与 LM Studio �
 ## 模型上下文协议
 
 模型上下文协议 (Model Context Protocol, MCP) 是一种开源协议[^mcp], 旨在以标准化的方式向 LLM 提供上下文信息.  
-LLM 可以与 MCP 服务器通信, 以扩展其功能.
+LLM 可以通过 MCP 提供的工具与 MCP 服务器通信, 以扩展其功能.  
+例如, 借助 [Blender MCP](https://www.blender.org/lab/mcp-server/), LLM 可利用 Blender 进行建模, 其效果通常显著优于直接在网页端使用 Three.js 建模.
 
 [^mcp]: 由 Anthropic 公司于 2024 年 11 月提出.
 
