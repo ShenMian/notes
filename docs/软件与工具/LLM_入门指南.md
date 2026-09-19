@@ -78,6 +78,13 @@ Cherry Studio 提供了一些内置 MCP 服务器, 可以在设置里直接启�
 
 ![Cherry Studio 的内置 MCP 服务器](assets/cherry_builtin_mcp.webp){ width=80% style="display: block; margin: 0 auto" }  
 
+在提示词相似的情况下, 提供合适的工具可以得到显著更优的效果:
+
+<p>
+    <img alt="DeepSeek V4.1 Flash 使用 Three.js 建模" src="assets/deepseek_v4.1_flash-threejs.webp" width="49%">
+    <img alt="DeepSeek V4.1 Flash 和 Gemini 3.8 Flash 使用 Blender 建模" src="assets/deepseek_v4.1_flash+gemini_3.8_flash-blender.webp" width="49%">
+</p>
+
 ## 知识库
 
 知识库 (Knowledge Base) 是一种存储和检索信息的系统, 旨在向 LLM 提供新的/专有的上下文信息.  
