@@ -82,7 +82,7 @@ SQL 注入依赖 UNION 关键字. 该关键字存在以下限制:
 python sqlmap.py -u "http://example.com/product?id=1" --technique=U --columns
 ```
 
-SQL 语句的查询结果一部分会直接显示在页面上, 这部分数据称为数据回显点. 通过观察数据回显点, 可以逐步的获取任意 SQL 语句的查询结果.
+SQL 语句的查询结果一部分会直接显示在页面上, 这部分数据称为数据回显点. 通过观察数据回显点, 可以逐步地获取任意 SQL 语句的查询结果.
 
 ```sql
 UNION SELECT 'echo0', 'echo1'

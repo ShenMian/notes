@@ -56,7 +56,7 @@ cargo generate --git https://github.com/Rahix/avr-hal-template.git
 cargo run
 ```
 
-由于模板已经通过 `.cargo/config.toml` 对工具链进行的配置, 此时只需要简单的执行上面命令即可执行烧录.
+由于模板已经通过 `.cargo/config.toml` 对工具链进行了配置, 此时只需要简单地执行上面命令即可执行烧录.
 
 [^arduino-flash-memory]: <https://docs.arduino.cc/learn/programming/memory-guide/#flash-memory-measurement>
 
