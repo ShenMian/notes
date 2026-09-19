@@ -42,7 +42,7 @@ reg add "HKEY_USERS\.DEFAULT\Control Panel\Keyboard" /v InitialKeyboardIndicator
 
     设置位于 `Control Panel\All Control Panel Items\Power Options\System Settings`.
 
-    运行 `gpedit.msc` 并打开路径 `Local Computer Policy/Computer Configuration/Administrative Templates/System/Power Managment/Button Settings`.  
+    运行 `gpedit.msc` 并打开路径 `Local Computer Policy/Computer Configuration/Administrative Templates/System/Power Management/Button Settings`.  
     启用其中的 `Select the lid switch action` 并设置一个动作.
     若选项无法修改, 则取消以上操作.  
 

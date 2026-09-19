@@ -38,7 +38,7 @@ struct Entity {
 
 ## 组件 (Component)
 
-组件用于存储数据, 无需包含成员函数. ， 下面是一个具体组件的简单实现:
+组件用于存储数据, 无需包含成员函数. 下面是一个具体组件的简单实现:
 
 ```cpp
 struct TransformComponent {

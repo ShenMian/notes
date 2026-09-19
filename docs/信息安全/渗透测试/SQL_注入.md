@@ -33,7 +33,7 @@ SELECT * FROM users WHERE id = '{id}'
 ```rs
 async fn query(Query(params): Query<HashMap<String, String>>) {
     let id = params.get("id").unwrap();
-    let sql = format!("SELECT username, passowrd FROM users WHERE id = '{id}'");
+    let sql = format!("SELECT username, password FROM users WHERE id = '{id}'");
 }
 ```
 
@@ -66,8 +66,8 @@ sqlmap 会自动检测该注入点的有效性, 并尝试获取数据库的基�
 
 SQL 注入依赖 UNION 关键字. 该关键字存在以下限制:
 
-- **字段数量一致**：两个 SELECT 语句的字段数量必须相同
-- **字段类型兼容**：对应位置的字段数据类型必须兼容
+- **字段数量一致**: 两个 SELECT 语句的字段数量必须相同
+- **字段类型兼容**: 对应位置的字段数据类型必须兼容
 
 假设原 SQL 语句一共查询了 2 个字段, 则可以使用下面的 SQL 语句来判断:
 

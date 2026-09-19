@@ -46,7 +46,7 @@ cd paru
 makepkg -si
 ```
 
-直接运行不带任何参数的 `paru` 即可快速进行全面更新，效果等同于 `-Syu`.[^paru-no-args]
+直接运行不带任何参数的 `paru` 即可快速进行全面更新, 效果等同于 `-Syu`.[^paru-no-args]
 
 [^paru-no-args]: https://github.com/Morganamilo/paru/blob/9ac3578807a87858651e81a02586ceb947686e7c/src/lib.rs#L169-L171
 

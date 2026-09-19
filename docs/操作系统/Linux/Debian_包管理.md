@@ -25,7 +25,7 @@ sudo apt autoremove        # 卸载未使用的包
 ### Debian 13 (trixie)
 
 ```conf title="/etc/apt/sources.list"
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# 默认注释了源码镜像以提高 apt update 速度, 如有需要可自行取消注释
 deb https://mirrors.cernet.edu.cn/debian/ trixie main contrib non-free non-free-firmware
 # deb-src https://mirrors.cernet.edu.cn/debian/ trixie main contrib non-free non-free-firmware
 
@@ -62,7 +62,7 @@ Suites: resolute resolute-updates resolute-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# 默认注释了源码镜像以提高 apt update 速度, 如有需要可自行取消注释
 # Types: deb-src
 # URIs: https://mirrors.cernet.edu.cn/ubuntu
 # Suites: resolute resolute-updates resolute-backports
@@ -82,7 +82,7 @@ Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 # Components: main restricted universe multiverse
 # Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# 预发布软件源，不建议启用
+# 预发布软件源, 不建议启用
 
 # Types: deb
 # URIs: https://mirrors.cernet.edu.cn/ubuntu
