@@ -235,7 +235,7 @@ fdisk 分区常用命令:
 
 !!! warning
     如果需要使用 Timeshift 管理快照, 必须创建名为 `@` 和 `@home` 的子卷.[^timeshift-subvolumes]  
-    否则可能能成功创建快照, 但是在还原快照的时候摧毁系统.
+    否则可能成功创建快照, 但是在还原快照的时候摧毁系统.
 
 [^timeshift-subvolumes]: <https://github.com/teejee2008/timeshift/issues/370>
 
