@@ -204,6 +204,19 @@ $$
 
 ## 编程智能体
 
+- Pi Agent
+
+    安装: `curl -fsSL https://pi.dev/install.sh | sh`
+
+    常用扩展:
+
+    ```sh
+    pi install npm:@pi-archimedes/sudo
+    pi install npm:pi-image-paste
+    pi install npm:pi-web-access
+    pi install npm:@juicesharp/rpiv-ask-user-question
+    ```
+
 - Claude Code
 
     安装方式请参考[官方文档](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code).
@@ -214,31 +227,27 @@ $$
     | ------------------------------------------ | ------------------------------------ |
     | `ANTHROPIC_BASE_URL`                       | `https://api.deepseek.com/anthropic` |
     | `ANTHROPIC_AUTH_TOKEN`                     | `<DEEPSEEK_API_KEY>`                 |
-    | `ANTHROPIC_MODEL`                          | `deepseek-v4-pro[1m]`                |
-    | `ANTHROPIC_DEFAULT_HAIKU_MODEL`            | `deepseek-v4-flash[1m]`              |
+    | `ANTHROPIC_MODEL`                          | `deepseek-flash[1m]`                 |
+    | `ANTHROPIC_DEFAULT_HAIKU_MODEL`            | `deepseek-flash[1m]`                 |
     | `CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC` | `1`                                  |
 
 - Codex
 
     安装: `npm install -g @openai/codex`.
 
-    配置第三方 API 端点, 以 OpenRouter (`deepseek/deepseek-v4-pro`) 为例:
+    配置第三方 API 端点, 以 OpenRouter (`deepseek/deepseek-v4.1-flash`) 为例:
 
     ```toml title="~/.codex/config.toml"
     preferred_auth_method = "apikey"
 
     model_provider = "openrouter"
-    model = "deepseek/deepseek-v4-pro"
+    model = "deepseek/deepseek-v4.1-flash"
 
     [model_providers.openrouter]
     name = "openrouter"
     base_url = "https://openrouter.ai/api/v1"
     env_key = "OPENROUTER_API_KEY"
     ```
-
-- Antigravity CLI
-
-    安装: `irm https://antigravity.google/cli/install.ps1 | iex`.
 
 ## 参数
 
