@@ -357,6 +357,7 @@ TODO: 完善下面表格
 
 - <https://barmory.net>: 查询战绩和单位数据.
 - <https://ba-hub.net>: 查询单位数据.
+- <https://www.brokenarrow.club/index-en.html>: 卡组.
 
 ## 参考
 
