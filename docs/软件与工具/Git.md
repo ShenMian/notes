@@ -80,7 +80,7 @@ gpg --list-secret-keys --keyid-format=long
 [keyboxd]
 ---------
 sec   ed25519/<KEY_ID> 2023-12-28 [SC]
-      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      XXXXXXXXXXXXXXXXXXXXXXXX<KEY_ID>
 uid                 [ultimate] ShenMian <sms_school@outlook.com>
 ssb   cv25519/<SUB_KEY_ID> 2023-12-28 [E]
 ```
