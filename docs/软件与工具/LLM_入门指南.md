@@ -202,7 +202,7 @@ $$
 [^gemma-4]: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 [^granite-4]: https://www.ibm.com/new/announcements/ibm-granite-4-0-hyper-efficient-high-performance-hybrid-models
 
-## 编程智能体
+## 智能体
 
 - Pi Agent
 
