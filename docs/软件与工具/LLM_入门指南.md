@@ -237,7 +237,7 @@ $$
 
 - Codex
 
-    安装: `npm install -g @openai/codex`.
+    安装: `pnpm add -g @openai/codex`.
 
     配置第三方 API 端点, 以 OpenRouter (`deepseek/deepseek-v4.1-flash`) 为例:
 
