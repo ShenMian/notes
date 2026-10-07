@@ -206,7 +206,7 @@ $$
 
 - Pi Agent
 
-    安装: `curl -fsSL https://pi.dev/install.sh | sh`
+    安装: `curl -fsSL https://pi.dev/install.sh | sh`.
 
     常用扩展:
 
@@ -216,6 +216,10 @@ $$
     pi install npm:pi-web-access
     pi install npm:@juicesharp/rpiv-ask-user-question
     ```
+
+- OpenCode
+
+    安装: `pnpm add -g --allow-build=@opencode/cli @opencode/cli`.
 
 - Claude Code
 
