@@ -221,6 +221,8 @@ $$
 
     安装: `pnpm add -g --allow-build=@opencode/cli @opencode/cli`.
 
+    [OpenChamber](https://github.com/openchamber/openchamber): 一个基于 OpenCode 的开源 (MIT)/跨平台 GUI 客户端, 功能十分强大.
+
 - Claude Code
 
     安装方式请参考[官方文档](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code).
