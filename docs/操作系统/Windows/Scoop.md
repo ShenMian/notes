@@ -9,7 +9,7 @@
 Scoop 安装路径可以通过环境变量 `SCOOP` 指定, 建议选择无需管理员权限的路径.  
 Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件夹.
 
-将下面命令中的 `<install_path>` 替换为 Scoop 的**完整安装路径**, 并在 Powershell (需要 5.1 或更高版本) 中执行:
+将下面命令中的 `<install_path>` 替换为 Scoop 的**完整安装路径**, 并在 PowerShell (需要 5.1 或更高版本) 中执行:
 
 ```ps1
 # 指定 Scoop 的完整安装路径, Scoop 自身以及其所管理的软件将安装在该路径下的 apps 文件夹
@@ -56,9 +56,9 @@ scoop uninstall <NAME> [-p] # 卸载应用 (包括依赖项), 选项 p 表示同
 scoop update *              # 更新全部应用
 scoop list                  # 列出已安装的全部应用
 
-scoop bucket add <URL> [repo] # 添加 Bucket
-scoop bucket rm <URL>         # 移除 Bucket
-scoop bucket list             # 列出添加的 Bucket
+scoop bucket add <NAME> [REPO] # 添加 Bucket
+scoop bucket rm <NAME>         # 移除 Bucket
+scoop bucket list              # 列出添加的 Bucket
 ```
 
 ## 查询频次限制

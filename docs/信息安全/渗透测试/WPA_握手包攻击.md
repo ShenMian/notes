@@ -56,7 +56,7 @@
     - 使用 Hashcat. (推荐)
 
         ```sh
-        aircrack-ng [.cap file] -j [.haccpx file]       # 将 .cap 文件转为 hashcat 接受的 .haccpx 文件
+        aircrack-ng [.cap file] -j [.hccapx file]       # 将 .cap 文件转为 hashcat 接受的 .hccapx 文件
         hashcat -m 2500 -a 0 [.hccapx file] [dict file] # 利用 hashcat 进行破解
         ```
 

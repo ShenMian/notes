@@ -26,9 +26,9 @@ sudo pacman -S plasma-meta power-profiles-daemon
 sudo pacman -S noto-fonts-cjk
 ```
 
-默认日语字体优先级别更高, 会导致中文显示异常. 在 `~/.fonts.conf` 中写入下面内容, 修改优先级:
+默认日语字体优先级别更高, 会导致中文显示异常. 在 `~/.config/fontconfig/fonts.conf` 中写入下面内容, 修改优先级:
 
-```xml title="~/.fonts.conf"
+```xml title="~/.config/fontconfig/fonts.conf"
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>

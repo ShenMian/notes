@@ -1,11 +1,11 @@
 # Support Vector Machine (SVM, 支持向量机)
 
-发明者: Vapinik \[苏\]
+发明者: Vapnik \[苏\]
 
 Linear support vector machine(LSVM) in the linearly separable case and Hard Margin Maximization.
 
 LSVM in the linearly separable case suppose a training dataset in a feature space, is given
-   $$T = \{(x_1. y_1), (x_2, y_2), ..., (x_n, y_n)\}$$
+   $$T = \{(x_1, y_1), (x_2, y_2), ..., (x_n, y_n)\}$$
    where $x_i \in X$ = $R^n$, $y_i \in Y = \{+1, -1\}$, $i=1,2,...,N$.
 
    Definition (linear separability of dataset)

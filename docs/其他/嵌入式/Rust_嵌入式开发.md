@@ -17,7 +17,7 @@ rustup target add thumbv7em-none-eabihf # 有浮点处理单元 (FPU)
 
 - `thumbv6m-none-eabi`: 适用于 Cortex-M0 和 Cortex-M1 处理器.
 - `thumbv7m-none-eabi`: 适用于 Cortex-M3 处理器.
-- `thumbv7em-none-eabi`: 适用于 Cortex-M4 和 Cortex-M 处理器.
+- `thumbv7em-none-eabi`: 适用于 Cortex-M4 和 Cortex-M7 处理器.
 - `thumbv7em-none-eabihf`: 适用于 Cortex-M4F 和 Cortex-M7F 处理器.
 - `thumbv8m.main-none-eabi`: 适用于 Cortex-M33 和 Cortex-M35P 处理器.
 - `thumbv8m.main-none-eabihf`: 适用于 Cortex-M33F 和 Cortex-M35PF 处理器.

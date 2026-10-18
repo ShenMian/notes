@@ -10,14 +10,14 @@ Time: 1 min.
 
 Time: 1 - 2 mins.
 
-Keep talking until the examiner stops your.
+Keep talking until the examiner stops you.
 
 Get to the point.
 
 ## Use flexible templates
 
 1. I'd like to kick off by telling you \_\_.
-2. This took place _2 month age_.
+2. This took place _2 months ago_.
 3. It's one of the _most amazing_ places I have visited.
 
 ## Use cohesive devices

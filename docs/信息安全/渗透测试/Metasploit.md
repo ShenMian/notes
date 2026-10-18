@@ -42,13 +42,13 @@ msfdb start # 启动数据库
 # 数据库/工作区
 msf > workspace [name]             # 切换工作区
 msf > workspace -a [name]          # 添加工作区
-msf > db_nmap [...]                # 调用 nmap 进行扫描, 比将结果保存到当前工作区
+msf > db_nmap [...]                # 调用 nmap 进行扫描, 并将结果保存到当前工作区
 msf > db_export -f [format] [file] # 将当前工作区中的数据以指定格式 (通常是 xml) 导出到文件中, 导出结果可能为空, 需要进行检查
 
 # 查找/选择 module
 msf > search [[type:]keyword] # 搜索 module
 msf > use [id/module]         # 使用 module, module 的名称或 search 指令结果中的 id
-msf > use [id/module]         # 显示 module 的详细信息.
+msf > info [id/module]        # 显示 module 的详细信息.
 msf > setg [option] [value]   # 设置默认选项, 避免切换 module 时重复填写不变的参数
 
 # 使用 module
@@ -65,7 +65,7 @@ msf > sessions [id]    # 打开会话, -i
 msf > sessions -u [id] # 将 shell 升级到 meterpreter
 
 # 故障排除
-msf > setg LogLevel 5          # 日志详细等级, 范围 1-5
+msf > setg LogLevel 3          # 日志详细等级, 范围 0-3
 cat ~/.msf6/logs/framework.log # 查看日志
 msf > debug                    # 显示诊断信息, 在故障发生后使用
 ```
@@ -131,7 +131,7 @@ msf > use exploit/multi/handler
 msf > set payload [id/value]
 # ... 设置载荷中的参数 ...
 msf > set ExitOnSession false # 建立连接后不结束监听
-msf > run -j                  # 开始监听并作为后台任务运行, 因为这是一个堵塞操作
+msf > run -j                  # 开始监听并作为后台任务运行, 因为这是一个阻塞操作
 ```
 
 ## Meterpreter
@@ -167,7 +167,7 @@ meterpreter > run [module]      # 执行 module, 主要位于 "post/[system]" �
     exit
     ```
 
-- Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是又以下几个原因导致的:  
+- Meterpreter 会话意外关闭, 返回原因 Died / exploit/multi/handler 无法和目标建立连接 / 目标上的接收器发生段错误, 可能是由以下几个原因导致的:  
 
     - MSF 和 Meterpreter 的版本不兼容: 解决方法是确保版本相同.
     - 载荷不匹配: 该问题会导致目标上的 Stagers 发生段错误, exploit/multi/handler 中设置的载荷 (类型/系统/架构) 与目标上期待的不一致, 解决方法是确保载荷一致.

@@ -31,7 +31,7 @@ IELTS Speaking: Speak **natural** spoken English.
 
 ## Use different tenses
 
-1. I **started** painting a couple of years age.
+1. I **started** painting a couple of years ago.
 2. I **decided** to **have a go at** painting. (To **have a go at** something = to try something new)
 3. I decided to **try my hand at** painting.
 4. I've been playing football **as long as I can remember**.
