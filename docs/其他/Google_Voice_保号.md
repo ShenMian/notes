@@ -5,7 +5,7 @@
 
 ## 引言
 
-Google Voice 号码在特定地区可以免费获取[^google-voice-verification], 但其他地区需要通过其他手段获取. 根据 [Google Voice 使用限制政策](https://support.google.com/voice/answer/9230450), 6 个月不活跃的号码将会被回收, 因此在不使用的时候需要防止号码因为不活跃而被回收.
+Google Voice 号码在特定地区可以免费获取[^google-voice-verification], 但其他地区需要通过其他手段获取. 根据 [Google Voice 使用限制政策](https://support.google.com/voice/answer/9230450), 3 个月不活跃的号码将会被回收, 因此在不使用的时候需要防止号码因为不活跃而被回收.
 
 !!! warning
     为保证安全, 不应使用 Google Voice 号码注册账户. 避免账户回收后重新分发被他人滥用.
@@ -16,7 +16,7 @@ Google Voice 号码在特定地区可以免费获取[^google-voice-verification]
 
 ## 订阅广告短信
 
-只需要订阅一次短信广告, 之后便会自动接受到短信.
+只需要订阅一次短信广告, 之后便会自动接收到短信.
 
 - Starbucks: 咖啡公司. 发送 `JOIN` 至 `22122`, 每月 2 条短信. 回复 `STOP` 结束订阅.
 - Bloomingdale's: 百货商店. 发送 `code` 至 `25666`, 然后回复 `PROMO`. 回复 `STOP` 结束订阅.

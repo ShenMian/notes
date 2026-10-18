@@ -2,7 +2,7 @@
 
 **英文**: Dishonored 2.
 
-![封面 - Arkane Studio](assets/Dishonored_2/dishonored_2_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
+![封面 - Arkane Studios](assets/Dishonored_2/dishonored_2_cover.webp){ width=30% style="display: block; margin: 0 auto" }  
 
 ## 测评
 
@@ -18,7 +18,7 @@
 
 ### 优点
 
-![截图 - Arkane Studio](assets/Dishonored_2/4.webp){ width=70% style="display: block; margin: 0 auto" }  
+![截图 - Arkane Studios](assets/Dishonored_2/4.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 - **优秀的关卡设计**: 如机关宅邸 (Clockwork mansion).
 - **玩法多样**: 通过武器和超能力可以看出这款游戏并不只有潜行一种玩法, 直接与敌人正面冲突也是一种十分刺激的玩法. 虽然存在 "混乱度" 的设定, 但对游玩的影响不大.
@@ -31,7 +31,7 @@
 - **优化不佳**: 在较大的场景下帧率的波动会变得十分严重, 带来卡顿感.
 - **存在崩溃现象**: 在游玩时遇到过若干次崩溃现象, 部分玩家存在到达特定区域就崩溃的现象.
 
-![背景 - Arkane Studio](assets/Dishonored_2/0.webp){ width=70% style="display: block; margin: 0 auto" }  
+![背景 - Arkane Studios](assets/Dishonored_2/0.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 ## 背景
 
@@ -62,7 +62,7 @@
 
 ### 敌人
 
-![敌人 - Arkane Studio](assets/Dishonored_2/8.webp){ width=70% style="display: block; margin: 0 auto" }  
+![敌人 - Arkane Studios](assets/Dishonored_2/8.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 敌人的状态有以下几种:  
 
@@ -88,7 +88,7 @@
 
 ### 超能力
 
-![超能力 - Arkane Studio](assets/Dishonored_2/2.webp){ width=70% style="display: block; margin: 0 auto" }  
+![超能力 - Arkane Studios](assets/Dishonored_2/2.webp){ width=70% style="display: block; margin: 0 auto" }  
 
 以下几个能力较为重要:  
 
