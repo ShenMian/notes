@@ -1,4 +1,4 @@
-# Dave the diver
+# Dave the Diver
 
 **中文**: 潜水员戴夫.  
 

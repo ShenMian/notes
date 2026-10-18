@@ -6,7 +6,7 @@ icon: simple/kalilinux
 
 ## 下载
 
-因根据使用环境选择合适的系统镜像文件, 可以从官网查看不同版本的适用情况.
+应根据使用环境选择合适的系统镜像文件, 可以从官网查看不同版本的适用情况.
 
 - [Kali 官网](https://www.kali.org/get-kali/)
 - [阿里巴巴开源镜像站](https://mirrors.aliyun.com/kali-images/)
@@ -18,14 +18,14 @@ icon: simple/kalilinux
 - Windows: 在使用 Rufus 烧录前设置 Persistent partition size.
 - Linux: 详情请参考 [Adding Persistence to a Kali Linux Live USB Drive](https://www.kali.org/docs/usb/usb-persistence/)
 
-启动时需要在启动菜单择带有 persistence 字样的选项.
+启动时需要在启动菜单中选择带有 persistence 字样的选项.
 
 !!! warning
-    因为要进行读写操作, 所以效率会收读写速率的影响.
+    因为要进行读写操作, 所以效率会受读写速率的影响.
 
 ## 卷标
 
-卷标需要从通过修改文件 `autorun.inf` 中的 `autorun.label` 来进行修改.
+卷标可以通过修改文件 `autorun.inf` 中的 `autorun.label` 来修改.
 
 ## 工具
 

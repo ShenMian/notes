@@ -6,7 +6,7 @@ icon: simple/mariadb
 
 ```sh
 # 安装 MariaDB
-sudo pacman -Sy mariadb
+sudo pacman -S mariadb
 mariadb-install-db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 
 # 启用服务

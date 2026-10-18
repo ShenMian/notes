@@ -94,7 +94,7 @@
 | ---- | -------------------------------------- | ---------------- |
 | 43   | Low Caliber Military Ammunition Crate  | 小口径军用弹盒   |
 | 44   | Low Caliber Civilian Ammunition Crate  | 小口径民用弹盒   |
-| 119  | Low Caliber Ranger Ammuniton Box       | 小口径俄制弹药盒 |
+| 119  | Low Caliber Ranger Ammunition Box      | 小口径俄制弹药盒 |
 | 1192 | High Caliber Military Ammunition Crate | 大口径军用弹盒   |
 | 1193 | High Caliber Ranger Ammunition Crate   | 大口径俄制弹盒   |
 
