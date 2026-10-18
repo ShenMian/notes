@@ -10,4 +10,4 @@ GOT 是在运行时不断完善的, 所以该表是**可写的**.
 
 ## 参考
 
-- <https://ctf101.org/binary-exploitation/what-is-the-got/>.
+- <https://web.archive.org/web/20260814214720/https://ctf101.org/binary-exploitation/what-is-the-got/>.
