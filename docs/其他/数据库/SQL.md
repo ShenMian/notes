@@ -65,7 +65,7 @@ FROM <tables>
 根据指定列排序, 有以下两种排序方式:
 
 - `ASC`: 升序, 默认排序方式.
-- `DESC`: 降序, 默认排序方式.
+- `DESC`: 降序.
 
 ### GROUP BY 子句
 
@@ -116,9 +116,9 @@ ORDER  BY S.dept;
 `SELECT` 和 `FROM` 中可以通过 `AS` 指定表或列的别名.  
 当表进行自连接时, 为了避免歧义, 必须为该表指定别名.  
 
-### 算数表达式
+### 算术表达式
 
-`SELECT`, `WHERE` 和 `HAVING` 中存在算数表达式.
+`SELECT`, `WHERE` 和 `HAVING` 中存在算术表达式.
 
 ```sql
 SELECT Log(1000)  AS three,
@@ -131,7 +131,7 @@ SELECT Log(1000)  AS three,
 ```sql
 SELECT S.sname
 FROM   sailors S
-WHERE  S.sname LIKE 'B_%’
+WHERE  S.sname LIKE 'B_%'
 ```
 
 DBMS 通常也支持通过正则表达式匹配字符串, 但语法不太一致. 下面是 PostgreSQL 的例子:
@@ -139,12 +139,12 @@ DBMS 通常也支持通过正则表达式匹配字符串, 但语法不太一致.
 ```sql
 SELECT s.sname
 FROM   sailors S
-WHERE  s.sname ~ 'B.*’
+WHERE  s.sname ~ 'B.*'
 ```
 
 ### 组合
 
-`UNION`/`INTERSECT`/`EXCEPT` 可以求两条查询语句结果的交/并/差集.
+`UNION`/`INTERSECT`/`EXCEPT` 可以求两条查询语句结果的并/交/差集.
 
 ### 嵌套查询
 
