@@ -30,8 +30,8 @@ icon: simple/manjaro
 - **GNOME**: 美观, 对分数倍缩放支持**不佳**.
 - **Xfce**: 轻量, 适合性能较差的电脑.
 
-![KDE Plasma - Manjaro official webside](assets/manjaro_official_kde.webp){ width=40% }
-![KDE Plasma - Manjaro official webside](assets/manjaro_official_kde_more.webp){ width=40% }  
+![KDE Plasma - Manjaro official website](assets/manjaro_official_kde.webp){ width=40% }
+![KDE Plasma - Manjaro official website](assets/manjaro_official_kde_more.webp){ width=40% }  
 
 点击 `More` 可以看到更多信息. 默认是 `Full` 完整版, 也可以选择 `Minimal` 最小版, 仅提供了基本的桌面环境, 没有安装附加的软件.  
 

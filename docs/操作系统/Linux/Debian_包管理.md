@@ -24,20 +24,32 @@ sudo apt autoremove        # 卸载未使用的包
 
 ### Debian 13 (trixie)
 
-```conf title="/etc/apt/sources.list"
-# 默认注释了源码镜像以提高 apt update 速度, 如有需要可自行取消注释
-deb https://mirrors.cernet.edu.cn/debian/ trixie main contrib non-free non-free-firmware
-# deb-src https://mirrors.cernet.edu.cn/debian/ trixie main contrib non-free non-free-firmware
+```conf title="/etc/apt/sources.list.d/debian.sources"
+Types: deb
+URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/debian
+Suites: trixie trixie-updates trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
-deb https://mirrors.cernet.edu.cn/debian/ trixie-updates main contrib non-free non-free-firmware
-# deb-src https://mirrors.cernet.edu.cn/debian/ trixie-updates main contrib non-free non-free-firmware
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
+# Types: deb-src
+# URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/debian
+# Suites: trixie trixie-updates trixie-backports
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
-deb https://mirrors.cernet.edu.cn/debian/ trixie-backports main contrib non-free non-free-firmware
-# deb-src https://mirrors.cernet.edu.cn/debian/ trixie-backports main contrib non-free non-free-firmware
+# 安全更新软件源
+Types: deb
+URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/debian-security?official_index=1
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
-# 以下安全更新软件源为官方源配置
-deb https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
-# deb-src https://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+# Types: deb-src
+# URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/debian-security?official_index=1
+# Suites: trixie-security
+# Components: main contrib non-free non-free-firmware
+# Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```
 
 详情请参考[校园网联合镜像站](https://help.mirrors.cernet.edu.cn/debian/).
@@ -53,45 +65,45 @@ deb https://mirrors.cernet.edu.cn/kali kali-rolling main non-free contrib non-fr
 
 详情请参考[校园网联合镜像站](https://help.mirrors.cernet.edu.cn/kali/).
 
-### Ubuntu 24.04
+### Ubuntu 26.04 LTS
 
 ```conf title="/etc/apt/sources.list.d/ubuntu.sources"
 Types: deb
-URIs: https://mirrors.cernet.edu.cn/ubuntu
+URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu
 Suites: resolute resolute-updates resolute-backports
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# 默认注释了源码镜像以提高 apt update 速度, 如有需要可自行取消注释
+# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释
 # Types: deb-src
-# URIs: https://mirrors.cernet.edu.cn/ubuntu
+# URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu
 # Suites: resolute resolute-updates resolute-backports
 # Components: main restricted universe multiverse
 # Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# 以下安全更新软件源为官方源配置
+# 安全更新软件源
 Types: deb
-URIs: http://security.ubuntu.com/ubuntu/
+URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu?official_index=1
 Suites: resolute-security
 Components: main restricted universe multiverse
 Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 # Types: deb-src
-# URIs: http://security.ubuntu.com/ubuntu/
+# URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu?official_index=1
 # Suites: resolute-security
 # Components: main restricted universe multiverse
 # Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
-# 预发布软件源, 不建议启用
+# 预发布软件源，不建议启用
 
 # Types: deb
-# URIs: https://mirrors.cernet.edu.cn/ubuntu
+# URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu
 # Suites: resolute-proposed
 # Components: main restricted universe multiverse
 # Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
 
 # # Types: deb-src
-# # URIs: https://mirrors.cernet.edu.cn/ubuntu
+# # URIs: mirror+https://mirrors.cernet.edu.cn/api/apt/mirrorlist/ubuntu
 # # Suites: resolute-proposed
 # # Components: main restricted universe multiverse
 # # Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg

@@ -28,7 +28,7 @@ gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffe
 
 然后在 `Settings | Displays | Scale` 里调整具体的缩放倍率.
 
-由于 GTK 不支持分数被缩放, 因此这部分应用 (包括大部分 GNOME 原生应用) 将使用超采样来实现分数倍缩放.  
+由于 GTK 不支持分数倍缩放, 因此这部分应用 (包括大部分 GNOME 原生应用) 将使用超采样来实现分数倍缩放.  
 这将导致下面问题:
 
 - 超采样通常被应用于抗锯齿, 因此应用的界面将变得模糊.
